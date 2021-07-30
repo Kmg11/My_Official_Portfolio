@@ -1,0 +1,18 @@
+---- Start Global ----
+
+- Meta Tags
+- Fav Icon
+- Github Description
+- Github README File
+- Copyrights For All Images & My Portfolio
+- package.json File Settings [ Description, Repositry, Author, homePagem etc... ]
+
+---- End Global ----
+---- Start Tests ----
+
+- Performance
+- Accessibility
+- Seo
+- Best Practice
+
+---- End Tests ----

@@ -1,0 +1,13 @@
+---- Start Design Notes ----
+
+- Add Checks For Every Project
+	- Html5 Validation Check
+	- Preformance Check
+	- Accessibility Check
+	- SEO Check
+	- Best Practice Check
+
+- Project Must Have To Buttons Github Link & Live Preview
+- Take Care Of Designs That Have Versions
+
+---- End Design Notes ----

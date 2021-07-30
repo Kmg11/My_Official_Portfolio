@@ -1,0 +1,40 @@
+---- Start Files Structure ----
+
+- Api
+- Components
+	- Navbar
+	- Slider
+- Pages
+	- Home
+	- Profile
+	- Projects
+	- Project
+	- Cv
+	- Contact
+- Hooks
+	- useFetch
+- Style
+	- Variables
+		- Colors
+		- Fonts
+		- Sizes [ Border - Font ]
+	- Reusable
+
+---- End Files Structure ----
+---- Start Json File ----
+
+- Project Details
+	- Name
+	- Description
+	- Links To Github & Live Preview [ Get From Github API ]
+	- Images
+	- Features
+	- Checks
+	- Performance - Accessibility - SEO - Best Practice Numbers
+
+---- End Json File ----
+---- Start Notes ----
+
+- Make Section For Other Information
+
+---- End Notes ----
