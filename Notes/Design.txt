@@ -9,5 +9,8 @@
 
 - Project Must Have To Buttons Github Link & Live Preview
 - Take Care Of Designs That Have Versions
+- Add Social Links In Project Page
+- Add Loading Lazy Load
+- Add Error Handling
 
 ---- End Design Notes ----

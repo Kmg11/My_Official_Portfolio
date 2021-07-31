@@ -1,0 +1,43 @@
+{
+	"name": "Kirolos Mahfouz",
+	"image": "/images/global/personal-image.webp",
+	"email": "kirolosmahfouz15@gmail.com",
+	"description": "I'm Frontend Web Devolper With A Loot Of Skills & Technologies",
+	"date_of_birth": "3/8/2000",
+	"Gender": "Male",
+	"Nationality": "Egyptian",
+	"Marital Status": "Single",
+	"Address": "Faisal, Giza Egypt",
+	"social_links": [
+		{
+			"id": 1,
+			"website": "Github",
+			"link": "https://github.com/Kmg11",
+			"icon": "faGithubSquare"
+		},
+		{
+			"id": 2,
+			"website": "Linkedin",
+			"link": "https://www.linkedin.com/in/kirolos-m-a29134165/",
+			"icon": "faLinkedin"
+		},
+		{
+			"id": 3,
+			"website": "Email",
+			"link": "kirolosmahfouz15@gmail.com",
+			"icon": "faEnvelopeSquare"
+		},
+		{
+			"id": 4,
+			"website": "Behance",
+			"link": "https://www.behance.net/kirolosmahfouz",
+			"icon": "faBehanceSquare"
+		},
+		{
+			"id": 5,
+			"website": "Facebook",
+			"link": "https://www.facebook.com/KirolosMahfouz/",
+			"icon": "faFacebookSquare"
+		}
+	]
+}

@@ -8,8 +8,15 @@
 - package.json File Settings [ Description, Repositry, Author, homePagem etc... ]
 - Project Page Title Must Be Project Name
 - Add Error Page
+- take Care Of Images Width
+- Remove Not Used Font
 
 ---- End Global ----
+---- Start Bugs & Errors ----
+
+- React Helement Error In Console Cause componentWillMount & Strict Mode
+
+---- End Bugs & Errors ----
 ---- Start Tests ----
 
 - Performance

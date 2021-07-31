@@ -41,5 +41,7 @@
 - Change favicon & appleicon
 - take care of meta tags
 - Add Facebook Meta Tags
+- Add Loading Lazy Load
+- Add Error Handling
 
 ---- End Notes ----
