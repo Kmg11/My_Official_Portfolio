@@ -6,6 +6,8 @@
 - Github README File
 - Copyrights For All Images & My Portfolio
 - package.json File Settings [ Description, Repositry, Author, homePagem etc... ]
+- Project Page Title Must Be Project Name
+- Add Error Page
 
 ---- End Global ----
 ---- Start Tests ----

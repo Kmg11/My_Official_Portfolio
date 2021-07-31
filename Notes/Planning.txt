@@ -1,6 +1,8 @@
 ---- Start Files Structure ----
 
 - Api
+- Constants
+	- Router
 - Components
 	- Navbar
 	- Slider
@@ -36,5 +38,8 @@
 ---- Start Notes ----
 
 - Make Section For Other Information
+- Change favicon & appleicon
+- take care of meta tags
+- Add Facebook Meta Tags
 
 ---- End Notes ----
