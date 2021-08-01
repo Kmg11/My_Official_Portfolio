@@ -1,21 +1,21 @@
 import styled from "styled-components";
-import {
-	backgroundColor,
-	backgroundOverlay,
-} from "../../Style/Variables/Colors";
-import { overlay } from "../../Style/Functions";
+import { Variables, Functions } from "../../Style";
 
-export const HomeStyle = styled.section`
+export const Home = styled.section`
 	position: relative;
-	background-color: ${backgroundColor};
-	background-image: url("/images/home/background.webp");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
 	min-height: 100vh;
+	${Functions.backgroundImage("/images/home/background.webp")}
 
 	&::before {
 		content: "";
-		${overlay(backgroundOverlay)};
+		${Functions.overlay(Variables.Colors.backgroundOverlay)};
 	}
+`;
+
+export const Content = styled.div`
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
 `;

@@ -8,18 +8,8 @@ import {
 	faFacebookSquare,
 } from "@fortawesome/free-brands-svg-icons";
 
-import {
-	BannerStyle,
-	Row,
-	ImageContainer,
-	Image,
-	Info,
-	Name,
-	Description,
-	SocialLinks,
-	Items,
-	Link,
-} from "./Banner.style";
+import * as Style from "./Banner.style";
+import { PROJECTS } from "../../Constants/Router";
 
 export function Banner({ response: { data, success } }) {
 	const icons = {
@@ -30,31 +20,44 @@ export function Banner({ response: { data, success } }) {
 		Facebook: faFacebookSquare,
 	};
 
-	return (
-		<BannerStyle>
-			{success && (
-				<Row>
-					<ImageContainer>
-						<Image src={data.image} alt={data.name} />
-					</ImageContainer>
+	const socialLinksList =
+		success &&
+		data.social_links.map((link) => {
+			return (
+				<Style.Item key={link.id}>
+					<Style.ItemLink
+						href={link.website === "Email" ? `mailto:${link.link}` : link.link}
+						target="_blank"
+					>
+						<FontAwesomeIcon icon={icons[link.website]} />
+					</Style.ItemLink>
+				</Style.Item>
+			);
+		});
 
-					<Info>
-						<Name>{data.name}</Name>
-						<Description>{data.description}</Description>
-						<SocialLinks>
-							{data.social_links.map((link) => {
-								return (
-									<Items key={link.id}>
-										<Link href={link.link} target="_blank">
-											<FontAwesomeIcon icon={icons[link.website]} />
-										</Link>
-									</Items>
-								);
-							})}
-						</SocialLinks>
-					</Info>
-				</Row>
-			)}
-		</BannerStyle>
+	return (
+		success && (
+			<Style.Banner>
+				<Style.Row>
+					<Style.ImageContainer>
+						<Style.Image src={data.image} alt={data.name} />
+					</Style.ImageContainer>
+
+					<Style.Info>
+						<Style.Name>{data.name}</Style.Name>
+						<Style.Description>{data.description}</Style.Description>
+						<Style.SocialLinks>{socialLinksList}</Style.SocialLinks>
+					</Style.Info>
+				</Style.Row>
+
+				<Style.Button to={PROJECTS}>
+					<Style.Arrows>
+						<Style.Arrow></Style.Arrow>
+						<Style.Arrow></Style.Arrow>
+						<Style.Arrow></Style.Arrow>
+					</Style.Arrows>
+				</Style.Button>
+			</Style.Banner>
+		)
 	);
 }

@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import { Navbar } from "../../Components/Navbar/Navbar";
 
 export function Profile() {
 	return (
@@ -14,7 +15,8 @@ export function Profile() {
 					content="Frontend, Web Devolper, Programming, Portfolio, Kirolos Mahfouz, Web, HTML, HTML5, CSS, CSS3, Javascript, jQuery, Bootstrap, Sass, Pug, Gulp, Git, Github, React, Redux, CLI"
 				/>
 			</Helmet>
-			Profile
+
+			<Navbar />
 		</div>
 	);
 }

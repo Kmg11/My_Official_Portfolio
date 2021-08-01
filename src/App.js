@@ -1,7 +1,7 @@
 import { createContext } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Home, Projects, Project, Profile, Contact } from "./Pages";
-import { HOME, PROJECTS, PROJECT, PROFILE, CONTACT } from "./Constants/Router";
+import { Home, Projects, Project, Profile, Cv } from "./Pages";
+import { HOME, PROJECTS, PROJECT, PROFILE, CV } from "./Constants/Router";
 
 export const APIContext = createContext();
 const APILinks = {
@@ -17,7 +17,7 @@ export function App() {
 					<Route path={PROJECTS} component={Projects} />
 					<Route path={PROJECT} component={Project} />
 					<Route path={PROFILE} component={Profile} />
-					<Route path={CONTACT} component={Contact} />
+					<Route path={CV} component={Cv} />
 				</Switch>
 			</Router>
 		</APIContext.Provider>

@@ -1,8 +1,10 @@
 import { Helmet } from "react-helmet";
+import { Navbar } from "../../Components/Navbar/Navbar";
+import * as Style from "./Projects.style";
 
 export function Projects() {
 	return (
-		<div>
+		<Style.Projects>
 			<Helmet>
 				<title>Kirolos Mahfouz | Projects</title>
 				<meta
@@ -14,7 +16,8 @@ export function Projects() {
 					content="Frontend, Web Devolper, Programming, Portfolio, Kirolos Mahfouz, Web, HTML, HTML5, CSS, CSS3, Javascript, jQuery, Bootstrap, Sass, Pug, Gulp, Git, Github, React, Redux, CLI"
 				/>
 			</Helmet>
-			Projects
-		</div>
+
+			<Navbar />
+		</Style.Projects>
 	);
 }

@@ -4,6 +4,10 @@ export * as Variables from "./Variables";
 export * as Functions from "./Functions";
 
 export const GlobalStyle = createGlobalStyle`
+	* {
+		box-sizing: border-box;
+	}
+
 	body {
 		font-family: "Roboto", sans-serif;
 	}
@@ -14,5 +18,11 @@ export const GlobalStyle = createGlobalStyle`
 
 	a {
 		text-decoration: none;
+	}
+
+	button {
+		background: none;
+		border: none;
+		cursor: pointer;
 	}
 `;

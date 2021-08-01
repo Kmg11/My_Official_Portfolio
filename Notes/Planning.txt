@@ -1,26 +1,30 @@
 ---- Start Files Structure ----
 
-- Api
-- Constants
-	- Router
-- Components
-	- Navbar
-	- Slider
-- Pages
-	- Home
-	- Profile
-	- Projects
-	- Project
-	- Cv
-	- Contact
-- Hooks
-	- useFetch
-- Style
-	- Variables
-		- Colors
-		- Fonts
-		- Sizes [ Border - Font ]
-	- Reusable
+- public
+	- Api
+	- images
+
+- src
+	- Constants
+		- Router
+	- Components
+		- Navbar
+		- Slider
+	- Pages
+		- Home
+		- Profile
+		- Projects
+		- Project
+		- Cv
+		- Contact
+	- Hooks
+		- useFetch
+	- Style
+		- Variables
+			- Colors
+			- Fonts
+			- Sizes [ Border - Font ]
+		- Functions
 
 ---- End Files Structure ----
 ---- Start Json File ----

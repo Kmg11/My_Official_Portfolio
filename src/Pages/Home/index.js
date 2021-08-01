@@ -1,16 +1,16 @@
 import { useContext } from "react";
 import { Helmet } from "react-helmet";
 import { useFetchGet } from "../../Hooks/useFetchGet";
-import { HomeStyle } from "./Home.style";
-import { Banner } from "../../Components/Banner/Banner";
+import * as Style from "./Home.style";
 import { APIContext } from "../../App";
+import { Banner } from "../../Components/Banner/Banner";
 
 export function Home() {
 	const API = useContext(APIContext);
 	const { data, success } = useFetchGet(API.info);
 
 	return (
-		<HomeStyle>
+		<Style.Home>
 			<Helmet>
 				<title>Kirolos Mahfouz | Home</title>
 				<meta
@@ -23,7 +23,9 @@ export function Home() {
 				/>
 			</Helmet>
 
-			<Banner response={{ data, success }} />
-		</HomeStyle>
+			<Style.Content>
+				<Banner response={{ data, success }} />
+			</Style.Content>
+		</Style.Home>
 	);
 }
