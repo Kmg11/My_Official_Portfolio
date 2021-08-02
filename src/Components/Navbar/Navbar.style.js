@@ -5,11 +5,11 @@ import { Variables } from "../../Style";
 export const Navbar = styled.nav`
 	position: fixed;
 	top: 0;
-	left: 0;
 	bottom: 0;
+	left: 0;
 	z-index: 2;
 	min-height: 100vh;
-	background-color: ${Variables.Colors.forgroundColor};
+	background-color: ${Variables.Colors.mainColor};
 	padding: 20px 10px 20px 10px;
 	border-radius: 0 30px 30px 0;
 	text-align: center;

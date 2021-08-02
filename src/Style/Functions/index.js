@@ -1,7 +1,7 @@
 import { css } from "styled-components";
 import { Variables } from "..";
 
-export const overlay = (backgroundColor) => {
+export const overlay = (backgroundColor, backgroundImage) => {
 	return css`
 		position: absolute;
 		top: 0;
@@ -9,7 +9,16 @@ export const overlay = (backgroundColor) => {
 		left: 0;
 		right: 0;
 		z-index: 2;
-		background-color: ${backgroundColor};
+
+		${backgroundColor &&
+		css`
+			background-color: ${backgroundColor};
+		`}
+
+		${backgroundImage &&
+		css`
+			background-image: ${backgroundImage};
+		`}
 	`;
 };
 

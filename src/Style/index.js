@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
+import * as Variables from "./Variables";
 export * as Variables from "./Variables";
 export * as Functions from "./Functions";
 
@@ -9,6 +10,7 @@ export const GlobalStyle = createGlobalStyle`
 	}
 
 	body {
+		background-color: ${Variables.Colors.backgroundColor};
 		font-family: "Roboto", sans-serif;
 	}
 
@@ -24,5 +26,9 @@ export const GlobalStyle = createGlobalStyle`
 		background: none;
 		border: none;
 		cursor: pointer;
+	}
+
+	img {
+		user-select: none;
 	}
 `;

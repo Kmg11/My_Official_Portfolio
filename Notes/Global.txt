@@ -10,6 +10,8 @@
 - Add Error Page
 - take Care Of Images Width
 - Remove Not Used Font
+- Add Shadows To Navbar Icons & Name
+- Convert Forground Color To Main Color
 
 ---- End Global ----
 ---- Start Bugs & Errors ----

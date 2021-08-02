@@ -1,4 +1,5 @@
 import * as Style from "./Navbar.style";
+import { Link } from "react-router-dom";
 import { CV, HOME, PROFILE, PROJECTS } from "../../Constants/Router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -12,10 +13,12 @@ export function Navbar() {
 	return (
 		<Style.Navbar>
 			<Style.ImageContainer>
-				<Style.Image
-					src="/images/global/personal-image-small.webp"
-					alt="Kirolos Mahfouz"
-				/>
+				<Link to={PROFILE}>
+					<Style.Image
+						src="/images/global/personal-image-small.webp"
+						alt="Kirolos Mahfouz"
+					/>
+				</Link>
 			</Style.ImageContainer>
 
 			<Style.List>

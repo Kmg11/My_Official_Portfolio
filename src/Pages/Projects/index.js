@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import { Navbar } from "../../Components/Navbar/Navbar";
+import { ProjectsContainer } from "../../Components/ProjectsContainer/ProjectsContainer";
 import * as Style from "./Projects.style";
 
 export function Projects() {
@@ -17,7 +18,10 @@ export function Projects() {
 				/>
 			</Helmet>
 
-			<Navbar />
+			<Style.Content>
+				<Navbar />
+				<ProjectsContainer />
+			</Style.Content>
 		</Style.Projects>
 	);
 }
