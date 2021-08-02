@@ -9,7 +9,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import * as Style from "./Banner.style";
-import { PROJECTS } from "../../Constants/Router";
 
 export function Banner({ response: { data, success } }) {
 	const icons = {
@@ -28,6 +27,8 @@ export function Banner({ response: { data, success } }) {
 					<Style.ItemLink
 						href={link.website === "Email" ? `mailto:${link.link}` : link.link}
 						target="_blank"
+						rel="noreferrer"
+						aria-label={link.website}
 					>
 						<FontAwesomeIcon icon={icons[link.website]} />
 					</Style.ItemLink>
@@ -49,14 +50,6 @@ export function Banner({ response: { data, success } }) {
 						<Style.SocialLinks>{socialLinksList}</Style.SocialLinks>
 					</Style.Info>
 				</Style.Row>
-
-				<Style.Button to={PROJECTS}>
-					<Style.Arrows>
-						<Style.Arrow></Style.Arrow>
-						<Style.Arrow></Style.Arrow>
-						<Style.Arrow></Style.Arrow>
-					</Style.Arrows>
-				</Style.Button>
 			</Style.Banner>
 		)
 	);

@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Navbar } from "../../Components/Navbar/Navbar";
 
 export function Project() {
@@ -15,7 +15,7 @@ export function Project() {
 					content="Frontend, Web Devolper, Programming, Portfolio, Kirolos Mahfouz, Web, HTML, HTML5, CSS, CSS3, Javascript, jQuery, Bootstrap, Sass, Pug, Gulp, Git, Github, React, Redux, CLI"
 				/>
 			</Helmet>
-			
+
 			<Navbar />
 		</div>
 	);

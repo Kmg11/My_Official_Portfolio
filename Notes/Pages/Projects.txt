@@ -1,5 +1,6 @@
 ---- Start Projects Page ----
 
 - Padding Left Dynamic
+- Randomize Images When Hover On Card
 
 ---- End Projects Page ----

@@ -1,9 +1,10 @@
 import { useContext } from "react";
-import { Helmet } from "react-helmet";
-import { useFetchGet } from "../../Hooks/useFetchGet";
-import * as Style from "./Home.style";
+import { Helmet } from "react-helmet-async";
 import { APIContext } from "../../App";
+import { useFetchGet } from "../../Hooks/useFetchGet";
 import { Banner } from "../../Components/Banner/Banner";
+import { NextButton } from "../../Components/NextButton/NextButton";
+import * as Style from "./Home.style";
 
 export function Home() {
 	const API = useContext(APIContext);
@@ -25,6 +26,7 @@ export function Home() {
 
 			<Style.Content>
 				<Banner response={{ data, success }} />
+				<NextButton />
 			</Style.Content>
 		</Style.Home>
 	);

@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Navbar } from "../../Components/Navbar/Navbar";
 
 export function Profile() {

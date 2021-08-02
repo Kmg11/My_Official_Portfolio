@@ -1,5 +1,9 @@
 ---- Start Home Page ----
 
-- Social Links Email Make It Copy Not Link
+- [ Done ] Fix Accessibility
+- [ Done ] FIx Best Practice
+- [ Done ] Move Next Button From Banner To Separete Component
+- [ Done ] Responsive
+- Email Link Make It Copy Not Link
 
 ---- End Home Page ----

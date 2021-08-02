@@ -16,7 +16,7 @@
 ---- End Global ----
 ---- Start Bugs & Errors ----
 
-- React Helement Error In Console Cause componentWillMount & Strict Mode
+- [ Done ] React Helement Error In Console Cause componentWillMount & Strict Mode
 
 ---- End Bugs & Errors ----
 ---- Start Tests ----
