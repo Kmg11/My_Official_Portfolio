@@ -12,6 +12,9 @@
 - Remove Not Used Font
 - Add Shadows To Navbar Icons & Name
 - Convert Forground Color To Main Color
+- Error Handler
+- Loading Handler
+- Add Focus Handler For All Elments & Remove Default Focus
 
 ---- End Global ----
 ---- Start Bugs & Errors ----

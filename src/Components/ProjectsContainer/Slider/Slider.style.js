@@ -1,149 +1,80 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { Functions, Variables } from "../../../Style";
+import { Variables } from "../../../Style";
 
-export const Slider = styled.div`
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-auto-rows: 30vh;
-	gap: 20px;
-`;
-
-export const Buttons = styled.div`
-	position: absolute;
-	bottom: 20px;
-	left: 20px;
-	right: 0;
-	z-index: 4;
-	width: max-content;
-	display: grid;
-	grid-template-columns: repeat(2, auto);
-	gap: 20px;
-	justify-content: start;
-	align-items: center;
-	opacity: 0;
-	transition: all 0.2s linear;
-`;
-
-export const ButtonIcon = styled.span`
-	color: ${Variables.Colors.whiteColor};
-	display: inline-block;
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
-	text-align: center;
-	border: 1px solid ${Variables.Colors.whiteColor};
-	border-radius: 50%;
-	margin-right: 10px;
-	font-size: 1rem;
-	transition: all 0.2s linear;
-`;
-
-export const ButtonName = styled.span`
-	color: ${Variables.Colors.whiteColor};
-	font-size: 1.1rem;
-`;
-
-export const Button = styled.a`
-	display: block;
-
-	&:hover {
-		${ButtonIcon} {
-			background-color: ${Variables.Colors.mainColor};
-			border-color: ${Variables.Colors.mainColor};
-		}
-	}
-`;
-
-export const CardInfo = styled.div`
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	transform: translateY(100%);
-	width: 100%;
-	background-color: ${Variables.Colors.secondBackgroundColor};
-	padding: 20px 20px 10px 20px;
-	opacity: 0;
-	z-index: -1;
-	transition: all 0.2s linear;
-`;
-
-export const Box = styled.div``;
-
-export const Title = styled.h4`
-	color: ${Variables.Colors.whiteColor};
-	margin: 0;
-`;
-
-export const Description = styled.p`
-	color: ${Variables.Colors.textColor};
-	line-height: 1.6;
-	font-size: 0.9rem;
-`;
-
-export const TechTitle = styled.h4`
-	color: ${Variables.Colors.whiteColor};
-	margin-bottom: 5px;
-`;
-
-export const TechList = styled.ul`
-	padding: 0;
-	margin-bottom: 0;
-`;
-
-export const TechItem = styled.li`
-	color: ${Variables.Colors.textColor};
-	border: 1px solid ${Variables.Colors.whiteColor};
-	display: inline-block;
-	text-align: center;
-	padding: 5px 10px;
-	font-size: 0.9rem;
-	margin-right: 10px;
-	margin-bottom: 10px;
-`;
-
-export const Card = styled.div`
+export const Slider = styled.section`
 	position: relative;
+	margin-bottom: 2rem;
 
-	&::before {
-		content: "";
-		transition: all 0.2s linear;
-		opacity: 0;
-		${Functions.overlay(null, "linear-gradient(to top, #000, transparent, transparent)")}
+	&:hover,
+	&:focus {
+		z-index: 5;
 	}
 
-	&:hover {
-		&::before {
-			opacity: 1;
+	.swiper-container {
+		overflow: visible;
+		padding-right: 90px;
+
+		.swiper-button-prev,
+		.swiper-button-next {
+			top: 0;
+			bottom: 0;
+			background-color: rgba(15, 23, 30, 0.5);
+			width: 40px;
+			height: 100%;
+			margin-top: 0;
+			transition: all 0.2s linear;
+
+			&:after {
+				color: ${Variables.Colors.whiteColor};
+				font-size: 1.9rem;
+			}
+
+			&:hover,
+			&:focus {
+				background-color: rgba(15, 23, 30, 0.75);
+			}
 		}
 
-		${Buttons} {
-			opacity: 1;
+		.swiper-button-prev {
+			left: 0;
+			transform: translateX(-40px);
 		}
 
-		${CardInfo} {
-			opacity: 1;
-			z-index: 5;
+		.swiper-button-next {
+			right: 0;
+			transform: translateX(40px);
 		}
-	}
 
-	&:nth-of-type(odd) {
-		${Functions.backgroundImage("/images/projects/templates/Apple.png")}
-	}
+		.swiper-button-disabled {
+			opacity: 0;
+			visibility: hidden;
+		}
 
-	&:nth-of-type(even) {
-		${Functions.backgroundImage("/images/projects/templates/Agency.png")}
+		.swiper-wrapper {
+			display: flex;
+		}
 	}
 `;
 
-export const Go = styled(Link)`
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
+export const Title = styled.h3`
+	color: ${Variables.Colors.titlesColor};
+	margin-top: 0;
+`;
+
+export const SeeMore = styled.div`
 	width: 100%;
-	height: 100%;
-	z-index: 3;
+	height: 30vh;
+	background-color: ${Variables.Colors.secondBackgroundColor};
+	color: ${Variables.Colors.textColor};
+	display: grid;
+	place-items: center;
+	font-size: 1.2rem;
+	cursor: pointer;
+	transition: all 0.2s linear;
+
+	&:hover,
+	&:focus {
+		transform: scale(1.1) translateY(-8px);
+		z-index: 5;
+	}
 `;

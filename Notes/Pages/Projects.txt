@@ -1,6 +1,11 @@
 ---- Start Projects Page ----
 
-- Padding Left Dynamic
+- [ Done ] Padding Left Dynamic
+- [ Done ] Hover z-index Problem When Cards Grid [ problem in Card Must Have z-index ]
 - Randomize Images When Hover On Card
+- Slider Last Item Problem When Resize
+- Make Slider Buttons Transparency When Hover On Card
+- Accessibilty In Slider
+- Swiper Keyboard Need To Seprate Every Slider
 
 ---- End Projects Page ----

@@ -9,30 +9,29 @@
 		- Router
 	- Components
 		- Navbar
-		- Slider
+		- Banner
+		- NextButton
+		- ProjectsContainer
 	- Pages
 		- Home
 		- Profile
 		- Projects
 		- Project
 		- Cv
-		- Contact
 	- Hooks
 		- useFetch
 	- Style
 		- Variables
 			- Colors
-			- Fonts
-			- Sizes [ Border - Font ]
 		- Functions
 
 ---- End Files Structure ----
 ---- Start Json File ----
 
 - Project Details
-	- Name
-	- Description
-	- Links To Github & Live Preview [ Get From Github API ]
+	- [ Done ] Name
+	- [ Done ] Description
+	- [ Done ] Links To Github & Live Preview [ Get From Github API ]
 	- Images
 	- Features
 	- Checks

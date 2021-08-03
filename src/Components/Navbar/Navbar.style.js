@@ -13,6 +13,7 @@ export const Navbar = styled.nav`
 	padding: 20px 10px 20px 10px;
 	border-radius: 0 30px 30px 0;
 	text-align: center;
+	z-index: 1000;
 `;
 
 export const ImageContainer = styled.div`
@@ -77,12 +78,14 @@ export const ItemLink = styled(NavLink)`
 	margin: auto;
 
 	&:hover,
+	&:focus,
 	&.active {
 		color: ${Variables.Colors.mainColor};
 		background-color: ${Variables.Colors.whiteBackgroundColor};
 	}
 
-	&:hover {
+	&:hover,
+	&:focus {
 		${LinkName} {
 			opacity: 1;
 			transform: translate(120%, -50%);

@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
 	body {
 		background-color: ${Variables.Colors.backgroundColor};
 		font-family: "Roboto", sans-serif;
+		overflow-x: hidden;
 	}
 
 	ul {

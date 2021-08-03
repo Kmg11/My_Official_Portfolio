@@ -7,5 +7,5 @@ export const Projects = styled.section`
 `;
 
 export const Content = styled.section`
-	padding-left: 90px;
+	padding-left: ${(props) => props.navWidth}px;
 `;

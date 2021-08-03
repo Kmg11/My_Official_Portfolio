@@ -84,7 +84,8 @@ export const ItemLink = styled.a`
 		left: -1px;
 	}
 
-	&:hover {
+	&:hover,
+	&:focus {
 		color: ${Variables.Colors.mainColor};
 		background-color: ${Variables.Colors.whiteBackgroundColor};
 	}

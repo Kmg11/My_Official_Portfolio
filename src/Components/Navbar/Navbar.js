@@ -1,6 +1,6 @@
-import * as Style from "./Navbar.style";
 import { Link } from "react-router-dom";
 import { CV, HOME, PROFILE, PROJECTS } from "../../Constants/Router";
+import { forwardRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faWrench,
@@ -8,10 +8,11 @@ import {
 	faScroll,
 	faHome,
 } from "@fortawesome/free-solid-svg-icons";
+import * as Style from "./Navbar.style";
 
-export function Navbar() {
+function MainNavbar(props, ref) {
 	return (
-		<Style.Navbar>
+		<Style.Navbar ref={ref}>
 			<Style.ImageContainer>
 				<Link to={PROFILE}>
 					<Style.Image
@@ -61,3 +62,5 @@ export function Navbar() {
 		</Style.Navbar>
 	);
 }
+
+export const Navbar = forwardRef(MainNavbar);

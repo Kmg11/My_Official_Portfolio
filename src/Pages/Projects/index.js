@@ -1,9 +1,17 @@
+import { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Navbar } from "../../Components/Navbar/Navbar";
 import { ProjectsContainer } from "../../Components/ProjectsContainer/ProjectsContainer";
 import * as Style from "./Projects.style";
 
 export function Projects() {
+	const [NavWidthState, setNavWidthState] = useState();
+	const navWidth = useRef();
+
+	useEffect(() => {
+		setNavWidthState(navWidth.current.offsetWidth);
+	}, []);
+
 	return (
 		<Style.Projects>
 			<Helmet>
@@ -18,8 +26,8 @@ export function Projects() {
 				/>
 			</Helmet>
 
-			<Style.Content>
-				<Navbar />
+			<Style.Content navWidth={NavWidthState}>
+				<Navbar ref={navWidth} />
 				<ProjectsContainer />
 			</Style.Content>
 		</Style.Projects>

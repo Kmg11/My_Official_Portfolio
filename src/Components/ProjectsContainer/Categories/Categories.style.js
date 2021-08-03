@@ -1,32 +1,32 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { Variables } from "../../../Style";
 
 export const Categories = styled.section`
-	padding-top: 30px;
-	padding-bottom: 30px;
-	display: grid;
-	grid-template-columns: repeat(2, auto);
-	gap: 30px;
-	place-items: center;
-	place-content: center;
+	margin-bottom: 3rem;
 `;
 
 export const Button = styled.button`
 	font-size: 1.2rem;
-	border-radius: 50%;
-	width: 70px;
-	height: 70px;
-	background-color: #333;
-	display: block;
-`;
-
-export const Icon = styled.span`
+	width: 130px;
+	height: 50px;
+	background-color: ${Variables.Colors.secondBackgroundColor};
 	color: ${Variables.Colors.whiteColor};
-	display: block;
-	margin-bottom: 8px;
-`;
+	font-size: 1rem;
+	display: inline-block;
+	transition: all 0.2s linear;
 
-export const Name = styled.span`
-	color: ${Variables.Colors.whiteColor};
-	display: block;
+	&:hover,
+	&:focus {
+		background-color: ${Variables.Colors.mainColor};
+	}
+
+	${(props) =>
+		props.active &&
+		css`
+			background-color: ${Variables.Colors.mainColor};
+		`}
+
+	&:not(:last-of-type) {
+		margin-right: 20px;
+	}
 `;
