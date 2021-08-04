@@ -1,0 +1,58 @@
+{
+	"templates": [
+		{
+			"id": 1,
+			"title": "",
+			"Description": "",
+			"technologies": ["", "", ""],
+			"images": ["", "", ""],
+			"features": ["", "", ""],
+			"how_to_use": ["", "", ""],
+			"notes": "",
+			"links": {
+				"github": "",
+				"live_preview": ""
+			},
+			"tests": [
+				{ "percentage": "", "type": "" },
+				{ "percentage": "", "type": "" },
+				{ "percentage": "", "type": "" }
+			],
+			"versions": [
+				{ "version": "", "github": "", "live_preview": "" },
+				{ "version": "", "github": "", "live_preview": "" },
+				{ "version": "", "github": "", "live_preview": "" }
+			],
+			"is_top": false
+		}
+	],
+
+	"apps": [
+		{
+			"id": 1,
+			"title": "",
+			"Description": "",
+			"technologies": ["", "", ""],
+			"images": ["", "", ""],
+			"features": ["", "", ""],
+			"how_to_use": ["", "", ""],
+			"functionality": ["", "", ""],
+			"notes": "",
+			"links": {
+				"github": "",
+				"live_preview": ""
+			},
+			"tests": [
+				{ "percentage": "", "type": "" },
+				{ "percentage": "", "type": "" },
+				{ "percentage": "", "type": "" }
+			],
+			"versions": [
+				{ "version": "", "github": "", "live_preview": "" },
+				{ "version": "", "github": "", "live_preview": "" },
+				{ "version": "", "github": "", "live_preview": "" }
+			],
+			"is_top": false
+		}
+	]
+}

@@ -1,16 +1,12 @@
----- Start Design Notes ----
-
 - Add Checks For Every Project
-	- Html5 Validation Check
-	- Preformance Check
-	- Accessibility Check
-	- SEO Check
-	- Best Practice Check
+	- [ Done ] Html5 Validation Check
+	- [ Done ] Preformance Check
+	- [ Done ] Accessibility Check
+	- [ Done ] SEO Check
+	- [ Done ] Best Practice Check
 
-- Project Must Have To Buttons Github Link & Live Preview
-- Take Care Of Designs That Have Versions
+- [ Done ] Project Must Have To Buttons Github Link & Live Preview
+- [ Done ] Take Care Of Designs That Have Versions
 - Add Social Links In Project Page
 - Add Loading Lazy Load
 - Add Error Handling
-
----- End Design Notes ----

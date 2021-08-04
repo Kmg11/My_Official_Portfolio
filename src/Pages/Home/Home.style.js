@@ -5,7 +5,7 @@ import { Variables, Functions } from "../../Style";
 export const Home = styled.section`
 	position: relative;
 	min-height: 100vh;
-	${Functions.backgroundImage("/images/home/background.webp")}
+	${Functions.backgroundImage("/Images/Home/background.webp")}
 
 	&::before {
 		content: "";

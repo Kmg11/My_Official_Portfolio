@@ -115,7 +115,7 @@ export const Card = styled.div`
 	height: 30vh;
 	position: relative;
 	transition: all 0.2s linear;
-	${Functions.backgroundImage("/images/projects/templates/Apple.png")}
+	${Functions.backgroundImage("/Images/Projects/templates/Apple.png")}
 
 	&::before {
 		content: "";

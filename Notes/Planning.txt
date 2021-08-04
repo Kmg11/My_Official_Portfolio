@@ -2,7 +2,13 @@
 
 - public
 	- Api
+		- info.json
+		- projects.json
 	- images
+		- global [ Contain Global Images ]
+		- projects [ Projects Page Images ]
+			- templates
+			- apps
 
 - src
 	- Constants
@@ -17,13 +23,26 @@
 		- Profile
 		- Projects
 		- Project
-		- Cv
 	- Hooks
 		- useFetch
 	- Style
 		- Variables
 			- Colors
 		- Functions
+
+- Notes
+	- Pages
+		- Home.txt
+		- Projects.txt
+		- Profile.txt
+	- Components
+		- Navbar.txt
+		- Banner.txt
+		- NextButton.txt
+		- ProjectsContainer.txt
+	- Design.txt
+	- Global.txt
+	- Planning.txt
 
 ---- End Files Structure ----
 ---- Start Json File ----
@@ -32,19 +51,116 @@
 	- [ Done ] Name
 	- [ Done ] Description
 	- [ Done ] Links To Github & Live Preview [ Get From Github API ]
-	- Images
-	- Features
-	- Checks
-	- Performance - Accessibility - SEO - Best Practice Numbers
+	- [ Done ] Images
+	- [ Done ] Features
+	- [ Done ] Technologies
+	- [ Done ] Tests
+	- [ Done ] Versions
+	- [ Done ] How To Use
+	- [ Done ] Notes
+
+- Templates Structure [
+	{
+		"id": 1,
+		"title": "",
+		"Description": "",
+		"technologies": ["", "", ""],
+		"images": ["", "", ""],
+		"features": ["", "", ""],
+		"how_to_use": ["", "", ""],
+		"notes": "",
+		"links": {
+			"github": "",
+			"live_preview": ""
+		},
+		"tests": [
+			{ "percentage": "", "type": "" },
+			{ "percentage": "", "type": "" },
+			{ "percentage": "", "type": "" }
+		],
+		"versions": [
+			{ "version": "", "github": "", "live_preview": "" },
+			{ "version": "", "github": "", "live_preview": "" },
+			{ "version": "", "github": "", "live_preview": "" }
+		],
+		"is_top": false
+	}
+]
+
+- Apps Structure [
+	{
+		"id": 1,
+		"title": "",
+		"Description": "",
+		"technologies": ["", "", ""],
+		"images": ["", "", ""],
+		"features": ["", "", ""],
+		"how_to_use": ["", "", ""],
+		"functionality": ["", "", ""],
+		"notes": "",
+		"links": {
+			"github": "",
+			"live_preview": ""
+		},
+		"tests": [
+			{ "percentage": "", "type": "" },
+			{ "percentage": "", "type": "" },
+			{ "percentage": "", "type": "" }
+		],
+		"versions": [
+			{ "version": "", "github": "", "live_preview": "" },
+			{ "version": "", "github": "", "live_preview": "" },
+			{ "version": "", "github": "", "live_preview": "" }
+		],
+		"is_top": false
+	}
+]
 
 ---- End Json File ----
 ---- Start Notes ----
 
-- Make Section For Other Information
+- [ Done ] Make Section For Notes In Project Page
 - Change favicon & appleicon
-- take care of meta tags
-- Add Facebook Meta Tags
-- Add Loading Lazy Load
-- Add Error Handling
+- take care of meta tags & Add Facebook Meta Tags
+- Add Loading Lazy Load & Add Error Handling
+- You Can Use Redux In [ Navbar Width ]
+- Github Must Have The Same Information
+- Take Care If No Live Preview
+- Copyrights For All Images & My Portfolio
+- package.json File Settings [ Description, Repositry, Author, homePagem etc... ]
+- Add Error Page
+- Add Focus Handler For All Elments & Remove Default Focus
+- take Care Of Images Width In Responsive
+- Add Shadows To Navbar Icons & Name
+- Project Page Title Must Be Project Name
+- Think About Challenges Section In Project Page
+- Add Social Links In Project Page
+- Split Information To Simple Information & Advanced Information
+
+- Simple Information
+	- Title
+	- Description
+	- Technologies
+	- Images
+	- Features
+	- Notes
+	- Links
+
+- Advanced Information
+	- How To Use
+	- Functionality
+	- Tests
+	- Versions
+
+- Projects Description
+	- Some Of The Features
+	- Functionality
+	- Take Care Of Grammer
+
+- Projects Features
+	- Small Images
+	- Fast Load
+	- Structure
+	- Performance & Accessibility & Best Practice & Seo
 
 ---- End Notes ----

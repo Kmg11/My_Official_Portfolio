@@ -1,5 +1,3 @@
----- Start Projects Page ----
-
 - [ Done ] Padding Left Dynamic
 - [ Done ] Hover z-index Problem When Cards Grid [ problem in Card Must Have z-index ]
 - [ Done ] Swiper Problem In Last Show Item Not Fixed Until Resize [ Problem In Dynamic Padding ]
@@ -11,5 +9,4 @@
 - Randomize Images When Hover On Card
 - Responsive
 - Problem With Overflow When Move With Keyboard Tab
-
----- End Projects Page ----
+- Add Images In HTML Elment Not As Background

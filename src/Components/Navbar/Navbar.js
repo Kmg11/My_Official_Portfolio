@@ -16,7 +16,7 @@ function MainNavbar(props, ref) {
 			<Style.ImageContainer>
 				<Link to={PROFILE}>
 					<Style.Image
-						src="/images/global/personal-image-small.webp"
+						src="/Images/Global/personal-image-small.webp"
 						alt="Kirolos Mahfouz"
 					/>
 				</Link>

@@ -1,21 +1,11 @@
 ---- Start Global ----
 
-- Meta Tags
-- Fav Icon
-- Github Description
-- Github README File
-- Copyrights For All Images & My Portfolio
-- package.json File Settings [ Description, Repositry, Author, homePagem etc... ]
-- Project Page Title Must Be Project Name
-- Add Error Page
-- take Care Of Images Width
+- [ Done ] Convert Forground Color To Main Color
+- [ Done ] Make All Folders Start With Capital Letter
+- Add Main Images Paths In Constants [ Projects - Global - Home ]
+- Make All Files Start With Uppearcase Letter & index Only In Collector
 - Remove Not Used Font
-- Add Shadows To Navbar Icons & Name
-- Convert Forground Color To Main Color
-- Error Handler
-- Loading Handler
-- Add Focus Handler For All Elments & Remove Default Focus
-- Readme File
+- Review Images Not Used
 
 ---- End Global ----
 ---- Start Bugs & Errors ----
@@ -25,9 +15,40 @@
 ---- End Bugs & Errors ----
 ---- Start Tests ----
 
-- Performance
-- Accessibility
-- Seo
-- Best Practice
+- Home Page
+	- Performance
+	- Performance On Google Site
+	- Performance On GTmatrix
+	- Accessibility
+	- Seo
+	- Best Practice
+	- Validation
+
+- Projects Page
+	- Performance
+	- Performance On Google Site
+	- Performance On GTmatrix
+	- Accessibility
+	- Seo
+	- Best Practice
+	- Validation
+
+- Project Page
+	- Performance
+	- Performance On Google Site
+	- Performance On GTmatrix
+	- Accessibility
+	- Seo
+	- Best Practice
+	- Validation
+
+- Profile Page
+	- Performance
+	- Performance On Google Site
+	- Performance On GTmatrix
+	- Accessibility
+	- Seo
+	- Best Practice
+	- Validation
 
 ---- End Tests ----
