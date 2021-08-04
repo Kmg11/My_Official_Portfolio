@@ -5,7 +5,7 @@ import { ProjectsContainer } from "../../Components/ProjectsContainer/ProjectsCo
 import * as Style from "./Projects.style";
 
 export function Projects() {
-	const [NavWidthState, setNavWidthState] = useState();
+	const [navWidthState, setNavWidthState] = useState();
 	const navWidth = useRef();
 
 	useEffect(() => {
@@ -26,9 +26,9 @@ export function Projects() {
 				/>
 			</Helmet>
 
-			<Style.Content navWidth={NavWidthState}>
+			<Style.Content navWidth={navWidthState}>
 				<Navbar ref={navWidth} />
-				<ProjectsContainer />
+				<ProjectsContainer navWidthState={navWidthState} />
 			</Style.Content>
 		</Style.Projects>
 	);

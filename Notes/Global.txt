@@ -15,6 +15,7 @@
 - Error Handler
 - Loading Handler
 - Add Focus Handler For All Elments & Remove Default Focus
+- Readme File
 
 ---- End Global ----
 ---- Start Bugs & Errors ----

@@ -2,10 +2,14 @@
 
 - [ Done ] Padding Left Dynamic
 - [ Done ] Hover z-index Problem When Cards Grid [ problem in Card Must Have z-index ]
-- Randomize Images When Hover On Card
-- Slider Last Item Problem When Resize
+- [ Done ] Swiper Problem In Last Show Item Not Fixed Until Resize [ Problem In Dynamic Padding ]
+- [ Done ] Slider Last Item Problem When Resize
+- [ Done ] Last Slider Problem With Page Height
 - Make Slider Buttons Transparency When Hover On Card
-- Accessibilty In Slider
+- Accessibilty In Slider [ Hover & Focus On Link ]
 - Swiper Keyboard Need To Seprate Every Slider
+- Randomize Images When Hover On Card
+- Responsive
+- Problem With Overflow When Move With Keyboard Tab
 
 ---- End Projects Page ----

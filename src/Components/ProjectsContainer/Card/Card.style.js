@@ -115,7 +115,7 @@ export const Card = styled.div`
 	height: 30vh;
 	position: relative;
 	transition: all 0.2s linear;
-	z-index: 5;
+	${Functions.backgroundImage("/images/projects/templates/Apple.png")}
 
 	&::before {
 		content: "";
@@ -126,10 +126,6 @@ export const Card = styled.div`
 			null,
 			"linear-gradient(to top, #000, transparent, transparent)"
 		)}
-	}
-
-	&:nth-of-type(odd) {
-		${Functions.backgroundImage("/images/projects/templates/Apple.png")}
 	}
 
 	&:hover,

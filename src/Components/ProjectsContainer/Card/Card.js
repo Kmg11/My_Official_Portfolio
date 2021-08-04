@@ -1,7 +1,7 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faWifi } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import * as Style from './Card.style';
+import * as Style from "./Card.style";
 
 export function Card() {
 	return (

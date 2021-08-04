@@ -4,6 +4,7 @@ import { Variables } from "../../../Style";
 export const Slider = styled.section`
 	position: relative;
 	margin-bottom: 2rem;
+	width: 100%;
 
 	&:hover,
 	&:focus {
@@ -12,7 +13,6 @@ export const Slider = styled.section`
 
 	.swiper-container {
 		overflow: visible;
-		padding-right: 90px;
 
 		.swiper-button-prev,
 		.swiper-button-next {
@@ -49,10 +49,6 @@ export const Slider = styled.section`
 			opacity: 0;
 			visibility: hidden;
 		}
-
-		.swiper-wrapper {
-			display: flex;
-		}
 	}
 `;
 
@@ -61,9 +57,10 @@ export const Title = styled.h3`
 	margin-top: 0;
 `;
 
-export const SeeMore = styled.div`
+export const SeeMore = styled.button`
 	width: 100%;
 	height: 30vh;
+	display: block;
 	background-color: ${Variables.Colors.secondBackgroundColor};
 	color: ${Variables.Colors.textColor};
 	display: grid;
