@@ -1,48 +1,44 @@
 ---- Start Files Structure ----
 
 - public
-	- Api
-		- info.json
-		- projects.json
-	- images
-		- global [ Contain Global Images ]
-		- projects [ Projects Page Images ]
-			- templates
-			- apps
+	- Api [ All Json Files ]
+	- images [ All Images For Hole App ]
+		- Global 				[ Contain Global Images ]
+		- Home 					[ For Home Page ]
+		- Projects [ Projects Page Images ]
+			- Templates 	[ All Projects Templates Images ]
+			- Apps 				[ All Projects Apps Images ]
 
 - src
-	- Constants
-		- Router
-	- Components
+	- Constants [ All Constants For Hole App ]
+		- Routes 			[ All Routes Urls ]
+		- Apis 				[ All Json Urls ]
+		- Images 			[ All Main Images Paths ]
+	- Components [ All Components ]
 		- Navbar
 		- Banner
 		- NextButton
 		- ProjectsContainer
-	- Pages
+	- Pages [ All Pages ]
 		- Home
 		- Profile
 		- Projects
 		- Project
-	- Hooks
-		- useFetch
-	- Style
+		- Cv
+	- Hooks [ All Custome Hooks ]
+		- Fetch [ All Fetch Requests Use In The Application ]
+			- useFetchGet
+	- Style [ All Global Styles & Reuse Styles ]
 		- Variables
 			- Colors
 		- Functions
-
-- Notes
-	- Pages
-		- Home.txt
-		- Projects.txt
-		- Profile.txt
-	- Components
-		- Navbar.txt
-		- Banner.txt
-		- NextButton.txt
-		- ProjectsContainer.txt
-	- Design.txt
-	- Global.txt
-	- Planning.txt
+			- overlay
+			- backgroundImage
+	- State [ Redux Control Center ]
+		- Store
+		- Reducers
+		- Types
+		- ActionCreators
 
 ---- End Files Structure ----
 ---- Start Json File ----
@@ -63,6 +59,7 @@
 	{
 		"id": 1,
 		"title": "",
+		"small_description": "",
 		"Description": "",
 		"technologies": ["", "", ""],
 		"images": ["", "", ""],
@@ -91,6 +88,7 @@
 	{
 		"id": 1,
 		"title": "",
+		"small_description": "",
 		"Description": "",
 		"technologies": ["", "", ""],
 		"images": ["", "", ""],
@@ -120,10 +118,10 @@
 ---- Start Notes ----
 
 - [ Done ] Make Section For Notes In Project Page
+- [ Done ] Add Redux For [ Navbar Width ]
 - Change favicon & appleicon
 - take care of meta tags & Add Facebook Meta Tags
 - Add Loading Lazy Load & Add Error Handling
-- You Can Use Redux In [ Navbar Width ]
 - Github Must Have The Same Information
 - Take Care If No Live Preview
 - Copyrights For All Images & My Portfolio
@@ -140,6 +138,7 @@
 - Add Project Title In URL In PRoject Page
 - All Data In Page Must Be In Context
 - Add File Structure To REAME File On Github
+- Create Small Description
 
 - Simple Information
 	- Title

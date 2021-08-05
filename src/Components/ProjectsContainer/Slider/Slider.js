@@ -9,17 +9,20 @@ import SwiperCore, { Navigation, A11y, Keyboard } from "swiper/core";
 
 // Import Swiper Style
 import "swiper/swiper-bundle.min.css";
+import { useSelector } from "react-redux";
 
 // install Swiper modules
 SwiperCore.use([Navigation, A11y, Keyboard]);
 
 export function Slider({ navWidthState }) {
+	const navbarWidth = useSelector((state) => state.navbarWidth);
+
 	return (
 		<Style.Slider>
 			<Style.Title>Templates</Style.Title>
 
 			{/* This Check For Handle Dynamic Dynamic Padding Left Of The Container */}
-			{navWidthState && (
+			{navbarWidth && (
 				<Swiper
 					spaceBetween={10}
 					slidesPerView={1}

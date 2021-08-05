@@ -1,12 +1,13 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faWifi } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Routes } from "../../../Constants";
 import * as Style from "./Card.style";
 
 export function Card() {
 	return (
 		<Style.Card>
-			<Style.Go to="/" aria-label="Go To Project Page"></Style.Go>
+			<Style.Go to={Routes.PROJECT} aria-label="Go To Project Page"></Style.Go>
 
 			<Style.Buttons>
 				<Style.Button href="/" target="_blank" rel="noreferrer">

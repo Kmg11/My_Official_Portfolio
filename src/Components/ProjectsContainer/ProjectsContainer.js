@@ -8,7 +8,7 @@ const TOP = "TOP";
 const TEMPLATES = "TEMPLATES";
 const APPS = "APPS";
 
-export function ProjectsContainer({ navWidthState }) {
+export function ProjectsContainer() {
 	const [projectsPage, setProjectsPage] = useState(TOP);
 
 	return (
@@ -18,11 +18,9 @@ export function ProjectsContainer({ navWidthState }) {
 				setProjectsPage={setProjectsPage}
 			/>
 
-			{projectsPage === TOP && <Top navWidthState={navWidthState} />}
-			{projectsPage === TEMPLATES && (
-				<Templates navWidthState={navWidthState} />
-			)}
-			{projectsPage === APPS && <Apps navWidthState={navWidthState} />}
+			{projectsPage === TOP && <Top />}
+			{projectsPage === TEMPLATES && <Templates />}
+			{projectsPage === APPS && <Apps />}
 		</Style.ProjectsContainer>
 	);
 }

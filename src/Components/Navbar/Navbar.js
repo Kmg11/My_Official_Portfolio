@@ -1,18 +1,33 @@
 import { Link } from "react-router-dom";
 import { Images, Routes } from "../../Constants";
-import { forwardRef } from "react";
+import { useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useDispatch } from "react-redux";
+import { bindActionCreators } from "redux";
+import { NavbarActionCreators } from "../../State/ActionCreators";
+import * as Style from "./Navbar.style";
 import {
 	faWrench,
 	faUserAlt,
 	faScroll,
 	faHome,
 } from "@fortawesome/free-solid-svg-icons";
-import * as Style from "./Navbar.style";
 
-function MainNavbar(props, ref) {
+export function Navbar() {
+	const navWidth = useRef();
+	const dispatch = useDispatch();
+	const { setNavbarWidth } = bindActionCreators(NavbarActionCreators, dispatch);
+
+	useEffect(() => {
+		setNavbarWidth(navWidth.current.offsetWidth);
+
+		window.addEventListener("resize", () => {
+			setNavbarWidth(navWidth.current.offsetWidth);
+		});
+	}, [setNavbarWidth]);
+
 	return (
-		<Style.Navbar ref={ref}>
+		<Style.Navbar ref={navWidth}>
 			<Style.ImageContainer>
 				<Link to={Routes.PROFILE}>
 					<Style.Image
@@ -62,5 +77,3 @@ function MainNavbar(props, ref) {
 		</Style.Navbar>
 	);
 }
-
-export const Navbar = forwardRef(MainNavbar);

@@ -1,16 +1,11 @@
-import { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
+import { useSelector } from "react-redux";
 import { Navbar } from "../../Components/Navbar/Navbar";
 import { ProjectsContainer } from "../../Components/ProjectsContainer/ProjectsContainer";
 import * as Style from "./Projects.style";
 
 export function Projects() {
-	const [navWidthState, setNavWidthState] = useState();
-	const navWidth = useRef();
-
-	useEffect(() => {
-		setNavWidthState(navWidth.current.offsetWidth);
-	}, []);
+	const navbarWidth = useSelector((state) => state.navbarWidth);
 
 	return (
 		<Style.Projects>
@@ -26,9 +21,9 @@ export function Projects() {
 				/>
 			</Helmet>
 
-			<Style.Content navWidth={navWidthState}>
-				<Navbar ref={navWidth} />
-				<ProjectsContainer navWidthState={navWidthState} />
+			<Style.Content navWidth={navbarWidth}>
+				<Navbar />
+				<ProjectsContainer />
 			</Style.Content>
 		</Style.Projects>
 	);

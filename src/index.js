@@ -1,17 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "normalize.css";
 import { GlobalStyle } from "./Style";
 import { App } from "./App";
-import reportWebVitals from "./reportWebVitals";
 import { HelmetProvider } from "react-helmet-async";
+import { Provider } from "react-redux";
+import { store } from "./State/Store";
+import reportWebVitals from "./reportWebVitals";
+import "normalize.css";
 
 ReactDOM.render(
 	<React.StrictMode>
-		<HelmetProvider>
-			<GlobalStyle />
-			<App />
-		</HelmetProvider>
+		<Provider store={store}>
+			<HelmetProvider>
+				<GlobalStyle />
+				<App />
+			</HelmetProvider>
+		</Provider>
 	</React.StrictMode>,
 	document.getElementById("root")
 );

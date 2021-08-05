@@ -1,0 +1,1 @@
+export const SET_NAVBAR_WIDTH = "SET_NAVBAR_WIDTH";

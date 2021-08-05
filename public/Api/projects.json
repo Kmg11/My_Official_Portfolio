@@ -3,6 +3,7 @@
 		{
 			"id": 1,
 			"title": "",
+			"small_description": "",
 			"Description": "",
 			"technologies": ["", "", ""],
 			"images": ["", "", ""],
@@ -31,6 +32,7 @@
 		{
 			"id": 1,
 			"title": "",
+			"small_description": "",
 			"Description": "",
 			"technologies": ["", "", ""],
 			"images": ["", "", ""],
