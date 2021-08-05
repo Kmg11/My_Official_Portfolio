@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
-
 import * as Variables from "./Variables";
+
 export * as Variables from "./Variables";
 export * as Functions from "./Functions";
 

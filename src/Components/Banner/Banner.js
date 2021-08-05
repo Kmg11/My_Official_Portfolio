@@ -1,5 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
+import { Images } from "../../Constants";
+import * as Style from "./Banner.style";
 
 import {
 	faGithubSquare,
@@ -8,7 +10,6 @@ import {
 	faFacebookSquare,
 } from "@fortawesome/free-brands-svg-icons";
 
-import * as Style from "./Banner.style";
 
 export function Banner({ response: { data, success } }) {
 	const icons = {
@@ -41,7 +42,10 @@ export function Banner({ response: { data, success } }) {
 			<Style.Banner>
 				<Style.Row>
 					<Style.ImageContainer>
-						<Style.Image src={data.image} alt={data.name} />
+						<Style.Image
+							src={`${Images.GLOBAL}/${data.image}`}
+							alt={data.name}
+						/>
 					</Style.ImageContainer>
 
 					<Style.Info>

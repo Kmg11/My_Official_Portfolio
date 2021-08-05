@@ -136,6 +136,10 @@
 - Think About Challenges Section In Project Page
 - Add Social Links In Project Page
 - Split Information To Simple Information & Advanced Information
+- First 5 Technologies Only Will Be Added In Project Card
+- Add Project Title In URL In PRoject Page
+- All Data In Page Must Be In Context
+- Add File Structure To REAME File On Github
 
 - Simple Information
 	- Title

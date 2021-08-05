@@ -1,11 +1,12 @@
-import { Link } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
+import { Link } from "react-router-dom";
 import { Variables, Functions } from "../../Style";
+import { Images } from '../../Constants'
 
 export const Home = styled.section`
 	position: relative;
 	min-height: 100vh;
-	${Functions.backgroundImage("/Images/Home/background.webp")}
+	${Functions.backgroundImage(`${Images.HOME}/background.webp`)}
 
 	&::before {
 		content: "";

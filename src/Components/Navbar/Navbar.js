@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { CV, HOME, PROFILE, PROJECTS } from "../../Constants/Router";
+import { Images, Routes } from "../../Constants";
 import { forwardRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -14,9 +14,9 @@ function MainNavbar(props, ref) {
 	return (
 		<Style.Navbar ref={ref}>
 			<Style.ImageContainer>
-				<Link to={PROFILE}>
+				<Link to={Routes.PROFILE}>
 					<Style.Image
-						src="/Images/Global/personal-image-small.webp"
+						src={`${Images.GLOBAL}/personal-image-small.webp`}
 						alt="Kirolos Mahfouz"
 					/>
 				</Link>
@@ -24,7 +24,7 @@ function MainNavbar(props, ref) {
 
 			<Style.List>
 				<Style.Item>
-					<Style.ItemLink exact to={HOME}>
+					<Style.ItemLink exact to={Routes.HOME}>
 						<Style.LinkIcon>
 							<FontAwesomeIcon icon={faHome} />
 						</Style.LinkIcon>
@@ -33,7 +33,7 @@ function MainNavbar(props, ref) {
 				</Style.Item>
 
 				<Style.Item>
-					<Style.ItemLink to={PROJECTS}>
+					<Style.ItemLink to={Routes.PROJECTS}>
 						<Style.LinkIcon>
 							<FontAwesomeIcon icon={faWrench} />
 						</Style.LinkIcon>
@@ -42,7 +42,7 @@ function MainNavbar(props, ref) {
 				</Style.Item>
 
 				<Style.Item>
-					<Style.ItemLink to={PROFILE}>
+					<Style.ItemLink to={Routes.PROFILE}>
 						<Style.LinkIcon>
 							<FontAwesomeIcon icon={faUserAlt} />
 						</Style.LinkIcon>
@@ -51,7 +51,7 @@ function MainNavbar(props, ref) {
 				</Style.Item>
 
 				<Style.Item>
-					<Style.ItemLink to={CV}>
+					<Style.ItemLink to={Routes.CV}>
 						<Style.LinkIcon>
 							<FontAwesomeIcon icon={faScroll} />
 						</Style.LinkIcon>

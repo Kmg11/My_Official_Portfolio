@@ -1,5 +1,5 @@
-export { Home } from "./Home";
-export { Projects } from "./Projects";
-export { Project } from "./Project";
-export { Profile } from "./Profile";
-export { Cv } from "./Cv";
+export { Home } from "./Home/Home";
+export { Projects } from "./Projects/Projects";
+export { Project } from "./Project/Project";
+export { Profile } from "./Profile/Profile";
+export { Cv } from "./Cv/Cv";

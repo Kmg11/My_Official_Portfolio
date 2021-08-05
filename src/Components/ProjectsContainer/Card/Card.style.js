@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { Functions, Variables } from "../../../Style";
+import { Images } from "../../../Constants";
 
 export const Buttons = styled.div`
 	position: absolute;
@@ -115,7 +116,7 @@ export const Card = styled.div`
 	height: 30vh;
 	position: relative;
 	transition: all 0.2s linear;
-	${Functions.backgroundImage("/Images/Projects/templates/Apple.png")}
+	${Functions.backgroundImage(`${Images.TEMPLATES}/Apple.png`)}
 
 	&::before {
 		content: "";

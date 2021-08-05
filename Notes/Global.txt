@@ -2,10 +2,13 @@
 
 - [ Done ] Convert Forground Color To Main Color
 - [ Done ] Make All Folders Start With Capital Letter
-- Add Main Images Paths In Constants [ Projects - Global - Home ]
-- Make All Files Start With Uppearcase Letter & index Only In Collector
+- [ Done ] Move APIS Links To Constants Folder & Remove Context
+- [ Done ] Add Main Images Paths In Constants [ Projects - Global - Home ]
+- [ Done ] Make All Files Start With Uppearcase Letter & index Only In Collector
+- [ Done ] Move Hooks To Folders
 - Remove Not Used Font
-- Review Images Not Used
+- Remove Images Not Used
+- Try Add Helmet Info Dynamic From Api
 
 ---- End Global ----
 ---- Start Bugs & Errors ----

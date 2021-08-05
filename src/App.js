@@ -1,25 +1,17 @@
-import { createContext } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Home, Projects, Project, Profile, Cv } from "./Pages";
-import { HOME, PROJECTS, PROJECT, PROFILE, CV } from "./Constants/Router";
-
-export const APIContext = createContext();
-const APILinks = {
-	info: "/Api/info.json",
-};
+import * as Page from "./Pages";
+import { Routes } from "./Constants";
 
 export function App() {
 	return (
-		<APIContext.Provider value={APILinks}>
-			<Router>
-				<Switch>
-					<Route exact path={HOME} component={Home} />
-					<Route path={PROJECTS} component={Projects} />
-					<Route path={PROJECT} component={Project} />
-					<Route path={PROFILE} component={Profile} />
-					<Route path={CV} component={Cv} />
-				</Switch>
-			</Router>
-		</APIContext.Provider>
+		<Router>
+			<Switch>
+				<Route exact path={Routes.HOME} component={Page.Home} />
+				<Route path={Routes.PROJECTS} component={Page.Projects} />
+				<Route path={Routes.PROJECT} component={Page.Project} />
+				<Route path={Routes.PROFILE} component={Page.Profile} />
+				<Route path={Routes.CV} component={Page.Cv} />
+			</Switch>
+		</Router>
 	);
 }
