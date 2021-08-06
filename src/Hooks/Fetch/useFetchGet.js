@@ -4,7 +4,6 @@ export function useFetchGet(url) {
 	const [data, setData] = useState(null);
 	const [isPending, setIsPending] = useState(false);
 	const [error, setError] = useState(null);
-	const [success, setSuccess] = useState(null);
 
 	const abortCount = useRef(new AbortController());
 	const abortCountCurrent = abortCount.current;
@@ -29,14 +28,13 @@ export function useFetchGet(url) {
 			.then((data) => {
 				setIsPending(false);
 				setData(data);
-				setSuccess(true);
 				setError(null);
 			})
 			.catch((err) => {
 				if (err.name !== "AbortError") {
 					setIsPending(false);
 					setError(err.message);
-					setSuccess(null);
+					setData(null);
 				}
 			});
 	}, [url, abortCountCurrent]);
@@ -46,5 +44,5 @@ export function useFetchGet(url) {
 		return () => abortCountCurrent.abort();
 	}, [abortCountCurrent, getData]);
 
-	return { getData, data, isPending, error, success };
+	return { getData, data, isPending, error };
 }

@@ -9,11 +9,13 @@
 - Remove Not Used Font
 - Remove Images Not Used
 - Try Add Helmet Info Dynamic From Api
+- Remove Success State From useFetch
 
 ---- End Global ----
 ---- Start Bugs & Errors ----
 
 - [ Done ] React Helement Error In Console Cause componentWillMount & Strict Mode
+- [ Done ] Error Navbar Width When Change Page
 
 ---- End Bugs & Errors ----
 ---- Start Tests ----

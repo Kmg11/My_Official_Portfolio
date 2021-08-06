@@ -1,9 +1,11 @@
 import { Helmet } from "react-helmet-async";
 import { Navbar } from "../../Components/Navbar/Navbar";
+import { SingleProject } from "../../Components/SingleProject/SingleProject";
+import * as Style from "./Project.style";
 
 export function Project() {
 	return (
-		<div>
+		<>
 			<Helmet>
 				<title>Kirolos Mahfouz | Project</title>
 				<meta
@@ -16,7 +18,10 @@ export function Project() {
 				/>
 			</Helmet>
 
-			<Navbar />
-		</div>
+			<Style.Content>
+				<Navbar />
+				<SingleProject />
+			</Style.Content>
+		</>
 	);
 }

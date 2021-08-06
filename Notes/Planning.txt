@@ -119,6 +119,10 @@
 
 - [ Done ] Make Section For Notes In Project Page
 - [ Done ] Add Redux For [ Navbar Width ]
+- [ Done ] All Data In Page Must Be In Context
+- [ Done ] Add Style In Constants
+- [ Done ] Add Components Folder In Style Folder
+- minifest File
 - Change favicon & appleicon
 - take care of meta tags & Add Facebook Meta Tags
 - Add Loading Lazy Load & Add Error Handling
@@ -136,7 +140,6 @@
 - Split Information To Simple Information & Advanced Information
 - First 5 Technologies Only Will Be Added In Project Card
 - Add Project Title In URL In PRoject Page
-- All Data In Page Must Be In Context
 - Add File Structure To REAME File On Github
 - Create Small Description
 

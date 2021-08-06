@@ -19,11 +19,12 @@ export function Navbar() {
 	const { setNavbarWidth } = bindActionCreators(NavbarActionCreators, dispatch);
 
 	useEffect(() => {
-		setNavbarWidth(navWidth.current.offsetWidth);
+		const handleNavWidth = () => setNavbarWidth(navWidth.current.offsetWidth);
 
-		window.addEventListener("resize", () => {
-			setNavbarWidth(navWidth.current.offsetWidth);
-		});
+		handleNavWidth();
+		window.addEventListener("resize", handleNavWidth);
+
+		return () => window.removeEventListener("resize", handleNavWidth);
 	}, [setNavbarWidth]);
 
 	return (

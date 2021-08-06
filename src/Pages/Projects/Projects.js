@@ -8,7 +8,7 @@ export function Projects() {
 	const navbarWidth = useSelector((state) => state.navbarWidth);
 
 	return (
-		<Style.Projects>
+		<>
 			<Helmet>
 				<title>Kirolos Mahfouz | Projects</title>
 				<meta
@@ -25,6 +25,6 @@ export function Projects() {
 				<Navbar />
 				<ProjectsContainer />
 			</Style.Content>
-		</Style.Projects>
+		</>
 	);
 }

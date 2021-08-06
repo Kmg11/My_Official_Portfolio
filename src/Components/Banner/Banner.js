@@ -1,6 +1,8 @@
+import { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
 import { Images } from "../../Constants";
+import { ResponseContext } from "../../Pages/Home/Home";
 import * as Style from "./Banner.style";
 
 import {
@@ -10,8 +12,9 @@ import {
 	faFacebookSquare,
 } from "@fortawesome/free-brands-svg-icons";
 
+export function Banner() {
+	const { data } = useContext(ResponseContext);
 
-export function Banner({ response: { data, success } }) {
 	const icons = {
 		Github: faGithubSquare,
 		Linkedin: faLinkedin,
@@ -21,7 +24,7 @@ export function Banner({ response: { data, success } }) {
 	};
 
 	const socialLinksList =
-		success &&
+		data &&
 		data.social_links.map((link) => {
 			return (
 				<Style.Item key={link.id}>
@@ -38,7 +41,7 @@ export function Banner({ response: { data, success } }) {
 		});
 
 	return (
-		success && (
+		data && (
 			<Style.Banner>
 				<Style.Row>
 					<Style.ImageContainer>
