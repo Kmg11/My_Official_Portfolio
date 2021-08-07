@@ -142,10 +142,15 @@
 - Add Project Title In URL In PRoject Page
 - Add File Structure To REAME File On Github
 - Create Small Description
+- Add Alt Information In API
+- Review All Spaces Between Diffrent Elements
+- Add Global Styles For [ Big Headers, Side Headers, Paragraphs ]
+- Add Links To Technologies & Skills For Information
+- Add Miginfication For Slider Images By Click On Button
 
 - Simple Information
 	- Title
-	- Description
+	- Small Description
 	- Technologies
 	- Images
 	- Features
@@ -154,9 +159,12 @@
 
 - Advanced Information
 	- How To Use
+	- Full Description
 	- Functionality
 	- Tests
 	- Versions
+	- Full Skills
+	- Full Images
 
 - Projects Description
 	- Some Of The Features

@@ -8,6 +8,8 @@ export const overlay = (backgroundColor, backgroundImage) => {
 		left: 0;
 		right: 0;
 		z-index: 2;
+		width: 100%;
+		height: 100%;
 
 		${backgroundColor &&
 		css`

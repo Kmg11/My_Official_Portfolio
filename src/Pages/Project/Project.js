@@ -1,9 +1,12 @@
 import { Helmet } from "react-helmet-async";
+import { useSelector } from "react-redux";
 import { Navbar } from "../../Components/Navbar/Navbar";
 import { SingleProject } from "../../Components/SingleProject/SingleProject";
 import * as Style from "./Project.style";
 
 export function Project() {
+	const navbarWidth = useSelector((state) => state.navbarWidth);
+
 	return (
 		<>
 			<Helmet>
@@ -18,7 +21,7 @@ export function Project() {
 				/>
 			</Helmet>
 
-			<Style.Content>
+			<Style.Content navbarWidth={navbarWidth}>
 				<Navbar />
 				<SingleProject />
 			</Style.Content>

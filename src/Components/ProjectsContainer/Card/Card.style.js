@@ -10,45 +10,9 @@ export const Buttons = styled.div`
 	right: 0;
 	z-index: 4;
 	width: max-content;
-	display: grid;
-	grid-template-columns: repeat(2, auto);
-	gap: 20px;
-	justify-content: start;
-	align-items: center;
 	opacity: 0;
 	visibility: hidden;
 	transition: all 0.2s linear;
-`;
-
-export const ButtonIcon = styled.span`
-	color: ${Variables.Colors.whiteColor};
-	display: inline-block;
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
-	text-align: center;
-	border: 1px solid ${Variables.Colors.whiteColor};
-	border-radius: 50%;
-	margin-right: 10px;
-	font-size: 1rem;
-	transition: all 0.2s linear;
-`;
-
-export const ButtonName = styled.span`
-	color: ${Variables.Colors.whiteColor};
-	font-size: 1.1rem;
-`;
-
-export const Button = styled.a`
-	display: block;
-
-	&:hover,
-	&:focus {
-		${ButtonIcon} {
-			background-color: ${Variables.Colors.mainColor};
-			border-color: ${Variables.Colors.mainColor};
-		}
-	}
 `;
 
 export const CardInfo = styled.div`

@@ -1,7 +1,7 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faWifi } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Routes } from "../../../Constants";
+import { CircleButtons } from "../../Buttons/CircleButtons/CircleButtons";
 import * as Style from "./Card.style";
 
 export function Card() {
@@ -10,19 +10,12 @@ export function Card() {
 			<Style.Go to={Routes.PROJECT} aria-label="Go To Project Page"></Style.Go>
 
 			<Style.Buttons>
-				<Style.Button href="/" target="_blank" rel="noreferrer">
-					<Style.ButtonIcon>
-						<FontAwesomeIcon icon={faGithub} fixedWidth />
-					</Style.ButtonIcon>
-					<Style.ButtonName>Github</Style.ButtonName>
-				</Style.Button>
-
-				<Style.Button href="/" target="_blank" rel="noreferrer">
-					<Style.ButtonIcon>
-						<FontAwesomeIcon icon={faWifi} fixedWidth />
-					</Style.ButtonIcon>
-					<Style.ButtonName>Live</Style.ButtonName>
-				</Style.Button>
+				<CircleButtons
+					info={[
+						{ href: "/", icon: faGithub, text: "github" },
+						{ href: "/", icon: faWifi, text: "live" },
+					]}
+				/>
 			</Style.Buttons>
 
 			<Style.CardInfo>

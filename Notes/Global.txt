@@ -6,10 +6,21 @@
 - [ Done ] Add Main Images Paths In Constants [ Projects - Global - Home ]
 - [ Done ] Make All Files Start With Uppearcase Letter & index Only In Collector
 - [ Done ] Move Hooks To Folders
+- [ Done ] Remove Border Radius From Navbar
+- [ Done ] Split Buttons To Small Component
 - Remove Not Used Font
 - Remove Images Not Used
 - Try Add Helmet Info Dynamic From Api
 - Remove Success State From useFetch
+- Check Heights In Responsive
+- alt Attribute Must Be Dynamic
+- Make All Words transform From Style & Type Text In json file small
+- Select Projects Item From Navbar In Single Project Page
+- Add Object Fit For Images In Style Components
+- Increase Font Size In Big Screens From html Element To 20px
+- Add Mouse Selection Color
+- Redux Problem When Select
+- Remove min-height From Project Page
 
 ---- End Global ----
 ---- Start Bugs & Errors ----

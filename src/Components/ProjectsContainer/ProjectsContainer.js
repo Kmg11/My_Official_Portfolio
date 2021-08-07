@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Top } from "./Top/Top";
 import { Templates } from "./Templates/Templates";
 import { Apps } from "./Apps/Apps";
+import { BoxButtons } from "../Buttons/BoxButtons/BoxButtons";
 import * as Style from "./ProjectsContainer.style";
 
 const TOP = "TOP";
@@ -28,24 +29,15 @@ export function ProjectsContainer() {
 function CategoriesButtons({ projectsPage, setProjectsPage }) {
 	return (
 		<Style.Categories>
-			<Style.Button
-				onClick={() => setProjectsPage(TOP)}
-				active={projectsPage === TOP ? true : false}
-			>
-				Top
-			</Style.Button>
-			<Style.Button
-				onClick={() => setProjectsPage(TEMPLATES)}
-				active={projectsPage === TEMPLATES ? true : false}
-			>
-				Templates
-			</Style.Button>
-			<Style.Button
-				onClick={() => setProjectsPage(APPS)}
-				active={projectsPage === APPS ? true : false}
-			>
-				Small Apps
-			</Style.Button>
+			<BoxButtons
+				page={projectsPage}
+				setPage={setProjectsPage}
+				info={[
+					{ pageType: TOP, text: "Top" },
+					{ pageType: TEMPLATES, text: "Templates" },
+					{ pageType: APPS, text: "Small Apps" },
+				]}
+			/>
 		</Style.Categories>
 	);
 }

@@ -21,7 +21,7 @@ export function Projects() {
 				/>
 			</Helmet>
 
-			<Style.Content navWidth={navbarWidth}>
+			<Style.Content navbarWidth={navbarWidth}>
 				<Navbar />
 				<ProjectsContainer />
 			</Style.Content>
