@@ -1,15 +1,17 @@
 import styled from "styled-components";
 
+const GAP = "2rem";
+
 export const Info = styled.section`
-	padding: 40px;
-`;
-
-export const Content = styled.div`
+	padding: 2.5rem;
 	display: grid;
-	grid-template-columns: 70% 30%;
-	gap: 20px;
+	grid-template-columns: 1fr 0.5fr;
+	gap: ${GAP};
 `;
 
-export const Buttons = styled.div`
-	margin-bottom: 3rem;
+export const SideGrid = styled.section`
+	display: grid;
+	grid-template-columns: 1fr;
+	align-content: start;
+	gap: ${GAP};
 `;

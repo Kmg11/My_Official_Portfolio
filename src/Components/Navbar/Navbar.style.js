@@ -26,8 +26,6 @@ export const ImageContainer = styled.div`
 export const Image = styled.img``;
 
 export const List = styled.ul`
-	padding: 0;
-	margin: 0;
 	position: absolute;
 	top: 50%;
 	left: 50%;

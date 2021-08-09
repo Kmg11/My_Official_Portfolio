@@ -3,7 +3,6 @@
 		{
 			"id": 1,
 			"title": "",
-			"small_description": "",
 			"Description": "",
 			"technologies": ["", "", ""],
 			"images": ["", "", ""],
@@ -32,13 +31,11 @@
 		{
 			"id": 1,
 			"title": "",
-			"small_description": "",
 			"Description": "",
 			"technologies": ["", "", ""],
 			"images": ["", "", ""],
 			"features": ["", "", ""],
 			"how_to_use": ["", "", ""],
-			"functionality": ["", "", ""],
 			"notes": "",
 			"links": {
 				"github": "",

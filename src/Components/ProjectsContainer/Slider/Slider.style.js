@@ -52,11 +52,6 @@ export const Slider = styled.section`
 	}
 `;
 
-export const Title = styled.h3`
-	color: ${Variables.Colors.titlesColor};
-	margin-top: 0;
-`;
-
 export const SeeMore = styled.button`
 	width: 100%;
 	height: 30vh;

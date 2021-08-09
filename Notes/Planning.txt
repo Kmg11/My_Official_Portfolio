@@ -122,10 +122,11 @@
 - [ Done ] All Data In Page Must Be In Context
 - [ Done ] Add Style In Constants
 - [ Done ] Add Components Folder In Style Folder
+- Create Titles Components
 - minifest File
 - Change favicon & appleicon
 - take care of meta tags & Add Facebook Meta Tags
-- Add Loading Lazy Load & Add Error Handling
+- Add Loading Lazy Load & Add Error Handling from traversary media
 - Github Must Have The Same Information
 - Take Care If No Live Preview
 - Copyrights For All Images & My Portfolio
@@ -135,9 +136,8 @@
 - take Care Of Images Width In Responsive
 - Add Shadows To Navbar Icons & Name
 - Project Page Title Must Be Project Name
-- Think About Challenges Section In Project Page
 - Add Social Links In Project Page
-- Split Information To Simple Information & Advanced Information
+- Add for devolopers tag for advanced information such as [how to use]
 - First 5 Technologies Only Will Be Added In Project Card
 - Add Project Title In URL In PRoject Page
 - Add File Structure To REAME File On Github
@@ -147,24 +147,11 @@
 - Add Global Styles For [ Big Headers, Side Headers, Paragraphs ]
 - Add Links To Technologies & Skills For Information
 - Add Miginfication For Slider Images By Click On Button
-
-- Simple Information
-	- Title
-	- Small Description
-	- Technologies
-	- Images
-	- Features
-	- Notes
-	- Links
-
-- Advanced Information
-	- How To Use
-	- Full Description
-	- Functionality
-	- Tests
-	- Versions
-	- Full Skills
-	- Full Images
+- Search For Best Colors On text In dark mode
+- Card Title Connect To Same Title - Spaces Problem
+- After End project check transition all property
+- Add Badge For Project Page For Teplate Or app like navbar toltip
+- Add Normaliz To Agency Webstie & Othe Projects Not Have Normalize
 
 - Projects Description
 	- Some Of The Features
@@ -176,5 +163,8 @@
 	- Fast Load
 	- Structure
 	- Performance & Accessibility & Best Practice & Seo
+	- Responsive
+	- animation
+	- Browser Coptapility
 
 ---- End Notes ----

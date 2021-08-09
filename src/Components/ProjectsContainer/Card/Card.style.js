@@ -41,6 +41,7 @@ export const Description = styled.p`
 	color: ${Variables.Colors.textColor};
 	line-height: 1.6;
 	font-size: 0.9rem;
+	margin-top: 1rem;
 `;
 
 export const TechTitle = styled.h4`
@@ -49,8 +50,7 @@ export const TechTitle = styled.h4`
 `;
 
 export const TechList = styled.ul`
-	padding: 0;
-	margin-bottom: 0;
+	margin-top: 1rem;
 `;
 
 export const TechItem = styled.li`

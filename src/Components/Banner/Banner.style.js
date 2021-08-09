@@ -53,10 +53,7 @@ export const Description = styled.p`
 	line-height: 1.7;
 `;
 
-export const SocialLinks = styled.ul`
-	padding: 0;
-	margin: 0;
-`;
+export const SocialLinks = styled.ul``;
 
 export const Item = styled.li`
 	display: inline-block;
