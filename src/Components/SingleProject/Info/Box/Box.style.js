@@ -21,7 +21,8 @@ export const Item = styled.li`
 	background-color: ${Variables.Colors.secondBackgroundColor};
 	border-left: 5px solid ${Variables.Colors.mainColor};
 
-	&:hover {
+	&:hover,
+	&:focus {
 		${Icon} {
 			transition: color 0.2s linear;
 			color: ${Variables.Colors.whiteColor};

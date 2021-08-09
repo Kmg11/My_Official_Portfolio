@@ -122,7 +122,7 @@
 - [ Done ] All Data In Page Must Be In Context
 - [ Done ] Add Style In Constants
 - [ Done ] Add Components Folder In Style Folder
-- Create Titles Components
+- [ Done ] Create Titles Components
 - minifest File
 - Change favicon & appleicon
 - take care of meta tags & Add Facebook Meta Tags
@@ -152,6 +152,7 @@
 - After End project check transition all property
 - Add Badge For Project Page For Teplate Or app like navbar toltip
 - Add Normaliz To Agency Webstie & Othe Projects Not Have Normalize
+- alt Attribute Must Be Dynamic
 
 - Projects Description
 	- Some Of The Features

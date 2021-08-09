@@ -8,7 +8,8 @@ export const Navbar = styled.nav`
 	bottom: 0;
 	left: 0;
 	z-index: 2;
-	min-height: 100vh;
+	min-height: 500px;
+	max-height: 100%;
 	background-color: ${Variables.Colors.mainColor};
 	padding: 20px 10px 20px 10px;
 	text-align: center;

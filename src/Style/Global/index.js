@@ -14,6 +14,10 @@ export const GlobalStyle = createGlobalStyle`
 		overflow-x: hidden;
 	}
 
+	::selection {
+		background-color: ${Variables.Colors.mainColor};
+	}
+
 	ul {
 		list-style: none;
 		padding: 0;
