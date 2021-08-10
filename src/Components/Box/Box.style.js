@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Variables } from "../../../../Style";
+import { Variables } from "../../Style";
 
 export const List = styled.ul`
 	display: grid;

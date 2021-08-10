@@ -1,2 +1,3 @@
 - Navbar Responsive
 - Hide Navbar & add button to show it
+- Navbar Responsiv add nav to top & slide from left with item name appear

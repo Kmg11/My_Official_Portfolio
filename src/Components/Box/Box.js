@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Components } from "../../../../Style";
+import { Components } from "../../Style";
 import * as Style from "./Box.style";
 
 export function Box({ title, icon, items }) {
@@ -8,13 +8,18 @@ export function Box({ title, icon, items }) {
 			<Components.SubTitle>{title}</Components.SubTitle>
 
 			<Style.List>
-				{items.map((text) => {
+				{items.map((item, index) => {
 					return (
-						<Style.Item key={text}>
+						<Style.Item key={index}>
 							<Style.Icon>
 								<FontAwesomeIcon icon={icon} fixedWidth />
 							</Style.Icon>
-							<Style.Text>{text}</Style.Text>
+
+							{typeof item === "string" ? (
+								<Style.Text>{item}</Style.Text>
+							) : (
+								item
+							)}
 						</Style.Item>
 					);
 				})}

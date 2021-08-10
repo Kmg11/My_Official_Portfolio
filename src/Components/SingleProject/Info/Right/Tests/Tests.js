@@ -1,5 +1,5 @@
 import { faPercent } from "@fortawesome/free-solid-svg-icons";
-import { Box } from "../../Box/Box";
+import { Box } from "../../../../Box/Box";
 import * as Style from "./Tests.style";
 
 export function Tests() {

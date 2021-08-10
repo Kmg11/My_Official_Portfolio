@@ -1,68 +1,53 @@
+import { faFileImage } from "@fortawesome/free-solid-svg-icons";
 import { Images as ImagesPath } from "../../../../../Constants";
-import { Components } from "../../../../../Style";
+import { Box } from "../../../../Box/Box";
 import * as Style from "./Images.style";
 
 export function Images() {
 	return (
 		<Style.Images>
-			<Components.SubTitle>images</Components.SubTitle>
-
-			<Style.ImagesList>
-				<Style.ImageItem>
-					<Style.Image
-						src={`${ImagesPath.TEMPLATES}/Apple.png`}
-						alt="Project Images"
-					/>
-				</Style.ImageItem>
-				<Style.ImageItem>
-					<Style.Image
-						src={`${ImagesPath.TEMPLATES}/Apple.png`}
-						alt="Project Images"
-					/>
-				</Style.ImageItem>
-				<Style.ImageItem>
-					<Style.Image
-						src={`${ImagesPath.TEMPLATES}/Apple.png`}
-						alt="Project Images"
-					/>
-				</Style.ImageItem>
-				<Style.ImageItem>
-					<Style.Image
-						src={`${ImagesPath.TEMPLATES}/Apple.png`}
-						alt="Project Images"
-					/>
-				</Style.ImageItem>
-				<Style.ImageItem>
-					<Style.Image
-						src={`${ImagesPath.TEMPLATES}/Apple.png`}
-						alt="Project Images"
-					/>
-				</Style.ImageItem>
-				<Style.ImageItem>
-					<Style.Image
-						src={`${ImagesPath.TEMPLATES}/Apple.png`}
-						alt="Project Images"
-					/>
-				</Style.ImageItem>
-				<Style.ImageItem>
-					<Style.Image
-						src={`${ImagesPath.TEMPLATES}/Apple.png`}
-						alt="Project Images"
-					/>
-				</Style.ImageItem>
-				<Style.ImageItem>
-					<Style.Image
-						src={`${ImagesPath.TEMPLATES}/Apple.png`}
-						alt="Project Images"
-					/>
-				</Style.ImageItem>
-				<Style.ImageItem>
-					<Style.Image
-						src={`${ImagesPath.TEMPLATES}/Apple.png`}
-						alt="Project Images"
-					/>
-				</Style.ImageItem>
-			</Style.ImagesList>
+			<Box
+				title="images"
+				icon={faFileImage}
+				items={[
+					<Style.ImageContainer>
+						<Style.Image
+							src={`${ImagesPath.TEMPLATES}/Apple.png`}
+							alt="Project Images"
+						/>
+					</Style.ImageContainer>,
+					<Style.ImageContainer>
+						<Style.Image
+							src={`${ImagesPath.TEMPLATES}/Apple.png`}
+							alt="Project Images"
+						/>
+					</Style.ImageContainer>,
+					<Style.ImageContainer>
+						<Style.Image
+							src={`${ImagesPath.TEMPLATES}/Apple.png`}
+							alt="Project Images"
+						/>
+					</Style.ImageContainer>,
+					<Style.ImageContainer>
+						<Style.Image
+							src={`${ImagesPath.TEMPLATES}/Apple.png`}
+							alt="Project Images"
+						/>
+					</Style.ImageContainer>,
+					<Style.ImageContainer>
+						<Style.Image
+							src={`${ImagesPath.TEMPLATES}/Apple.png`}
+							alt="Project Images"
+						/>
+					</Style.ImageContainer>,
+					<Style.ImageContainer>
+						<Style.Image
+							src={`${ImagesPath.TEMPLATES}/Apple.png`}
+							alt="Project Images"
+						/>
+					</Style.ImageContainer>,
+				]}
+			/>
 		</Style.Images>
 	);
 }

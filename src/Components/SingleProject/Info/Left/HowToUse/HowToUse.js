@@ -1,5 +1,5 @@
 import { faClipboard } from "@fortawesome/free-regular-svg-icons";
-import { Box } from "../../Box/Box";
+import { Box } from "../../../../Box/Box";
 import * as Style from "./HowToUse.style";
 
 export function HowToUse() {

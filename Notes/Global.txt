@@ -11,6 +11,8 @@
 - [ Done ] Remove min-height From Project Page
 - [ Done ] Add Mouse Selection Color
 - [ Done ] Remove Success State From useFetch
+- [ Done ] Project Versions Need Fix For Take Full Width & take care of key
+- [ Done ] Make Box Paragraph Or Link For Skills & Versions
 - Remove Not Used Font
 - Remove Images Not Used
 - Try Add Helmet Info Dynamic From Api
@@ -18,6 +20,12 @@
 - Make All Words transform From Style & Type Text In json file small
 - Increase Font Size In Big Screens From html Element To 20px
 - Redux Problem When Select
+- if navbar in responsive changed remove responsive function
+- Add Phone To Social Links
+- Think About Change Single Project Header
+		- Make It As Website Weader Full Height 
+		- add full description & make it slider like appple slider
+		- remove images section
 
 ---- End Global ----
 ---- Start Bugs & Errors ----

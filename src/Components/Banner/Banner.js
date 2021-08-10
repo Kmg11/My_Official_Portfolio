@@ -1,8 +1,6 @@
-import { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
 import { Images } from "../../Constants";
-import { ResponseContext } from "../../Pages/Home/Home";
 import * as Style from "./Banner.style";
 
 import {
@@ -13,8 +11,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 export function Banner() {
-	const { data } = useContext(ResponseContext);
-
 	const icons = {
 		Github: faGithubSquare,
 		Linkedin: faLinkedin,
@@ -23,9 +19,42 @@ export function Banner() {
 		Facebook: faFacebookSquare,
 	};
 
+	const data = [
+		{
+			id: 1,
+			website: "Github",
+			link: "https://github.com/Kmg11",
+			icon: "faGithubSquare",
+		},
+		{
+			id: 2,
+			website: "Linkedin",
+			link: "https://www.linkedin.com/in/kirolos-m-a29134165/",
+			icon: "faLinkedin",
+		},
+		{
+			id: 3,
+			website: "Email",
+			link: "kirolosmahfouz15@gmail.com",
+			icon: "faEnvelopeSquare",
+		},
+		{
+			id: 4,
+			website: "Behance",
+			link: "https://www.behance.net/kirolosmahfouz",
+			icon: "faBehanceSquare",
+		},
+		{
+			id: 5,
+			website: "Facebook",
+			link: "https://www.facebook.com/KirolosMahfouz/",
+			icon: "faFacebookSquare",
+		},
+	];
+
 	const socialLinksList =
 		data &&
-		data.social_links.map((link) => {
+		data.map((link) => {
 			return (
 				<Style.Item key={link.id}>
 					<Style.ItemLink
@@ -46,14 +75,16 @@ export function Banner() {
 				<Style.Row>
 					<Style.ImageContainer>
 						<Style.Image
-							src={`${Images.GLOBAL}/${data.image}`}
+							src={`${Images.GLOBAL}/personal-image.webp`}
 							alt={data.name}
 						/>
 					</Style.ImageContainer>
 
 					<Style.Info>
-						<Style.Name>{data.name}</Style.Name>
-						<Style.Description>{data.description}</Style.Description>
+						<Style.Name>Kirolos Mahfouz</Style.Name>
+						<Style.Description>
+							I'm Frontend Web Devolper With A Loot Of Skills & Technologies
+						</Style.Description>
 						<Style.SocialLinks>{socialLinksList}</Style.SocialLinks>
 					</Style.Info>
 				</Style.Row>
