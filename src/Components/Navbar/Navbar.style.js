@@ -1,92 +1,35 @@
-import { NavLink } from "react-router-dom";
-import styled from "styled-components";
-import { Variables } from "../../Style";
+import styled, { css } from "styled-components";
+import { Variables, Functions } from "../../Style";
 
 export const Navbar = styled.nav`
 	position: fixed;
 	top: 0;
 	bottom: 0;
 	left: 0;
-	z-index: 2;
 	min-height: 500px;
 	max-height: 100%;
 	background-color: ${Variables.Colors.mainColor};
-	padding: 20px 10px 20px 10px;
+	padding: 20px;
 	text-align: center;
 	z-index: 1000;
-`;
 
-export const ImageContainer = styled.div`
-	width: 80px;
-	height: 80px;
-	border-radius: 50%;
-	overflow: hidden;
-	margin-bottom: 4rem;
-`;
+	${Functions.mediaBreakpointDown("sm")} {
+		bottom: auto;
+		right: 0;
+		min-height: 0;
+		max-height: none;
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+		justify-content: space-between;
+		align-items: center;
+		padding: 15px 20px;
+		transition: all 0.3s linear;
 
-export const Image = styled.img``;
-
-export const List = styled.ul`
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-`;
-
-export const Item = styled.li`
-	&:not(:last-of-type) {
-		margin-bottom: 30px;
-	}
-`;
-
-export const LinkName = styled.span`
-	position: absolute;
-	top: 50%;
-	right: 0;
-	z-index: 3;
-	transform: translate(10%, -50%);
-	background-color: ${Variables.Colors.whiteBackgroundColor};
-	color: ${Variables.Colors.mainColor};
-	padding: 8px 10px;
-	border-radius: 10px;
-	font-size: 0.9rem;
-	display: block;
-	font-weight: 500;
-	opacity: 0;
-	width: 80px;
-	transition: all 0.3s linear;
-`;
-
-export const LinkIcon = styled.span`
-	display: block;
-	margin-bottom: 2px;
-	font-size: 1.2rem;
-`;
-
-export const ItemLink = styled(NavLink)`
-	position: relative;
-	display: block;
-	color: ${Variables.Colors.textColor};
-	width: 55px;
-	height: 55px;
-	border-radius: 50%;
-	display: grid;
-	place-items: center;
-	transition: all 0.3s linear;
-	margin: auto;
-
-	&:hover,
-	&:focus,
-	&.active {
-		color: ${Variables.Colors.mainColor};
-		background-color: ${Variables.Colors.whiteBackgroundColor};
-	}
-
-	&:hover,
-	&:focus {
-		${LinkName} {
-			opacity: 1;
-			transform: translate(120%, -50%);
-		}
+		${(props) =>
+			props.isOpen &&
+			css`
+				margin-left: ${props.listWidth}px;
+			`}
 	}
 `;

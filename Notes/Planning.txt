@@ -151,8 +151,8 @@
 - Card Title Connect To Same Title - Spaces Problem
 - After End project check transition all property
 - Add Badge For Project Page For Teplate Or app like navbar toltip
-- Add Normaliz To Agency Webstie & Othe Projects Not Have Normalize
 - alt Attribute Must Be Dynamic
+- Add Normaliz To Agency Webstie & Othe Projects Not Have Normalize
 
 - Projects Description
 	- Some Of The Features
@@ -167,5 +167,15 @@
 	- Responsive
 	- animation
 	- Browser Coptapility
+	- Accessibility & Seo & Best Practice & Performance
+	- Html Validation
+	- Error Handling
+	- Loading Handling
 
 ---- End Notes ----
+---- Start Responsive ----
+
+- Add Media Querys In Function with parameter for size
+- add containers width
+
+---- End Responsive ----

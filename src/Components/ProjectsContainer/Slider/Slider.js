@@ -15,8 +15,8 @@ import { Components } from "../../../Style";
 // install Swiper modules
 SwiperCore.use([Navigation, A11y, Keyboard]);
 
-export function Slider({ navWidthState }) {
-	const navbarWidth = useSelector((state) => state.navbarWidth);
+export function Slider() {
+	const navbarWidth = useSelector((state) => state.navbarSize.width);
 
 	return (
 		<Style.Slider>

@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
-import { navbarWidth } from "./navbar";
+import { navbarSize } from "./navbar";
 
 export const reducers = combineReducers({
-	navbarWidth,
+	navbarSize,
 });

@@ -5,7 +5,8 @@ import { ProfileContainer } from "../../Components/ProfileContainer/ProfileConta
 import * as Style from "./Profile.style";
 
 export function Profile() {
-	const navbarWidth = useSelector((state) => state.navbarWidth);
+	const navbarWidth = useSelector((state) => state.navbarSize.width);
+	const navbarHeight = useSelector((state) => state.navbarSize.height);
 
 	return (
 		<div>
@@ -21,7 +22,7 @@ export function Profile() {
 				/>
 			</Helmet>
 
-			<Style.Content navbarWidth={navbarWidth}>
+			<Style.Content navbarWidth={navbarWidth} navbarHeight={navbarHeight}>
 				<Navbar />
 				<ProfileContainer />
 			</Style.Content>

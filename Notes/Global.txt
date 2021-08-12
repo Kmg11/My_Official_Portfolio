@@ -13,19 +13,24 @@
 - [ Done ] Remove Success State From useFetch
 - [ Done ] Project Versions Need Fix For Take Full Width & take care of key
 - [ Done ] Make Box Paragraph Or Link For Skills & Versions
-- Remove Not Used Font
-- Remove Images Not Used
+- [ Done ] move Constants style to style Variables
+- [ Done ] Navbar Responsive
+- [ Done ] Hide Navbar & add button to show it
+- [ Done ] Navbar Responsiv add nav to top & slide from left with item name appear
+- [ Done ] match animation duration in navbar
+- Remove Not Used Font & Images
 - Try Add Helmet Info Dynamic From Api
 - Check Heights In Responsive
 - Make All Words transform From Style & Type Text In json file small
 - Increase Font Size In Big Screens From html Element To 20px
-- Redux Problem When Select
-- if navbar in responsive changed remove responsive function
 - Add Phone To Social Links
 - Think About Change Single Project Header
 		- Make It As Website Weader Full Height 
 		- add full description & make it slider like appple slider
 		- remove images section
+- See Swiper Propertys fix overflow
+- Agency Website Remove event listener from event listener not working
+- home page media dynamic
 
 ---- End Global ----
 ---- Start Bugs & Errors ----

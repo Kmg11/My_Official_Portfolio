@@ -1,13 +1,13 @@
 import { NavbarTypes } from "../Types";
 
-export const navbarWidth = (state = 0, action) => {
-	let width = state;
+export const navbarSize = (state = { width: 0, height: 0 }, action) => {
+	let size = state;
 
 	switch (action.type) {
-		case NavbarTypes.SET_NAVBAR_WIDTH:
-			width = action.payload;
-			return width;
+		case NavbarTypes.SET_NAVBAR_SIZE:
+			size = { width: action.payload.width, height: action.payload.height };
+			return size;
 		default:
-			return width;
+			return size;
 	}
 };

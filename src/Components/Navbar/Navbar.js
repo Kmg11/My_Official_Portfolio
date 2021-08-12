@@ -1,80 +1,87 @@
-import { Link } from "react-router-dom";
-import { Images, Routes } from "../../Constants";
-import { useEffect, useRef } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useEffect, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { bindActionCreators } from "redux";
 import { NavbarActionCreators } from "../../State/ActionCreators";
+import { Image } from "./Image/Image";
+import { Button } from "./Button/Button";
+import { List } from "./List/List";
 import * as Style from "./Navbar.style";
-import {
-	faWrench,
-	faUserAlt,
-	faScroll,
-	faHome,
-} from "@fortawesome/free-solid-svg-icons";
 
 export function Navbar() {
-	const navWidth = useRef();
+	const [isOpen, setIsOpen] = useState(false);
+	const [listWidth, setListWidth] = useState(0);
+
+	const navbar = useRef();
+	const list = useRef(0);
+
 	const dispatch = useDispatch();
-	const { setNavbarWidth } = bindActionCreators(NavbarActionCreators, dispatch);
+	const { setNavbarSize } = bindActionCreators(NavbarActionCreators, dispatch);
 
+	// Set the size of the navbar
 	useEffect(() => {
-		const handleNavWidth = () => setNavbarWidth(navWidth.current.offsetWidth);
+		const handleNavbarSize = () => {
+			setNavbarSize({
+				width: navbar.current.offsetWidth,
+				height: navbar.current.offsetHeight,
+			});
+		};
 
-		handleNavWidth();
-		window.addEventListener("resize", handleNavWidth);
+		handleNavbarSize();
+		window.addEventListener("resize", handleNavbarSize);
+		return () => window.removeEventListener("resize", handleNavbarSize);
+	}, [setNavbarSize]);
 
-		return () => window.removeEventListener("resize", handleNavWidth);
-	}, [setNavbarWidth]);
+	// Set the width of the list
+	useEffect(() => {
+		const handlListWidth = () => {
+			setListWidth(list.current ? list.current.offsetWidth : 0);
+		};
+
+		handlListWidth();
+		window.addEventListener("resize", handlListWidth);
+		return () => window.removeEventListener("resize", handlListWidth);
+	}, [setListWidth]);
+
+	// Close Navbar When CLick Outside & Press ESC Key
+	useEffect(() => {
+		const closeNavbar = (e) => {
+			if (isOpen) {
+				if (e.target !== list.current && e.target !== navbar.current) {
+					setIsOpen(false);
+				}
+				if (e.key === "Escape" && e.code === "Escape") setIsOpen(false);
+			}
+		};
+
+		document.addEventListener("click", closeNavbar);
+		window.addEventListener("keyup", closeNavbar);
+
+		return () => {
+			document.removeEventListener("click", closeNavbar);
+			window.removeEventListener("keyup", closeNavbar);
+		};
+	}, [isOpen]);
+
+	// Handle Close Navbar When Resize & Scroll Window
+	useEffect(() => {
+		const closeNavbar = () => {
+			if (isOpen) setIsOpen(false);
+		};
+
+		window.addEventListener("scroll", closeNavbar);
+		window.addEventListener("resize", closeNavbar);
+
+		return () => {
+			window.removeEventListener("resize", closeNavbar);
+			window.removeEventListener("scroll", closeNavbar);
+		};
+	}, [isOpen]);
 
 	return (
-		<Style.Navbar ref={navWidth}>
-			<Style.ImageContainer>
-				<Link to={Routes.PROFILE}>
-					<Style.Image
-						src={`${Images.GLOBAL}/personal-image-small.webp`}
-						alt="Kirolos Mahfouz"
-					/>
-				</Link>
-			</Style.ImageContainer>
-
-			<Style.List>
-				<Style.Item>
-					<Style.ItemLink exact to={Routes.HOME}>
-						<Style.LinkIcon>
-							<FontAwesomeIcon icon={faHome} />
-						</Style.LinkIcon>
-						<Style.LinkName>Home</Style.LinkName>
-					</Style.ItemLink>
-				</Style.Item>
-
-				<Style.Item>
-					<Style.ItemLink to={Routes.PROJECTS}>
-						<Style.LinkIcon>
-							<FontAwesomeIcon icon={faWrench} />
-						</Style.LinkIcon>
-						<Style.LinkName>Projects</Style.LinkName>
-					</Style.ItemLink>
-				</Style.Item>
-
-				<Style.Item>
-					<Style.ItemLink to={Routes.PROFILE}>
-						<Style.LinkIcon>
-							<FontAwesomeIcon icon={faUserAlt} />
-						</Style.LinkIcon>
-						<Style.LinkName>Profile</Style.LinkName>
-					</Style.ItemLink>
-				</Style.Item>
-
-				<Style.Item>
-					<Style.ItemLink to={Routes.CV}>
-						<Style.LinkIcon>
-							<FontAwesomeIcon icon={faScroll} />
-						</Style.LinkIcon>
-						<Style.LinkName>Cv</Style.LinkName>
-					</Style.ItemLink>
-				</Style.Item>
-			</Style.List>
+		<Style.Navbar ref={navbar} isOpen={isOpen} listWidth={listWidth}>
+			<Button isOpen={isOpen} setIsOpen={setIsOpen} />
+			<Image />
+			<List ref={list} isOpen={isOpen} />
 		</Style.Navbar>
 	);
 }

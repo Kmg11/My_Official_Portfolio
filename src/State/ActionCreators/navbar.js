@@ -1,6 +1,6 @@
 import { NavbarTypes } from "../Types";
 
-export function setNavbarWidth(width) {
+export function setNavbarSize(size) {
 	return (dispatch) =>
-		dispatch({ type: NavbarTypes.SET_NAVBAR_WIDTH, payload: width });
+		dispatch({ type: NavbarTypes.SET_NAVBAR_SIZE, payload: size });
 }

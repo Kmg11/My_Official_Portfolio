@@ -5,7 +5,8 @@ import { SingleProject } from "../../Components/SingleProject/SingleProject";
 import * as Style from "./Project.style";
 
 export function Project() {
-	const navbarWidth = useSelector((state) => state.navbarWidth);
+	const navbarWidth = useSelector((state) => state.navbarSize.width);
+	const navbarHeight = useSelector((state) => state.navbarSize.height);
 
 	return (
 		<>
@@ -21,7 +22,7 @@ export function Project() {
 				/>
 			</Helmet>
 
-			<Style.Content navbarWidth={navbarWidth}>
+			<Style.Content navbarWidth={navbarWidth} navbarHeight={navbarHeight}>
 				<Navbar />
 				<SingleProject />
 			</Style.Content>
