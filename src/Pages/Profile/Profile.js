@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { useSelector } from "react-redux";
+import { Components } from "../../Style/";
 import { Navbar } from "../../Components/Navbar/Navbar";
 import { ProfileContainer } from "../../Components/ProfileContainer/ProfileContainer";
 import * as Style from "./Profile.style";
@@ -24,7 +25,10 @@ export function Profile() {
 
 			<Style.Content navbarWidth={navbarWidth} navbarHeight={navbarHeight}>
 				<Navbar />
-				<ProfileContainer />
+
+				<Components.Container>
+					<ProfileContainer />
+				</Components.Container>
 			</Style.Content>
 		</div>
 	);

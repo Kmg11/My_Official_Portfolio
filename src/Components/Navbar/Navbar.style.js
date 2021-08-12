@@ -24,7 +24,7 @@ export const Navbar = styled.nav`
 		justify-content: space-between;
 		align-items: center;
 		padding: 15px 20px;
-		transition: all 0.3s linear;
+		transition: margin-left 0.3s linear;
 
 		${(props) =>
 			props.isOpen &&

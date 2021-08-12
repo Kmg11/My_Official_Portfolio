@@ -8,6 +8,6 @@ export const PageContent = styled.section`
 
 	${Functions.mediaBreakpointDown("sm")} {
 		padding-left: 0;
-		padding-top: ${(props) => props.navbarHeight}px;
+		padding-top: ${(props) => props.navbarHeight + 30}px;
 	}
 `;

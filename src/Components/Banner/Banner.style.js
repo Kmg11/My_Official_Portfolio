@@ -1,8 +1,12 @@
 import styled from "styled-components";
-import { Variables } from "../../Style";
+import { Functions, Variables } from "../../Style";
 
 export const Banner = styled.section`
 	width: max-content;
+
+	${Functions.mediaBreakpointDown('xs')} {
+		width: 100%;
+	}
 `;
 
 export const Row = styled.div`
@@ -11,7 +15,7 @@ export const Row = styled.div`
 	gap: 20px;
 	place-items: center;
 
-	@media (max-width: 600px) {
+	${Functions.mediaBreakpointDown('sm')} {
 		grid-template-columns: 1fr;
 		justify-content: center;
 		text-align: center;
@@ -23,11 +27,6 @@ export const ImageContainer = styled.div`
 	height: 250px;
 	border-radius: 50%;
 	background-color: ${Variables.Colors.backgroundColor};
-
-	@media (max-width: 600px) {
-		width: 200px;
-		height: 200px;
-	}
 `;
 
 export const Image = styled.img`
@@ -51,6 +50,10 @@ export const Description = styled.p`
 	margin-bottom: 10px;
 	width: 300px;
 	line-height: 1.7;
+
+	${Functions.mediaBreakpointDown('xs')} {
+		width: 100%;
+	}
 `;
 
 export const SocialLinks = styled.ul``;

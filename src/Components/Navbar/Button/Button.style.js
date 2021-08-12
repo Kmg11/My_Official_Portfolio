@@ -2,6 +2,10 @@ import styled, { css } from "styled-components";
 import { Variables, Functions } from "../../../Style";
 
 export const Button = styled.button`
+	${Functions.mediaBreakpointUp('md')} {
+		display: none;
+	}
+
 	${Functions.mediaBreakpointDown("sm")} {
 		cursor: pointer;
 		position: relative;

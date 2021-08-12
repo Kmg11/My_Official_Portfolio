@@ -38,11 +38,17 @@ export function mediaBreakpointOnly(size) {
 		case "xs":
 			return mediaBreakpointDown("xs");
 		case "sm":
-			return `${mediaBreakpointUp("sm")} and ${mediaBreakpointDown("sm")}`;
+			return `${mediaBreakpointUp("sm")} and ${mediaBreakpointDown(
+				"sm"
+			).replace("@media ", "")}`;
 		case "md":
-			return `${mediaBreakpointUp("md")} and ${mediaBreakpointDown("md")}`;
+			return `${mediaBreakpointUp("md")} and ${mediaBreakpointDown(
+				"md"
+			).replace("@media ", "")}`;
 		case "lg":
-			return `${mediaBreakpointUp("lg")} and ${mediaBreakpointDown("lg")}`;
+			return `${mediaBreakpointUp("lg")} and ${mediaBreakpointDown(
+				"lg"
+			).replace("@media ", "")}`;
 		case "xl":
 			return mediaBreakpointUp("xl");
 		default:

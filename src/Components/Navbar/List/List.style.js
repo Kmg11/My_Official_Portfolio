@@ -112,7 +112,7 @@ export const Link = styled(NavLink)`
 		border-radius: 10px;
 		width: auto;
 		height: auto;
-		padding: 10px 20px;
+		padding: 20px;
 
 		&.active {
 			color: ${Variables.Colors.whiteColor};
