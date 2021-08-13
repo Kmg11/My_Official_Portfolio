@@ -1,4 +1,4 @@
-import { forwardRef } from "react";
+import { useEffect, useRef } from "react";
 import { Routes } from "../../../Constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as Style from "./List.style";
@@ -9,11 +9,26 @@ import {
 	faHome,
 } from "@fortawesome/free-solid-svg-icons";
 
-export function ListComponent({ isOpen }, ref) {
+export function List({ setListWidth, setList, isOpen }) {
+	const list = useRef(0);
+
+	// Set the width of the list
+	useEffect(() => {
+		setList(list);
+
+		const handlListWidth = () => {
+			setListWidth(getComputedStyle(list.current).width);
+		};
+
+		handlListWidth();
+		window.addEventListener("resize", handlListWidth);
+		return () => window.removeEventListener("resize", handlListWidth);
+	}, [setListWidth, setList]);
+
 	return (
 		<Style.List
 			isOpen={isOpen}
-			ref={ref}
+			ref={list}
 			onclick={(e) => {
 				e.stopPropagation();
 			}}
@@ -56,5 +71,3 @@ export function ListComponent({ isOpen }, ref) {
 		</Style.List>
 	);
 }
-
-export const List = forwardRef(ListComponent);

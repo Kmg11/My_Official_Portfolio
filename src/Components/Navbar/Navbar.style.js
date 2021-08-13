@@ -29,7 +29,7 @@ export const Navbar = styled.nav`
 		${(props) =>
 			props.isOpen &&
 			css`
-				margin-left: ${props.listWidth}px;
+				margin-left: ${props.listWidth};
 			`}
 	}
 `;

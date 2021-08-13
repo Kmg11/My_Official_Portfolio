@@ -1,6 +1,6 @@
 import { NavbarTypes } from "../Types";
 
-export const navbarSize = (state = { width: 0, height: 0 }, action) => {
+export const navbarSize = (state = { width: null, height: null }, action) => {
 	let size = state;
 
 	switch (action.type) {

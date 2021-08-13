@@ -20,7 +20,6 @@ export const List = styled.ul`
 		padding: 40px 15px;
 		background-color: rgba(28, 38, 49, 0.95);
 		transform: translateX(-100%);
-		opacity: 0;
 		z-index: 1001;
 		transition-property: transform, opacity;
 		transition: 0.3s linear;
@@ -29,7 +28,6 @@ export const List = styled.ul`
 			props.isOpen &&
 			css`
 				transform: translateX(0);
-				opacity: 1;
 			`}
 	}
 `;
@@ -125,7 +123,7 @@ export const Link = styled(NavLink)`
 			background-color: ${Variables.Colors.mainColor};
 
 			${Name} {
-				opacity: none;
+				opacity: 1;
 				transform: none;
 				color: ${Variables.Colors.whiteColor};
 			}

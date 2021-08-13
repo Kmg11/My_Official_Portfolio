@@ -9,11 +9,10 @@ import * as Style from "./Navbar.style";
 
 export function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
+	const [list, setList] = useState(0);
 	const [listWidth, setListWidth] = useState(0);
 
-	const navbar = useRef();
-	const list = useRef(0);
-
+	const navbar = useRef(0);
 	const dispatch = useDispatch();
 	const { setNavbarSize } = bindActionCreators(NavbarActionCreators, dispatch);
 
@@ -21,8 +20,8 @@ export function Navbar() {
 	useEffect(() => {
 		const handleNavbarSize = () => {
 			setNavbarSize({
-				width: navbar.current.offsetWidth,
-				height: navbar.current.offsetHeight,
+				width: getComputedStyle(navbar.current).width,
+				height: getComputedStyle(navbar.current).height,
 			});
 		};
 
@@ -30,17 +29,6 @@ export function Navbar() {
 		window.addEventListener("resize", handleNavbarSize);
 		return () => window.removeEventListener("resize", handleNavbarSize);
 	}, [setNavbarSize]);
-
-	// Set the width of the list
-	useEffect(() => {
-		const handlListWidth = () => {
-			setListWidth(list.current ? list.current.offsetWidth : 0);
-		};
-
-		handlListWidth();
-		window.addEventListener("resize", handlListWidth);
-		return () => window.removeEventListener("resize", handlListWidth);
-	}, [setListWidth]);
 
 	// Close Navbar When CLick Outside & Press ESC Key
 	useEffect(() => {
@@ -60,7 +48,7 @@ export function Navbar() {
 			document.removeEventListener("click", closeNavbar);
 			window.removeEventListener("keyup", closeNavbar);
 		};
-	}, [isOpen]);
+	}, [isOpen, list]);
 
 	// Handle Close Navbar When Resize & Scroll Window
 	useEffect(() => {
@@ -81,7 +69,7 @@ export function Navbar() {
 		<Style.Navbar ref={navbar} isOpen={isOpen} listWidth={listWidth}>
 			<Button isOpen={isOpen} setIsOpen={setIsOpen} />
 			<Image />
-			<List ref={list} isOpen={isOpen} />
+			<List setListWidth={setListWidth} setList={setList} isOpen={isOpen} />
 		</Style.Navbar>
 	);
 }

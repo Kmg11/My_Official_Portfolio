@@ -31,6 +31,7 @@
 - See Swiper Propertys fix overflow
 - Agency Website Remove event listener from event listener not working
 - home page media dynamic
+- add another live preview section in single page
 
 ---- End Global ----
 ---- Start Bugs & Errors ----
