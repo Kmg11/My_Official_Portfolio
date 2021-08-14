@@ -66,7 +66,7 @@ export const Item = styled.li`
 	}
 `;
 
-export const ItemLink = styled.a`
+export const Link = styled.a`
 	color: ${Variables.Colors.whiteColor};
 	font-size: 2rem;
 	display: block;

@@ -57,14 +57,14 @@ export function Banner() {
 		data.map((link) => {
 			return (
 				<Style.Item key={link.id}>
-					<Style.ItemLink
+					<Style.Link
 						href={link.website === "Email" ? `mailto:${link.link}` : link.link}
 						target="_blank"
 						rel="noreferrer"
 						aria-label={link.website}
 					>
 						<FontAwesomeIcon icon={icons[link.website]} />
-					</Style.ItemLink>
+					</Style.Link>
 				</Style.Item>
 			);
 		});
@@ -76,7 +76,7 @@ export function Banner() {
 					<Style.ImageContainer>
 						<Style.Image
 							src={`${Images.GLOBAL}/personal-image.webp`}
-							alt={data.name}
+							alt="Kirolos Mahfouz Image"
 						/>
 					</Style.ImageContainer>
 

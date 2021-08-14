@@ -9,13 +9,13 @@ export function Versions() {
 				title="versions"
 				icon={faCodeBranch}
 				items={[
-					<Style.Link href="/" target="_blank">
+					<Style.Link href="/" target="_blank" rel="noreferrer">
 						v3.0.0
 					</Style.Link>,
-					<Style.Link href="/" target="_blank">
+					<Style.Link href="/" target="_blank" rel="noreferrer">
 						v2.0.0
 					</Style.Link>,
-					<Style.Link href="/" target="_blank">
+					<Style.Link href="/" target="_blank" rel="noreferrer">
 						v1.0.0
 					</Style.Link>,
 				]}

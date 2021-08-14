@@ -9,6 +9,7 @@ import { Description } from "./Right/Description/Description";
 import { Technologies } from "./Right/Technologies/Technologies";
 import { Tests } from "./Right/Tests/Tests";
 import { Versions } from "./Right/Versions/Versions";
+import { Links } from "./Right/Links/Links";
 import * as Style from "./Info.style";
 
 export function Info() {
@@ -25,6 +26,7 @@ export function Info() {
 						<Notes />
 						<Tests />
 						<Versions />
+						<Links />
 						<HowToUse />
 					</>
 				) : (
