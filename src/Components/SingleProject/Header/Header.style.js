@@ -10,6 +10,7 @@ export const Header = styled.header`
 
 	&::before {
 		content: "";
+		z-index: 2;
 		${Functions.overlay(Variables.Colors.backgroundOverlay2)}
 	}
 `;

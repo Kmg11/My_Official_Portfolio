@@ -6,12 +6,13 @@ export const GlobalStyle = createGlobalStyle`
 	*::before,
 	*::after {
 		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
 	}
 
 	body {
 		background-color: ${Variables.Colors.backgroundColor};
 		font-family: "Roboto", sans-serif;
-		overflow-x: hidden;
 	}
 
 	::selection {

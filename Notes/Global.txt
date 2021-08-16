@@ -32,6 +32,9 @@
 - Agency Website Remove event listener from event listener not working
 - home page media dynamic
 - add another live preview section in single page
+- Check for reset margin in elements and padding & check px
+- transition & animation timing in all website 0.2s
+- review components & function to replace repeat code to reusable components & functions
 
 ---- End Global ----
 ---- Start Bugs & Errors ----

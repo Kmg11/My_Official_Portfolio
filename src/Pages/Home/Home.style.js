@@ -10,6 +10,7 @@ export const Home = styled.section`
 
 	&::before {
 		content: "";
+		z-index: 2;
 		${Functions.overlay(Variables.Colors.backgroundOverlay)};
 	}
 `;

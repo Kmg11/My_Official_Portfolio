@@ -3,10 +3,11 @@
 - [ Done ] Swiper Problem In Last Show Item Not Fixed Until Resize [ Problem In Dynamic Padding ]
 - [ Done ] Slider Last Item Problem When Resize
 - [ Done ] Last Slider Problem With Page Height
+- [ Done ] Responsive
+- [ Done ] Problem With Overflow When Move With Keyboard Tab
+- [ Done ] Add Images In HTML Elment Not As Background
+- [ Done ] Split Card Component To Small Components
 - Make Slider Buttons Transparency When Hover On Card
 - Accessibilty In Slider [ Hover & Focus On Link ]
 - Swiper Keyboard Need To Seprate Every Slider
 - Randomize Images When Hover On Card
-- Responsive
-- Problem With Overflow When Move With Keyboard Tab
-- Add Images In HTML Elment Not As Background

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Variables } from "../../../Style";
+import { Functions, Variables } from "../../../Style";
 
 export const Slider = styled.section`
 	position: relative;
@@ -19,7 +19,7 @@ export const Slider = styled.section`
 			top: 0;
 			bottom: 0;
 			background-color: rgba(15, 23, 30, 0.5);
-			width: 40px;
+			width: 50px;
 			height: 100%;
 			margin-top: 0;
 			transition: all 0.2s linear;
@@ -33,16 +33,44 @@ export const Slider = styled.section`
 			&:focus {
 				background-color: rgba(15, 23, 30, 0.75);
 			}
+
+			@media (hover: none) {
+				display: none;
+			}
+
+			@media (any-hover: none) {
+				display: none;
+			}
+
+			@media (pointer: coarse) {
+				display: none;
+			}
+
+			@media (pointer: none) {
+				display: none;
+			}
+
+			${Functions.mediaBreakpointDown("sm")} {
+				width: 40px;
+			}
 		}
 
 		.swiper-button-prev {
 			left: 0;
-			transform: translateX(-40px);
+			transform: translateX(-2.5rem);
+
+			${Functions.mediaBreakpointDown("sm")} {
+				transform: translateX(-1.5rem);
+			}
 		}
 
 		.swiper-button-next {
 			right: 0;
-			transform: translateX(40px);
+			transform: translateX(2.5rem);
+
+			${Functions.mediaBreakpointDown("sm")} {
+				transform: translateX(1.5rem);
+			}
 		}
 
 		.swiper-button-disabled {

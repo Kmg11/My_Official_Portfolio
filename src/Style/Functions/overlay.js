@@ -7,7 +7,6 @@ export const overlay = (backgroundColor, backgroundImage) => {
 		bottom: 0;
 		left: 0;
 		right: 0;
-		z-index: 2;
 		width: 100%;
 		height: 100%;
 
@@ -20,5 +19,17 @@ export const overlay = (backgroundColor, backgroundImage) => {
 		css`
 			background-image: ${backgroundImage};
 		`}
+	`;
+};
+
+export const overlayTransparent = () => {
+	return css`
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
 	`;
 };

@@ -38,7 +38,7 @@ export function Slider() {
 							slidesPerView: 2,
 							spaceBetween: 10,
 						},
-						1000: {
+						1100: {
 							slidesPerView: 3,
 							spaceBetween: 10,
 						},
@@ -49,6 +49,15 @@ export function Slider() {
 					}}
 					navigation
 				>
+					<SwiperSlide>
+						<Card />
+					</SwiperSlide>
+					<SwiperSlide>
+						<Card />
+					</SwiperSlide>
+					<SwiperSlide>
+						<Card />
+					</SwiperSlide>
 					<SwiperSlide>
 						<Card />
 					</SwiperSlide>

@@ -9,6 +9,7 @@ export function BoxButtons({ page, setPage, info }) {
 						key={pageType}
 						onClick={() => setPage(pageType)}
 						active={page === pageType ? true : false}
+						numberOfButtons={info.length}
 					>
 						{text}
 					</Style.Button>
