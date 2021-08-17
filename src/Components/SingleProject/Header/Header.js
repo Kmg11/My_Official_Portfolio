@@ -15,12 +15,12 @@ export function Header() {
 
 			<Components.Container>
 				<Style.Content>
-					<Style.ProjectName>apple dark mode</Style.ProjectName>
+					<Style.Name>apple dark mode</Style.Name>
 
-					<Style.SmallDescription>
+					<Style.Description>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut commodi
 						in quibusdam ipsam deserunt mollitia.
-					</Style.SmallDescription>
+					</Style.Description>
 
 					<CircleButtons
 						info={[

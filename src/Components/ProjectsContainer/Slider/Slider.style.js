@@ -22,7 +22,8 @@ export const Slider = styled.section`
 			width: 50px;
 			height: 100%;
 			margin-top: 0;
-			transition: all 0.2s linear;
+			transition-property: background-color;
+			transition: 0.2s linear;
 
 			&:after {
 				color: ${Variables.Colors.whiteColor};
@@ -90,11 +91,16 @@ export const SeeMore = styled.button`
 	place-items: center;
 	font-size: 1.2rem;
 	cursor: pointer;
-	transition: all 0.2s linear;
+	transition-property: transform, z-index;
+	transition: 0.2s linear;
 
 	&:hover,
 	&:focus {
 		transform: scale(1.1) translateY(-8px);
 		z-index: 5;
+
+		${Functions.mediaBreakpointDown("sm")} {
+			transform: scale(1) translateY(-8px);
+		}
 	}
 `;

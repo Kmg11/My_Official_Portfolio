@@ -20,7 +20,8 @@ export const ButtonIcon = styled.span`
 	border-radius: 50%;
 	margin-right: 10px;
 	font-size: 1rem;
-	transition: all 0.2s linear;
+	transition-property: background-color, border-color;
+	transition: 0.2s linear;
 `;
 
 export const ButtonName = styled.span`

@@ -4,7 +4,10 @@ import { Variables } from "..";
 export const GlobalStyle = createGlobalStyle`
 	*,
 	*::before,
-	*::after {
+	*::after,
+	body *,
+	body *::before,
+	body *::after {
 		box-sizing: border-box;
 		margin: 0;
 		padding: 0;
@@ -21,8 +24,6 @@ export const GlobalStyle = createGlobalStyle`
 
 	ul {
 		list-style: none;
-		padding: 0;
-		margin: 0;
 	}
 
 	a {

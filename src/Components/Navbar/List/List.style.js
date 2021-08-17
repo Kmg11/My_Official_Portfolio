@@ -53,7 +53,8 @@ export const Name = styled.span`
 	opacity: 0;
 	width: 80px;
 	text-transform: capitalize;
-	transition: all 0.3s linear;
+	transition-property: opacity, transform;
+	transition: 0.25s linear;
 
 	${Functions.mediaBreakpointDown("sm")} {
 		position: static;
@@ -83,9 +84,12 @@ export const Link = styled(NavLink)`
 	border-radius: 50%;
 	display: grid;
 	place-items: center;
-	transition: all 0.3s linear;
+	transition-property: color, background-color;
+	transition: 0.25s linear;
 	margin: auto;
 
+	&:hover,
+	&:focus,
 	&.active {
 		color: ${Variables.Colors.mainColor};
 		background-color: ${Variables.Colors.whiteBackgroundColor};
@@ -93,9 +97,6 @@ export const Link = styled(NavLink)`
 
 	&:hover,
 	&:focus {
-		color: ${Variables.Colors.mainColor};
-		background-color: ${Variables.Colors.whiteBackgroundColor};
-
 		${Name} {
 			opacity: 1;
 			transform: translate(120%, -50%);

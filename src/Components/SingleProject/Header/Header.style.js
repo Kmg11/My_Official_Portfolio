@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Functions, Variables } from "../../../Style";
+import { Components, Functions, Variables } from "../../../Style";
 
 export const Header = styled.header`
 	width: 100%;
@@ -15,15 +15,12 @@ export const Header = styled.header`
 	}
 `;
 
-export const CoverImage = styled.img`
+export const CoverImage = styled(Components.ImageCover)`
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
 `;
 
 export const Content = styled.div`
@@ -43,18 +40,16 @@ export const Content = styled.div`
 	}
 `;
 
-export const ProjectName = styled.h1`
+export const Name = styled.h1`
 	color: ${Variables.Colors.titlesColor};
 	text-transform: capitalize;
-	margin-top: 0;
 	margin-bottom: 10px;
 `;
 
-export const SmallDescription = styled.p`
+export const Description = styled.p`
 	color: ${Variables.Colors.whiteColor};
 	width: 400px;
 	line-height: 1.7;
-	margin-top: 0;
 	margin-bottom: 10px;
 
 	${Functions.mediaBreakpointDown("xs")} {

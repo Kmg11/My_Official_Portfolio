@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Functions } from "../../../../../Style";
+import { Components, Functions } from "../../../../../Style";
 
 export const Images = styled.section`
 	ul {
@@ -17,9 +17,4 @@ export const ImageContainer = styled.div`
 	cursor: pointer;
 `;
 
-export const Image = styled.img`
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	display: block;
-`;
+export const Image = styled(Components.ImageCover)``;

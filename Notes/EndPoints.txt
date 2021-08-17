@@ -1,0 +1,10 @@
+- Remove Not Used Images
+- Try Add Helmet Info Dynamic From Api
+- minifest File
+- Change favicon & appleicon
+- take care of meta tags & Add Facebook Meta Tags
+- Github Must Have The Same Information
+- Add Normaliz To Agency Webstie & Othe Projects Not Have Normalize
+- package.json File Settings [ Description, Repositry, Author, homePagem etc... ]
+- Add Error Page
+- Infinity Scroll In Projects Page

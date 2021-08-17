@@ -18,23 +18,19 @@
 - [ Done ] Hide Navbar & add button to show it
 - [ Done ] Navbar Responsiv add nav to top & slide from left with item name appear
 - [ Done ] match animation duration in navbar
-- Remove Not Used Font & Images
-- Try Add Helmet Info Dynamic From Api
-- Check Heights In Responsive
-- Make All Words transform From Style & Type Text In json file small
+- [ Done ] Remove Not Used Font & Images
+- [ Done ] Check for reset margin in elements and padding & check px
+- [ Done ] review components & function to replace repeat code to reusable components & functions
+- [ Done ] add another live preview section in single page
+- [ Done ] Check Heights In Responsive
+- [ Done ] Make All Words transform From Style & Type Text In json file small
+- [ Done ] transition & animation timing in all website 0.2s
 - Increase Font Size In Big Screens From html Element To 20px
 - Add Phone To Social Links
 - Think About Change Single Project Header
 		- Make It As Website Weader Full Height 
 		- add full description & make it slider like appple slider
 		- remove images section
-- See Swiper Propertys fix overflow
-- Agency Website Remove event listener from event listener not working
-- home page media dynamic
-- add another live preview section in single page
-- Check for reset margin in elements and padding & check px
-- transition & animation timing in all website 0.2s
-- review components & function to replace repeat code to reusable components & functions
 
 ---- End Global ----
 ---- Start Bugs & Errors ----

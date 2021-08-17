@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { Functions, Variables } from "../../Style";
+import { Components, Functions, Variables } from "../../Style";
 
 export const Banner = styled.section`
 	width: max-content;
 
-	${Functions.mediaBreakpointDown('xs')} {
+	${Functions.mediaBreakpointDown("xs")} {
 		width: 100%;
 	}
 `;
@@ -12,10 +12,10 @@ export const Banner = styled.section`
 export const Row = styled.div`
 	display: grid;
 	grid-template-columns: auto 1fr;
-	gap: 20px;
+	gap: 1.25rem;
 	place-items: center;
 
-	${Functions.mediaBreakpointDown('sm')} {
+	${Functions.mediaBreakpointDown("sm")} {
 		grid-template-columns: 1fr;
 		justify-content: center;
 		text-align: center;
@@ -29,29 +29,24 @@ export const ImageContainer = styled.div`
 	background-color: ${Variables.Colors.backgroundColor};
 `;
 
-export const Image = styled.img`
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-`;
+export const Image = styled(Components.ImageCover)``;
 
 export const Info = styled.div``;
 
 export const Name = styled.h1`
 	color: ${Variables.Colors.titlesColor};
-	margin: 0;
 `;
 
 export const Description = styled.p`
 	color: ${Variables.Colors.whiteColor};
 	font-size: 1.2rem;
-	font-weight: bold;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	font-weight: 700;
+	margin-top: 0.625rem;
+	margin-bottom: 0.625rem;
 	width: 300px;
 	line-height: 1.7;
 
-	${Functions.mediaBreakpointDown('xs')} {
+	${Functions.mediaBreakpointDown("xs")} {
 		width: 100%;
 	}
 `;
@@ -70,7 +65,8 @@ export const Link = styled.a`
 	color: ${Variables.Colors.whiteColor};
 	font-size: 2rem;
 	display: block;
-	transition: all 0.2s linear;
+	transition-property: color, background-color;
+	transition: 0.2s linear;
 
 	/* This Code For Handling Hover Problem With Svg */
 	width: 25px;

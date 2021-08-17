@@ -123,36 +123,24 @@
 - [ Done ] Add Style In Constants
 - [ Done ] Add Components Folder In Style Folder
 - [ Done ] Create Titles Components
-- minifest File
-- Change favicon & appleicon
-- take care of meta tags & Add Facebook Meta Tags
+- [ Done ] Card Title Connect To Same Title - Spaces Problem
+- [ Done ] Review All Spaces Between Diffrent Elements
+- [ Done ] Add Global Styles For [ Big Headers, Side Headers, Paragraphs ]
 - Add Loading Lazy Load & Add Error Handling from traversary media
-- Github Must Have The Same Information
 - Take Care If No Live Preview
 - Copyrights For All Images & My Portfolio
-- package.json File Settings [ Description, Repositry, Author, homePagem etc... ]
-- Add Error Page
 - Add Focus Handler For All Elments & Remove Default Focus
 - take Care Of Images Width In Responsive
 - Add Shadows To Navbar Icons & Name
 - Project Page Title Must Be Project Name
 - Add Social Links In Project Page
-- Add for devolopers tag for advanced information such as [how to use]
 - First 5 Technologies Only Will Be Added In Project Card
 - Add Project Title In URL In PRoject Page
 - Add File Structure To REAME File On Github
-- Create Small Description
-- Add Alt Information In API
-- Review All Spaces Between Diffrent Elements
-- Add Global Styles For [ Big Headers, Side Headers, Paragraphs ]
 - Add Links To Technologies & Skills For Information
-- Add Miginfication For Slider Images By Click On Button
 - Search For Best Colors On text In dark mode
-- Card Title Connect To Same Title - Spaces Problem
-- After End project check transition all property
 - Add Badge For Project Page For Teplate Or app like navbar toltip
 - alt Attribute Must Be Dynamic
-- Add Normaliz To Agency Webstie & Othe Projects Not Have Normalize
 
 - Projects Description
 	- Some Of The Features

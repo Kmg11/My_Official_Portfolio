@@ -32,6 +32,5 @@ export const Item = styled.li`
 
 export const Text = styled.p`
 	color: ${Variables.Colors.whiteColor};
-	margin: 0;
 	line-height: 1.6;
 `;

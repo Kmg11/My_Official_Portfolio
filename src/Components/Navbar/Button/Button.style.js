@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { Variables, Functions } from "../../../Style";
 
 export const Button = styled.button`
-	${Functions.mediaBreakpointUp('md')} {
+	${Functions.mediaBreakpointUp("md")} {
 		display: none;
 	}
 
@@ -11,7 +11,6 @@ export const Button = styled.button`
 		position: relative;
 		z-index: 5;
 		width: 30px;
-		padding: 0;
 		border: none;
 	}
 `;
@@ -21,7 +20,7 @@ export const Line = styled.span`
 		display: block;
 		width: 100%;
 		height: 4px;
-		background-color: ${Variables.Colors.whiteColor};
+		background-color: ${Variables.Colors.whiteBackgroundColor};
 		border-radius: 10px;
 
 		&:nth-of-type(1) {
