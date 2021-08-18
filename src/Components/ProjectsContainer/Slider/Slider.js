@@ -29,6 +29,7 @@ export function Slider() {
 					slidesPerView={1}
 					slidesPerGroup={1}
 					keyboard={true}
+					navigation={true}
 					breakpoints={{
 						0: {
 							slidesPerView: 1,
@@ -47,7 +48,6 @@ export function Slider() {
 							spaceBetween: 20,
 						},
 					}}
-					navigation
 				>
 					<SwiperSlide>
 						<Card />

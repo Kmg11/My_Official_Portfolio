@@ -25,12 +25,13 @@
 - [ Done ] Check Heights In Responsive
 - [ Done ] Make All Words transform From Style & Type Text In json file small
 - [ Done ] transition & animation timing in all website 0.2s
+- [ Done ] Think About Change Single Project Header
+		- [ Done ] Make It As Website Weader Full Height 
+		- [ Done ] add full description & make it slider like appple slider
+		- [ Done ] remove images section
+- [ Done ] review responsive & think about remove thumbs in movile
 - Increase Font Size In Big Screens From html Element To 20px
 - Add Phone To Social Links
-- Think About Change Single Project Header
-		- Make It As Website Weader Full Height 
-		- add full description & make it slider like appple slider
-		- remove images section
 
 ---- End Global ----
 ---- Start Bugs & Errors ----

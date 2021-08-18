@@ -5,20 +5,24 @@ const GAP = "2rem";
 
 export const Info = styled.section`
 	padding: 2.5rem 1.5rem;
-	display: grid;
-	grid-template-columns: 1fr 0.5fr;
-	gap: ${GAP};
 
 	${Functions.mediaBreakpointOnly("md")} {
 		padding: 2.5rem 1rem;
 	}
 
-	${Functions.mediaBreakpointDown("md")} {
-		grid-template-columns: 1fr 1fr;
-	}
-
 	${Functions.mediaBreakpointDown("sm")} {
 		padding: 2.5rem 0 2.5rem;
+	}
+`;
+
+export const Row = styled.div`
+	display: grid;
+	grid-template-columns: 1fr 0.5fr;
+	gap: ${GAP};
+	margin-top: ${GAP};
+
+	${Functions.mediaBreakpointDown("md")} {
+		grid-template-columns: repeat(2, 1fr);
 	}
 
 	${Functions.mediaBreakpointDown("xs")} {

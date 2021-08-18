@@ -18,8 +18,10 @@ export function Header() {
 					<Style.Name>apple dark mode</Style.Name>
 
 					<Style.Description>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut commodi
-						in quibusdam ipsam deserunt mollitia.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+						nihil voluptatum aliquam fugit veniam, quia, incidunt beatae neque
+						impedit rem, quaerat necessitatibus voluptate totam molestiae quam
+						eum in. Quod, eos!
 					</Style.Description>
 
 					<CircleButtons

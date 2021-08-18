@@ -3,7 +3,8 @@ import { Components, Functions, Variables } from "../../../Style";
 
 export const Header = styled.header`
 	width: 100%;
-	height: 50vh;
+	min-height: 500px;
+	height: 100vh;
 	position: relative;
 	display: grid;
 	align-items: center;
@@ -11,7 +12,7 @@ export const Header = styled.header`
 	&::before {
 		content: "";
 		z-index: 2;
-		${Functions.overlay(Variables.Colors.backgroundOverlay2)}
+		${Functions.overlay(null, "linear-gradient(to right, #000, transparent)")}
 	}
 `;
 
@@ -26,6 +27,8 @@ export const CoverImage = styled(Components.ImageCover)`
 export const Content = styled.div`
 	position: relative;
 	z-index: 2;
+	display: grid;
+	gap: 1rem;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 
@@ -43,14 +46,12 @@ export const Content = styled.div`
 export const Name = styled.h1`
 	color: ${Variables.Colors.titlesColor};
 	text-transform: capitalize;
-	margin-bottom: 10px;
 `;
 
 export const Description = styled.p`
 	color: ${Variables.Colors.whiteColor};
 	width: 400px;
-	line-height: 1.7;
-	margin-bottom: 10px;
+	line-height: 1.5;
 
 	${Functions.mediaBreakpointDown("xs")} {
 		width: 100%;
