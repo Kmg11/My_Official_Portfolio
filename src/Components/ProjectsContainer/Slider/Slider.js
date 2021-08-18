@@ -15,14 +15,22 @@ import { Components } from "../../../Style";
 // install Swiper modules
 SwiperCore.use([Navigation, A11y, Keyboard]);
 
-export function Slider() {
+export function Slider({ data, setProjectsPage, pageType }) {
 	const navbarWidth = useSelector((state) => state.navbarSize.width);
+
+	const slideList = data.map((item) => {
+		return (
+			<SwiperSlide key={item.id}>
+				<Card info={item} />
+			</SwiperSlide>
+		);
+	});
 
 	return (
 		<Style.Slider>
-			<Components.SubTitle>Templates</Components.SubTitle>
+			<Components.SubTitle>{data[0].type}</Components.SubTitle>
 
-			{/* This Check For Handle Dynamic Dynamic Padding Left Of The Container */}
+			{/* This Check For Handle Dynamic Padding Left Of The Container */}
 			{navbarWidth && (
 				<Swiper
 					spaceBetween={10}
@@ -49,29 +57,11 @@ export function Slider() {
 						},
 					}}
 				>
+					{slideList}
 					<SwiperSlide>
-						<Card />
-					</SwiperSlide>
-					<SwiperSlide>
-						<Card />
-					</SwiperSlide>
-					<SwiperSlide>
-						<Card />
-					</SwiperSlide>
-					<SwiperSlide>
-						<Card />
-					</SwiperSlide>
-					<SwiperSlide>
-						<Card />
-					</SwiperSlide>
-					<SwiperSlide>
-						<Card />
-					</SwiperSlide>
-					<SwiperSlide>
-						<Card />
-					</SwiperSlide>
-					<SwiperSlide>
-						<Style.SeeMore>See More</Style.SeeMore>
+						<Style.SeeMore onClick={() => setProjectsPage(pageType)}>
+							See More
+						</Style.SeeMore>
 					</SwiperSlide>
 				</Swiper>
 			)}

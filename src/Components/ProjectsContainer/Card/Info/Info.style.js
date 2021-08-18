@@ -26,6 +26,7 @@ export const Box = styled.div`
 
 export const Title = styled.h4`
 	color: ${Variables.Colors.whiteColor};
+	text-transform: capitalize;
 `;
 
 export const Description = styled.p`

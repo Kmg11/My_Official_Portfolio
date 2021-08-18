@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import { useContext, useState } from "react";
 import { Images } from "../../../../Constants";
+import { ProjectContext } from "../../SingleProject";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -15,7 +16,21 @@ import { Components } from "../../../../Style";
 SwiperCore.use([Thumbs]);
 
 export function Slider() {
+	const {
+		project: { title, images },
+	} = useContext(ProjectContext);
 	const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
+	let imagesList = [...Array(images.number_of_images).keys()].map((item) => {
+		return (
+			<SwiperSlide key={item}>
+				<Style.Image
+					src={`${Images.PROJECTS}/${images.folder_name}/${item + 1}.webp`}
+					alt={`${title} Images`}
+				/>
+			</SwiperSlide>
+		);
+	});
 
 	return (
 		<Style.Slider>
@@ -27,30 +42,7 @@ export function Slider() {
 					thumbs={{ swiper: thumbsSwiper }}
 					className="main-sider"
 				>
-					<SwiperSlide>
-						<Style.Image src={`${Images.TEMPLATES}/Agency.png`} alt="" />
-					</SwiperSlide>
-					<SwiperSlide>
-						<Style.Image src={`${Images.TEMPLATES}/Agency.png`} alt="" />
-					</SwiperSlide>
-					<SwiperSlide>
-						<Style.Image src={`${Images.TEMPLATES}/Agency.png`} alt="" />
-					</SwiperSlide>
-					<SwiperSlide>
-						<Style.Image src={`${Images.TEMPLATES}/Agency.png`} alt="" />
-					</SwiperSlide>
-					<SwiperSlide>
-						<Style.Image src={`${Images.TEMPLATES}/Agency.png`} alt="" />
-					</SwiperSlide>
-					<SwiperSlide>
-						<Style.Image src={`${Images.TEMPLATES}/Agency.png`} alt="" />
-					</SwiperSlide>
-					<SwiperSlide>
-						<Style.Image src={`${Images.TEMPLATES}/Agency.png`} alt="" />
-					</SwiperSlide>
-					<SwiperSlide>
-						<Style.Image src={`${Images.TEMPLATES}/Agency.png`} alt="" />
-					</SwiperSlide>
+					{imagesList}
 				</Swiper>
 
 				<Swiper
@@ -73,30 +65,7 @@ export function Slider() {
 						},
 					}}
 				>
-					<SwiperSlide>
-						<Style.Image src={`${Images.TEMPLATES}/Agency.png`} alt="" />
-					</SwiperSlide>
-					<SwiperSlide>
-						<Style.Image src={`${Images.TEMPLATES}/Agency.png`} alt="" />
-					</SwiperSlide>
-					<SwiperSlide>
-						<Style.Image src={`${Images.TEMPLATES}/Agency.png`} alt="" />
-					</SwiperSlide>
-					<SwiperSlide>
-						<Style.Image src={`${Images.TEMPLATES}/Agency.png`} alt="" />
-					</SwiperSlide>
-					<SwiperSlide>
-						<Style.Image src={`${Images.TEMPLATES}/Agency.png`} alt="" />
-					</SwiperSlide>
-					<SwiperSlide>
-						<Style.Image src={`${Images.TEMPLATES}/Agency.png`} alt="" />
-					</SwiperSlide>
-					<SwiperSlide>
-						<Style.Image src={`${Images.TEMPLATES}/Agency.png`} alt="" />
-					</SwiperSlide>
-					<SwiperSlide>
-						<Style.Image src={`${Images.TEMPLATES}/Agency.png`} alt="" />
-					</SwiperSlide>
+					{imagesList}
 				</Swiper>
 			</Style.SwiperContainer>
 		</Style.Slider>

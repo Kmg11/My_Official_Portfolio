@@ -1,25 +1,24 @@
+import { useContext } from "react";
+import { InfoContext } from "../Card";
 import * as Style from "./Info.style";
 
 export function Info() {
+	const { title, description, technologies } = useContext(InfoContext);
+
+	const technologiesList = technologies.map((item, index) => {
+		return <Style.Item key={index}>{item}</Style.Item>;
+	});
+
 	return (
 		<Style.Info>
 			<Style.Box>
-				<Style.Title>Apple</Style.Title>
-				<Style.Description>
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa nemo
-					provident error nulla est quod nam libero dolorum laudantium rem.
-				</Style.Description>
+				<Style.Title>{title}</Style.Title>
+				<Style.Description>{description}</Style.Description>
 			</Style.Box>
 
 			<Style.Box>
-				<Style.Title>Technolgy Used</Style.Title>
-				<Style.List>
-					<Style.Item>Html</Style.Item>
-					<Style.Item>Css</Style.Item>
-					<Style.Item>Javascript</Style.Item>
-					<Style.Item>jQuery</Style.Item>
-					<Style.Item>Bootstrap</Style.Item>
-				</Style.List>
+				<Style.Title>Technologies</Style.Title>
+				<Style.List>{technologiesList}</Style.List>
 			</Style.Box>
 		</Style.Info>
 	);

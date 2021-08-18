@@ -1,21 +1,17 @@
 import { faPercent } from "@fortawesome/free-solid-svg-icons";
+import { useContext } from "react";
 import { Box } from "../../../../Box/Box";
+import { ProjectContext } from "../../../SingleProject";
 import * as Style from "./Tests.style";
 
 export function Tests() {
+	const {
+		project: { tests },
+	} = useContext(ProjectContext);
+
 	return (
 		<Style.Tests>
-			<Box
-				title="tests"
-				icon={faPercent}
-				items={[
-					"97% Performance",
-					"100% Accessibilty",
-					"100% SEO",
-					"100% Best Practice",
-					"100% Html Validation",
-				]}
-			/>
+			<Box title="tests" icon={faPercent} items={tests} />
 		</Style.Tests>
 	);
 }

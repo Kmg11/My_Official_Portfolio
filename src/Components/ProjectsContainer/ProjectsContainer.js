@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { createContext, useState } from "react";
+import { useFetchGet } from "../../Hooks/Fetch/useFetchGet";
+import { Apis } from "../../Constants";
 import { Top } from "./Top/Top";
 import { Templates } from "./Templates/Templates";
 import { Apps } from "./Apps/Apps";
@@ -9,20 +11,32 @@ const TOP = "TOP";
 const TEMPLATES = "TEMPLATES";
 const APPS = "APPS";
 
+export const TemplatesContext = createContext();
+
 export function ProjectsContainer() {
 	const [projectsPage, setProjectsPage] = useState(TOP);
 
-	return (
-		<Style.ProjectsContainer>
-			<CategoriesButtons
-				projectsPage={projectsPage}
-				setProjectsPage={setProjectsPage}
-			/>
+	const { data: templates, isPending, error } = useFetchGet(Apis.TEMPLATES);
+	const templatesObject = { templates, isPending, error };
 
-			{projectsPage === TOP && <Top />}
-			{projectsPage === TEMPLATES && <Templates />}
-			{projectsPage === APPS && <Apps />}
-		</Style.ProjectsContainer>
+	return (
+		<TemplatesContext.Provider value={templatesObject}>
+			<Style.ProjectsContainer>
+				<CategoriesButtons
+					projectsPage={projectsPage}
+					setProjectsPage={setProjectsPage}
+				/>
+
+				{projectsPage === TOP && (
+					<Top
+						setProjectsPage={setProjectsPage}
+						pageType={{ TEMPLATES, APPS }}
+					/>
+				)}
+				{projectsPage === TEMPLATES && <Templates />}
+				{projectsPage === APPS && <Apps />}
+			</Style.ProjectsContainer>
+		</TemplatesContext.Provider>
 	);
 }
 

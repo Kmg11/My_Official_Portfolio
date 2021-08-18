@@ -1,16 +1,14 @@
+import { useContext } from "react";
 import { Card } from "../Card/Card";
-import * as Style from './Templates.style'
+import { TemplatesContext } from "../ProjectsContainer";
+import * as Style from "./Templates.style";
 
 export function Templates() {
-	return (
-		<Style.Cards>
-			<Card />
-			<Card />
-			<Card />
-			<Card />
-			<Card />
-			<Card />
-			<Card />
-		</Style.Cards>
-	);
+	const { templates } = useContext(TemplatesContext);
+
+	const templatesList = templates.map((item) => {
+		return <Card key={item.id} info={item} />;
+	});
+
+	return <Style.Cards>{templatesList}</Style.Cards>;
 }

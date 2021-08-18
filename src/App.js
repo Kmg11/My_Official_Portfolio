@@ -8,7 +8,7 @@ export function App() {
 			<Switch>
 				<Route exact path={Routes.HOME} component={Page.Home} />
 				<Route path={Routes.PROJECTS} component={Page.Projects} />
-				<Route path={Routes.PROJECT} component={Page.Project} />
+				<Route path={`${Routes.PROJECT}/:type/:id/:title`} component={Page.Project} />
 				<Route path={Routes.PROFILE} component={Page.Profile} />
 				<Route path={Routes.CV} component={Page.Cv} />
 			</Switch>

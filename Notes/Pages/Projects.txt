@@ -11,3 +11,6 @@
 - Accessibilty In Slider [ Hover & Focus On Link ]
 - Swiper Keyboard Need To Seprate Every Slider
 - Randomize Images When Hover On Card
+
+- Change Project Title When Change Projects Top Or Templates Or Apps
+- Add Specific Length For Card description & Title & Technolgies

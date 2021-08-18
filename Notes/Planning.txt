@@ -148,22 +148,21 @@
 	- Take Care Of Grammer
 
 - Projects Features
-	- Small Images
-	- Fast Load
-	- Structure
-	- Performance & Accessibility & Best Practice & Seo
-	- Responsive
-	- animation
-	- Browser Coptapility
-	- Accessibility & Seo & Best Practice & Performance
+	- Compatible with all devices such as mobile
+	- Compatible with all browsers such as Chrome and Firefox
+	- Compatible with search engines
+	- Compatible with screen readers
+	- Optimize images
+	- High performance
 	- Html Validation
+	- Dark Mode
 	- Error Handling
 	- Loading Handling
 
 ---- End Notes ----
 ---- Start Responsive ----
 
-- Add Media Querys In Function with parameter for size
-- add containers width
+- [ Done ] Add Media Querys In Function with parameter for size
+- [ Done ] add containers width
 
 ---- End Responsive ----
