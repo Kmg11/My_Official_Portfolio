@@ -30,14 +30,16 @@
 		- [ Done ] add full description & make it slider like appple slider
 		- [ Done ] remove images section
 - [ Done ] review responsive & think about remove thumbs in movile
+- [ Done ] Responsiv In Projects Page Templates & Apps
+- [ Done ] Connect Info API With Home & Profile Pages
 - Increase Font Size In Big Screens From html Element To 20px
 - Add Phone To Social Links
-- Think About Change Technolgies on single page to grid with boxes like box button
 - Add small images & optimize png image for not suported browsers in picture tag
-- Responsiv In Projects Page Templates & Apps
-- Dynamic Dark Mode In Agency Website
 - think about make projects page categories pages for more Accessibility
 - convert all images to picture tag for handling diffrent sizes
+- optimize images for png and add it to project file
+- cut navbar height in responsive from 100vh height elements
+- check navbar addEventLisener
 
 ---- End Global ----
 ---- Start Bugs & Errors ----

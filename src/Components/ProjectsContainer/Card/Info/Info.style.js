@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Variables } from "../../../../Style";
 
@@ -16,23 +17,32 @@ export const Info = styled.div`
 	transition-property: visibility, opacity, z-index;
 	transition: 0.2s linear;
 	display: grid;
-	gap: 1.2rem;
+	gap: 1rem;
 `;
 
 export const Box = styled.div`
 	display: grid;
-	gap: 1rem;
+	gap: 0.7rem;
 `;
 
 export const Title = styled.h4`
 	color: ${Variables.Colors.whiteColor};
 	text-transform: capitalize;
+	font-size: 1rem;
 `;
 
 export const Description = styled.p`
 	color: ${Variables.Colors.textColor};
 	line-height: 1.6;
 	font-size: 0.9rem;
+`;
+
+export const Dots = styled(Link)`
+	font-size: 1.5rem;
+	font-weight: 700;
+	display: inline-block;
+	line-height: 0;
+	color: ${Variables.Colors.whiteColor};
 `;
 
 export const List = styled.ul`
@@ -49,11 +59,12 @@ export const Item = styled.li`
 	border: 1px solid ${Variables.Colors.whiteColor};
 	text-align: center;
 	padding: 5px 15px;
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 	margin-bottom: 0.625rem;
 	margin-right: 0.3125rem;
 	margin-left: 0.3125rem;
 	cursor: pointer;
+	text-transform: capitalize;
 	transition-property: border-color, background-color;
 	transition-duration: 0.2s;
 

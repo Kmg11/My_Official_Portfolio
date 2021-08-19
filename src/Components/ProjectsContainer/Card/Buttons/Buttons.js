@@ -8,14 +8,16 @@ import * as Style from "./Buttons.style";
 export function Buttons() {
 	const { links } = useContext(InfoContext);
 
+	const linksList = [
+		{ href: links.github, icon: faGithub, text: "github" },
+		{ href: links.live, icon: faWifi, text: "live" },
+	];
+
+	const finalLinks = links.live ? linksList : linksList.slice(0, 1);
+
 	return (
 		<Style.Buttons>
-			<CircleButtons
-				info={[
-					{ href: links.github, icon: faGithub, text: "github" },
-					{ href: links.live, icon: faWifi, text: "live" },
-				]}
-			/>
+			<CircleButtons info={finalLinks} />
 		</Style.Buttons>
 	);
 }

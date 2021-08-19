@@ -12,6 +12,13 @@ export function Header() {
 		project: { title, description, links, images },
 	} = useContext(ProjectContext);
 
+	const linksList = [
+		{ href: links.github, icon: faGithub, text: "github" },
+		{ href: links.live, icon: faWifi, text: "live" },
+	];
+
+	const finalLinks = links.live ? linksList : linksList.slice(0, 1);
+
 	return (
 		<Style.Header>
 			<Style.CoverImage
@@ -22,15 +29,8 @@ export function Header() {
 			<Components.Container>
 				<Style.Content>
 					<Style.Name>{title}</Style.Name>
-
 					<Style.Description>{description}</Style.Description>
-
-					<CircleButtons
-						info={[
-							{ href: links.github, icon: faGithub, text: "github" },
-							{ href: links.live, icon: faWifi, text: "live" },
-						]}
-					/>
+					<CircleButtons info={finalLinks} />
 				</Style.Content>
 			</Components.Container>
 		</Style.Header>

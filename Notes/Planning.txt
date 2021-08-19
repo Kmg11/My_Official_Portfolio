@@ -126,21 +126,16 @@
 - [ Done ] Card Title Connect To Same Title - Spaces Problem
 - [ Done ] Review All Spaces Between Diffrent Elements
 - [ Done ] Add Global Styles For [ Big Headers, Side Headers, Paragraphs ]
+- [ Done ] alt Attribute Must Be Dynamic
+- [ Done ] Project Page Title Must Be Project Name
+- [ Done ] Take Care If No Live Preview Link
 - Add Loading Lazy Load & Add Error Handling from traversary media
-- Take Care If No Live Preview
 - Copyrights For All Images & My Portfolio
 - Add Focus Handler For All Elments & Remove Default Focus
 - take Care Of Images Width In Responsive
-- Add Shadows To Navbar Icons & Name
-- Project Page Title Must Be Project Name
 - Add Social Links In Project Page
-- First 5 Technologies Only Will Be Added In Project Card
 - Add Project Title In URL In PRoject Page
-- Add File Structure To REAME File On Github
-- Add Links To Technologies & Skills For Information
-- Search For Best Colors On text In dark mode
 - Add Badge For Project Page For Teplate Or app like navbar toltip
-- alt Attribute Must Be Dynamic
 
 - Projects Description
 	- Some Of The Features

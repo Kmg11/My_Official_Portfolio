@@ -1,9 +1,14 @@
 import { useContext } from "react";
+import { Routes } from "../../../../Constants";
 import { InfoContext } from "../Card";
 import * as Style from "./Info.style";
 
 export function Info() {
-	const { title, description, technologies } = useContext(InfoContext);
+	const { id, type, title, description, technologies } =
+		useContext(InfoContext);
+
+	const sliceDescription =
+		description.length > 100 ? description.slice(0, 100) : description;
 
 	const technologiesList = technologies.map((item, index) => {
 		return <Style.Item key={index}>{item}</Style.Item>;
@@ -13,7 +18,12 @@ export function Info() {
 		<Style.Info>
 			<Style.Box>
 				<Style.Title>{title}</Style.Title>
-				<Style.Description>{description}</Style.Description>
+				<Style.Description>
+					{sliceDescription}{" "}
+					<Style.Dots to={`${Routes.PROJECT}/${type}/${id}/${title}`}>
+						...
+					</Style.Dots>
+				</Style.Description>
 			</Style.Box>
 
 			<Style.Box>

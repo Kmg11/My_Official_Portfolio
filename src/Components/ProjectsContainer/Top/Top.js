@@ -4,12 +4,14 @@ import { TemplatesContext } from "../ProjectsContainer";
 
 export function Top({ setProjectsPage, pageType }) {
 	const { templates } = useContext(TemplatesContext);
+	const topTemplates =
+		templates && templates.filter((template) => template.is_top);
 
 	return (
 		<>
-			{templates && (
+			{topTemplates && (
 				<Slider
-					data={templates}
+					data={topTemplates}
 					setProjectsPage={setProjectsPage}
 					pageType={pageType.TEMPLATES}
 				/>
