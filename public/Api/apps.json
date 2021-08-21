@@ -1,27 +1,53 @@
 [
 	{
 		"id": 1,
-		"title": "",
-		"Description": "",
-		"technologies": ["", "", ""],
-		"images": ["", "", ""],
-		"features": ["", "", ""],
-		"how_to_use": ["", "", ""],
-		"notes": "",
-		"links": {
-			"github": "",
-			"live_preview": ""
+		"type": "app",
+		"title": "facebook post clone",
+		"description": "SPA application Clone facebook post function like interacting with posts by liking, commenting, deleting comment, deleting posts and creating posts with front-end technologies only using json server as mock database, design with responsive and dark mode with simple animations.",
+		"technologies": [
+			"react",
+			"styled components",
+			"json",
+			"html",
+			"css",
+			"javascript"
+		],
+		"images": {
+			"folder_name": "Apps/Facebook_Post_Clone",
+			"number_of_images": 10
 		},
-		"tests": [
-			{ "percentage": "", "type": "" },
-			{ "percentage": "", "type": "" },
-			{ "percentage": "", "type": "" }
+		"links": {
+			"github": "https://github.com/Kmg11/Facebook_Post_Clone"
+		},
+		"features": [
+			"Interact with posts by [ like, comment, delete ] and single page for every post",
+			"Form for creating posts that contain user ( name, image ), post ( title, description, images )",
+			"Save unsent data in local storage",
+			"Infinity scroll",
+			"A random image containing a distinctive color and the first letter of the first and second name of the user who did not put a picture",
+			"Loading handler, error handler and 404 page",
+			"More features on github",
+			"Compatible with all devices such as mobile",
+			"Compatible with all browsers such as Chrome and Firefox",
+			"Compatible with search engines",
+			"Compatible with screen readers",
+			"High performance"
 		],
-		"versions": [
-			{ "version": "", "github": "", "live_preview": "" },
-			{ "version": "", "github": "", "live_preview": "" },
-			{ "version": "", "github": "", "live_preview": "" }
+		"how_to_use": [
+			"You Need To Setup [ nodejs, gulp ] on your machine",
+			"Install json-server [ npm install -g json-server ] - First Time Only",
+			"Clone Repo",
+			"npm install",
+			"npm run mock or json-server --watch .\\src\\Apis\\posts.json --port 8000",
+			"npm start or npm run start - on another terminal"
 		],
-		"is_top": false
+		"tests": null,
+		"versions": null,
+		"other_links": null,
+		"notes": [
+			"No live preview link because using json server as Database how to preview on github",
+			"If You Want To Add Image In Post All Images Must Be In public/images Folder"
+		],
+		"is_top": true
 	}
 ]

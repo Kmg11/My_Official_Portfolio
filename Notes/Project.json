@@ -1,0 +1,40 @@
+{
+	"id": 1,
+	"type": "template, app",
+	"title": "",
+	"description": "",
+	"technologies": ["", "", ""],
+	"images": {
+		"folder_name": "Templates/, Apps/",
+		"number_of_images": 10
+	},
+	"links": { "github": "", "live": "" },
+	"features": [
+		"Compatible with all devices such as mobile",
+		"Compatible with all browsers such as Chrome and Firefox",
+		"Compatible with search engines",
+		"Compatible with screen readers",
+		"Optimize images",
+		"High performance",
+		"Html Validation",
+		"Dark Mode"
+	],
+	"how_to_use": [
+		"You Need To Setup [ nodejs, gulp ] on your machine",
+		"Clone Repo",
+		"npm install",
+		"npm start or npm run start",
+		"Open On Your Browser http://localhost:8888"
+	],
+	"tests": [
+		"98% performance",
+		"100% accessibility",
+		"100% seo",
+		"100% best practices",
+		"100% html validation"
+	],
+	"versions": [{ "name": "v3.0.0", "github": "" }],
+	"other_links": [{ "link": "", "text": "" }],
+	"notes": ["", "", ""],
+	"is_top": false
+}

@@ -12,30 +12,36 @@ const TEMPLATES = "TEMPLATES";
 const APPS = "APPS";
 
 export const TemplatesContext = createContext();
+export const AppsContext = createContext();
 
 export function ProjectsContainer() {
 	const [projectsPage, setProjectsPage] = useState(TOP);
 
-	const { data: templates, isPending, error } = useFetchGet(Apis.TEMPLATES);
-	const templatesObject = { templates, isPending, error };
+	const { data: templates } = useFetchGet(Apis.TEMPLATES);
+	const templatesObject = { templates };
+
+	const { data: apps } = useFetchGet(Apis.APPS);
+	const appsObject = { apps };
 
 	return (
 		<TemplatesContext.Provider value={templatesObject}>
-			<Style.ProjectsContainer>
-				<CategoriesButtons
-					projectsPage={projectsPage}
-					setProjectsPage={setProjectsPage}
-				/>
-
-				{projectsPage === TOP && (
-					<Top
+			<AppsContext.Provider value={appsObject}>
+				<Style.ProjectsContainer>
+					<CategoriesButtons
+						projectsPage={projectsPage}
 						setProjectsPage={setProjectsPage}
-						pageType={{ TEMPLATES, APPS }}
 					/>
-				)}
-				{projectsPage === TEMPLATES && <Templates />}
-				{projectsPage === APPS && <Apps />}
-			</Style.ProjectsContainer>
+
+					{projectsPage === TOP && (
+						<Top
+							setProjectsPage={setProjectsPage}
+							pageType={{ TEMPLATES, APPS }}
+						/>
+					)}
+					{projectsPage === TEMPLATES && <Templates />}
+					{projectsPage === APPS && <Apps />}
+				</Style.ProjectsContainer>
+			</AppsContext.Provider>
 		</TemplatesContext.Provider>
 	);
 }

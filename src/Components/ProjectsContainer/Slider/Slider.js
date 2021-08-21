@@ -28,7 +28,7 @@ export function Slider({ data, setProjectsPage, pageType }) {
 
 	return (
 		<Style.Slider>
-			<Components.SubTitle>{data[0].type}</Components.SubTitle>
+			<Components.SubTitle>{data[0].type}s</Components.SubTitle>
 
 			{/* This Check For Handle Dynamic Padding Left Of The Container */}
 			{navbarWidth && (

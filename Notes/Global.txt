@@ -42,6 +42,8 @@
 	- [ Done ] take care of background images in css
 - think about change home page style with dark theme
 - move single page testing to header
+- Navbar Image add png version
+- Remove Behance Link
 
 ---- End Global ----
 ---- Start Bugs & Errors ----
@@ -54,39 +56,39 @@
 ---- Start Tests ----
 
 - Home Page
-	- Performance
+	- [ Done ] Performance
 	- Performance On Google Site
 	- Performance On GTmatrix
-	- Accessibility
-	- Seo
-	- Best Practice
+	- [ Done ] Accessibility
+	- [ Done ] Seo
+	- [ Done ] Best Practice
 	- Validation
 
 - Projects Page
-	- Performance
+	- [ Done ] Performance
 	- Performance On Google Site
 	- Performance On GTmatrix
-	- Accessibility
-	- Seo
-	- Best Practice
+	- [ Done ] Accessibility
+	- [ Done ] Seo
+	- [ Done ] Best Practice
 	- Validation
 
 - Project Page
-	- Performance
+	- [ Done ] Performance
 	- Performance On Google Site
 	- Performance On GTmatrix
-	- Accessibility
-	- Seo
-	- Best Practice
+	- [ Done ] Accessibility
+	- [ Done ] Seo
+	- [ Done ] Best Practice
 	- Validation
 
 - Profile Page
-	- Performance
+	- [ Done ] Performance
 	- Performance On Google Site
 	- Performance On GTmatrix
-	- Accessibility
-	- Seo
-	- Best Practice
+	- [ Done ] Accessibility
+	- [ Done ] Seo
+	- [ Done ] Best Practice
 	- Validation
 
 ---- End Tests ----

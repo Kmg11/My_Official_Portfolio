@@ -16,3 +16,11 @@
 - Agency
 	- Add Normaliz To Agency Webstie & Othe Projects Not Have Normalize
 	- Dynamic Dark Mode In Agency Website as a feature
+
+
+- After Finish
+	- Add Portfolio Link On
+		- Linkedin
+		- Facebook
+		- Github & Add All Social Links
+		- Links On Markdown On Every Project
