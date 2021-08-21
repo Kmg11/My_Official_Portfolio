@@ -12,4 +12,3 @@
 - Make Slider Buttons Transparency When Hover On Card
 - Accessibilty In Slider [ Hover & Focus On Link ]
 - Swiper Keyboard Need To Seprate Every Slider
-- Change Projects page Title When Change Projects Top Or Templates Or Apps

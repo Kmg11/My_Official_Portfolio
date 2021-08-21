@@ -1,14 +1,18 @@
-- Remove Not Used Images
-- Try Add Helmet Info Dynamic From Api
+- [ Done ] package.json File Settings [ Description, Repositry, Author, homePagem etc... ]
 - minifest File
 - Change favicon & appleicon
 - take care of meta tags & Add Facebook Meta Tags
 - Github Must Have The Same Information
-- Add Normaliz To Agency Webstie & Othe Projects Not Have Normalize
-- Dynamic Dark Mode In Agency Website as a feature
-- package.json File Settings [ Description, Repositry, Author, homePagem etc... ]
+- Add Focus Handler For All Elments & Remove Default Focus
+- Copyrights For All Images & My Portfolio
 - Add 404 Error Page
-- Infinity Scroll In Projects Page
-- Search For Best Colors On text In dark mode
-- Add Links To Technologies & Skills For Information
-- Add File Structure To REAME File On Github
+- Add Loading Lazy Load & Add Error Handling from traversary media
+- check not used dependencies
+
+- Last Work
+	- [ Done ] Remove Not Used Images
+	- Add Cv Google Drive Link
+
+- Agency
+	- Add Normaliz To Agency Webstie & Othe Projects Not Have Normalize
+	- Dynamic Dark Mode In Agency Website as a feature

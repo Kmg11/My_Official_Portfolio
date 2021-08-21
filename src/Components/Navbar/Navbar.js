@@ -33,16 +33,16 @@ export function Navbar() {
 	// Close Navbar When CLick Outside & Press ESC Key
 	useEffect(() => {
 		const closeNavbar = (e) => {
-			if (isOpen) {
-				if (e.target !== list.current && e.target !== navbar.current) {
-					setIsOpen(false);
-				}
-				if (e.key === "Escape" && e.code === "Escape") setIsOpen(false);
+			if (e.key === "Escape" && e.code === "Escape") setIsOpen(false);
+			if (e.target !== list.current && e.target !== navbar.current) {
+				setIsOpen(false);
 			}
 		};
 
-		document.addEventListener("click", closeNavbar);
-		window.addEventListener("keyup", closeNavbar);
+		if (isOpen) {
+			document.addEventListener("click", closeNavbar);
+			window.addEventListener("keyup", closeNavbar);
+		}
 
 		return () => {
 			document.removeEventListener("click", closeNavbar);
@@ -52,12 +52,12 @@ export function Navbar() {
 
 	// Handle Close Navbar When Resize & Scroll Window
 	useEffect(() => {
-		const closeNavbar = () => {
-			if (isOpen) setIsOpen(false);
-		};
+		const closeNavbar = () => setIsOpen(false);
 
-		window.addEventListener("scroll", closeNavbar);
-		window.addEventListener("resize", closeNavbar);
+		if (isOpen) {
+			window.addEventListener("scroll", closeNavbar);
+			window.addEventListener("resize", closeNavbar);
+		}
 
 		return () => {
 			window.removeEventListener("resize", closeNavbar);

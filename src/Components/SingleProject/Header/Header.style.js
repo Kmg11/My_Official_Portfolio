@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Components, Functions, Variables } from "../../../Style";
+import { Functions, Variables } from "../../../Style";
 
 export const Header = styled.header`
 	width: 100%;
@@ -14,9 +14,13 @@ export const Header = styled.header`
 		z-index: 2;
 		${Functions.overlay(null, "linear-gradient(to right, #000, transparent)")}
 	}
+
+	${Functions.mediaBreakpointDown("sm")} {
+		height: calc(100vh - ${(props) => props.navbarHeight});
+	}
 `;
 
-export const CoverImage = styled(Components.ImageCover)`
+export const CoverImage = styled.div`
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -41,6 +45,22 @@ export const Content = styled.div`
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}
+`;
+
+export const Badge = styled.h5`
+	color: ${Variables.Colors.whiteColor};
+	background-color: ${Variables.Colors.secondBackgroundColor};
+	width: max-content;
+	padding: 6px 7px 6px 15px;
+	border-left: 3px solid ${Variables.Colors.mainColor};
+	cursor: default;
+	user-select: none;
+	text-align: center;
+	font-size: 0.8rem;
+	font-weight: 300;
+	line-height: 1;
+	text-transform: uppercase;
+	letter-spacing: 8px;
 `;
 
 export const Name = styled.h1`

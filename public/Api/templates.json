@@ -1,7 +1,7 @@
 [
 	{
 		"id": 1,
-		"type": "templates",
+		"type": "template",
 		"title": "apple clone",
 		"description": "Landing page with a high level of performance, fully responsive, image optimization, beautiful animation, simple and beautiful design with dark mode.",
 		"technologies": [
@@ -59,10 +59,7 @@
 				"github": "https://github.com/Kmg11/Apple/tree/main"
 			}
 		],
-		"other_links": [
-			{ "link": "/", "text": "Netlify" },
-			{ "link": "/", "text": "git" }
-		],
+		"other_links": null,
 		"notes": null,
 		"is_top": true
 	}

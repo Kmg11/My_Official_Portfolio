@@ -9,6 +9,7 @@ import {
 	faBehanceSquare,
 	faFacebookSquare,
 } from "@fortawesome/free-brands-svg-icons";
+import { CreateImage } from "../CreateImage/CreateImage";
 
 export function Banner({ response }) {
 	const {
@@ -42,10 +43,7 @@ export function Banner({ response }) {
 		<Style.Banner>
 			<Style.Row>
 				<Style.ImageContainer>
-					<Style.Image
-						src={`${Images.GLOBAL}/personal-image.webp`}
-						alt={name}
-					/>
+					<CreateImage src={`${Images.GLOBAL}/personal-image`} alt={name} />
 				</Style.ImageContainer>
 
 				<Style.Info>

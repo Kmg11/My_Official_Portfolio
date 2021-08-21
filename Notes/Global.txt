@@ -32,20 +32,23 @@
 - [ Done ] review responsive & think about remove thumbs in movile
 - [ Done ] Responsiv In Projects Page Templates & Apps
 - [ Done ] Connect Info API With Home & Profile Pages
-- Increase Font Size In Big Screens From html Element To 20px
-- Add Phone To Social Links
-- Add small images & optimize png image for not suported browsers in picture tag
-- think about make projects page categories pages for more Accessibility
-- convert all images to picture tag for handling diffrent sizes
-- optimize images for png and add it to project file
-- cut navbar height in responsive from 100vh height elements
-- check navbar addEventLisener
+- [ Done ] Add Helmet Info Dynamic From Api
+- [ Done ] check navbar addEventLisener
+- [ Done ] cut navbar height in responsive from 100vh height elements
+- [ Done ] Images
+	- [ Done ] Add small images & optimize png image for not suported browsers in picture tag
+	- [ Done ] optimize images for png and add it to project file
+	- [ Done ] take Care Of Images Width In Responsive
+	- [ Done ] take care of background images in css
+- think about change home page style with dark theme
+- move single page testing to header
 
 ---- End Global ----
 ---- Start Bugs & Errors ----
 
 - [ Done ] React Helement Error In Console Cause componentWillMount & Strict Mode
 - [ Done ] Error Navbar Width When Change Page
+- [ Done ] Console State Update When Move From Projects Page To Single Page
 
 ---- End Bugs & Errors ----
 ---- Start Tests ----

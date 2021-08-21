@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Components, Variables } from "../../../../Style";
+import { Variables } from "../../../../Style";
 
 export const Slider = styled.section``;
 
@@ -41,5 +41,3 @@ export const SwiperContainer = styled.div`
 		opacity: 1;
 	}
 `;
-
-export const Image = styled(Components.ImageCover)``;

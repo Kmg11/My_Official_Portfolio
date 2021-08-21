@@ -1,4 +1,4 @@
-import { createContext, useRef, useState } from "react";
+import { createContext, useEffect, useRef, useState } from "react";
 import { Image } from "./Image/Image";
 import { Go } from "./Go/Go";
 import { Buttons } from "./Buttons/Buttons";
@@ -27,6 +27,10 @@ export function Card({ info }) {
 		setImageNumber(1);
 		clearInterval(timer.current);
 	};
+
+	useEffect(() => {
+		return () => clearInterval(timer.current);
+	}, []);
 
 	return (
 		<InfoContext.Provider value={info}>

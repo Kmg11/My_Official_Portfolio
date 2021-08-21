@@ -2,7 +2,6 @@ export const backgroundColor = "#0F171E";
 export const secondBackgroundColor = "#1C2631";
 export const whiteBackgroundColor = "#ffffff";
 export const backgroundOverlay = "rgba(45, 61, 223, 65%)";
-export const backgroundOverlay2 = "rgba(45, 61, 223, 58%)";
 
 export const mainColor = "#2D3DDF";
 export const titlesColor = "#ffffff";

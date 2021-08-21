@@ -83,7 +83,7 @@ export const Slider = styled.section`
 
 export const SeeMore = styled.button`
 	width: 100%;
-	height: 30vh;
+	height: 190px;
 	display: block;
 	background-color: ${Variables.Colors.secondBackgroundColor};
 	color: ${Variables.Colors.textColor};

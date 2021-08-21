@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { useFetchGet } from "../../Hooks/Fetch/useFetchGet";
-import { Apis } from "../../Constants";
+import { CreateImage } from "../../Components/CreateImage/CreateImage";
+import { Apis, Images } from "../../Constants";
 import { Banner } from "../../Components/Banner/Banner";
 import { NextButton } from "../../Components/NextButton/NextButton";
 import * as Style from "./Home.style";
@@ -24,6 +25,10 @@ export function Home() {
 					/>
 				</Helmet>
 			)}
+
+			<Style.CoverImage>
+				<CreateImage src={`${Images.HOME}/background`} alt="Background Image" />
+			</Style.CoverImage>
 
 			{info && (
 				<Style.Content>

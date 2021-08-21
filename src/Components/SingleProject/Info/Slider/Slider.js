@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import { Images } from "../../../../Constants";
+import { CreateImage } from "../../../CreateImage/CreateImage";
 import { ProjectContext } from "../../SingleProject";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -24,9 +25,9 @@ export function Slider() {
 	let imagesList = [...Array(images.number_of_images).keys()].map((item) => {
 		return (
 			<SwiperSlide key={item}>
-				<Style.Image
-					src={`${Images.PROJECTS}/${images.folder_name}/${item + 1}.webp`}
-					alt={`${title} Images`}
+				<CreateImage
+					src={`${Images.PROJECTS}/${images.folder_name}/${item + 1}`}
+					alt={`${title} Image`}
 				/>
 			</SwiperSlide>
 		);

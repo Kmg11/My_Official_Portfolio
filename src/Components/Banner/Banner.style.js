@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Components, Functions, Variables } from "../../Style";
+import { Functions, Variables } from "../../Style";
 
 export const Banner = styled.section`
 	width: max-content;
@@ -28,8 +28,6 @@ export const ImageContainer = styled.div`
 	border-radius: 50%;
 	background-color: ${Variables.Colors.backgroundColor};
 `;
-
-export const Image = styled(Components.ImageCover)``;
 
 export const Info = styled.div``;
 

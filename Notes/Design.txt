@@ -1,4 +1,4 @@
-- Add Checks For Every Project
+- [ Done ] Add Checks For Every Project
 	- [ Done ] Html5 Validation Check
 	- [ Done ] Preformance Check
 	- [ Done ] Accessibility Check
@@ -7,6 +7,3 @@
 
 - [ Done ] Project Must Have To Buttons Github Link & Live Preview
 - [ Done ] Take Care Of Designs That Have Versions
-- Add Social Links & Copyright with function to update date In Project Page
-- Add Loading Lazy Load
-- Add Error Handling

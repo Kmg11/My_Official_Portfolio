@@ -5,7 +5,7 @@ import { Info } from "./Info/Info.style";
 
 export const Card = styled.div`
 	width: 100%;
-	height: 30vh;
+	height: 190px;
 	position: relative;
 	transition-property: z-index, transform;
 	transition: 0.2s linear;

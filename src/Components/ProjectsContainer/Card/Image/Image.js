@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Images } from "../../../../Constants";
 import { InfoContext } from "../Card";
+import { CreateImage } from "../../../CreateImage/CreateImage";
 import * as Style from "./Image.style";
 
 export function Image({ imageNumber }) {
@@ -8,8 +9,8 @@ export function Image({ imageNumber }) {
 
 	return (
 		<Style.ImageContainer>
-			<Style.Image
-				src={`${Images.PROJECTS}/${images.folder_name}/${imageNumber}.webp`}
+			<CreateImage
+				src={`${Images.PROJECTS}/${images.folder_name}/${imageNumber}`}
 				alt={title}
 			/>
 		</Style.ImageContainer>

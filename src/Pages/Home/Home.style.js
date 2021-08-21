@@ -1,11 +1,9 @@
 import styled from "styled-components";
 import { Variables, Functions } from "../../Style";
-import { Images } from "../../Constants";
 
 export const Home = styled.section`
 	position: relative;
 	min-height: 100vh;
-	${Functions.backgroundImage(`${Images.HOME}/background.webp`)}
 	${Functions.center("grid")};
 
 	&::before {
@@ -16,5 +14,14 @@ export const Home = styled.section`
 `;
 
 export const Content = styled.div`
-	z-index: 2;
+	z-index: 3;
+`;
+
+export const CoverImage = styled.div`
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
 `;

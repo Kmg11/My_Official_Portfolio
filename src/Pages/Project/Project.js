@@ -17,7 +17,7 @@ export function Project() {
 		data: projects,
 		isPending,
 		error,
-	} = useFetchGet(`${Apis[type.toUpperCase()]}`);
+	} = useFetchGet(`${Apis[type.toUpperCase() + "S"]}`);
 
 	const targetProject =
 		projects && projects.filter((project) => project.id.toString() === id)[0];
