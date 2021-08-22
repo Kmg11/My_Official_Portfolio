@@ -62,5 +62,66 @@
 		"other_links": null,
 		"notes": null,
 		"is_top": true
+	},
+
+	{
+		"id": 2,
+		"type": "template",
+		"title": "agency",
+		"description": "Responsive SPA website with high level of performance, simple design, using React, React router, Sass.",
+		"technologies": [
+			"react",
+			"sass",
+			"json",
+			"axios",
+			"html",
+			"css",
+			"javascript"
+		],
+		"images": {
+			"folder_name": "Templates/Agency",
+			"number_of_images": 13
+		},
+		"links": {
+			"github": "https://github.com/Kmg11/Agency",
+			"live": "https://kmg11.github.io/Agency/"
+		},
+		"features": [
+			"Hight level of quality in every small peace of the website",
+			"Two themes of colors [ Light theme & Dark theme ]",
+			"Dynamic theme depend on user preference",
+			"Dynamic images depend on theme",
+			"Compatible with all devices such as mobile",
+			"Compatible with all browsers such as Chrome and Firefox",
+			"Compatible with search engines",
+			"Compatible with screen readers",
+			"Every thing is dynamic by using an restful API ( Application Programming Interface )",
+			"Contact form for sending messages connected with json-server",
+			"Navbar with modern features such a [ close when click on any place in the document - close with ESC button - etc... ]",
+			"SVGs Images that have a good quality & low size",
+			"Powerful slider for team section [ Swiper.js ]",
+			"Scroll to top button",
+			"Newsletter form",
+			"Optimize images",
+			"High performance"
+		],
+		"how_to_use": [
+			"You Need To Setup [ nodejs, gulp ] on your machine",
+			"Clone Repo",
+			"npm install",
+			"npm start or npm run start",
+			"Add / in the last of url => http://localhost:3000/Agency/"
+		],
+		"tests": [
+			"97% performance",
+			"97% accessibility",
+			"100% seo",
+			"100% best practices",
+			"100% html validation"
+		],
+		"versions": null,
+		"other_links": null,
+		"notes": null,
+		"is_top": true
 	}
 ]

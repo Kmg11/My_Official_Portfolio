@@ -44,6 +44,8 @@
 - move single page testing to header
 - Navbar Image add png version
 - Remove Behance Link
+- Review Data Flow For Projects Page
+- proptype web dev simplified
 
 ---- End Global ----
 ---- Start Bugs & Errors ----

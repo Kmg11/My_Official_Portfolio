@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Variables, Functions } from "../../Style";
+import { Functions } from "../../Style";
 
 export const Home = styled.section`
 	position: relative;
@@ -9,7 +9,7 @@ export const Home = styled.section`
 	&::before {
 		content: "";
 		z-index: 2;
-		${Functions.overlay(Variables.Colors.backgroundOverlay)};
+		${Functions.overlay(null, "linear-gradient(to right, #000, transparent)")};
 	}
 `;
 

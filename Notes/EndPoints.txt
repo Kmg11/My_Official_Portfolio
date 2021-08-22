@@ -13,11 +13,6 @@
 	- [ Done ] Remove Not Used Images
 	- Add Cv Google Drive Link
 
-- Agency
-	- Add Normaliz To Agency Webstie & Othe Projects Not Have Normalize
-	- Dynamic Dark Mode In Agency Website as a feature
-
-
 - After Finish
 	- Add Portfolio Link On
 		- Linkedin
