@@ -2,8 +2,6 @@
 
 ### Description
 
-text
-
 ---
 
 ### Links
@@ -15,22 +13,15 @@ text
 
 ### Features
 
-- Compatible with all devices such as mobile
-- Compatible with all browsers such as Chrome and Firefox
-- Compatible with search engines
-- Compatible with screen readers
+- Compatible with all devices, browsers, search engines and screen readers
 - Optimize images
 - High performance
-- Html Validation
 - Dark Mode
 
 ---
 
 ### Technologies
 
--
--
--
 -
 
 ---
@@ -66,6 +57,8 @@ text
 ### Versions
 
 - [v3.0.0]()
+
+---
 
 ### My Links
 

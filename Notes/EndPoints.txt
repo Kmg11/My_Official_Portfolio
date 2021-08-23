@@ -1,17 +1,19 @@
 - [ Done ] package.json File Settings [ Description, Repositry, Author, homePagem etc... ]
+- [ Done ] Github Must Have The Same Information
 - minifest File
 - Change favicon & appleicon
 - take care of meta tags & Add Facebook Meta Tags
-- Github Must Have The Same Information
 - Add Focus Handler For All Elments & Remove Default Focus
 - Copyrights For All Images & My Portfolio
 - Add 404 Error Page
 - Add Loading Lazy Load & Add Error Handling from traversary media
-- check not used dependencies
 
 - Last Work
 	- [ Done ] Remove Not Used Images
 	- Add Cv Google Drive Link
+	- Public Repositry
+	- README File
+	- Add Portfolio To Projects Page
 
 - After Finish
 	- Add Portfolio Link On

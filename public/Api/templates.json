@@ -4,15 +4,7 @@
 		"type": "template",
 		"title": "apple clone",
 		"description": "Landing page with a high level of performance, fully responsive, image optimization, beautiful animation, simple and beautiful design with dark mode.",
-		"technologies": [
-			"html",
-			"css",
-			"javascript",
-			"jquery",
-			"sass",
-			"bootstrap",
-			"gulp"
-		],
+		"technologies": ["html", "css", "jquery", "sass", "bootstrap", "gulp"],
 		"images": {
 			"folder_name": "Templates/Apple",
 			"number_of_images": 10
@@ -22,13 +14,9 @@
 			"live": "https://kmg11.github.io/Apple/dist/"
 		},
 		"features": [
-			"Compatible with all devices such as mobile",
-			"Compatible with all browsers such as Chrome and Firefox",
-			"Compatible with search engines",
-			"Compatible with screen readers",
+			"Compatible with all devices, browsers, search engines and screen readers",
 			"Optimize images",
 			"High performance",
-			"Html Validation",
 			"Dark Mode"
 		],
 		"how_to_use": [
@@ -69,15 +57,7 @@
 		"type": "template",
 		"title": "agency",
 		"description": "Responsive SPA website with high level of performance, simple design, using React, React router, Sass.",
-		"technologies": [
-			"react",
-			"sass",
-			"json",
-			"axios",
-			"html",
-			"css",
-			"javascript"
-		],
+		"technologies": ["react", "sass", "json", "axios"],
 		"images": {
 			"folder_name": "Templates/Agency",
 			"number_of_images": 13
@@ -87,22 +67,15 @@
 			"live": "https://kmg11.github.io/Agency/"
 		},
 		"features": [
-			"Hight level of quality in every small peace of the website",
 			"Two themes of colors [ Light theme & Dark theme ]",
 			"Dynamic theme depend on user preference",
 			"Dynamic images depend on theme",
-			"Compatible with all devices such as mobile",
-			"Compatible with all browsers such as Chrome and Firefox",
-			"Compatible with search engines",
-			"Compatible with screen readers",
-			"Every thing is dynamic by using an restful API ( Application Programming Interface )",
+			"Compatible with all devices, browsers, search engines and screen readers",
+			"Every thing is dynamic by using an restful API",
 			"Contact form for sending messages connected with json-server",
 			"Navbar with modern features such a [ close when click on any place in the document - close with ESC button - etc... ]",
-			"SVGs Images that have a good quality & low size",
-			"Powerful slider for team section [ Swiper.js ]",
+			"Optimize images SVGs Images that have a good quality & low size",
 			"Scroll to top button",
-			"Newsletter form",
-			"Optimize images",
 			"High performance"
 		],
 		"how_to_use": [

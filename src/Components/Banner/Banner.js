@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
 import { Images } from "../../Constants";
+import { CreateImage } from "../CreateImage/CreateImage";
 import * as Style from "./Banner.style";
 
 import {
@@ -9,7 +10,6 @@ import {
 	faBehanceSquare,
 	faFacebookSquare,
 } from "@fortawesome/free-brands-svg-icons";
-import { CreateImage } from "../CreateImage/CreateImage";
 
 export function Banner({ response }) {
 	const {

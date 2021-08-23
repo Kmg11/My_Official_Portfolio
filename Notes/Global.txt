@@ -40,7 +40,8 @@
 	- [ Done ] optimize images for png and add it to project file
 	- [ Done ] take Care Of Images Width In Responsive
 	- [ Done ] take care of background images in css
-- think about change home page style with dark theme
+- [ Done ] think about change home page style with dark theme
+- HOme Page description Add Half summary and containue direct to profile page
 - move single page testing to header
 - Navbar Image add png version
 - Remove Behance Link

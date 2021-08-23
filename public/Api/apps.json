@@ -4,14 +4,7 @@
 		"type": "app",
 		"title": "facebook post clone",
 		"description": "SPA application Clone facebook post function like interacting with posts by liking, commenting, deleting comment, deleting posts and creating posts with front-end technologies only using json server as mock database, design with responsive and dark mode with simple animations.",
-		"technologies": [
-			"react",
-			"styled components",
-			"json",
-			"html",
-			"css",
-			"javascript"
-		],
+		"technologies": ["react", "styled components", "json"],
 		"images": {
 			"folder_name": "Apps/Facebook_Post_Clone",
 			"number_of_images": 10
@@ -26,11 +19,7 @@
 			"Infinity scroll",
 			"A random image containing a distinctive color and the first letter of the first and second name of the user who did not put a picture",
 			"Loading handler, error handler and 404 page",
-			"More features on github",
-			"Compatible with all devices such as mobile",
-			"Compatible with all browsers such as Chrome and Firefox",
-			"Compatible with search engines",
-			"Compatible with screen readers",
+			"Compatible with all devices, browsers, search engines and screen readers",
 			"High performance"
 		],
 		"how_to_use": [
