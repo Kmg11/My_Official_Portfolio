@@ -4,9 +4,9 @@ import { Info } from "./Info/Info";
 
 export const ProjectContext = createContext();
 
-export function SingleProject({ info }) {
+export function SingleProject({ data }) {
 	return (
-		<ProjectContext.Provider value={info}>
+		<ProjectContext.Provider value={data}>
 			<Header />
 			<Info />
 		</ProjectContext.Provider>

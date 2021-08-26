@@ -9,11 +9,3 @@ export const ProjectsContainer = styled.section`
 		padding: 2.5rem 1.5rem 20rem;
 	}
 `;
-
-export const Categories = styled.section`
-	margin-bottom: 3rem;
-
-	${Functions.mediaBreakpointDown("xs")} {
-		margin-bottom: 2rem;
-	}
-`;

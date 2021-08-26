@@ -1,5 +1,5 @@
 import { useFetchGet } from "../../Hooks/Fetch/useFetchGet";
-import { Apis } from "../../Constants";
+import { Apis, Images } from "../../Constants";
 import { Helmet } from "react-helmet-async";
 import { useSelector } from "react-redux";
 import { Components } from "../../Style/";
@@ -14,18 +14,25 @@ export function Profile() {
 	const navbarWidth = useSelector((state) => state.navbarSize.width);
 	const navbarHeight = useSelector((state) => state.navbarSize.height);
 
+	const title = info && `Profile | ${info.name}`;
+	const description = info && `${info.name} | ${info.description}`;
+
 	return (
 		<>
 			{info && (
 				<Helmet>
-					<title>{info.name} | Profile</title>
-					<meta
-						name="description"
-						content={`${info.name} | ${info.description}`}
-					/>
+					<title>{title}</title>
+					<meta name="description" content={description} />
 					<meta
 						name="keywords"
 						content="Frontend, Web Devolper, Programming, Portfolio, Kirolos Mahfouz, Web, HTML, HTML5, CSS, CSS3, Javascript, jQuery, Bootstrap, Sass, Pug, Gulp, Git, Github, React, Redux, CLI"
+					/>
+
+					<meta property="og:title" content={title} />
+					<meta property="og:description" content={description} />
+					<meta
+						property="og:image"
+						content={`${Images.GLOBAL}/personal-image.png`}
 					/>
 				</Helmet>
 			)}

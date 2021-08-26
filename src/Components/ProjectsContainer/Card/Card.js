@@ -7,8 +7,8 @@ import * as Style from "./Card.style";
 
 export const InfoContext = createContext();
 
-export function Card({ info }) {
-	const { images } = info;
+export function Card({ data }) {
+	const { images } = data;
 	const [imageNumber, setImageNumber] = useState(1);
 
 	let timer = useRef(0);
@@ -33,7 +33,7 @@ export function Card({ info }) {
 	}, []);
 
 	return (
-		<InfoContext.Provider value={info}>
+		<InfoContext.Provider value={data}>
 			<Style.Card
 				onMouseEnter={handleOnMouseEnter}
 				onMouseLeave={handleOnMouseLeave}

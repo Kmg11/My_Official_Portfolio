@@ -8,18 +8,22 @@ export function Projects() {
 	const navbarWidth = useSelector((state) => state.navbarSize.width);
 	const navbarHeight = useSelector((state) => state.navbarSize.height);
 
+	const title = `Projects | Kirolos Mahfouz`;
+	const description =
+		"Kirolos Mahfouz | Frontend Web Devolper Portfolio Projects Page";
+
 	return (
 		<>
 			<Helmet>
-				<title>Kirolos Mahfouz | Projects</title>
-				<meta
-					name="description"
-					content="Kirolos Mahfouz | Frontend Web Devolper Portfolio Projects Page"
-				/>
+				<title>{title}</title>
+				<meta name="description" content={description} />
 				<meta
 					name="keywords"
 					content="Frontend, Web Devolper, Programming, Portfolio, Kirolos Mahfouz, Web, HTML, HTML5, CSS, CSS3, Javascript, jQuery, Bootstrap, Sass, Pug, Gulp, Git, Github, React, Redux, CLI"
 				/>
+
+				<meta property="og:title" content={title} />
+				<meta property="og:description" content={description} />
 			</Helmet>
 
 			<Style.Content navbarWidth={navbarWidth} navbarHeight={navbarHeight}>

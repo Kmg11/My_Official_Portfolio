@@ -20,7 +20,6 @@ export function Header() {
 	];
 
 	const finalLinks = links.live ? linksList : linksList.slice(0, 1);
-
 	const navbarHeight = useSelector((state) => state.navbarSize.height);
 
 	return (

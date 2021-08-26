@@ -61,7 +61,7 @@ export function List({ setListWidth, setList, isOpen }) {
 			</Style.Item>
 
 			<Style.Item>
-				<Style.Link to={Routes.CV}>
+				<Style.Link to="/test">
 					<Style.Icon>
 						<FontAwesomeIcon icon={faScroll} />
 					</Style.Icon>

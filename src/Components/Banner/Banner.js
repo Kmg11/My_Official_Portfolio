@@ -7,7 +7,6 @@ import * as Style from "./Banner.style";
 import {
 	faGithubSquare,
 	faLinkedin,
-	faBehanceSquare,
 	faFacebookSquare,
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -20,7 +19,6 @@ export function Banner({ response }) {
 		Github: faGithubSquare,
 		Linkedin: faLinkedin,
 		Email: faEnvelopeSquare,
-		Behance: faBehanceSquare,
 		Facebook: faFacebookSquare,
 	};
 

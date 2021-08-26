@@ -10,18 +10,25 @@ export function Home() {
 	const response = useFetchGet(Apis.INFO);
 	const { data: info } = response;
 
+	const title = info && `Home | ${info.name}`;
+	const description = info && info.description;
+
 	return (
 		<Style.Home>
 			{info && (
 				<Helmet>
-					<title>{info.name} | Home</title>
-					<meta
-						name="description"
-						content={`${info.name} | ${info.description}`}
-					/>
+					<title>{title}</title>
+					<meta name="description" content={description} />
 					<meta
 						name="keywords"
 						content="Frontend, Web Devolper, Programming, Portfolio, Kirolos Mahfouz, Web, HTML, HTML5, CSS, CSS3, Javascript, jQuery, Bootstrap, Sass, Pug, Gulp, Git, Github, React, Redux, CLI"
+					/>
+
+					<meta property="og:title" content={title} />
+					<meta property="og:description" content={description} />
+					<meta
+						property="og:image"
+						content={`${Images.GLOBAL}/personal-image.png`}
 					/>
 				</Helmet>
 			)}

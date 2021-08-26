@@ -10,7 +10,6 @@ export function App() {
 				<Route path={Routes.PROJECTS} component={Page.Projects} />
 				<Route path={`${Routes.PROJECT}/:type/:id/:title`} component={Page.Project} />
 				<Route path={Routes.PROFILE} component={Page.Profile} />
-				<Route path={Routes.CV} component={Page.Cv} />
 			</Switch>
 		</Router>
 	);
