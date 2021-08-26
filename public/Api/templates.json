@@ -96,5 +96,45 @@
 		"other_links": null,
 		"notes": null,
 		"is_top": true
+	},
+
+	{
+		"id": 3,
+		"type": "template",
+		"title": "Restaurant",
+		"description": "Landing page with 2 lang [ English - Arabic ] with a high level of performance, fully responsive, image optimization, simple and beautiful design.",
+		"technologies": ["pug", "sass", "jquery", "bootstrap grid", "gulp"],
+		"images": {
+			"folder_name": "Templates/Restaurant",
+			"number_of_images": 14
+		},
+		"links": {
+			"github": "https://github.com/Kmg11/Restaurant",
+			"live": "https://kmg11.github.io/Restaurant/dist/"
+		},
+		"features": [
+			"2 Languages [ English - Arabic ]",
+			"Compatible with all devices, browsers, search engines and screen readers",
+			"Optimize images",
+			"High performance"
+		],
+		"how_to_use": [
+			"You Need To Setup [ nodejs, gulp ] on your machine",
+			"Clone Repo",
+			"npm install",
+			"npm start or npm run start",
+			"Open (index.html) or (index-ar.html) in dist folder with live server"
+		],
+		"tests": [
+			"96% performance",
+			"100% accessibility",
+			"100% seo",
+			"100% best practices",
+			"100% html validation"
+		],
+		"versions": null,
+		"other_links": null,
+		"notes": null,
+		"is_top": true
 	}
 ]
