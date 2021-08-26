@@ -13,6 +13,7 @@
 	- README File
 	- proptype web dev simplified
 	- test facebook meta tags
+	- Remove Not Used Repos Like [ Apple Dark Mode, Mixed Images ]
 
 - After Finish
 	- Add Portfolio Link On

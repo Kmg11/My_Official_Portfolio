@@ -38,5 +38,38 @@
 			"If You Want To Add Image In Post All Images Must Be In public/images Folder"
 		],
 		"is_top": true
+	},
+
+	{
+		"id": 2,
+		"type": "app",
+		"title": "full screen slider",
+		"description": "Full screen slider with vanilla javascript with lots of options to handle slider look and functionality.",
+		"technologies": ["html", "css", "javascript"],
+		"images": {
+			"folder_name": "Apps/Full_Screen_Slider/",
+			"number_of_images": 8
+		},
+		"links": {
+			"github": "https://github.com/Kmg11/Full_Screen_Slider",
+			"live": "https://kmg11.github.io/Full_Screen_Slider/"
+		},
+		"features": [
+			"All options are saved to local storage",
+			"Two modes of slide [ opacity, transform ]",
+			"Change all colors options",
+			"Full keyboard control",
+			"Auto play option",
+			"Slider Gallery",
+			"Help menu"
+		],
+		"how_to_use": null,
+		"tests": null,
+		"versions": null,
+		"other_links": null,
+		"notes": [
+			"This app shows my problem solving skills and vanilla javascript skills"
+		],
+		"is_top": true
 	}
 ]
