@@ -71,5 +71,35 @@
 			"This app shows my problem solving skills and vanilla javascript skills"
 		],
 		"is_top": true
+	},
+
+	{
+		"id": 3,
+		"type": "app",
+		"title": "memory game",
+		"description": "Memory game created with vanilla javascript only with timing system and results section saved in local storage.",
+		"technologies": ["html", "css", "javascript"],
+		"images": {
+			"folder_name": "Apps/Memory_Game/",
+			"number_of_images": 6
+		},
+		"links": {
+			"github": "https://github.com/Kmg11/Memory_Game",
+			"live": "https://kmg11.github.io/Memory_Game/"
+		},
+		"features": [
+			"Timing system",
+			"Results system",
+			"Sound system",
+			"Save all results in local storage"
+		],
+		"how_to_use": null,
+		"tests": null,
+		"versions": null,
+		"other_links": null,
+		"notes": [
+			"This app shows my problem solving skills and vanilla javascript skills"
+		],
+		"is_top": true
 	}
 ]

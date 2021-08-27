@@ -43,7 +43,11 @@ export function Slider({ data, page }) {
 					{slideList}
 
 					<SwiperSlide>
-						<Style.SeeMore onClick={() => setProjectsPage(pageType)}>
+						<Style.SeeMore
+							onClick={() =>
+								setProjectsPage(pageType[data[0].type.toUpperCase() + "S"])
+							}
+						>
 							See More
 						</Style.SeeMore>
 					</SwiperSlide>

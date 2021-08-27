@@ -14,6 +14,7 @@
 ### Features
 
 - Compatible with all devices, browsers, search engines and screen readers
+- Loading handler, error handler and 404 page
 - Optimize images
 - High performance
 - Dark Mode

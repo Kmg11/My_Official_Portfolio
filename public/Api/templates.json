@@ -76,6 +76,7 @@
 			"Navbar with modern features such a [ close when click on any place in the document - close with ESC button - etc... ]",
 			"Optimize images SVGs Images that have a good quality & low size",
 			"Scroll to top button",
+			"Loading handler, error handler and 404 page",
 			"High performance"
 		],
 		"how_to_use": [

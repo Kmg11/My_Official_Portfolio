@@ -32,10 +32,10 @@
 
 - Projects Features
 	- Compatible with all devices, browsers, search engines and screen readers
+	- Error Handling && Loading Handling
 	- Optimize images
 	- High performance
 	- Dark Mode
-	- Error Handling && Loading Handling
 
 ---- End Notes ----
 ---- Start Responsive ----
