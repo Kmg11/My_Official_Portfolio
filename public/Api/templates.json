@@ -137,5 +137,38 @@
 		"other_links": null,
 		"notes": null,
 		"is_top": true
+	},
+
+	{
+		"id": 4,
+		"type": "template",
+		"title": "taamer hosny",
+		"description": "Landing page with a high level of performance, fully responsive, image optimization, simple and beautiful design with dark mode.",
+		"technologies": ["html", "css", "jquery"],
+		"images": {
+			"folder_name": "Templates/Tamer_Hosny/",
+			"number_of_images": 7
+		},
+		"links": {
+			"github": "https://github.com/Kmg11/Tamer_Hosny",
+			"live": "https://kmg11.github.io/Tamer_Hosny/"
+		},
+		"features": [
+			"Compatible with all devices, browsers, search engines and screen readers",
+			"High performance",
+			"Dark Mode"
+		],
+		"how_to_use": null,
+		"tests": [
+			"99% performance",
+			"97% accessibility",
+			"100% seo",
+			"100% best practices",
+			"100% html validation"
+		],
+		"versions": null,
+		"other_links": null,
+		"notes": ["Media player is design only not working as real media player"],
+		"is_top": false
 	}
 ]
