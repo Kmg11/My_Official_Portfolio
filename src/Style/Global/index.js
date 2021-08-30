@@ -13,6 +13,23 @@ export const GlobalStyle = createGlobalStyle`
 		padding: 0;
 	}
 
+	html {
+		scrollbar-width: normal;
+		scrollbar-color: ${Variables.Colors.mainColor} ${Variables.Colors.secondBackgroundColor};
+	}
+
+	html::-webkit-scrollbar {
+		width: 1.2vw;
+	}
+	
+	html::-webkit-scrollbar-thumb {
+		background-color: ${Variables.Colors.mainColor};
+	}
+
+	html::-webkit-scrollbar-track {
+		background-color: ${Variables.Colors.secondBackgroundColor};
+	}
+
 	body {
 		background-color: ${Variables.Colors.backgroundColor};
 		font-family: "Roboto", sans-serif;
