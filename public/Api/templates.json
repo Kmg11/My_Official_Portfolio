@@ -36,15 +36,15 @@
 		"versions": [
 			{
 				"name": "v3.0.0",
-				"github": "https://github.com/Kmg11/Apple/tree/V3.0.0"
+				"link": "https://github.com/Kmg11/Apple/tree/V3.0.0"
 			},
 			{
 				"name": "v2.0.0",
-				"github": "https://github.com/Kmg11/Apple/tree/V2.0.0"
+				"link": "https://github.com/Kmg11/Apple/tree/V2.0.0"
 			},
 			{
 				"name": "v1.0.0",
-				"github": "https://github.com/Kmg11/Apple/tree/main"
+				"link": "https://github.com/Kmg11/Apple/tree/main"
 			}
 		],
 		"other_links": null,

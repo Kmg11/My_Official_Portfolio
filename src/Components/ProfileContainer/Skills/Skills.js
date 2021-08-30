@@ -2,10 +2,18 @@ import { faTools } from "@fortawesome/free-solid-svg-icons";
 import { Box } from "../../Box/Box";
 import * as Style from "./Skills.style";
 
-export function Skills({ info }) {
+export function Skills({ response }) {
+	const { data, isPending } = response;
+
 	return (
 		<Style.Skills>
-			<Box title="Core Proficiencies" icon={faTools} items={info} />
+			<Box
+				title="skills"
+				icon={faTools}
+				isPending={isPending}
+				data={data}
+				section="skills"
+			/>
 		</Style.Skills>
 	);
 }

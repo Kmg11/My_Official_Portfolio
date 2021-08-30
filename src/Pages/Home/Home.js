@@ -37,12 +37,10 @@ export function Home() {
 				<CreateImage src={`${Images.HOME}/background`} alt="Background Image" />
 			</Style.CoverImage>
 
-			{info && (
-				<Style.Content>
-					<Banner response={response} />
-					<NextButton />
-				</Style.Content>
-			)}
+			<Style.Content>
+				<Banner response={response} />
+				<NextButton />
+			</Style.Content>
 		</Style.Home>
 	);
 }

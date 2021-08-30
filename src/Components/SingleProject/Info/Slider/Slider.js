@@ -17,21 +17,21 @@ import { Components } from "../../../../Style";
 SwiperCore.use([Thumbs]);
 
 export function Slider() {
-	const {
-		project: { title, images },
-	} = useContext(ProjectContext);
+	const { project, isPending } = useContext(ProjectContext);
 	const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
-	let imagesList = [...Array(images.number_of_images).keys()].map((item) => {
-		return (
-			<SwiperSlide key={item}>
-				<CreateImage
-					src={`${Images.PROJECTS}/${images.folder_name}/${item + 1}`}
-					alt={`${title} Image`}
-				/>
-			</SwiperSlide>
-		);
-	});
+	let imagesList =
+		project &&
+		[...Array(project.images.number_of_images).keys()].map((item) => {
+			return (
+				<SwiperSlide key={item}>
+					<CreateImage
+						src={`${Images.PROJECTS}/${project.images.folder_name}/${item + 1}`}
+						alt={`${project.title} Image`}
+					/>
+				</SwiperSlide>
+			);
+		});
 
 	return (
 		<Style.Slider>
@@ -43,6 +43,7 @@ export function Slider() {
 					thumbs={{ swiper: thumbsSwiper }}
 					className="main-sider"
 				>
+					{isPending && <Components.SkeletonLoadingBox height="500px" />}
 					{imagesList}
 				</Swiper>
 
@@ -66,6 +67,15 @@ export function Slider() {
 						},
 					}}
 				>
+					{isPending &&
+						[...new Array(4).keys()].map((item) => {
+							return (
+								<SwiperSlide key={item}>
+									<Components.SkeletonLoadingBox height="100px" />
+								</SwiperSlide>
+							);
+						})}
+
 					{imagesList}
 				</Swiper>
 			</Style.SwiperContainer>

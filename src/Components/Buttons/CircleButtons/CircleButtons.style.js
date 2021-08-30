@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { Variables } from "../../../Style";
 
 export const Buttons = styled.div`
@@ -11,12 +11,12 @@ export const Buttons = styled.div`
 
 export const ButtonIcon = styled.span`
 	color: ${Variables.Colors.whiteColor};
-	display: inline-block;
 	width: 40px;
 	height: 40px;
 	line-height: 40px;
 	text-align: center;
-	border: 1px solid ${Variables.Colors.whiteColor};
+	border: ${(props) =>
+		props.skeleton ? 0 : css`1px solid ${Variables.Colors.whiteColor}`};
 	border-radius: 50%;
 	margin-right: 10px;
 	font-size: 1rem;
@@ -31,7 +31,9 @@ export const ButtonName = styled.span`
 `;
 
 export const Button = styled.a`
-	display: block;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	place-items: center;
 
 	&:hover,
 	&:focus {

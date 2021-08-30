@@ -44,7 +44,11 @@
 - [ Done ] Remove Behance Link
 - [ Done ] Review Data Flow For Projects Page
 - [ Done ] Navbar Image add png version
+- [ Done ] Remove Technolges and skills links from box
+- [ Done ] make all links in json file have same keys
 - Add Download CV Link In Profile Page
+- Fixing Images Skelo Loading By Not Remove Loading
+- find way for more handling for ProfileContainer & Box Component
 
 ---- End Global ----
 ---- Start Bugs & Errors ----

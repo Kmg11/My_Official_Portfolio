@@ -34,3 +34,7 @@ export const Text = styled.p`
 	color: ${Variables.Colors.whiteColor};
 	line-height: 1.6;
 `;
+
+export const Link = styled.a`
+	color: ${Variables.Colors.whiteColor};
+`;

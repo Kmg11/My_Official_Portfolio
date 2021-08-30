@@ -9,17 +9,17 @@ import * as Style from "./Profile.style";
 
 export function Profile() {
 	const response = useFetchGet(Apis.INFO);
-	const { data: info } = response;
+	const { data } = response;
 
 	const navbarWidth = useSelector((state) => state.navbarSize.width);
 	const navbarHeight = useSelector((state) => state.navbarSize.height);
 
-	const title = info && `Profile | ${info.name}`;
-	const description = info && `${info.name} | ${info.description}`;
+	const title = data && `Profile | ${data.name}`;
+	const description = data && `${data.name} | ${data.description}`;
 
 	return (
 		<>
-			{info && (
+			{data && (
 				<Helmet>
 					<title>{title}</title>
 					<meta name="description" content={description} />
@@ -37,15 +37,13 @@ export function Profile() {
 				</Helmet>
 			)}
 
-			{info && (
-				<Style.Content navbarWidth={navbarWidth} navbarHeight={navbarHeight}>
-					<Navbar />
+			<Style.Content navbarWidth={navbarWidth} navbarHeight={navbarHeight}>
+				<Navbar />
 
-					<Components.Container>
-						<ProfileContainer response={response} />
-					</Components.Container>
-				</Style.Content>
-			)}
+				<Components.Container>
+					<ProfileContainer response={response} />
+				</Components.Container>
+			</Style.Content>
 		</>
 	);
 }

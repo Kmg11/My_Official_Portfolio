@@ -2,11 +2,14 @@ import { Card } from "../Card/Card";
 import * as Style from "./All.style";
 
 export function All({ data }) {
+	const { data: projects } = data;
+
 	return (
 		<Style.Cards>
-			{data.map((item) => {
-				return <Card key={item.id} data={item} />;
-			})}
+			{projects &&
+				projects.map((item) => {
+					return <Card key={item.id} data={item} />;
+				})}
 		</Style.Cards>
 	);
 }

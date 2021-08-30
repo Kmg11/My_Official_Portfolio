@@ -12,8 +12,8 @@ const APPS = "APPS";
 
 export function ProjectsContainer() {
 	const [projectsPage, setProjectsPage] = useState(TOP);
-	const { data: templates } = useFetchGet(Apis.TEMPLATES);
-	const { data: apps } = useFetchGet(Apis.APPS);
+	const templates = useFetchGet(Apis.TEMPLATES);
+	const apps = useFetchGet(Apis.APPS);
 
 	return (
 		<Style.ProjectsContainer>
@@ -25,14 +25,14 @@ export function ProjectsContainer() {
 				}}
 			/>
 
-			{projectsPage === TOP && templates && apps && (
+			{projectsPage === TOP && (
 				<Top
 					page={{ setProjectsPage, pageType: { TEMPLATES, APPS } }}
 					data={{ templates, apps }}
 				/>
 			)}
-			{projectsPage === TEMPLATES && templates && <All data={templates} />}
-			{projectsPage === APPS && apps && <All data={apps} />}
+			{projectsPage === TEMPLATES && <All data={templates} />}
+			{projectsPage === APPS && <All data={apps} />}
 		</Style.ProjectsContainer>
 	);
 }
