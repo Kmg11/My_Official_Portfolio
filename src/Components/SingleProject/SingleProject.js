@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { createContext } from "react";
 import { Header } from "./Header/Header";
 import { Info } from "./Info/Info";
@@ -12,3 +13,7 @@ export function SingleProject({ data }) {
 		</ProjectContext.Provider>
 	);
 }
+
+SingleProject.propTypes = {
+	data: PropTypes.object,
+};

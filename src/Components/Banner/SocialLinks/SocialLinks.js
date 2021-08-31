@@ -1,8 +1,13 @@
+import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookSquare, faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+	faFacebookSquare,
+	faGithubSquare,
+	faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
 import { Components } from "../../../Style";
-import * as Style from './SocialLinks.style'
+import * as Style from "./SocialLinks.style";
 
 export function SocialLinks({ data, isPending }) {
 	const icons = {
@@ -44,3 +49,8 @@ export function SocialLinks({ data, isPending }) {
 		</Style.SocialLinks>
 	);
 }
+
+SocialLinks.propTypes = {
+	data: PropTypes.object,
+	isPending: PropTypes.bool.isRequired,
+};

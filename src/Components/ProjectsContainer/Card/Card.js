@@ -1,4 +1,5 @@
 import { createContext, useEffect, useRef, useState } from "react";
+import PropTypes from "prop-types";
 import { Image } from "./Image/Image";
 import { Go } from "./Go/Go";
 import { Buttons } from "./Buttons/Buttons";
@@ -46,3 +47,7 @@ export function Card({ data }) {
 		</InfoContext.Provider>
 	);
 }
+
+Card.propTypes = {
+	data: PropTypes.object.isRequired,
+};

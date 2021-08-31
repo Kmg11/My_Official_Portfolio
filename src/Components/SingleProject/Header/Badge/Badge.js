@@ -1,7 +1,11 @@
+import { useContext } from "react";
 import { Components } from "../../../../Style";
+import { ProjectContext } from "../../SingleProject";
 import * as Style from "./Badge.style";
 
-export function Badge({ project, isPending }) {
+export function Badge() {
+	const { project, isPending } = useContext(ProjectContext);
+
 	return (
 		<Style.Badge>
 			{isPending && (

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { useContext } from "react";
 import { Images } from "../../../../Constants";
 import { InfoContext } from "../Card";
@@ -16,3 +17,7 @@ export function Image({ imageNumber }) {
 		</Style.ImageContainer>
 	);
 }
+
+Image.propTypes = {
+	imageNumber: PropTypes.number.isRequired,
+};

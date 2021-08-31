@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Card } from "../Card/Card";
 import * as Style from "./All.style";
 
@@ -13,3 +14,7 @@ export function All({ data }) {
 		</Style.Cards>
 	);
 }
+
+All.propTypes = {
+	data: PropTypes.object.isRequired,
+};

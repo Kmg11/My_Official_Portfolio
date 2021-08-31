@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { useSelector } from "react-redux";
 import { Components } from "../../../../Style";
 import { Card } from "../../Card/Card";
@@ -73,3 +74,12 @@ export function Slider({ response, page }) {
 		</Style.Slider>
 	);
 }
+
+Slider.propTypes = {
+	response: PropTypes.object.isRequired,
+
+	page: PropTypes.shape({
+		setProjectsPage: PropTypes.func.isRequired,
+		pageType: PropTypes.object.isRequired,
+	}),
+};

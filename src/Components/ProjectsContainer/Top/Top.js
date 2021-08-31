@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Slider } from "./Slider/Slider";
 
 export function Top({ page, data }) {
@@ -10,3 +11,15 @@ export function Top({ page, data }) {
 		</>
 	);
 }
+
+Top.propTypes = {
+	page: PropTypes.shape({
+		setProjectsPage: PropTypes.func.isRequired,
+		pageType: PropTypes.object.isRequired,
+	}),
+
+	data: PropTypes.shape({
+		templates: PropTypes.object.isRequired,
+		apps: PropTypes.object.isRequired,
+	}),
+};

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Components } from "../../../Style";
 import * as Style from "./Name.style";
 
@@ -9,3 +10,8 @@ export function Name({ data, isPending }) {
 		</Style.Name>
 	);
 }
+
+Name.propTypes = {
+	data: PropTypes.object,
+	isPending: PropTypes.bool.isRequired,
+};

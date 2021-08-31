@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import * as Style from "./CreateImage.style";
 
 export function CreateImage({ src, alt }) {
@@ -9,3 +10,8 @@ export function CreateImage({ src, alt }) {
 		</picture>
 	);
 }
+
+CreateImage.propTypes = {
+	src: PropTypes.string.isRequired,
+	alt: PropTypes.string.isRequired,
+};

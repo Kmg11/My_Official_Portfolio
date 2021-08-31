@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { faInfo } from "@fortawesome/free-solid-svg-icons";
 import { Box } from "../../Box/Box";
 import * as Style from "./Summary.style";
@@ -17,3 +18,7 @@ export function Summary({ response }) {
 		</Style.Summary>
 	);
 }
+
+Summary.propTypes = {
+	response: PropTypes.object.isRequired,
+};

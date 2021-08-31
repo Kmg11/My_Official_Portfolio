@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Banner } from "../Banner/Banner";
 import { Summary } from "./Summary/Summary";
 import { Skills } from "./Skills/Skills";
@@ -17,3 +18,7 @@ export function ProfileContainer({ response }) {
 		</Style.ProfileContainer>
 	);
 }
+
+ProfileContainer.propTypes = {
+	response: PropTypes.object.isRequired,
+};

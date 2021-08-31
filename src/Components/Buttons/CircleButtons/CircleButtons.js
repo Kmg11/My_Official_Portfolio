@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Components } from "../../../Style";
 import * as Style from "./CircleButtons.style";
@@ -36,3 +37,8 @@ export function CircleButtons({ info, skeleton }) {
 		</Style.Buttons>
 	);
 }
+
+CircleButtons.propTypes = {
+	info: PropTypes.array,
+	skeleton: PropTypes.bool,
+};

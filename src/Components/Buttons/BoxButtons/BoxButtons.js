@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import * as Style from "./BoxButtons.style";
 
 export function BoxButtons({ page, setPage, info }) {
@@ -18,3 +19,14 @@ export function BoxButtons({ page, setPage, info }) {
 		</Style.Buttons>
 	);
 }
+
+BoxButtons.propTypes = {
+	page: PropTypes.string.isRequired,
+	setPage: PropTypes.func.isRequired,
+	info: PropTypes.arrayOf(
+		PropTypes.shape({
+			pageType: PropTypes.string.isRequired,
+			text: PropTypes.string.isRequired,
+		})
+	),
+};

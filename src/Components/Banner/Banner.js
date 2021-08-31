@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { SocialLinks } from "./SocialLinks/SocialLinks";
 import { Image } from "./Image/Image";
 import { Name } from "./Name/Name";
@@ -21,3 +22,7 @@ export function Banner({ response }) {
 		</Style.Banner>
 	);
 }
+
+Banner.propTypes = {
+	response: PropTypes.object.isRequired,
+};

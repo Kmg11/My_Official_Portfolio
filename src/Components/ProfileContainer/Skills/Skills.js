@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { faTools } from "@fortawesome/free-solid-svg-icons";
 import { Box } from "../../Box/Box";
 import * as Style from "./Skills.style";
@@ -17,3 +18,7 @@ export function Skills({ response }) {
 		</Style.Skills>
 	);
 }
+
+Skills.propTypes = {
+	response: PropTypes.object.isRequired,
+};

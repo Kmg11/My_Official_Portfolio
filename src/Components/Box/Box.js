@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Components } from "../../Style";
 import * as Style from "./Box.style";
@@ -48,3 +49,12 @@ export function Box({ title, icon, isPending, data, section, isLink = false }) {
 		</>
 	);
 }
+
+Box.propTypes = {
+	title: PropTypes.string.isRequired,
+	icon: PropTypes.object.isRequired,
+	isPending: PropTypes.bool.isRequired,
+	data: PropTypes.object,
+	section: PropTypes.string.isRequired,
+	isLink: PropTypes.bool,
+};

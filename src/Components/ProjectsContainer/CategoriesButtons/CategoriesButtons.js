@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { BoxButtons } from "../../Buttons/BoxButtons/BoxButtons";
 import * as Style from "./CategoriesButtons.style";
 
@@ -16,3 +17,11 @@ export function CategoriesButtons({ page }) {
 		</Style.Categories>
 	);
 }
+
+CategoriesButtons.propTypes = {
+	page: PropTypes.shape({
+		projectsPage: PropTypes.string.isRequired,
+		setProjectsPage: PropTypes.func.isRequired,
+		pageType: PropTypes.object.isRequired,
+	}),
+};

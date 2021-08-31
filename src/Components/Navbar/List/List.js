@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import PropTypes from "prop-types";
 import { Routes } from "../../../Constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as Style from "./List.style";
@@ -71,3 +72,9 @@ export function List({ setListWidth, setList, isOpen }) {
 		</Style.List>
 	);
 }
+
+List.propTypes = {
+	setListWidth: PropTypes.func.isRequired,
+	setList: PropTypes.func.isRequired,
+	isOpen: PropTypes.bool.isRequired,
+};

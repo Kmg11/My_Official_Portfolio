@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import * as Style from "./Button.style";
 
 export function Button({ isOpen, setIsOpen }) {
@@ -9,3 +10,8 @@ export function Button({ isOpen, setIsOpen }) {
 		</Style.Button>
 	);
 }
+
+Button.propTypes = {
+	isOpen: PropTypes.bool.isRequired,
+	setIsOpen: PropTypes.func.isRequired,
+};

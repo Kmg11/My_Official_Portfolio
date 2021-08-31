@@ -1,7 +1,11 @@
+import { useContext } from "react";
 import { Components } from "../../../../Style";
+import { ProjectContext } from "../../SingleProject";
 import * as Style from "./Description.style";
 
-export function Description({ project, isPending }) {
+export function Description() {
+	const { project, isPending } = useContext(ProjectContext);
+
 	return (
 		<Style.Description>
 			{isPending && (

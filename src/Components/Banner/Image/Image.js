@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Images } from "../../../Constants";
 import { Components } from "../../../Style";
 import { CreateImage } from "../../CreateImage/CreateImage";
@@ -14,3 +15,8 @@ export function Image({ data, isPending }) {
 		</Style.ImageContainer>
 	);
 }
+
+Image.propTypes = {
+	data: PropTypes.object,
+	isPending: PropTypes.bool.isRequired,
+};

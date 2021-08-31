@@ -34,7 +34,10 @@ export function Home() {
 			)}
 
 			<Style.CoverImage>
-				<CreateImage src={`${Images.HOME}/background`} alt="Background Image" />
+				<CreateImage
+					src={`${Images.HOME}/background`}
+					alt="Home Background Image"
+				/>
 			</Style.CoverImage>
 
 			<Style.Content>
