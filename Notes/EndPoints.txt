@@ -2,13 +2,13 @@
 - [ Done ] Github Must Have The Same Information
 - [ Done ] Change favicon & appleicon
 - [ Done ] take care of meta tags & Add Facebook Meta Tags
+- [ Done ] Add Loading Lazy Load 
 - Add 404 Error Page
-- Add Loading Lazy Load & Add Error Handling from traversary media
-- Add Animation [ React Spring, WoW ]
+- Add Animation [ React Spring, WoW, Frame Motion ]
 
 - Last Work
 	- [ Done ] Remove Not Used Images
-	- Add Cv Google Drive Link
+	- Add Cv Google Drive Link - Add Download CV Link In Profile Page
 	- Public Repositry
 	- README File
 	- test facebook meta tags

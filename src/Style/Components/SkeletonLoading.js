@@ -19,14 +19,15 @@ const skeletonLoading = () => {
 };
 
 export const SkeletonLoadingBox = styled.div`
+	${skeletonLoading};
 	width: ${(props) => (props.width ? props.width : "100%")};
 	height: ${(props) => (props.height ? props.height : "100%")};
 	border-radius: inherit;
-	${skeletonLoading};
 `;
 
 export const SkeletonLoadingText = styled.span`
-	border-radius: 0.125rem;
+	${skeletonLoading};
+	border-radius: 4px;
 	display: block;
 
 	${(props) =>
@@ -48,6 +49,4 @@ export const SkeletonLoadingText = styled.span`
 						width: ${(props) => (props.width ? props.width : "80%")};
 					}
 			  `}
-
-	${skeletonLoading};
 `;

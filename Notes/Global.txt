@@ -47,11 +47,6 @@
 - [ Done ] Remove Technolges and skills links from box
 - [ Done ] make all links in json file have same keys
 - [ Done ] Change Scrollbar Style
-- Add Download CV Link In Profile Page
-- Fixing Images Skelo Loading By Not Remove Loading
-- find way for more handling for ProfileContainer & Box Component
-- think about remove loop in buttons and add button by button [ Circle Button ]
-- Error In Console In Single Page When Save SingleProject Component Error Appear
 - [ Done ] Add proptype
 	- [ Done ] Home Page
 	- [ Done ] Profile Page
@@ -63,6 +58,9 @@
 	- [ Done ] CircleButton
 	- [ Done ] CreateImage
 	- [ Done ] Navbar
+- find way for more handling for ProfileContainer & Box Component
+- think about remove loop in buttons and add button by button [ Circle Button ]
+- Error In Console In Single Page When Save SingleProject Component Error Appear
 
 ---- End Global ----
 ---- Start Bugs & Errors ----
@@ -76,8 +74,8 @@
 
 - Home Page
 	- [ Done ] Performance
-	- Performance On Google Site
-	- Performance On GTmatrix
+	- [ Done ] Performance On Google Site
+	- [ Done ] Performance On GTmatrix
 	- [ Done ] Accessibility
 	- [ Done ] Seo
 	- [ Done ] Best Practice
@@ -85,8 +83,8 @@
 
 - Projects Page
 	- [ Done ] Performance
-	- Performance On Google Site
-	- Performance On GTmatrix
+	- [ Done ] Performance On Google Site
+	- [ Done ] Performance On GTmatrix
 	- [ Done ] Accessibility
 	- [ Done ] Seo
 	- [ Done ] Best Practice
@@ -94,8 +92,8 @@
 
 - Project Page
 	- [ Done ] Performance
-	- Performance On Google Site
-	- Performance On GTmatrix
+	- [ Done ] Performance On Google Site
+	- [ Done ] Performance On GTmatrix
 	- [ Done ] Accessibility
 	- [ Done ] Seo
 	- [ Done ] Best Practice
@@ -103,8 +101,8 @@
 
 - Profile Page
 	- [ Done ] Performance
-	- Performance On Google Site
-	- Performance On GTmatrix
+	- [ Done ] Performance On Google Site
+	- [ Done ] Performance On GTmatrix
 	- [ Done ] Accessibility
 	- [ Done ] Seo
 	- [ Done ] Best Practice
