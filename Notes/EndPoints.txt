@@ -5,14 +5,16 @@
 - [ Done ] Add Loading Lazy Load 
 - Add 404 Error Page
 - Add Animation [ React Spring, WoW, Frame Motion ]
+- Performance On Mobile Problems
 
 - Last Work
 	- [ Done ] Remove Not Used Images
+	- [ Done ] Public Repositry
+	- [ Done ] Deploy On Netlify
+	- [ Done ] Remove Not Used Repos Like [ Apple Dark Mode, Mixed Images ]
+	- test facebook meta tags not working
 	- Add Cv Google Drive Link - Add Download CV Link In Profile Page
-	- Public Repositry
 	- README File
-	- test facebook meta tags
-	- Remove Not Used Repos Like [ Apple Dark Mode, Mixed Images ]
 
 - After Finish
 	- Add Portfolio Link On

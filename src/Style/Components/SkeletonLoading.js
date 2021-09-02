@@ -22,7 +22,7 @@ export const SkeletonLoadingBox = styled.div`
 	${skeletonLoading};
 	width: ${(props) => (props.width ? props.width : "100%")};
 	height: ${(props) => (props.height ? props.height : "100%")};
-	border-radius: inherit;
+	border-radius: ${(props) => (props.radius ? props.radius : "inherit")};
 `;
 
 export const SkeletonLoadingText = styled.span`

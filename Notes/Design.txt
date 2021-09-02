@@ -1,9 +1,0 @@
-- [ Done ] Add Checks For Every Project
-	- [ Done ] Html5 Validation Check
-	- [ Done ] Preformance Check
-	- [ Done ] Accessibility Check
-	- [ Done ] SEO Check
-	- [ Done ] Best Practice Check
-
-- [ Done ] Project Must Have To Buttons Github Link & Live Preview
-- [ Done ] Take Care Of Designs That Have Versions

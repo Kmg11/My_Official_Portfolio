@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { ProjectContext } from "../../SingleProject";
-import { Section } from "../Section/Section";
+import { Box } from "../../../Box/Box";
 import {
 	faClipboard,
 	faCodeBranch,
@@ -15,7 +15,7 @@ export function SmallScreens() {
 
 	return (
 		<>
-			<Section
+			<Box
 				title="technologies"
 				icon={faTools}
 				isPending={isPending}
@@ -23,7 +23,7 @@ export function SmallScreens() {
 				section="technologies"
 			/>
 
-			<Section
+			<Box
 				title="features"
 				icon={faStar}
 				data={project}
@@ -31,7 +31,7 @@ export function SmallScreens() {
 				isPending={isPending}
 			/>
 
-			<Section
+			<Box
 				title="notes"
 				icon={faClipboard}
 				data={project}
@@ -39,7 +39,7 @@ export function SmallScreens() {
 				isPending={isPending}
 			/>
 
-			<Section
+			<Box
 				title="tests"
 				icon={faPercent}
 				isPending={isPending}
@@ -47,7 +47,7 @@ export function SmallScreens() {
 				section="tests"
 			/>
 
-			<Section
+			<Box
 				title="versions"
 				icon={faCodeBranch}
 				isPending={isPending}
@@ -56,7 +56,7 @@ export function SmallScreens() {
 				isLink={true}
 			/>
 
-			<Section
+			<Box
 				title="other links"
 				icon={faLink}
 				isPending={isPending}
@@ -65,7 +65,7 @@ export function SmallScreens() {
 				isLink={true}
 			/>
 
-			<Section
+			<Box
 				title="how to use"
 				icon={faClipboard}
 				data={project}

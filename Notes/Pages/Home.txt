@@ -3,4 +3,4 @@
 - [ Done ] Move Next Button From Banner To Separete Component
 - [ Done ] Responsive
 - Email Link Make It Copy Not Link
-- Description Add Half summary and containue direct to profile page
+- Change Description & Type I'am Front End Web Developer

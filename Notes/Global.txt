@@ -58,10 +58,13 @@
 	- [ Done ] CircleButton
 	- [ Done ] CreateImage
 	- [ Done ] Navbar
-- find way for more handling for ProfileContainer & Box Component
-- think about remove loop in buttons and add button by button [ Circle Button ]
-- Error In Console In Single Page When Save SingleProject Component Error Appear
-- Review Swiper New Version & check css files
+- [ Done ] Improve Box Component
+- [ Done ] Error In Console In Single Page When Save SingleProject Component Error Appear
+- [ Done ] think about remove loop in buttons and add button by button
+	- [ Done ] CircleButtons
+- Resize For Home Background Image
+- Split Skelaton To Sperate Component For Handling Animation
+- check swiper css files
 
 ---- End Global ----
 ---- Start Bugs & Errors ----

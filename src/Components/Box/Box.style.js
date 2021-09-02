@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { Variables } from "../../Style";
 
+export const Box = styled.div``;
+
 export const List = styled.ul`
 	display: grid;
 	grid-template-columns: 1fr;

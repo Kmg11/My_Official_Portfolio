@@ -1,7 +1,7 @@
 import { ProjectContext } from "../../../SingleProject";
 import { useContext } from "react";
 import { faClipboard, faStar } from "@fortawesome/free-solid-svg-icons";
-import { Section } from "../../Section/Section";
+import { Box } from "../../../../Box/Box";
 import * as Style from "./Left.style";
 
 export function Left() {
@@ -9,7 +9,7 @@ export function Left() {
 
 	return (
 		<Style.Left>
-			<Section
+			<Box
 				title="features"
 				icon={faStar}
 				data={project}
@@ -17,7 +17,7 @@ export function Left() {
 				isPending={isPending}
 			/>
 
-			<Section
+			<Box
 				title="notes"
 				icon={faClipboard}
 				data={project}
@@ -25,7 +25,7 @@ export function Left() {
 				isPending={isPending}
 			/>
 
-			<Section
+			<Box
 				title="how to use"
 				icon={faClipboard}
 				data={project}

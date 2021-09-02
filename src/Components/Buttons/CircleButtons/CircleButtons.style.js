@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { Variables } from "../../../Style";
 
 export const Buttons = styled.div`
@@ -15,10 +15,8 @@ export const ButtonIcon = styled.span`
 	height: 40px;
 	line-height: 40px;
 	text-align: center;
-	border: ${(props) =>
-		props.skeleton ? 0 : css`1px solid ${Variables.Colors.whiteColor}`};
+	border: 1px solid ${Variables.Colors.whiteColor};
 	border-radius: 50%;
-	margin-right: 10px;
 	font-size: 1rem;
 	transition-property: background-color, border-color;
 	transition: 0.2s linear;
@@ -34,6 +32,7 @@ export const Button = styled.a`
 	display: grid;
 	grid-template-columns: repeat(2, auto);
 	place-items: center;
+	gap: 10px;
 
 	&:hover,
 	&:focus {

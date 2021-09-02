@@ -30,13 +30,6 @@
 - [ Done ] Add Project Title In URL In Project Page
 - [ Done ] Add Badge For Project Page For Teplate Or app like navbar toltip
 
-- Projects Features
-	- Compatible with all devices, browsers, search engines and screen readers
-	- Error Handling && Loading Handling
-	- Optimize images
-	- High performance
-	- Dark Mode
-
 ---- End Notes ----
 ---- Start Responsive ----
 
