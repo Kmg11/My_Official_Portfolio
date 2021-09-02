@@ -61,6 +61,7 @@
 - find way for more handling for ProfileContainer & Box Component
 - think about remove loop in buttons and add button by button [ Circle Button ]
 - Error In Console In Single Page When Save SingleProject Component Error Appear
+- Review Swiper New Version & check css files
 
 ---- End Global ----
 ---- Start Bugs & Errors ----
