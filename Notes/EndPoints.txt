@@ -3,9 +3,14 @@
 - [ Done ] Change favicon & appleicon
 - [ Done ] take care of meta tags & Add Facebook Meta Tags
 - [ Done ] Add Loading Lazy Load 
-- Add 404 Error Page
 - Add Animation [ React Spring, WoW, Frame Motion ]
+	- Split Skelaton To Sperate Component
+- [ Done ] Add 404 Error Page
 - Performance On Mobile Problems
+- Resize Home Background Image & add png version
+- Add home container for banner & next Button
+- think about remove center style component & split global style to small parts
+- think about change style to yehia radwan style
 
 - Last Work
 	- [ Done ] Remove Not Used Images
@@ -15,6 +20,8 @@
 	- test facebook meta tags not working
 	- Add Cv Google Drive Link - Add Download CV Link In Profile Page
 	- README File
+	- check swiper css files
+	- add skelaton for background image like net ninja move light
 
 - After Finish
 	- Add Portfolio Link On

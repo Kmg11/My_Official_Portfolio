@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { ProjectContext } from "../../SingleProject";
 import {
 	CircleButtons,
-	CircleButton,
+	Button,
 } from "../../../Buttons/CircleButtons/CircleButtons";
 import * as Style from "./Links.style";
 
@@ -13,9 +13,18 @@ export function Links() {
 
 	return (
 		<Style.Links>
-			<CircleButtons isPending={isPending} object={project} section="links">
-				<CircleButton name="github" icon={faGithub} text="github" />
-				<CircleButton name="live" icon={faWifi} text="live" />
+			<CircleButtons
+				isPending={isPending}
+				object={project}
+				section="links"
+				isStatic={false}
+			>
+				<Button name="github" icon={faGithub}>
+					github
+				</Button>
+				<Button name="live" icon={faWifi}>
+					live
+				</Button>
 			</CircleButtons>
 		</Style.Links>
 	);

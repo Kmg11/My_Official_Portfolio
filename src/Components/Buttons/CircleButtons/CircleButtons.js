@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Components } from "../../../Style";
 import { createContext, useContext } from "react";
@@ -6,12 +7,13 @@ import * as Style from "./CircleButtons.style";
 
 const ButtonContext = createContext();
 
-export function CircleButtons({ children, isPending, object, section }) {
-	const contextValue = { object, section };
+export function CircleButtons(props) {
+	const { children, isStatic, isPending, object, section } = props;
+	const contextValue = { isStatic, object, section };
 
 	return (
-		<Style.Buttons>
-			{!isPending && object && object[section] ? (
+		<Style.Buttons className="circle-buttons">
+			{isStatic || (!isPending && object && object[section]) ? (
 				<ButtonContext.Provider value={contextValue}>
 					{children}
 				</ButtonContext.Provider>
@@ -34,15 +36,27 @@ export function CircleButtons({ children, isPending, object, section }) {
 	);
 }
 
-export function CircleButton({ name, icon, text }) {
-	const { object, section } = useContext(ButtonContext);
+export function Button({ children, name, icon }) {
+	const { object, section, isStatic } = useContext(ButtonContext);
 
-	return object[section][name] ? (
-		<Style.Button href={object[section][name]} target="_blank" rel="noreferrer">
+	return isStatic ? (
+		<Style.Button className="button" as={Link} to={name}>
 			<Style.ButtonIcon>
 				<FontAwesomeIcon icon={icon} fixedWidth />
 			</Style.ButtonIcon>
-			<Style.ButtonName>{text}</Style.ButtonName>
+			<Style.ButtonName>{children}</Style.ButtonName>
+		</Style.Button>
+	) : object[section][name] ? (
+		<Style.Button
+			className="button"
+			href={object[section][name]}
+			target="_blank"
+			rel="noreferrer"
+		>
+			<Style.ButtonIcon>
+				<FontAwesomeIcon icon={icon} fixedWidth />
+			</Style.ButtonIcon>
+			<Style.ButtonName>{children}</Style.ButtonName>
 		</Style.Button>
 	) : null;
 }
@@ -52,13 +66,26 @@ CircleButtons.propTypes = {
 		PropTypes.arrayOf(PropTypes.element.isRequired),
 		PropTypes.element.isRequired,
 	]),
-	isPending: PropTypes.bool.isRequired,
+	isStatic: PropTypes.bool.isRequired,
+	isPending: function (props, propName) {
+		if (!props["isStatic"] && props[propName] === undefined) {
+			return new Error(
+				`${propName} prop not exist if the data is dynamic you must add ${propName} prop`
+			);
+		}
+	},
 	object: PropTypes.object,
-	section: PropTypes.string.isRequired,
+	section: function (props, propName) {
+		if (!props["isStatic"] && props[propName] === undefined) {
+			return new Error(
+				`${propName} prop not exist if the data is dynamic you must add ${propName} prop`
+			);
+		}
+	},
 };
 
-CircleButton.propTypes = {
+Button.propTypes = {
 	name: PropTypes.string.isRequired,
 	icon: PropTypes.object.isRequired,
-	text: PropTypes.string.isRequired,
+	children: PropTypes.node.isRequired,
 };

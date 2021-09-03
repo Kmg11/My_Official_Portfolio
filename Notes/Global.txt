@@ -62,9 +62,8 @@
 - [ Done ] Error In Console In Single Page When Save SingleProject Component Error Appear
 - [ Done ] think about remove loop in buttons and add button by button
 	- [ Done ] CircleButtons
-- Resize For Home Background Image
-- Split Skelaton To Sperate Component For Handling Animation
-- check swiper css files
+- [ Done ] Change Circle button prop text & add it as a child
+- [ Done ] add png version for home background image
 
 ---- End Global ----
 ---- Start Bugs & Errors ----

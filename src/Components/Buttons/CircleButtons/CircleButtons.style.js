@@ -4,7 +4,7 @@ import { Variables } from "../../../Style";
 export const Buttons = styled.div`
 	display: grid;
 	grid-template-columns: repeat(2, auto);
-	gap: 20px;
+	gap: 1.2rem;
 	justify-content: start;
 	align-items: center;
 `;

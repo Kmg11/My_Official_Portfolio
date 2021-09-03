@@ -4,7 +4,7 @@ import { faWifi } from "@fortawesome/free-solid-svg-icons";
 import { InfoContext } from "../Card";
 import {
 	CircleButtons,
-	CircleButton,
+	Button,
 } from "../../../Buttons/CircleButtons/CircleButtons";
 import * as Style from "./Buttons.style";
 
@@ -13,9 +13,18 @@ export function Buttons() {
 
 	return (
 		<Style.Buttons>
-			<CircleButtons isPending={false} object={info} section="links">
-				<CircleButton name="github" icon={faGithub} text="github" />
-				<CircleButton name="live" icon={faWifi} text="live" />
+			<CircleButtons
+				isPending={false}
+				object={info}
+				section="links"
+				isStatic={false}
+			>
+				<Button name="github" icon={faGithub}>
+					github
+				</Button>
+				<Button name="live" icon={faWifi}>
+					live
+				</Button>
 			</CircleButtons>
 		</Style.Buttons>
 	);
