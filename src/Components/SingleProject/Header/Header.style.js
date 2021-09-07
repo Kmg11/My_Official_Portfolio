@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import { Functions } from "../../../Style";
 
-export const Header = styled.header`
+export const Header = styled(motion.header)`
 	width: 100%;
 	min-height: 500px;
 	height: 100vh;

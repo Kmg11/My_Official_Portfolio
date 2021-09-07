@@ -8,6 +8,11 @@ import * as Style from "./Card.style";
 
 export const InfoContext = createContext();
 
+const cardVariants = {
+	hidden: { opacity: 0, y: 20 },
+	visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.2 } },
+};
+
 export function Card({ data }) {
 	const { images } = data;
 	const [imageNumber, setImageNumber] = useState(1);
@@ -38,6 +43,9 @@ export function Card({ data }) {
 			<Style.Card
 				onMouseEnter={handleOnMouseEnter}
 				onMouseLeave={handleOnMouseLeave}
+				variants={cardVariants}
+				initial="hidden"
+				animate="visible"
 			>
 				<Image imageNumber={imageNumber} />
 				<Go />

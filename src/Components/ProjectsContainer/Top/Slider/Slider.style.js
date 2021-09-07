@@ -1,7 +1,8 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import { Functions, Variables } from "../../../../Style";
 
-export const Slider = styled.section`
+export const Slider = styled(motion.section)`
 	position: relative;
 	margin-bottom: 2rem;
 	width: 100%;

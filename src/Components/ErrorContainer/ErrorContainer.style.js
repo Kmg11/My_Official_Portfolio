@@ -1,7 +1,8 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import { Functions, Variables } from "../../Style";
 
-export const ErrorContainer = styled.section`
+export const ErrorContainer = styled(motion.section)`
 	.circle-buttons {
 		justify-content: center;
 
@@ -26,20 +27,20 @@ export const Inner = styled.div`
 	text-align: center;
 `;
 
-export const Title = styled.h1`
+export const Title = styled(motion.h1)`
 	color: ${Variables.Colors.whiteColor};
 	text-transform: capitalize;
 	font-size: 7rem;
 `;
 
-export const Type = styled.p`
+export const Type = styled(motion.p)`
 	color: ${Variables.Colors.whiteColor};
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 1.5rem;
 `;
 
-export const Description = styled.p`
+export const Description = styled(motion.p)`
 	color: ${Variables.Colors.whiteColor};
 	max-width: 400px;
 	margin-left: auto;

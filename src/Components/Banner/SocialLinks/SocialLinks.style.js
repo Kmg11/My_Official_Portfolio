@@ -1,9 +1,10 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import { Variables } from "../../../Style";
 
 export const SocialLinks = styled.ul``;
 
-export const Item = styled.li`
+export const Item = styled(motion.li)`
 	display: inline-block;
 
 	&:not(:last-of-type) {

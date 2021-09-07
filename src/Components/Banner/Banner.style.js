@@ -1,11 +1,9 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import { Functions } from "../../Style";
 
-export const Banner = styled.section`
+export const Banner = styled(motion.section)`
 	max-width: max-content;
-`;
-
-export const Row = styled.div`
 	display: grid;
 	grid-template-columns: auto 1fr;
 	gap: 1.25rem;

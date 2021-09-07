@@ -5,6 +5,7 @@ import { NavbarActionCreators } from "../../State/ActionCreators";
 import { Image } from "./Image/Image";
 import { Button } from "./Button/Button";
 import { List } from "./List/List";
+import { Functions } from "../../Style";
 import * as Style from "./Navbar.style";
 
 export function Navbar() {
@@ -65,11 +66,37 @@ export function Navbar() {
 		};
 	}, [isOpen]);
 
-	return (
-		<Style.Navbar ref={navbar} isOpen={isOpen} listWidth={listWidth}>
-			<Button isOpen={isOpen} setIsOpen={setIsOpen} />
-			<Image />
-			<List setListWidth={setListWidth} setList={setList} isOpen={isOpen} />
-		</Style.Navbar>
-	);
+	const navbarVariants = {
+		hidden: { opacity: 0, x: -100 },
+		visible: { opacity: 1, x: 0, y: 0, transition: { duration: 0.7 } },
+	};
+
+	const smallNavbarVariants = {
+		hidden: { opacity: 0, y: -100, transition: { delay: 2 } },
+		visible: { opacity: 1, y: 0, x: 0, transition: { duration: 0.7 } },
+	};
+
+	const isSmall = window.matchMedia(
+		Functions.mediaBreakpointDown("sm").replace("@media ", "")
+	).matches;
+
+	const getNavbar = (variants) => {
+		return (
+			<Style.Navbar
+				ref={navbar}
+				isOpen={isOpen}
+				listWidth={listWidth}
+				variants={variants}
+				initial="hidden"
+				animate="visible"
+				exit="hidden"
+			>
+				<Button isOpen={isOpen} setIsOpen={setIsOpen} />
+				<Image />
+				<List setListWidth={setListWidth} setList={setList} isOpen={isOpen} />
+			</Style.Navbar>
+		);
+	};
+
+	return !isSmall ? getNavbar(navbarVariants) : getNavbar(smallNavbarVariants);
 }

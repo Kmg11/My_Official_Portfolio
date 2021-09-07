@@ -1,9 +1,8 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import { Variables } from "../../../../Style";
 
-export const Badge = styled.div``;
-
-export const InnerBadge = styled.h5`
+export const Badge = styled(motion.h5)`
 	color: ${Variables.Colors.whiteColor};
 	background-color: ${Variables.Colors.secondBackgroundColor};
 	width: max-content;

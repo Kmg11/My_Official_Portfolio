@@ -11,7 +11,11 @@ export function Header() {
 	const navbarHeight = useSelector((state) => state.navbarSize.height);
 
 	return (
-		<Style.Header navbarHeight={navbarHeight}>
+		<Style.Header
+			navbarHeight={navbarHeight}
+			initial="hidden"
+			animate="visible"
+		>
 			<CoverImage />
 
 			<Components.Container>

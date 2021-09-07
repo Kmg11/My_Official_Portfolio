@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import { Variables } from "../../../Style";
 
-export const Description = styled.p`
+export const Description = styled(motion.p)`
 	color: ${Variables.Colors.whiteColor};
 	font-size: 1.2rem;
 	font-weight: 300;

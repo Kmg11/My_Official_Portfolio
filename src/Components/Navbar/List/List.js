@@ -10,6 +10,11 @@ import {
 	faHome,
 } from "@fortawesome/free-solid-svg-icons";
 
+const itemVariants = {
+	hidden: { opacity: 0, scale: 0.7 },
+	visible: { opacity: 1, scale: 1, transition: { duration: 0.5, delay: 0.5 } },
+};
+
 export function List({ setListWidth, setList, isOpen }) {
 	const list = useRef(0);
 
@@ -34,7 +39,7 @@ export function List({ setListWidth, setList, isOpen }) {
 				e.stopPropagation();
 			}}
 		>
-			<Style.Item>
+			<Style.Item variants={itemVariants}>
 				<Style.Link exact to={Routes.HOME}>
 					<Style.Icon>
 						<FontAwesomeIcon icon={faHome} />
@@ -43,7 +48,7 @@ export function List({ setListWidth, setList, isOpen }) {
 				</Style.Link>
 			</Style.Item>
 
-			<Style.Item>
+			<Style.Item variants={itemVariants}>
 				<Style.Link to={Routes.PROJECTS}>
 					<Style.Icon>
 						<FontAwesomeIcon icon={faWrench} />
@@ -52,7 +57,7 @@ export function List({ setListWidth, setList, isOpen }) {
 				</Style.Link>
 			</Style.Item>
 
-			<Style.Item>
+			<Style.Item variants={itemVariants}>
 				<Style.Link to={Routes.PROFILE}>
 					<Style.Icon>
 						<FontAwesomeIcon icon={faUserAlt} />
@@ -61,7 +66,7 @@ export function List({ setListWidth, setList, isOpen }) {
 				</Style.Link>
 			</Style.Item>
 
-			<Style.Item>
+			<Style.Item variants={itemVariants}>
 				<Style.Link to="/test">
 					<Style.Icon>
 						<FontAwesomeIcon icon={faScroll} />

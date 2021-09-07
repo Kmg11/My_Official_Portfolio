@@ -1,0 +1,18 @@
+- Style
+	- think about change style to yehia radwan style
+	- think about change hover & all animations created with css to framer motion
+	- change banner social links to circle button style
+
+- Structure
+	- Add home container for banner & next Button
+	- think about remove center style component & split global style to small parts
+
+- Performance
+	- Mobile Problems
+	- check swiper css files
+	- remove font awesome and add react icons
+
+- Skelaton
+	- don't load design if api not load
+	- need handle in responsive
+	- add for background image like net ninja move light

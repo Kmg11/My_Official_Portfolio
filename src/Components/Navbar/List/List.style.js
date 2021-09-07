@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import { NavLink } from "react-router-dom";
 import { Functions, Variables } from "../../../Style";
+import { motion } from "framer-motion";
 
 export const List = styled.ul`
 	position: absolute;
@@ -32,7 +33,7 @@ export const List = styled.ul`
 	}
 `;
 
-export const Item = styled.li`
+export const Item = styled(motion.li)`
 	&:not(:last-of-type) {
 		margin-bottom: 30px;
 	}

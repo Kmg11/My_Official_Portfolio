@@ -1,10 +1,20 @@
 import PropTypes from "prop-types";
-import { BoxButtons } from "../../Buttons/BoxButtons/BoxButtons";
+import { BoxButtons } from "../../Buttons/Box/Box";
 import * as Style from "./CategoriesButtons.style";
+
+const categoriesVariants = {
+	hidden: { opacity: 0, y: -150 },
+	visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
+};
 
 export function CategoriesButtons({ page }) {
 	return (
-		<Style.Categories>
+		<Style.Categories
+			variants={categoriesVariants}
+			initial="hidden"
+			animate="visible"
+			exit="hidden"
+		>
 			<BoxButtons
 				page={page.projectsPage}
 				setPage={page.setProjectsPage}

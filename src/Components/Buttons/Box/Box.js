@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import * as Style from "./BoxButtons.style";
+import * as Style from "./Box.style";
 
 export function BoxButtons({ page, setPage, info }) {
 	return (

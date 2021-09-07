@@ -1,7 +1,8 @@
 import styled, { css } from "styled-components";
+import { motion } from "framer-motion";
 import { Variables, Functions } from "../../Style";
 
-export const Navbar = styled.nav`
+export const Navbar = styled(motion.nav)`
 	position: fixed;
 	top: 0;
 	bottom: 0;

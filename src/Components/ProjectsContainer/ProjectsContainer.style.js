@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import { Functions } from "../../Style";
 
-export const ProjectsContainer = styled.section`
+export const ProjectsContainer = styled(motion.section)`
 	overflow: hidden;
 	padding: 2.5rem 2.5rem 20rem;
 

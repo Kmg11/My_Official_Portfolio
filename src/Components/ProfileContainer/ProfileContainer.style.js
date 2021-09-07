@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import { Functions } from "../../Style";
 
-export const ProfileContainer = styled.section`
+export const ProfileContainer = styled(motion.section)`
 	padding: 2.5rem 1.5rem;
 	display: grid;
 	grid-template-columns: 1fr;

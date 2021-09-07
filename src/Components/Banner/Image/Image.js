@@ -4,15 +4,22 @@ import { Components } from "../../../Style";
 import { CreateImage } from "../../CreateImage/CreateImage";
 import * as Style from "./Image.style";
 
-export function Image({ data, isPending }) {
-	return (
-		<Style.ImageContainer>
-			{isPending && <Components.SkeletonLoadingBox />}
+const ImageVariants = {
+	hidden: { opacity: 0, scale: 0.7 },
+	visible: { opacity: 1, scale: 1, transition: { duration: 0.7 } },
+};
 
-			{data && (
-				<CreateImage src={`${Images.GLOBAL}/personal-image`} alt={data.name} />
-			)}
+export function Image({ data, isPending }) {
+	return isPending ? (
+		<Style.ImageContainer>
+			<Components.SkeletonLoadingBox />
 		</Style.ImageContainer>
+	) : (
+		data && (
+			<Style.ImageContainer variants={ImageVariants}>
+				<CreateImage src={`${Images.GLOBAL}/personal-image`} alt={data.name} />
+			</Style.ImageContainer>
+		)
 	);
 }
 

@@ -3,4 +3,4 @@
 - [ Done ] Move Next Button From Banner To Separete Component
 - [ Done ] Responsive
 - Email Link Make It Copy Not Link
-- Change Description & Type I'am Front End Web Developer
+- Change Description & Type I'am Front End Web Developer like linkedin head

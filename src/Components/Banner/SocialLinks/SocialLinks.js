@@ -9,6 +9,11 @@ import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
 import { Components } from "../../../Style";
 import * as Style from "./SocialLinks.style";
 
+const itemVariants = {
+	hidden: { opacity: 0, y: 20, scale: 0.7, originX: 0 },
+	visible: { opacity: 1, y: 0, scale: 1 },
+};
+
 export function SocialLinks({ data, isPending }) {
 	const icons = {
 		Github: faGithubSquare,
@@ -27,9 +32,13 @@ export function SocialLinks({ data, isPending }) {
 
 	const socialLinksList =
 		data &&
-		data.social_links.map((link) => {
+		data.social_links.map((link, index) => {
 			return (
-				<Style.Item key={link.id}>
+				<Style.Item
+					key={link.id}
+					variants={itemVariants}
+					transition={{ duration: 0.5, delay: 0.9 + index / 3 }}
+				>
 					<Style.Link
 						href={link.website === "Email" ? `mailto:${link.link}` : link.link}
 						target="_blank"
@@ -42,11 +51,10 @@ export function SocialLinks({ data, isPending }) {
 			);
 		});
 
-	return (
-		<Style.SocialLinks>
-			{isPending && socialLinksSkeletonList}
-			{socialLinksList}
-		</Style.SocialLinks>
+	return isPending ? (
+		<Style.SocialLinks>{socialLinksSkeletonList}</Style.SocialLinks>
+	) : (
+		<Style.SocialLinks>{socialLinksList}</Style.SocialLinks>
 	);
 }
 

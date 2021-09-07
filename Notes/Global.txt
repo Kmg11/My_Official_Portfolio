@@ -64,6 +64,7 @@
 	- [ Done ] CircleButtons
 - [ Done ] Change Circle button prop text & add it as a child
 - [ Done ] add png version for home background image
+- Links In Single Page Not Good Find Another Way
 
 ---- End Global ----
 ---- Start Bugs & Errors ----

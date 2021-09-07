@@ -2,10 +2,7 @@ import { useContext } from "react";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faWifi } from "@fortawesome/free-solid-svg-icons";
 import { InfoContext } from "../Card";
-import {
-	CircleButtons,
-	Button,
-} from "../../../Buttons/CircleButtons/CircleButtons";
+import { CircleButtons, Button } from "../../../Buttons/Circle/Circle";
 import * as Style from "./Buttons.style";
 
 export function Buttons() {

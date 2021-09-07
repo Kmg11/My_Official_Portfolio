@@ -1,5 +1,5 @@
-import { Routes } from "../../Constants";
-import * as Style from "./NextButton.style";
+import { Routes } from "../../../Constants";
+import * as Style from "./Next.style";
 
 export function NextButton() {
 	return (

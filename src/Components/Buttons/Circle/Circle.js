@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Components } from "../../../Style";
 import { createContext, useContext } from "react";
-import * as Style from "./CircleButtons.style";
+import * as Style from "./Circle.style";
 
 const ButtonContext = createContext();
 

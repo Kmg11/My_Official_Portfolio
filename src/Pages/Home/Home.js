@@ -3,8 +3,18 @@ import { useFetchGet } from "../../Hooks/Fetch/useFetchGet";
 import { CreateImage } from "../../Components/CreateImage/CreateImage";
 import { Apis, Images } from "../../Constants";
 import { Banner } from "../../Components/Banner/Banner";
-import { NextButton } from "../../Components/NextButton/NextButton";
+import { NextButton } from "../../Components/Buttons/Next/Next";
 import * as Style from "./Home.style";
+
+const homeVariants = {
+	hidden: { opacity: 0 },
+	visible: { opacity: 1, transition: { duration: 0.5 } },
+	exit: {
+		scale: 1.5,
+		opacity: 0,
+		transition: { duration: 0.5 },
+	},
+};
 
 export function Home() {
 	const response = useFetchGet(Apis.INFO);
@@ -33,7 +43,12 @@ export function Home() {
 				</Helmet>
 			)}
 
-			<Style.CoverImage>
+			<Style.CoverImage
+				variants={homeVariants}
+				initial="hidden"
+				animate="visible"
+				exit="exit"
+			>
 				<CreateImage
 					src={`${Images.HOME}/background`}
 					alt="Home Background Image"
@@ -42,7 +57,7 @@ export function Home() {
 
 			<Style.Content>
 				<Banner response={response} />
-				<NextButton />
+				{info && <NextButton />}
 			</Style.Content>
 		</Style.Home>
 	);

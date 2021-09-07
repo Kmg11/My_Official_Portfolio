@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import { Functions } from "../../../Style";
 import { Buttons } from "./Buttons/Buttons.style";
 import { Info } from "./Info/Info.style";
 
-export const Card = styled.div`
+export const Card = styled(motion.div)`
 	width: 100%;
 	height: 190px;
 	position: relative;

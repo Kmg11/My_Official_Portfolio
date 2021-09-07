@@ -9,6 +9,8 @@
 - [ Done ] Split Card Component To Small Components
 - [ Done ] Add Specific Length For Card description
 - [ Done ] Randomize Images When Hover On Card
+
+Future Enhancements:-
 - Make Slider Buttons Transparency When Hover On Card
 - Accessibilty In Slider [ Hover & Focus On Link ]
 - Swiper Keyboard Need To Seprate Every Slider

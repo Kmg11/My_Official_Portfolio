@@ -5,9 +5,17 @@ import { Skills } from "./Skills/Skills";
 import { Languages } from "./Languages/Languages";
 import * as Style from "./ProfileContainer.style";
 
+const containerVariants = {
+	exit: {
+		opacity: 0,
+		scale: 1.2,
+		transition: { duration: 0.5 },
+	},
+};
+
 export function ProfileContainer({ response }) {
 	return (
-		<Style.ProfileContainer>
+		<Style.ProfileContainer variants={containerVariants} exit="exit">
 			<Style.BannerContainer>
 				<Banner response={response} />
 			</Style.BannerContainer>

@@ -1,7 +1,8 @@
 import styled, { css } from "styled-components";
+import { motion } from "framer-motion";
 import { Variables, Functions } from "../../../Style";
 
-export const Button = styled.button`
+export const Button = styled(motion.button)`
 	${Functions.mediaBreakpointUp("md")} {
 		display: none;
 	}

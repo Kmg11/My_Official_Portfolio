@@ -10,6 +10,11 @@ import * as Style from "./Slider.style";
 // install Swiper modules
 SwiperCore.use([Navigation, A11y, Keyboard]);
 
+const sliderVariants = {
+	hidden: { opacity: 0, y: 50 },
+	visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
+};
+
 export function Slider({ response, page }) {
 	const { data, isPending } = response;
 	const { setProjectsPage, pageType } = page;
@@ -28,7 +33,12 @@ export function Slider({ response, page }) {
 		});
 
 	return (
-		<Style.Slider>
+		<Style.Slider
+			variants={sliderVariants}
+			initial="hidden"
+			animate="visible"
+			exit="hidden"
+		>
 			<Components.SubTitle>
 				{isPending && <Components.SkeletonLoadingText head width="100px" />}
 				{data && data[0].type}
