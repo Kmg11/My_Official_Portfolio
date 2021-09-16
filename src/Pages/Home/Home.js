@@ -7,10 +7,10 @@ import { NextButton } from "../../Components/Buttons/Next/Next";
 import * as Style from "./Home.style";
 
 const homeVariants = {
-	hidden: { opacity: 0 },
-	visible: { opacity: 1, transition: { duration: 0.5 } },
+	hidden: { opacity: 0, scale: 1.2 },
+	visible: { opacity: 1, scale: 1, transition: { duration: 0.7 } },
 	exit: {
-		scale: 1.5,
+		scale: 1.2,
 		opacity: 0,
 		transition: { duration: 0.5 },
 	},

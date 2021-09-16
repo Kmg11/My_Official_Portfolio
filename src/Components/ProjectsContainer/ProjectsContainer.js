@@ -5,17 +5,15 @@ import { CategoriesButtons } from "./CategoriesButtons/CategoriesButtons";
 import { Top } from "./Top/Top";
 import { All } from "./All/All";
 import * as Style from "./ProjectsContainer.style";
+import { AnimatePresence } from "framer-motion";
 
 const TOP = "TOP";
 const TEMPLATES = "TEMPLATES";
 const APPS = "APPS";
 
 const containerVariants = {
-	exit: {
-		opacity: 0,
-		scale: 1.2,
-		transition: { duration: 0.5 },
-	},
+	hidden: { opacity: 0, y: 70, transition: { duration: 0.5 } },
+	visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
 };
 
 export function ProjectsContainer() {
@@ -24,7 +22,12 @@ export function ProjectsContainer() {
 	const apps = useFetchGet(Apis.APPS);
 
 	return (
-		<Style.ProjectsContainer variants={containerVariants} exit="exit">
+		<Style.ProjectsContainer
+			variants={containerVariants}
+			initial="hidden"
+			animate="visible"
+			exit="hidden"
+		>
 			<CategoriesButtons
 				page={{
 					projectsPage,
@@ -33,14 +36,17 @@ export function ProjectsContainer() {
 				}}
 			/>
 
-			{projectsPage === TOP && (
-				<Top
-					page={{ setProjectsPage, pageType: { TEMPLATES, APPS } }}
-					data={{ templates, apps }}
-				/>
-			)}
-			{projectsPage === TEMPLATES && <All data={templates} />}
-			{projectsPage === APPS && <All data={apps} />}
+			<AnimatePresence exitBeforeEnter>
+				{projectsPage === TOP && (
+					<Top
+						key="top"
+						page={{ setProjectsPage, pageType: { TEMPLATES, APPS } }}
+						data={{ templates, apps }}
+					/>
+				)}
+				{projectsPage === TEMPLATES && <All key="templates" data={templates} />}
+				{projectsPage === APPS && <All key="apps" data={apps} />}
+			</AnimatePresence>
 		</Style.ProjectsContainer>
 	);
 }

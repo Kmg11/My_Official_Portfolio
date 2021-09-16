@@ -4,8 +4,15 @@
 - [ Done ] take care of meta tags & Add Facebook Meta Tags
 - [ Done ] Add Loading Lazy Load 
 - [ Done ] Add 404 Error Page
-- Add Animation [ React Spring, WoW, Frame Motion ]
-	- Split Skelaton To Sperate Component
+- [ Done ] Add Animation
+	- [ Done ] Split Skelaton To Sperate Component
+	- [ Done ] Add Load Animation
+	- [ Done ] Box Component
+	- [ Done ] Next Button Animation
+	- [ Done ] Slider & Card Must Not animate untill Skelaton finish
+	- [ Done ] Categoris Animation change tabs / in responsive
+	- [ Done ] close navbar when click on link to change page in responsive
+	- [ Done ] Check Animation In Responsive
 
 - Last Work
 	- [ Done ] Remove Not Used Images
@@ -15,6 +22,8 @@
 	- test facebook meta tags not working
 	- Add Cv Google Drive Link - Add Download CV Link In Profile Page
 	- README File
+	- Change Data [ summary ]
+	- Deploy on github netlify security problem
 
 - After Finish
 	- Add Portfolio Link On

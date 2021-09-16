@@ -9,8 +9,8 @@ import * as Style from "./Card.style";
 export const InfoContext = createContext();
 
 const cardVariants = {
-	hidden: { opacity: 0, y: 20 },
-	visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.2 } },
+	hidden: { opacity: 0, y: 40, transition: { duration: 0.5 } },
+	visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0 } },
 };
 
 export function Card({ data }) {
@@ -46,6 +46,7 @@ export function Card({ data }) {
 				variants={cardVariants}
 				initial="hidden"
 				animate="visible"
+				exit="hidden"
 			>
 				<Image imageNumber={imageNumber} />
 				<Go />

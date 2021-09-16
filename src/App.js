@@ -1,9 +1,4 @@
-import {
-	BrowserRouter as Router,
-	Switch,
-	Route,
-	useLocation,
-} from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
 import { Routes } from "./Constants";
 import { AnimatePresence } from "framer-motion";
 import * as Page from "./Pages";

@@ -3,7 +3,7 @@ import { BoxButtons } from "../../Buttons/Box/Box";
 import * as Style from "./CategoriesButtons.style";
 
 const categoriesVariants = {
-	hidden: { opacity: 0, y: -150 },
+	hidden: { opacity: 0, y: "-300%", transition: { duration: 0.5 } },
 	visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
 };
 

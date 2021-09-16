@@ -1,7 +1,8 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import { Variables } from "../../../../Style";
 
-export const Slider = styled.section``;
+export const Slider = styled(motion.section)``;
 
 export const SwiperContainer = styled.div`
 	position: relative;

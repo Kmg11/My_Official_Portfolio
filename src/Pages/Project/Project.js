@@ -7,6 +7,7 @@ import { Images } from "../../Constants";
 import { Navbar } from "../../Components/Navbar/Navbar";
 import { SingleProject } from "../../Components/SingleProject/SingleProject";
 import * as Style from "./Project.style";
+import { useEffect } from "react";
 
 export function Project() {
 	const navbarWidth = useSelector((state) => state.navbarSize.width);
@@ -23,6 +24,10 @@ export function Project() {
 		projects && projects.filter((project) => project.id.toString() === id)[0];
 
 	const apiInfo = { project: targetProject, isPending, error };
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	const helmetTitle =
 		targetProject &&

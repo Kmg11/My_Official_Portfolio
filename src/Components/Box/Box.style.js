@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import { Variables } from "../../Style";
 
-export const Box = styled.div``;
+export const Box = styled(motion.div)``;
 
 export const List = styled.ul`
 	display: grid;

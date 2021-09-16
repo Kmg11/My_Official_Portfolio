@@ -16,6 +16,11 @@ import { Components } from "../../../../Style";
 // install Swiper modules
 SwiperCore.use([Thumbs]);
 
+const sliderVariants = {
+	hidden: { opacity: 0, y: 50, transition: { duration: 0.5 } },
+	visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
+};
+
 export function Slider() {
 	const { project, isPending } = useContext(ProjectContext);
 	const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -34,7 +39,12 @@ export function Slider() {
 		});
 
 	return (
-		<Style.Slider>
+		<Style.Slider
+			variants={sliderVariants}
+			initial="hidden"
+			animate="visible"
+			exit="hidden"
+		>
 			<Components.SubTitle>Images</Components.SubTitle>
 
 			<Style.SwiperContainer>

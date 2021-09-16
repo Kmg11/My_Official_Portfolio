@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
 import { Variables } from "../../../Style";
@@ -7,7 +8,7 @@ export const NextButton = styled(Link)`
 	display: block;
 `;
 
-export const Arrows = styled.div`
+export const Arrows = styled(motion.div)`
 	transform: rotate(-90deg);
 	cursor: pointer;
 	display: inline-block;

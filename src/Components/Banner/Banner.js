@@ -7,7 +7,7 @@ import * as Style from "./Banner.style";
 
 const bannerVariants = {
 	exit: {
-		scale: 1.5,
+		scale: 1.2,
 		opacity: 0,
 		transition: { duration: 0.5 },
 	},

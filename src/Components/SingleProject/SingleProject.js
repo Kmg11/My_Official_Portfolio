@@ -7,17 +7,19 @@ import * as Style from "./SingleProject.style";
 export const ProjectContext = createContext();
 
 const containerVariants = {
-	exit: {
-		opacity: 0,
-		scale: 1.2,
-		transition: { duration: 0.5 },
-	},
+	hidden: { opacity: 0, transition: { duration: 0.5 } },
+	visible: { opacity: 1, transition: { duration: 0.7 } },
 };
 
 export function SingleProject({ data }) {
 	return (
 		<ProjectContext.Provider value={data}>
-			<Style.ProjectContext variants={containerVariants} exit="exit">
+			<Style.ProjectContext
+				variants={containerVariants}
+				initial="hidden"
+				animate="visible"
+				exit="hidden"
+			>
 				<Header />
 				<Info />
 			</Style.ProjectContext>

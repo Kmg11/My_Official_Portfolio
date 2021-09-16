@@ -31,6 +31,26 @@ export function List({ setListWidth, setList, isOpen }) {
 		return () => window.removeEventListener("resize", handlListWidth);
 	}, [setListWidth, setList]);
 
+	const linksList = [
+		{ name: "home", to: Routes.HOME, icon: faHome },
+		{ name: "projects", to: Routes.PROJECTS, icon: faWrench },
+		{ name: "profile", to: Routes.PROFILE, icon: faUserAlt },
+		{ name: "cv", to: "/test", icon: faScroll },
+	];
+
+	const linksItems = linksList.map(({ name, to, icon }, index) => {
+		return (
+			<Style.Item key={name} variants={itemVariants}>
+				<Style.Link exact to={to}>
+					<Style.Icon>
+						<FontAwesomeIcon icon={icon} />
+					</Style.Icon>
+					<Style.Name>{name}</Style.Name>
+				</Style.Link>
+			</Style.Item>
+		);
+	});
+
 	return (
 		<Style.List
 			isOpen={isOpen}
@@ -39,41 +59,7 @@ export function List({ setListWidth, setList, isOpen }) {
 				e.stopPropagation();
 			}}
 		>
-			<Style.Item variants={itemVariants}>
-				<Style.Link exact to={Routes.HOME}>
-					<Style.Icon>
-						<FontAwesomeIcon icon={faHome} />
-					</Style.Icon>
-					<Style.Name>home</Style.Name>
-				</Style.Link>
-			</Style.Item>
-
-			<Style.Item variants={itemVariants}>
-				<Style.Link to={Routes.PROJECTS}>
-					<Style.Icon>
-						<FontAwesomeIcon icon={faWrench} />
-					</Style.Icon>
-					<Style.Name>projects</Style.Name>
-				</Style.Link>
-			</Style.Item>
-
-			<Style.Item variants={itemVariants}>
-				<Style.Link to={Routes.PROFILE}>
-					<Style.Icon>
-						<FontAwesomeIcon icon={faUserAlt} />
-					</Style.Icon>
-					<Style.Name>profile</Style.Name>
-				</Style.Link>
-			</Style.Item>
-
-			<Style.Item variants={itemVariants}>
-				<Style.Link to="/test">
-					<Style.Icon>
-						<FontAwesomeIcon icon={faScroll} />
-					</Style.Icon>
-					<Style.Name>cv</Style.Name>
-				</Style.Link>
-			</Style.Item>
+			{linksItems}
 		</Style.List>
 	);
 }

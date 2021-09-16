@@ -3,6 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Components } from "../../Style";
 import * as Style from "./Box.style";
 
+const boxVariants = {
+	hidden: { opacity: 0, y: 50, transition: { duration: 0.5 } },
+	visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
+};
+
 export function Box({ title, icon, isPending, data, section, isLink = false }) {
 	const SkeletonLoading =
 		isPending &&
@@ -16,7 +21,12 @@ export function Box({ title, icon, isPending, data, section, isLink = false }) {
 		});
 
 	return !isPending && data && data[section] ? (
-		<Style.Box>
+		<Style.Box
+			variants={boxVariants}
+			initial="hidden"
+			animate="visible"
+			exit="hidden"
+		>
 			<Components.SubTitle>{title}</Components.SubTitle>
 			<Style.List>
 				{data[section].map((item, index) => {

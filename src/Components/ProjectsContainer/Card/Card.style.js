@@ -26,11 +26,11 @@ export const Card = styled(motion.div)`
 
 	&:hover,
 	&:focus {
-		transform: scale(1.1) translateY(-8px);
+		transform: translateY(-10px) !important;
 		z-index: 5;
 
 		${Functions.mediaBreakpointDown("sm")} {
-			transform: scale(1) translateY(-8px);
+			transform: translateY(0) !important;
 		}
 
 		&::before {

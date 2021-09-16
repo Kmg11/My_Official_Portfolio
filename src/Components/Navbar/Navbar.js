@@ -67,13 +67,18 @@ export function Navbar() {
 	}, [isOpen]);
 
 	const navbarVariants = {
-		hidden: { opacity: 0, x: -100 },
+		hidden: { opacity: 0, x: -100, transition: { duration: 0.5 } },
 		visible: { opacity: 1, x: 0, y: 0, transition: { duration: 0.7 } },
 	};
 
 	const smallNavbarVariants = {
-		hidden: { opacity: 0, y: -100, transition: { delay: 2 } },
+		hidden: { opacity: 0, y: -100, transition: { duration: 0.5 } },
 		visible: { opacity: 1, y: 0, x: 0, transition: { duration: 0.7 } },
+		exit: {
+			opacity: 0,
+			y: -100,
+			transition: { duration: 0.5, delay: isOpen ? 0.4 : 0 },
+		},
 	};
 
 	const isSmall = window.matchMedia(
@@ -89,7 +94,7 @@ export function Navbar() {
 				variants={variants}
 				initial="hidden"
 				animate="visible"
-				exit="hidden"
+				exit="exit"
 			>
 				<Button isOpen={isOpen} setIsOpen={setIsOpen} />
 				<Image />

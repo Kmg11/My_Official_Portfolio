@@ -6,16 +6,18 @@ import { Languages } from "./Languages/Languages";
 import * as Style from "./ProfileContainer.style";
 
 const containerVariants = {
-	exit: {
-		opacity: 0,
-		scale: 1.2,
-		transition: { duration: 0.5 },
-	},
+	hidden: { opacity: 0, transition: { duration: 0.5 } },
+	visible: { opacity: 1, transition: { duration: 0.7 } },
 };
 
 export function ProfileContainer({ response }) {
 	return (
-		<Style.ProfileContainer variants={containerVariants} exit="exit">
+		<Style.ProfileContainer
+			variants={containerVariants}
+			initial="hidden"
+			animate="visible"
+			exit="hidden"
+		>
 			<Style.BannerContainer>
 				<Banner response={response} />
 			</Style.BannerContainer>
