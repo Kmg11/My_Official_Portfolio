@@ -2,6 +2,7 @@
 	- think about change style to yehia radwan style
 	- think about change hover & all animations created with css to framer motion
 	- change banner social links to circle button style
+	- Ibtikar Colors & Fonts [ https://squadio.com/ ]
 
 - Structure
 	- Add home container for banner & next Button

@@ -9,7 +9,7 @@ export function Languages({ response }) {
 	return (
 		<Styled.Languages>
 			<Box
-				title="skills"
+				title="languages"
 				icon={faLanguage}
 				isPending={isPending}
 				data={data}

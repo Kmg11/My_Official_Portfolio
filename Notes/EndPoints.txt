@@ -19,15 +19,16 @@
 	- [ Done ] Public Repositry
 	- [ Done ] Deploy On Netlify
 	- [ Done ] Remove Not Used Repos Like [ Apple Dark Mode, Mixed Images ]
-	- test facebook meta tags not working
+	- [ Done ] README File
+		- Add Github Or Final Domain URL
+	- Change Data [ image ]
 	- Add Cv Google Drive Link - Add Download CV Link In Profile Page
-	- README File
-	- Change Data [ summary ]
 	- Deploy on github netlify security problem
+	- test facebook meta tags not working [ problem could be with https ]
 
 - After Finish
 	- Add Portfolio Link On
-		- Linkedin
+		- Linkedin - Change URL In Projects
 		- Facebook
 		- Github & Add All Social Links
 		- Links On Markdown On Every Project

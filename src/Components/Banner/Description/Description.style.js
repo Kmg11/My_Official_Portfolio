@@ -4,9 +4,9 @@ import { Variables } from "../../../Style";
 
 export const Description = styled(motion.p)`
 	color: ${Variables.Colors.whiteColor};
-	font-size: 1.2rem;
+	font-size: 1.125rem;
 	font-weight: 300;
-	margin-top: 0.315rem;
+	margin-top: 0.225rem;
 	margin-bottom: 0.625rem;
 	line-height: 1.7;
 `;
