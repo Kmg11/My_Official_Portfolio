@@ -13,6 +13,12 @@
 	- [ Done ] Categoris Animation change tabs / in responsive
 	- [ Done ] close navbar when click on link to change page in responsive
 	- [ Done ] Check Animation In Responsive
+- [ Done ] Projects Sliders Next & Prev Size
+
+- Projects
+	- Elzero Todo app javascript
+	- Add My Official Portfolio
+- Add Projects To Linkedin & Medhat Dahow Custome Hooks
 
 - Last Work
 	- [ Done ] Remove Not Used Images

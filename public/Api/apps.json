@@ -4,7 +4,7 @@
 		"type": "app",
 		"title": "facebook post clone",
 		"description": "SPA application Clone facebook post function like interacting with posts by liking, commenting, deleting comment, deleting posts and creating posts with front-end technologies only using json server as mock database, design with responsive and dark mode with simple animations.",
-		"technologies": ["react", "styled components", "json"],
+		"technologies": ["React", "Styled Components", "Json"],
 		"images": {
 			"folder_name": "Apps/Facebook_Post_Clone",
 			"number_of_images": 10
@@ -45,7 +45,7 @@
 		"type": "app",
 		"title": "full screen slider",
 		"description": "Full screen slider with vanilla javascript with lots of options to handle slider look and functionality.",
-		"technologies": ["html", "css", "javascript"],
+		"technologies": ["Html", "Css", "Javascript"],
 		"images": {
 			"folder_name": "Apps/Full_Screen_Slider/",
 			"number_of_images": 8
@@ -78,7 +78,7 @@
 		"type": "app",
 		"title": "memory game",
 		"description": "Memory game created with vanilla javascript only with timing system and results section saved in local storage.",
-		"technologies": ["html", "css", "javascript"],
+		"technologies": ["Html", "Css", "Javascript"],
 		"images": {
 			"folder_name": "Apps/Memory_Game/",
 			"number_of_images": 6
@@ -101,5 +101,60 @@
 			"This app shows my problem solving skills and vanilla javascript skills"
 		],
 		"is_top": true
+	},
+
+	{
+		"id": 4,
+		"type": "app",
+		"title": "hangman game",
+		"description": "Simple Hangman game using vanilla javascript",
+		"technologies": ["Html", "Css", "Javascript"],
+		"images": {
+			"folder_name": "Apps/Hangman_Game",
+			"number_of_images": 5
+		},
+		"links": {
+			"github": "https://github.com/Kmg11/Hangman_Game",
+			"live": "https://kmg11.github.io/Hangman_Game/"
+		},
+		"features": ["4 Different Categories", "Good Design", "Result Screen"],
+		"how_to_use": null,
+		"tests": null,
+		"versions": null,
+		"other_links": null,
+		"notes": null,
+		"is_top": true
+	},
+
+	{
+		"id": 5,
+		"type": "app",
+		"title": "react todo",
+		"description": "Simple todo app using react",
+		"technologies": ["React", "Css"],
+		"images": {
+			"folder_name": "Apps/React_Todo",
+			"number_of_images": 5
+		},
+		"links": { "github": "https://github.com/Kmg11/React_ToDo" },
+		"features": [
+			"Add task",
+			"Delete task",
+			"Complete task",
+			"Complete all tasks",
+			"No tasks message",
+			"Cool Design"
+		],
+		"how_to_use": [
+			"You Need To Setup [ nodejs, gulp ] on your machine",
+			"Clone Repo",
+			"npm install",
+			"npm start or npm run start"
+		],
+		"tests": null,
+		"versions": null,
+		"other_links": null,
+		"notes": null,
+		"is_top": false
 	}
 ]

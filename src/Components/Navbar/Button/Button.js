@@ -11,6 +11,7 @@ export function Button({ isOpen, setIsOpen }) {
 		<Style.Button
 			onClick={() => setIsOpen((prev) => !prev)}
 			variants={buttonVariants}
+			aria-label="Toggle Navbar"
 		>
 			<Style.Line isOpen={isOpen} />
 			<Style.Line isOpen={isOpen} />

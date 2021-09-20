@@ -31,7 +31,7 @@
 		"100% html validation"
 	],
 	"versions": [{ "name": "v3.0.0", "github": "" }],
-	"other_links": [{ "link": "", "text": "" }],
+	"other_links": [{ "link": "", "name": "" }],
 	"notes": ["", "", ""],
 	"is_top": false
 }

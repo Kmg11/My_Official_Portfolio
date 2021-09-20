@@ -8,6 +8,7 @@ export const SwiperContainer = styled.div`
 	position: relative;
 	background-color: ${Variables.Colors.secondBackgroundColor};
 	padding: 1rem;
+	min-height: 200px;
 
 	.swiper-slide {
 		display: flex;

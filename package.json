@@ -1,4 +1,5 @@
 {
+	"homepage": "",
 	"name": "portfolio",
 	"author": {
 		"name": "Kirolos Mahfouz",
@@ -13,6 +14,7 @@
 		"@fortawesome/free-solid-svg-icons": "^5.15.3",
 		"@fortawesome/react-fontawesome": "^0.1.14",
 		"framer-motion": "^4.1.17",
+		"gh-pages": "^3.2.3",
 		"normalize.css": "^8.0.1",
 		"prop-types": "^15.7.2",
 		"react": "^17.0.2",
@@ -30,7 +32,9 @@
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
-		"eject": "react-scripts eject"
+		"eject": "react-scripts eject",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
 	},
 	"eslintConfig": {
 		"extends": [

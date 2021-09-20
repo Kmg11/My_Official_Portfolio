@@ -47,48 +47,46 @@ export function Slider() {
 		>
 			<Components.SubTitle>Images</Components.SubTitle>
 
-			<Style.SwiperContainer>
-				<Swiper
-					spaceBetween={10}
-					thumbs={{ swiper: thumbsSwiper }}
-					className="main-sider"
-				>
-					{isPending && <Components.SkeletonLoadingBox height="500px" />}
-					{imagesList}
-				</Swiper>
+			{isPending && (
+				<Style.SwiperContainer>
+					<Components.SkeletonLoadingBox height="400px" />
+				</Style.SwiperContainer>
+			)}
 
-				<Swiper
-					onSwiper={setThumbsSwiper}
-					spaceBetween={16}
-					slidesPerView={4}
-					freeMode={true}
-					watchSlidesVisibility={true}
-					watchSlidesProgress={true}
-					className="small-slider"
-					breakpoints={{
-						0: {
-							slidesPerView: 2,
-						},
-						700: {
-							slidesPerView: 3,
-						},
-						1100: {
-							slidesPerView: 4,
-						},
-					}}
-				>
-					{isPending &&
-						[...new Array(4).keys()].map((item) => {
-							return (
-								<SwiperSlide key={item}>
-									<Components.SkeletonLoadingBox height="100px" />
-								</SwiperSlide>
-							);
-						})}
+			{project && (
+				<Style.SwiperContainer>
+					<Swiper
+						spaceBetween={10}
+						thumbs={{ swiper: thumbsSwiper }}
+						className="main-sider"
+					>
+						{imagesList}
+					</Swiper>
 
-					{imagesList}
-				</Swiper>
-			</Style.SwiperContainer>
+					<Swiper
+						onSwiper={setThumbsSwiper}
+						spaceBetween={16}
+						slidesPerView={4}
+						freeMode={true}
+						watchSlidesVisibility={true}
+						watchSlidesProgress={true}
+						className="small-slider"
+						breakpoints={{
+							0: {
+								slidesPerView: 2,
+							},
+							700: {
+								slidesPerView: 3,
+							},
+							1100: {
+								slidesPerView: 4,
+							},
+						}}
+					>
+						{imagesList}
+					</Swiper>
+				</Style.SwiperContainer>
+			)}
 		</Style.Slider>
 	);
 }

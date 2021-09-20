@@ -20,7 +20,7 @@ export const Slider = styled(motion.section)`
 			top: 0;
 			bottom: 0;
 			background-color: rgba(15, 23, 30, 0.5);
-			width: 50px;
+			width: 2.5rem;
 			height: 100%;
 			margin-top: 0;
 			transition-property: background-color;
