@@ -14,7 +14,7 @@ ReactDOM.render(
 		<Provider store={store}>
 			<HelmetProvider>
 				<GlobalStyle />
-				<Router>
+				<Router basename={process.env.PUBLIC_URL}>
 					<App />
 				</Router>
 			</HelmetProvider>

@@ -68,7 +68,6 @@
 - [ Done ] Navbar Problem In Responsive [ delay ]
 - [ Done ] Card Hover Not Working
 - [ Done ] Fix Single Page Images Slider Active On thumbs problem
-- Card Description Readmore
 
 ---- End Global ----
 ---- Start Bugs & Errors ----

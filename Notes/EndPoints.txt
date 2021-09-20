@@ -18,7 +18,6 @@
 - Projects
 	- Elzero Todo app javascript
 	- Add My Official Portfolio
-- Add Projects To Linkedin & Medhat Dahow Custome Hooks
 
 - Last Work
 	- [ Done ] Remove Not Used Images

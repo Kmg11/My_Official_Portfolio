@@ -1,4 +1,4 @@
-const base = "/images";
+const base = process.env.PUBLIC_URL + "/images";
 
 export const GLOBAL = base + "/Global";
 export const HOME = base + "/Home";
