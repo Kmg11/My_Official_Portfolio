@@ -1,0 +1,53 @@
+{
+	"name": "Kirolos Mahfouz",
+	"email": "kirolosmahfouz15@gmail.com",
+	"description": "I am a frontend web developer with a wide range of skills and techniques",
+	"summary": [
+		"An innovative frontend developer with more than 1 year of experience building and maintaining responsive websites. Proficient in HTML, CSS and strong knowledge in JavaScript as well as modern libraries and frameworks such as React. Passionate about getting the highest performance possible. Maintains up to date awareness of technological trends and technological advances."
+	],
+	"skills": [
+		"html",
+		"css",
+		"javascript",
+		"jquery",
+		"bootstrap",
+		"sass",
+		"pug",
+		"gulp",
+		"git",
+		"github",
+		"json",
+		"ajax",
+		"react",
+		"redux",
+		"styled components",
+		"npm"
+	],
+	"languages": ["English", "Arabic"],
+	"social_links": [
+		{
+			"id": 1,
+			"website": "Github",
+			"link": "https://github.com/Kmg11",
+			"icon": "faGithubSquare"
+		},
+		{
+			"id": 2,
+			"website": "Linkedin",
+			"link": "https://www.linkedin.com/in/kirolos-mahfouz/",
+			"icon": "faLinkedin"
+		},
+		{
+			"id": 3,
+			"website": "Email",
+			"link": "kirolosmahfouz15@gmail.com",
+			"icon": "faEnvelopeSquare"
+		},
+		{
+			"id": 5,
+			"website": "Facebook",
+			"link": "https://www.facebook.com/KirolosMahfouz/",
+			"icon": "faFacebookSquare"
+		}
+	]
+}

@@ -1,0 +1,160 @@
+[
+	{
+		"id": 1,
+		"type": "app",
+		"title": "facebook post clone",
+		"description": "SPA application Clone facebook post function like interacting with posts by liking, commenting, deleting comment, deleting posts and creating posts with front-end technologies only using json server as mock database, design with responsive and dark mode with simple animations.",
+		"technologies": ["React", "Styled Components", "Json"],
+		"images": {
+			"folder_name": "Apps/Facebook_Post_Clone",
+			"number_of_images": 10
+		},
+		"links": {
+			"github": "https://github.com/Kmg11/Facebook_Post_Clone"
+		},
+		"features": [
+			"Interact with posts by [ like, comment, delete ] and single page for every post",
+			"Form for creating posts that contain user ( name, image ), post ( title, description, images )",
+			"Save unsent data in local storage",
+			"Infinity scroll",
+			"A random image containing a distinctive color and the first letter of the first and second name of the user who did not put a picture",
+			"Loading handler, error handler and 404 page",
+			"Compatible with all devices, browsers, search engines and screen readers",
+			"High performance"
+		],
+		"how_to_use": [
+			"You Need To Setup [ nodejs, gulp ] on your machine",
+			"Install json-server [ npm install -g json-server ] - First Time Only",
+			"Clone Repo",
+			"npm install",
+			"npm run mock or json-server --watch .\\src\\Apis\\posts.json --port 8000",
+			"npm start or npm run start - on another terminal"
+		],
+		"tests": null,
+		"versions": null,
+		"other_links": null,
+		"notes": [
+			"No live preview link because using json server as Database how to preview on github",
+			"If You Want To Add Image In Post All Images Must Be In public/images Folder"
+		],
+		"is_top": true
+	},
+
+	{
+		"id": 2,
+		"type": "app",
+		"title": "full screen slider",
+		"description": "Full screen slider with vanilla javascript with lots of options to handle slider look and functionality.",
+		"technologies": ["Html", "Css", "Javascript"],
+		"images": {
+			"folder_name": "Apps/Full_Screen_Slider/",
+			"number_of_images": 8
+		},
+		"links": {
+			"github": "https://github.com/Kmg11/Full_Screen_Slider",
+			"live": "https://kmg11.github.io/Full_Screen_Slider/"
+		},
+		"features": [
+			"All options are saved to local storage",
+			"Two modes of slide [ opacity, transform ]",
+			"Change all colors options",
+			"Full keyboard control",
+			"Auto play option",
+			"Slider Gallery",
+			"Help menu"
+		],
+		"how_to_use": null,
+		"tests": null,
+		"versions": null,
+		"other_links": null,
+		"notes": [
+			"This app shows my problem solving skills and vanilla javascript skills"
+		],
+		"is_top": true
+	},
+
+	{
+		"id": 3,
+		"type": "app",
+		"title": "memory game",
+		"description": "Memory game created with vanilla javascript only with timing system and results section saved in local storage.",
+		"technologies": ["Html", "Css", "Javascript"],
+		"images": {
+			"folder_name": "Apps/Memory_Game/",
+			"number_of_images": 6
+		},
+		"links": {
+			"github": "https://github.com/Kmg11/Memory_Game",
+			"live": "https://kmg11.github.io/Memory_Game/"
+		},
+		"features": [
+			"Timing system",
+			"Results system",
+			"Sound system",
+			"Save all results in local storage"
+		],
+		"how_to_use": null,
+		"tests": null,
+		"versions": null,
+		"other_links": null,
+		"notes": [
+			"This app shows my problem solving skills and vanilla javascript skills"
+		],
+		"is_top": true
+	},
+
+	{
+		"id": 4,
+		"type": "app",
+		"title": "hangman game",
+		"description": "Simple Hangman game using vanilla javascript",
+		"technologies": ["Html", "Css", "Javascript"],
+		"images": {
+			"folder_name": "Apps/Hangman_Game",
+			"number_of_images": 5
+		},
+		"links": {
+			"github": "https://github.com/Kmg11/Hangman_Game",
+			"live": "https://kmg11.github.io/Hangman_Game/"
+		},
+		"features": ["4 Different Categories", "Good Design", "Result Screen"],
+		"how_to_use": null,
+		"tests": null,
+		"versions": null,
+		"other_links": null,
+		"notes": null,
+		"is_top": true
+	},
+
+	{
+		"id": 5,
+		"type": "app",
+		"title": "react todo",
+		"description": "Simple todo app using react",
+		"technologies": ["React", "Css"],
+		"images": {
+			"folder_name": "Apps/React_Todo",
+			"number_of_images": 5
+		},
+		"links": { "github": "https://github.com/Kmg11/React_ToDo" },
+		"features": [
+			"Add task",
+			"Delete task",
+			"Complete task",
+			"Complete all tasks",
+			"No tasks message",
+			"Cool Design"
+		],
+		"how_to_use": [
+			"You Need To Setup [ nodejs, gulp ] on your machine",
+			"Clone Repo",
+			"npm install",
+			"npm start or npm run start"
+		],
+		"tests": null,
+		"versions": null,
+		"other_links": null,
+		"notes": null,
+		"is_top": false
+	}
+]

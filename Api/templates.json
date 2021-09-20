@@ -1,0 +1,227 @@
+[
+	{
+		"id": 1,
+		"type": "template",
+		"title": "agency",
+		"description": "Responsive SPA website with high level of performance, simple design, using React, React router, Sass.",
+		"technologies": ["React", "Sass", "Json", "Axios"],
+		"images": {
+			"folder_name": "Templates/Agency",
+			"number_of_images": 13
+		},
+		"links": {
+			"github": "https://github.com/Kmg11/Agency",
+			"live": "https://kmg11.github.io/Agency/"
+		},
+		"features": [
+			"Two themes of colors [ Light theme & Dark theme ]",
+			"Dynamic theme depend on user preference",
+			"Dynamic images depend on theme",
+			"Compatible with all devices, browsers, search engines and screen readers",
+			"Every thing is dynamic by using an restful API",
+			"Contact form for sending messages connected with json-server",
+			"Navbar with modern features such a [ close when click on any place in the document - close with ESC button - etc... ]",
+			"Optimize images SVGs Images that have a good quality & low size",
+			"Scroll to top button",
+			"Loading handler, error handler and 404 page",
+			"High performance"
+		],
+		"how_to_use": [
+			"You Need To Setup [ nodejs, gulp ] on your machine",
+			"Clone Repo",
+			"npm install",
+			"npm start or npm run start",
+			"Add / in the last of url => http://localhost:3000/Agency/"
+		],
+		"tests": [
+			"97% Performance",
+			"97% Accessibility",
+			"100% Seo",
+			"100% Best Practices",
+			"100% Html Validation"
+		],
+		"versions": null,
+		"other_links": null,
+		"notes": null,
+		"is_top": true
+	},
+
+	{
+		"id": 2,
+		"type": "template",
+		"title": "apple clone",
+		"description": "Landing page with a high level of performance, fully responsive, image optimization, beautiful animation, simple and beautiful design with dark mode.",
+		"technologies": ["Html", "Css", "Jquery", "Sass", "Bootstrap", "Gulp"],
+		"images": {
+			"folder_name": "Templates/Apple",
+			"number_of_images": 10
+		},
+		"links": {
+			"github": "https://github.com/Kmg11/Apple/tree/V3.0.0",
+			"live": "https://kmg11.github.io/Apple/dist/"
+		},
+		"features": [
+			"Compatible with all devices, browsers, search engines and screen readers",
+			"Optimize images",
+			"High performance",
+			"Dark Mode"
+		],
+		"how_to_use": [
+			"You Need To Setup [ nodejs, gulp ] on your machine",
+			"Clone Repo",
+			"npm install",
+			"npm start or npm run start",
+			"Open On Your Browser http://localhost:8888"
+		],
+		"tests": [
+			"98% Performance",
+			"100% Accessibility",
+			"100% Seo",
+			"100% Best Practices",
+			"100% Html Validation"
+		],
+		"versions": [
+			{
+				"name": "v3.0.0",
+				"link": "https://github.com/Kmg11/Apple/tree/V3.0.0"
+			},
+			{
+				"name": "v2.0.0",
+				"link": "https://github.com/Kmg11/Apple/tree/V2.0.0"
+			},
+			{
+				"name": "v1.0.0",
+				"link": "https://github.com/Kmg11/Apple/tree/main"
+			}
+		],
+		"other_links": null,
+		"notes": null,
+		"is_top": true
+	},
+
+	{
+		"id": 3,
+		"type": "template",
+		"title": "Restaurant",
+		"description": "Landing page with 2 lang [ English - Arabic ] with a high level of performance, fully responsive, image optimization, simple and beautiful design.",
+		"technologies": ["Pug", "Sass", "Jquery", "Bootstrap Grid", "Gulp"],
+		"images": {
+			"folder_name": "Templates/Restaurant",
+			"number_of_images": 14
+		},
+		"links": {
+			"github": "https://github.com/Kmg11/Restaurant",
+			"live": "https://kmg11.github.io/Restaurant/dist/index.html"
+		},
+		"features": [
+			"2 Languages [ English - Arabic ]",
+			"Compatible with all devices, browsers, search engines and screen readers",
+			"Optimize images",
+			"High performance"
+		],
+		"how_to_use": [
+			"You Need To Setup [ nodejs, gulp ] on your machine",
+			"Clone Repo",
+			"npm install",
+			"npm start or npm run start",
+			"Open (index.html) or (index-ar.html) in dist folder with live server"
+		],
+		"tests": [
+			"96% Performance",
+			"100% Accessibility",
+			"100% Seo",
+			"100% Best Practices",
+			"100% Html Validation"
+		],
+		"versions": null,
+		"other_links": [
+			{
+				"link": "https://kmg11.github.io/Restaurant/dist/index-ar.html",
+				"name": "Live Arabic"
+			}
+		],
+		"notes": null,
+		"is_top": true
+	},
+
+	{
+		"id": 4,
+		"type": "template",
+		"title": "taamer hosny",
+		"description": "Landing page with a high level of performance, fully responsive, image optimization, simple and beautiful design with dark mode.",
+		"technologies": ["Html", "Css", "Jquery"],
+		"images": {
+			"folder_name": "Templates/Tamer_Hosny/",
+			"number_of_images": 7
+		},
+		"links": {
+			"github": "https://github.com/Kmg11/Tamer_Hosny",
+			"live": "https://kmg11.github.io/Tamer_Hosny/"
+		},
+		"features": [
+			"Compatible with all devices, browsers, search engines and screen readers",
+			"High performance",
+			"Dark Mode"
+		],
+		"how_to_use": null,
+		"tests": [
+			"99% Performance",
+			"97% Accessibility",
+			"100% Seo",
+			"100% Best Practices",
+			"100% Html Validation"
+		],
+		"versions": null,
+		"other_links": null,
+		"notes": ["Media player is design only not working as real media player"],
+		"is_top": false
+	},
+
+	{
+		"id": 5,
+		"type": "template",
+		"title": "Portfolio",
+		"description": "Multi Page responsive portfolio with simple and modern design.",
+		"technologies": ["Html", "Sass", "Javascript"],
+		"images": {
+			"folder_name": "Templates/Portfolio",
+			"number_of_images": 14
+		},
+		"links": {
+			"github": "https://github.com/Kmg11/Portfolio",
+			"live": "https://kmg11.github.io/Portfolio/dist/index.html"
+		},
+		"features": [
+			"2 Languages [ English - Arabic ]",
+			"Multi page website",
+			"Simple Design",
+			"Compatible with all devices, browsers, search engines and screen readers",
+			"Optimize images",
+			"High performance",
+			"Dark Mode"
+		],
+		"how_to_use": [
+			"You Need To Setup [ sass ] on your machine",
+			"Clone Repo",
+			"On terminal sass --watch .\\scss:.\\dist\\css",
+			"Open index.html with live server for English version",
+			"Open index-rtl.html with live server for Arabic version"
+		],
+		"tests": [
+			"100% performance",
+			"100% accessibility",
+			"100% seo",
+			"100% best practices",
+			"100% html validation"
+		],
+		"versions": null,
+		"other_links": [
+			{
+				"link": "https://kmg11.github.io/Portfolio/dist/index-rtl.html",
+				"name": "Live Arabic"
+			}
+		],
+		"notes": null,
+		"is_top": false
+	}
+]
