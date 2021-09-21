@@ -63,7 +63,7 @@ export function List({ setListWidth, setList, isOpen }) {
 			<Style.Item variants={itemVariants}>
 				<Style.Link
 					as="a"
-					href="/Files/Kirolos_Mahfouz_Cv.docx"
+					href={`${process.env.PUBLIC_URL}/Files/Kirolos_Mahfouz_Cv.docx`}
 					download="Kirolos Mahfouz Cv"
 				>
 					<Style.Icon>
