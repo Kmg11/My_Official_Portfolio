@@ -35,7 +35,6 @@ export function List({ setListWidth, setList, isOpen }) {
 		{ name: "home", to: Routes.HOME, icon: faHome },
 		{ name: "projects", to: Routes.PROJECTS, icon: faWrench },
 		{ name: "profile", to: Routes.PROFILE, icon: faUserAlt },
-		{ name: "cv", to: "/test", icon: faScroll },
 	];
 
 	const linksItems = linksList.map(({ name, to, icon }, index) => {
@@ -60,6 +59,19 @@ export function List({ setListWidth, setList, isOpen }) {
 			}}
 		>
 			{linksItems}
+
+			<Style.Item variants={itemVariants}>
+				<Style.Link
+					as="a"
+					href="/Files/Kirolos_Mahfouz_Cv.docx"
+					download="Kirolos Mahfouz Cv"
+				>
+					<Style.Icon>
+						<FontAwesomeIcon icon={faScroll} />
+					</Style.Icon>
+					<Style.Name>cv</Style.Name>
+				</Style.Link>
+			</Style.Item>
 		</Style.List>
 	);
 }

@@ -9,7 +9,8 @@ It includes most of the projects that I created and information about my experie
 ### Links
 
 - [Github](https://github.com/Kmg11/My_Official_Portfolio "Github Repo")
-- [Live](https://kirolos.netlify.app/ "Live Preview On Netlify")
+- [Live On Github](https://kmg11.github.io/My_Official_Portfolio/ "Live Preview On Github")
+- [Live On Netlify](https://kirolos.netlify.app/ "Live Preview On Netlify")
 
 ---
 

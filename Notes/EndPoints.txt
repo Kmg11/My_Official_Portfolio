@@ -14,9 +14,11 @@
 	- [ Done ] close navbar when click on link to change page in responsive
 	- [ Done ] Check Animation In Responsive
 - [ Done ] Projects Sliders Next & Prev Size
+- fallback image problem
 
 - Projects
 	- Elzero Todo app javascript
+	- traversery media booklist
 	- Add My Official Portfolio
 
 - Last Work
@@ -24,11 +26,11 @@
 	- [ Done ] Public Repositry
 	- [ Done ] Deploy On Netlify
 	- [ Done ] Remove Not Used Repos Like [ Apple Dark Mode, Mixed Images ]
+	- [ Done ] Deploy on github netlify security problem
 	- [ Done ] README File
-		- Add Github Or Final Domain URL
-	- Change Data [ image ]
-	- Add Cv Google Drive Link - Add Download CV Link In Profile Page
-	- Deploy on github netlify security problem
+		- [ Done ] Add Github Or Final Domain URL
+	- [ Done ] Change Data [ image ]
+	- [ Done ] Add Cv Google Drive Link - Add Download CV Link In Profile Page
 	- test facebook meta tags not working [ problem could be with https ]
 
 - After Finish

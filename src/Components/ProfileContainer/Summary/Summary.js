@@ -9,7 +9,7 @@ export function Summary({ response }) {
 	return (
 		<Style.Summary>
 			<Box
-				title="front end web developer"
+				title="frontend web developer"
 				icon={faInfo}
 				isPending={isPending}
 				data={data}

@@ -13,7 +13,7 @@ export function Image() {
 		<Style.ImageContainer variants={imageVariants}>
 			<Link to={Routes.PROFILE}>
 				<CreateImage
-					src={`${Images.GLOBAL}/personal-image-small`}
+					src={`${Images.GLOBAL}/personal-image`}
 					alt="Kirolos Mahfouz"
 				/>
 			</Link>
