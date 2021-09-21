@@ -9,7 +9,6 @@
 
 - Structure
 	- Add home container for banner & next Button
-	- think about remove center style component & split global style to small parts
 
 - Performance
 	- Mobile Problems
