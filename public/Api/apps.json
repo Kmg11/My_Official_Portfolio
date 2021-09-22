@@ -1,6 +1,6 @@
 [
 	{
-		"id": 1,
+		"id": "facebook-post-clone",
 		"type": "app",
 		"title": "facebook post clone",
 		"description": "SPA application Clone facebook post function like interacting with posts by liking, commenting, deleting comment, deleting posts and creating posts with front-end technologies only using json server as mock database, design with responsive and dark mode with simple animations.",
@@ -41,7 +41,7 @@
 	},
 
 	{
-		"id": 2,
+		"id": "full-screen-slider",
 		"type": "app",
 		"title": "full screen slider",
 		"description": "Full screen slider with vanilla javascript with lots of options to handle slider look and functionality.",
@@ -74,7 +74,7 @@
 	},
 
 	{
-		"id": 3,
+		"id": "memory-game",
 		"type": "app",
 		"title": "memory game",
 		"description": "Memory game created with vanilla javascript only with timing system and results section saved in local storage.",
@@ -104,7 +104,7 @@
 	},
 
 	{
-		"id": 4,
+		"id": "hangman-game",
 		"type": "app",
 		"title": "hangman game",
 		"description": "Simple Hangman game using vanilla javascript",
@@ -127,7 +127,7 @@
 	},
 
 	{
-		"id": 5,
+		"id": "react-todo",
 		"type": "app",
 		"title": "react todo",
 		"description": "Simple todo app using react",

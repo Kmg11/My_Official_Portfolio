@@ -20,15 +20,14 @@
 		"You Need To Setup [ nodejs, gulp ] on your machine",
 		"Clone Repo",
 		"npm install",
-		"npm start or npm run start",
-		"Open On Your Browser http://localhost:8888"
+		"npm start or npm run start"
 	],
 	"tests": [
-		"98% performance",
-		"100% accessibility",
-		"100% seo",
-		"100% best practices",
-		"100% html validation"
+		"100% Performance",
+		"100% Accessibility",
+		"100% Seo",
+		"100% Best Practices",
+		"100% Html Validation"
 	],
 	"versions": [{ "name": "v3.0.0", "github": "" }],
 	"other_links": [{ "link": "", "name": "" }],

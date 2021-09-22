@@ -18,15 +18,15 @@ export const GlobalStyle = createGlobalStyle`
 		scrollbar-color: ${Variables.Colors.mainColor} ${Variables.Colors.secondBackgroundColor};
 	}
 
-	html::-webkit-scrollbar {
-		width: 1.2vw;
+	::-webkit-scrollbar {
+		width: 1.1vw;
 	}
 	
-	html::-webkit-scrollbar-thumb {
+	::-webkit-scrollbar-thumb {
 		background-color: ${Variables.Colors.mainColor};
 	}
 
-	html::-webkit-scrollbar-track {
+	::-webkit-scrollbar-track {
 		background-color: ${Variables.Colors.secondBackgroundColor};
 	}
 

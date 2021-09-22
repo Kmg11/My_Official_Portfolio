@@ -14,12 +14,14 @@
 	- [ Done ] close navbar when click on link to change page in responsive
 	- [ Done ] Check Animation In Responsive
 - [ Done ] Projects Sliders Next & Prev Size
+- [ Done ] Create Script For Convert Images To Webp
+- [ Done ] Projects Id
+- Create Script For Compress png images
 - fallback image problem
 
 - Projects
-	- Elzero Todo app javascript
 	- traversery media booklist
-	- Add My Official Portfolio
+	- Elzero Todo app javascript
 
 - Last Work
 	- [ Done ] Remove Not Used Images
@@ -31,11 +33,12 @@
 		- [ Done ] Add Github Or Final Domain URL
 	- [ Done ] Change Data [ image ]
 	- [ Done ] Add Cv Google Drive Link - Add Download CV Link In Profile Page
+	- [ Done ] Record Video
 	- test facebook meta tags not working [ problem could be with https ]
 
 - After Finish
-	- Add Portfolio Link On
-		- Linkedin - Change URL In Projects
-		- Facebook
-		- Github & Add All Social Links
-		- Links On Markdown On Every Project
+	- [ Done ] Add Portfolio Link On
+		- [ Done ] Linkedin - Change URL In Projects
+		- [ Done ] Facebook
+		- [ Done ] Github & Add All Social Links
+		- [ Done ] Links On Markdown On Every Project

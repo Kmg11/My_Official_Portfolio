@@ -11,10 +11,7 @@ export function App() {
 			<Switch location={location} key={location.key}>
 				<Route exact path={Routes.HOME} component={Page.Home} />
 				<Route path={Routes.PROJECTS} component={Page.Projects} />
-				<Route
-					path={`${Routes.PROJECT}/:type/:id/:title`}
-					component={Page.Project}
-				/>
+				<Route path={`${Routes.PROJECT}/:type/:id`} component={Page.Project} />
 				<Route path={Routes.PROFILE} component={Page.Profile} />
 				<Route path="*" component={Page.Error} />
 			</Switch>

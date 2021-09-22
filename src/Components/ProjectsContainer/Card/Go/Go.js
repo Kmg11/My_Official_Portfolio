@@ -8,7 +8,7 @@ export function Go() {
 
 	return (
 		<Style.Go
-			to={`${Routes.PROJECT}/${type}/${id}/${title.split(" ").join("-")}`}
+			to={`${Routes.PROJECT}/${type}/${id}`}
 			aria-label={`Go To ${title} Page`}
 		></Style.Go>
 	);
