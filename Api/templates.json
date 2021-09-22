@@ -1,6 +1,6 @@
 [
 	{
-		"id": 6,
+		"id": "my-official-portfolio",
 		"type": "template",
 		"title": "My Official Portfolio",
 		"description": "My official portfolio It includes most of the projects that I created and information about my experience in the development of user interfaces ( Frontend Web Development ).",
@@ -14,6 +14,13 @@
 			"live": "https://kmg11.github.io/My_Official_Portfolio/"
 		},
 		"features": [
+			"Skeleton Loading",
+			"Dynamic data using json files",
+			"Powerful file structure",
+			"Not found page",
+			"Simple/Good Design",
+			"Cool animation",
+			"Custome scrollbar",
 			"Compatible with all devices, browsers, search engines and screen readers",
 			"Loading handler, error handler and 404 page",
 			"Optimize images",
@@ -27,20 +34,20 @@
 			"npm start or npm run start"
 		],
 		"tests": [
-			"100% performance",
-			"100% accessibility",
-			"100% seo",
-			"100% best practices",
-			"100% html validation"
+			"100% Performance",
+			"100% Accessibility",
+			"100% Seo",
+			"100% Best Practices",
+			"100% Html Validation"
 		],
 		"versions": null,
 		"other_links": null,
 		"notes": null,
-		"is_top": false
+		"is_top": true
 	},
 
 	{
-		"id": 1,
+		"id": "agency",
 		"type": "template",
 		"title": "agency",
 		"description": "Responsive SPA website with high level of performance, simple design, using React, React router, Sass.",
@@ -87,7 +94,7 @@
 	},
 
 	{
-		"id": 2,
+		"id": "apple-clone",
 		"type": "template",
 		"title": "apple clone",
 		"description": "Landing page with a high level of performance, fully responsive, image optimization, beautiful animation, simple and beautiful design with dark mode.",
@@ -140,7 +147,7 @@
 	},
 
 	{
-		"id": 3,
+		"id": "restaurant",
 		"type": "template",
 		"title": "Restaurant",
 		"description": "Landing page with 2 lang [ English - Arabic ] with a high level of performance, fully responsive, image optimization, simple and beautiful design.",
@@ -185,7 +192,7 @@
 	},
 
 	{
-		"id": 4,
+		"id": "taamer-hosny",
 		"type": "template",
 		"title": "taamer hosny",
 		"description": "Landing page with a high level of performance, fully responsive, image optimization, simple and beautiful design with dark mode.",
@@ -218,7 +225,7 @@
 	},
 
 	{
-		"id": 5,
+		"id": "portfolio",
 		"type": "template",
 		"title": "Portfolio",
 		"description": "Multi Page responsive portfolio with simple and modern design.",
