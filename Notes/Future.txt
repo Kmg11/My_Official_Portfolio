@@ -6,6 +6,7 @@
 	- font of responsive Portfolio
 	- Add Start To Top Projects after title in card
 		- add yellow color to type in single page to top projects
+	- Make Skill Item Slide To Avoid responsive Problems
 
 - Structure
 	- Add home container for banner & next Button
