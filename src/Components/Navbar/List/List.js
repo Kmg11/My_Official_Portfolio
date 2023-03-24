@@ -60,7 +60,7 @@ export function List({ setListWidth, setList, isOpen }) {
 		>
 			{linksItems}
 
-			<Style.Item variants={itemVariants}>
+			{/* <Style.Item variants={itemVariants}>
 				<Style.Link
 					as="a"
 					href={`${process.env.PUBLIC_URL}/Files/Kirolos_Mahfouz_Cv.docx`}
@@ -71,7 +71,7 @@ export function List({ setListWidth, setList, isOpen }) {
 					</Style.Icon>
 					<Style.Name>cv</Style.Name>
 				</Style.Link>
-			</Style.Item>
+			</Style.Item> */}
 		</Style.List>
 	);
 }

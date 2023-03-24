@@ -5,6 +5,7 @@ import { Skills } from "./Skills/Skills";
 import { Languages } from "./Languages/Languages";
 import { Cv } from "./Cv/Cv";
 import * as Style from "./ProfileContainer.style";
+import { Experience } from "./Experience/Experience";
 
 const containerVariants = {
 	hidden: { opacity: 0, transition: { duration: 0.5 } },
@@ -24,9 +25,10 @@ export function ProfileContainer({ response }) {
 			</Style.BannerContainer>
 
 			<Summary response={response} />
+			<Experience response={response} />
 			<Skills response={response} />
 			<Languages response={response} />
-			<Cv response={response} />
+			{/* <Cv response={response} /> */}
 		</Style.ProfileContainer>
 	);
 }
