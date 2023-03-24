@@ -10,7 +10,6 @@ My official portfolio It includes most of the projects that I created and inform
 
 - [Github](https://github.com/Kmg11/My_Official_Portfolio "Github Repo")
 - [Live On Github](https://kmg11.github.io/My_Official_Portfolio/ "Live Preview On Github")
-- [Live On Netlify](https://kirolos.netlify.app/ "Live Preview On Netlify")
 
 ---
 
@@ -37,4 +36,3 @@ My official portfolio It includes most of the projects that I created and inform
 - [My Portfolio](https://kmg11.github.io/My_Official_Portfolio/)
 - [Linkedin](https://www.linkedin.com/in/kirolos-mahfouz/)
 - [Github](https://github.com/Kmg11)
-- [Facebook](https://www.facebook.com/KirolosMahfouz/)
