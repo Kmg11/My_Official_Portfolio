@@ -5,7 +5,7 @@
 	"description": "",
 	"technologies": ["", "", ""],
 	"images": {
-		"folder_name": "Templates/, Apps/",
+		"folder_name": "templates/, Apps/",
 		"number_of_images": 10
 	},
 	"links": { "github": "", "live": "" },
