@@ -6,7 +6,7 @@
 		"description": "My official portfolio It includes most of the projects that I created and information about my experience in the development of user interfaces ( Frontend Web Development ).",
 		"technologies": ["React", "Redux", "Styled Components", "Json"],
 		"images": {
-			"folder_name": "Templates/My_Official_Portfolio",
+			"folder_name": "templates/My_Official_Portfolio",
 			"number_of_images": 15
 		},
 		"links": {
@@ -100,7 +100,7 @@
 		"description": "Landing page with a high level of performance, fully responsive, image optimization, beautiful animation, simple and beautiful design with dark mode.",
 		"technologies": ["Html", "Css", "Jquery", "Sass", "Bootstrap", "Gulp"],
 		"images": {
-			"folder_name": "Templates/Apple",
+			"folder_name": "templates/Apple",
 			"number_of_images": 10
 		},
 		"links": {
@@ -198,7 +198,7 @@
 		"description": "Landing page with a high level of performance, fully responsive, image optimization, simple and beautiful design with dark mode.",
 		"technologies": ["Html", "Css", "Jquery"],
 		"images": {
-			"folder_name": "Templates/Tamer_Hosny/",
+			"folder_name": "templates/Tamer_Hosny/",
 			"number_of_images": 7
 		},
 		"links": {
