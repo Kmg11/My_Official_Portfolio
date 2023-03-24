@@ -53,7 +53,7 @@
 		"description": "Responsive SPA website with high level of performance, simple design, using React, React router, Sass.",
 		"technologies": ["React", "Sass", "Json", "Axios"],
 		"images": {
-			"folder_name": "Templates/Agency",
+			"folder_name": "templates/Agency",
 			"number_of_images": 13
 		},
 		"links": {
@@ -153,7 +153,7 @@
 		"description": "Landing page with 2 lang [ English - Arabic ] with a high level of performance, fully responsive, image optimization, simple and beautiful design.",
 		"technologies": ["Pug", "Sass", "Jquery", "Bootstrap Grid", "Gulp"],
 		"images": {
-			"folder_name": "Templates/Restaurant",
+			"folder_name": "templates/Restaurant",
 			"number_of_images": 14
 		},
 		"links": {
@@ -231,7 +231,7 @@
 		"description": "Multi Page responsive portfolio with simple and modern design.",
 		"technologies": ["Html", "Sass", "Javascript"],
 		"images": {
-			"folder_name": "Templates/Portfolio",
+			"folder_name": "templates/Portfolio",
 			"number_of_images": 14
 		},
 		"links": {
