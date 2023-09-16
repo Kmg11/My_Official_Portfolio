@@ -1,0 +1,57 @@
+Enhancements on notes files
+
+- Create commits file
+- Remove not needed notes files
+- Upgrade packages
+- Enhance README.md example file
+- Rename Readme.md to README.example.md
+
+============================================================================
+
+- Create new branch for updates
+- Enhance file structure
+	- Rename folders and files
+- Add eslint, prettier .editorconfig files with airbnb config
+- Remove redux
+- Add new skills
+- Change skills list design
+- Change summary and headline
+- Handle experience section
+- Use markdown for project description
+- Add border to circle image like story with two empty places to round like clock
+- Enhance Box component
+- Remove not needed projects
+- Convert project to typescript [ Remove prop types ]
+- Uninstall redux, react-redux and redux-thunk
+- Add eslint and prettier scripts
+- Replace README.md file with new file in threads clone
+
+Problems
+
+- fallback image problem
+
+- Style
+	- change banner social links to circle button style
+	- Ibtikar Colors & Fonts [ https://squadio.com/ ]
+	- font of responsive Portfolio
+	- Add Start To Top Projects after title in card
+		- add yellow color to type in single page to top projects
+
+- Structure
+	- Add home container for banner & next Button
+
+- Performance
+	- Mobile Problems
+	- check swiper css files
+
+- Skelaton
+	- don't load design if api not load
+	- need handle in responsive
+	- add for background image like net ninja move light
+
+- Email Link Make It Copy Not Link home page
+
+Future Enhancements:- projects page
+- Make Slider Buttons Transparency When Hover On Card
+- Accessibilty In Slider [ Hover & Focus On Link ]
+- Swiper Keyboard Need To Seprate Every Slider
