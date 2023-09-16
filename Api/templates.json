@@ -1,5 +1,58 @@
 [
 	{
+		"id": "threads-clone",
+		"type": "template",
+		"title": "Threads Clone",
+		"description": "Threads Clone is a full-stack social media website built using NextJS 13, TypeScript, NodeJS, and MongoDB. It provides a comprehensive platform for users to engage in discussions, share ideas, and connect with like-minded individuals.",
+		"technologies": [
+			"Next.js",
+			"React.js",
+			"TypeScript",
+			"Node.js",
+			"MongoDB",
+			"Mongoose",
+			"Clerk",
+			"TailwindCSS",
+			"React hook form",
+			"Zod",
+			"Shadcn"
+		],
+		"images": {
+			"folder_name": "templates/Threads_Clone",
+			"number_of_images": 13
+		},
+		"links": {
+			"github": "https://github.com/Kmg11/Threads_Clone",
+			"live": "https://threads-clone-drab.vercel.app"
+		},
+		"features": [
+			"Full Authentication System: Threads Clone offers a robust authentication system that allows users to create accounts, log in securely, and start posting threads.",
+			"Thread Creation and Commenting: Users can create threads on various topics and engage in discussions with other users. The platform supports infinite nested reply threads, facilitating in-depth conversations.",
+			"Community Functionality: Threads Clone enables users to create and join communities based on their interests. Discover diverse communities, connect with others, and contribute to meaningful discussions.",
+			"Advanced Search Capabilities: The platform provides powerful search functionality, allowing users to find specific communities and users within Threads Clone. Easily discover relevant content and connect with others.",
+			"User Management with Clerk: Threads Clone leverages Clerk, a powerful tool, for handling user authentication and management. Enjoy a secure and seamless user experience."
+		],
+		"how_to_use": [
+			"Clone the repository: git clone https://github.com/Kmg11/Threads_Clone.git",
+			"Install dependencies: cd threads-clone && npm install",
+			"Configure environment variables: Rename .env.local.example to .env.local and update the necessary values.",
+			"Start the development server: npm run dev",
+			"Open your browser and visit http://localhost:3000 to access Threads Clone."
+		],
+		"tests": [
+			"100% Performance",
+			"100% Accessibility",
+			"100% Seo",
+			"100% Best Practices",
+			"100% Html Validation"
+		],
+		"versions": null,
+		"other_links": null,
+		"notes": null,
+		"is_top": true
+	},
+
+	{
 		"id": "my-official-portfolio",
 		"type": "template",
 		"title": "My Official Portfolio",
