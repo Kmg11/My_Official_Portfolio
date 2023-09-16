@@ -8,6 +8,24 @@ Enhancements on notes files
 
 ============================================================================
 
+Add Threads Clone Project
+
+- Add threads clone project
+- Add threads clone images
+
+============================================================================
+
+- Deploy after finish
+
+- Enhance Portfolio README.md file
+	- Remove tests
+	- Add table of content
+	- Add technologies used [ javascript ]
+	- Remove redux from technologies
+	- Enhance description
+	- Add project link on Portfolio
+	- Add getting started section
+	- Add features section
 - Create new branch for updates
 - Enhance file structure
 	- Rename folders and files
