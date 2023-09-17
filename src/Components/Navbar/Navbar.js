@@ -1,7 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import { useDispatch } from "react-redux";
-import { bindActionCreators } from "redux";
-import { NavbarActionCreators } from "../../State/ActionCreators";
 import { Image } from "./Image/Image";
 import { Button } from "./Button/Button";
 import { List } from "./List/List";
@@ -11,25 +8,7 @@ import * as Style from "./Navbar.style";
 export function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
 	const [list, setList] = useState(0);
-	const [listWidth, setListWidth] = useState(0);
-
 	const navbar = useRef(0);
-	const dispatch = useDispatch();
-	const { setNavbarSize } = bindActionCreators(NavbarActionCreators, dispatch);
-
-	// Set the size of the navbar
-	useEffect(() => {
-		const handleNavbarSize = () => {
-			setNavbarSize({
-				width: getComputedStyle(navbar.current).width,
-				height: getComputedStyle(navbar.current).height,
-			});
-		};
-
-		handleNavbarSize();
-		window.addEventListener("resize", handleNavbarSize);
-		return () => window.removeEventListener("resize", handleNavbarSize);
-	}, [setNavbarSize]);
 
 	// Close Navbar When CLick Outside & Press ESC Key
 	useEffect(() => {
@@ -86,23 +65,18 @@ export function Navbar() {
 		Functions.mediaBreakpointDown("sm").replace("@media ", "")
 	).matches;
 
-	const getNavbar = (variants) => {
-		return (
-			<Style.Navbar
-				ref={navbar}
-				isOpen={isOpen}
-				listWidth={listWidth}
-				variants={variants}
-				initial="hidden"
-				animate="visible"
-				exit="exit"
-			>
-				<Button isOpen={isOpen} setIsOpen={setIsOpen} />
-				<Image />
-				<List setListWidth={setListWidth} setList={setList} isOpen={isOpen} />
-			</Style.Navbar>
-		);
-	};
-
-	return !isSmall ? getNavbar(navbarVariants) : getNavbar(smallNavbarVariants);
+	return (
+		<Style.Navbar
+			ref={navbar}
+			isOpen={isOpen}
+			variants={!isSmall ? navbarVariants : smallNavbarVariants}
+			initial="hidden"
+			animate="visible"
+			exit="exit"
+		>
+			<Button isOpen={isOpen} setIsOpen={setIsOpen} />
+			<Image />
+			<List setList={setList} isOpen={isOpen} />
+		</Style.Navbar>
+	);
 }

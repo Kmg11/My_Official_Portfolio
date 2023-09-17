@@ -1,13 +1,8 @@
 import { Helmet } from "react-helmet-async";
-import { useSelector } from "react-redux";
-import { Navbar } from "../../Components/Navbar/Navbar";
 import { ProjectsContainer } from "../../Components/ProjectsContainer/ProjectsContainer";
 import * as Style from "./Projects.style";
 
 export function Projects() {
-	const navbarWidth = useSelector((state) => state.navbarSize.width);
-	const navbarHeight = useSelector((state) => state.navbarSize.height);
-
 	const title = `Projects | Kirolos Mahfouz`;
 	const description =
 		"Kirolos Mahfouz | Frontend Web Devolper Portfolio Projects Page";
@@ -26,8 +21,7 @@ export function Projects() {
 				<meta property="og:description" content={description} />
 			</Helmet>
 
-			<Style.Content navbarWidth={navbarWidth} navbarHeight={navbarHeight}>
-				<Navbar />
+			<Style.Content>
 				<ProjectsContainer />
 			</Style.Content>
 		</>

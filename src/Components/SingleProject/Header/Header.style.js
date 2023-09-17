@@ -15,10 +15,6 @@ export const Header = styled(motion.header)`
 		z-index: 2;
 		${Functions.overlay(null, "linear-gradient(to right, #000, transparent)")}
 	}
-
-	${Functions.mediaBreakpointDown("sm")} {
-		height: calc(100vh - ${(props) => props.navbarHeight});
-	}
 `;
 
 export const Content = styled.div`

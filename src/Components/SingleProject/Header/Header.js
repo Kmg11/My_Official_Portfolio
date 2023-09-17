@@ -1,4 +1,3 @@
-import { useSelector } from "react-redux";
 import { Components } from "../../../Style";
 import { CoverImage } from "./CoverImage/CoverImage";
 import { Badge } from "./Badge/Badge";
@@ -8,14 +7,8 @@ import { Links } from "./Links/Links";
 import * as Style from "./Header.style";
 
 export function Header() {
-	const navbarHeight = useSelector((state) => state.navbarSize.height);
-
 	return (
-		<Style.Header
-			navbarHeight={navbarHeight}
-			initial="hidden"
-			animate="visible"
-		>
+		<Style.Header initial="hidden" animate="visible">
 			<CoverImage />
 
 			<Components.Container>

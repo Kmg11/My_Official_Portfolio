@@ -1,1 +1,0 @@
-export const SET_NAVBAR_SIZE = "SET_NAVBAR_SIZE";

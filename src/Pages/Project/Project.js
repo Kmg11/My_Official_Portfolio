@@ -2,16 +2,12 @@ import { useFetchGet } from "../../Hooks/Fetch/useFetchGet";
 import { Apis } from "../../Constants";
 import { useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { useSelector } from "react-redux";
 import { Images } from "../../Constants";
-import { Navbar } from "../../Components/Navbar/Navbar";
 import { SingleProject } from "../../Components/SingleProject/SingleProject";
 import * as Style from "./Project.style";
 import { useEffect } from "react";
 
 export function Project() {
-	const navbarWidth = useSelector((state) => state.navbarSize.width);
-	const navbarHeight = useSelector((state) => state.navbarSize.height);
 	const { id, type } = useParams();
 
 	const {
@@ -59,8 +55,7 @@ export function Project() {
 				</Helmet>
 			)}
 
-			<Style.Content navbarWidth={navbarWidth} navbarHeight={navbarHeight}>
-				<Navbar />
+			<Style.Content>
 				<SingleProject data={apiInfo} />
 			</Style.Content>
 		</>

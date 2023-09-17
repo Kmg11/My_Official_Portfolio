@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Components, Functions } from "../../Style";
+import { Functions, Variables } from "../../Style";
 
 export const Error = styled.section`
 	position: relative;
@@ -12,7 +12,9 @@ export const Error = styled.section`
 	}
 `;
 
-export const Content = styled(Components.PageContent)`
+export const Content = styled.section`
+	background-color: ${Variables.Colors.backgroundColor};
+	min-height: 100vh;
 	position: relative;
 	z-index: 3;
 	background-color: transparent;

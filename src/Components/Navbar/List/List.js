@@ -6,7 +6,7 @@ import * as Style from "./List.style";
 import {
 	faWrench,
 	faUserAlt,
-	faScroll,
+	// faScroll,
 	faHome,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -15,27 +15,18 @@ const itemVariants = {
 	visible: { opacity: 1, scale: 1, transition: { duration: 0.5, delay: 0.5 } },
 };
 
-export function List({ setListWidth, setList, isOpen }) {
+const linksList = [
+	{ name: "home", to: Routes.HOME, icon: faHome },
+	{ name: "projects", to: Routes.PROJECTS, icon: faWrench },
+	{ name: "profile", to: Routes.PROFILE, icon: faUserAlt },
+];
+
+export function List({ setList, isOpen }) {
 	const list = useRef(0);
 
-	// Set the width of the list
 	useEffect(() => {
 		setList(list);
-
-		const handlListWidth = () => {
-			setListWidth(getComputedStyle(list.current).width);
-		};
-
-		handlListWidth();
-		window.addEventListener("resize", handlListWidth);
-		return () => window.removeEventListener("resize", handlListWidth);
-	}, [setListWidth, setList]);
-
-	const linksList = [
-		{ name: "home", to: Routes.HOME, icon: faHome },
-		{ name: "projects", to: Routes.PROJECTS, icon: faWrench },
-		{ name: "profile", to: Routes.PROFILE, icon: faUserAlt },
-	];
+	}, [setList]);
 
 	const linksItems = linksList.map(({ name, to, icon }, index) => {
 		return (
@@ -77,7 +68,6 @@ export function List({ setListWidth, setList, isOpen }) {
 }
 
 List.propTypes = {
-	setListWidth: PropTypes.func.isRequired,
 	setList: PropTypes.func.isRequired,
 	isOpen: PropTypes.bool.isRequired,
 };

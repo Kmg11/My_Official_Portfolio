@@ -3,11 +3,9 @@ import { motion } from "framer-motion";
 import { Variables, Functions } from "../../Style";
 
 export const Navbar = styled(motion.nav)`
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
+	position: relative;
 	min-height: 500px;
+	height: 100%;
 	max-height: 100%;
 	background-color: ${Variables.Colors.mainColor};
 	padding: 20px;
@@ -15,8 +13,6 @@ export const Navbar = styled(motion.nav)`
 	z-index: 1000;
 
 	${Functions.mediaBreakpointDown("sm")} {
-		bottom: auto;
-		right: 0;
 		min-height: 0;
 		max-height: none;
 		width: 100%;
@@ -30,7 +26,7 @@ export const Navbar = styled(motion.nav)`
 		${(props) =>
 			props.isOpen &&
 			css`
-				margin-left: ${props.listWidth};
+				margin-left: 200px;
 			`}
 	}
 `;

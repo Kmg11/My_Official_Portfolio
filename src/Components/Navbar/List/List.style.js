@@ -17,7 +17,7 @@ export const List = styled.ul`
 		transform: none;
 		min-height: 500px;
 		height: 100vh;
-		width: 250px;
+		width: 200px;
 		padding: 40px 15px;
 		background-color: rgba(28, 38, 49, 0.95);
 		transform: translateX(-100%);

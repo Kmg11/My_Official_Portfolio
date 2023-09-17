@@ -15,8 +15,40 @@ Add Threads Clone Project
 
 ============================================================================
 
-- Deploy after finish
+Enhance Navbar | Remove Redux
 
+- Create staging branch
+- Create layouts folder
+- Create MainLayout component
+- Add MainLayout to App component
+- Remove not needed logic and Navbar from Projects page
+- Remove not needed logic and Navbar from Project page
+- Remove not needed logic and Navbar from Profile page
+- Enhance Navbar component
+- Enhance Navbar List component
+- Remove all redux data
+- Remove store folder
+- Uninstall redux, react-redux and redux-thunk packages
+- Remove PageContent style
+
+============================================================================
+
+- Navbar Enhancements
+	- Enhance Navbar [ remove setList ]
+	- Create hooks to close navbar when click outside or esc
+	- scroll y when open navbar in responsive [ margin-left ]
+
+- in project page if project id is wrong show message
+
+- Add theme to styled components
+- Move layout components to layouts folder
+- Remove not needed projects
+- Change summary and headline
+- Add new skills
+- Change skills list design
+- Handle experience section
+- Use absolute path
+- Change github summary
 - Enhance Portfolio README.md file
 	- Remove tests
 	- Add table of content
@@ -26,23 +58,15 @@ Add Threads Clone Project
 	- Add project link on Portfolio
 	- Add getting started section
 	- Add features section
-- Create new branch for updates
 - Enhance file structure
 	- Rename folders and files
 - Add eslint, prettier .editorconfig files with airbnb config
-- Remove redux
-- Add new skills
-- Change skills list design
-- Change summary and headline
-- Handle experience section
 - Use markdown for project description
 - Add border to circle image like story with two empty places to round like clock
 - Enhance Box component
-- Remove not needed projects
 - Convert project to typescript [ Remove prop types ]
-- Uninstall redux, react-redux and redux-thunk
 - Add eslint and prettier scripts
-- Replace README.md file with new file in threads clone
+- Add cv link in navbar
 
 Problems
 
