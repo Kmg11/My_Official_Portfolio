@@ -33,15 +33,29 @@ Enhance Navbar | Remove Redux
 
 ============================================================================
 
+Create [ useOutsideClick, useEscapeKey, useScroll, useResize ] hooks | Enhance Navbar Component
+
+- Create useOutsideClick hook
+- Create useEscapeKey hook
+- Create useScroll hook
+- Create useResize hook
+- Add useOutsideClick to Navbar component
+- Add useEscapeKey to Navbar component
+- Add useScroll to Navbar component
+- Add useResize to Navbar component
+- Remove not needed code from Navbar and List components
+
+============================================================================
+
 - Navbar Enhancements
-	- Enhance Navbar [ remove setList ]
-	- Create hooks to close navbar when click outside or esc
+	- Animation broken in navbar list when change route [ add frame motion when exist ]
 	- scroll y when open navbar in responsive [ margin-left ]
+- Move pages containers to pages folder
+- Move layout components to layouts folder
 
 - in project page if project id is wrong show message
 
 - Add theme to styled components
-- Move layout components to layouts folder
 - Remove not needed projects
 - Change summary and headline
 - Add new skills
@@ -67,6 +81,8 @@ Enhance Navbar | Remove Redux
 - Convert project to typescript [ Remove prop types ]
 - Add eslint and prettier scripts
 - Add cv link in navbar
+- Remove Facebook-Post-Clone after add Facebook Clone project
+- Remove prop types after convert project to typescript
 
 Problems
 

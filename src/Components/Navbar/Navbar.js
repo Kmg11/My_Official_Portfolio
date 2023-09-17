@@ -1,49 +1,24 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Image } from "./Image/Image";
 import { Button } from "./Button/Button";
 import { List } from "./List/List";
 import { Functions } from "../../Style";
+import {
+	useOutsideClick,
+	useEscapeKey,
+	useScroll,
+	useResize,
+} from "../../Hooks";
 import * as Style from "./Navbar.style";
 
 export function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
-	const [list, setList] = useState(0);
 	const navbar = useRef(0);
 
-	// Close Navbar When CLick Outside & Press ESC Key
-	useEffect(() => {
-		const closeNavbar = (e) => {
-			if (e.key === "Escape" && e.code === "Escape") setIsOpen(false);
-			if (e.target !== list.current && e.target !== navbar.current) {
-				setIsOpen(false);
-			}
-		};
-
-		if (isOpen) {
-			document.addEventListener("click", closeNavbar);
-			window.addEventListener("keyup", closeNavbar);
-		}
-
-		return () => {
-			document.removeEventListener("click", closeNavbar);
-			window.removeEventListener("keyup", closeNavbar);
-		};
-	}, [isOpen, list]);
-
-	// Handle Close Navbar When Resize & Scroll Window
-	useEffect(() => {
-		const closeNavbar = () => setIsOpen(false);
-
-		if (isOpen) {
-			window.addEventListener("scroll", closeNavbar);
-			window.addEventListener("resize", closeNavbar);
-		}
-
-		return () => {
-			window.removeEventListener("resize", closeNavbar);
-			window.removeEventListener("scroll", closeNavbar);
-		};
-	}, [isOpen]);
+	useOutsideClick(navbar, () => setIsOpen(false));
+	useEscapeKey(() => setIsOpen(false));
+	useScroll(() => setIsOpen(false));
+	useResize(() => setIsOpen(false));
 
 	const navbarVariants = {
 		hidden: { opacity: 0, x: -100, transition: { duration: 0.5 } },
@@ -76,7 +51,7 @@ export function Navbar() {
 		>
 			<Button isOpen={isOpen} setIsOpen={setIsOpen} />
 			<Image />
-			<List setList={setList} isOpen={isOpen} />
+			<List isOpen={isOpen} />
 		</Style.Navbar>
 	);
 }

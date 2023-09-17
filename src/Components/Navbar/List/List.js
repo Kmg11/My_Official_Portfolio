@@ -1,4 +1,3 @@
-import { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import { Routes } from "../../../Constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -21,13 +20,7 @@ const linksList = [
 	{ name: "profile", to: Routes.PROFILE, icon: faUserAlt },
 ];
 
-export function List({ setList, isOpen }) {
-	const list = useRef(0);
-
-	useEffect(() => {
-		setList(list);
-	}, [setList]);
-
+export function List({ isOpen }) {
 	const linksItems = linksList.map(({ name, to, icon }, index) => {
 		return (
 			<Style.Item key={name} variants={itemVariants}>
@@ -44,7 +37,6 @@ export function List({ setList, isOpen }) {
 	return (
 		<Style.List
 			isOpen={isOpen}
-			ref={list}
 			onclick={(e) => {
 				e.stopPropagation();
 			}}
@@ -68,6 +60,5 @@ export function List({ setList, isOpen }) {
 }
 
 List.propTypes = {
-	setList: PropTypes.func.isRequired,
 	isOpen: PropTypes.bool.isRequired,
 };
