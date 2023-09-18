@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { motion } from "framer-motion";
 import { Variables, Functions } from "../../Style";
 
@@ -21,12 +21,5 @@ export const Navbar = styled(motion.nav)`
 		justify-content: space-between;
 		align-items: center;
 		padding: 15px 20px;
-		transition: margin-left 0.3s linear;
-
-		${(props) =>
-			props.isOpen &&
-			css`
-				margin-left: 200px;
-			`}
 	}
 `;

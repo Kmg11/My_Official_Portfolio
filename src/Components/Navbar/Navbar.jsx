@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { Image } from "./Image/Image";
 import { Button } from "./Button/Button";
-import { List } from "./List/List";
+import { NavbarList } from "./NavbarList/NavbarList";
 import { Functions } from "../../Style";
 import {
 	useOutsideClick,
@@ -12,13 +12,16 @@ import {
 import * as Style from "./Navbar.style";
 
 export function Navbar() {
-	const [isOpen, setIsOpen] = useState(false);
 	const navbar = useRef(0);
 
-	useOutsideClick(navbar, () => setIsOpen(false));
-	useEscapeKey(() => setIsOpen(false));
-	useScroll(() => setIsOpen(false));
-	useResize(() => setIsOpen(false));
+	const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+	const closeNavbar = () => setIsNavbarOpen(false);
+	const toggleNavbar = () => setIsNavbarOpen((prev) => !prev);
+
+	useOutsideClick(navbar, closeNavbar);
+	useEscapeKey(closeNavbar);
+	useScroll(closeNavbar);
+	useResize(closeNavbar);
 
 	const navbarVariants = {
 		hidden: { opacity: 0, x: -100, transition: { duration: 0.5 } },
@@ -29,11 +32,7 @@ export function Navbar() {
 	const smallNavbarVariants = {
 		hidden: { opacity: 0, y: -100, transition: { duration: 0.5 } },
 		visible: { opacity: 1, y: 0, x: 0, transition: { duration: 0.7 } },
-		exit: {
-			opacity: 0,
-			y: -100,
-			transition: { duration: 0.5, delay: isOpen ? 0.4 : 0 },
-		},
+		exit: { opacity: 0, y: -100, transition: { duration: 0.5, delay: 0 } },
 	};
 
 	const isSmall = window.matchMedia(
@@ -43,15 +42,14 @@ export function Navbar() {
 	return (
 		<Style.Navbar
 			ref={navbar}
-			isOpen={isOpen}
 			variants={!isSmall ? navbarVariants : smallNavbarVariants}
 			initial="hidden"
 			animate="visible"
 			exit="exit"
 		>
-			<Button isOpen={isOpen} setIsOpen={setIsOpen} />
+			<Button isNavbarOpen={isNavbarOpen} toggleNavbar={toggleNavbar} />
 			<Image />
-			<List isOpen={isOpen} />
+			<NavbarList isNavbarOpen={isNavbarOpen} closeNavbar={closeNavbar} />
 		</Style.Navbar>
 	);
 }

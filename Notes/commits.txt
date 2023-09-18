@@ -47,9 +47,17 @@ Create [ useOutsideClick, useEscapeKey, useScroll, useResize ] hooks | Enhance N
 
 ============================================================================
 
-- Navbar Enhancements
-	- Animation broken in navbar list when change route [ add frame motion when exist ]
-	- scroll y when open navbar in responsive [ margin-left ]
+Enhance Navbar Component
+
+- Create NavbarListItem component
+- Rename List component to NavbarList component
+- Add close button to Navbar List component
+- Remove Animation from Navbar when open NavbarList component
+- Enhance NavbarListItem component
+- Fix NavbarList animation when change page
+
+============================================================================
+
 - Move pages containers to pages folder
 - Move layout components to layouts folder
 

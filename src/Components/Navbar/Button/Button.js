@@ -6,21 +6,21 @@ const buttonVariants = {
 	visible: { opacity: 1, scale: 1, transition: { duration: 0.5, delay: 0.5 } },
 };
 
-export function Button({ isOpen, setIsOpen }) {
+export function Button({ isNavbarOpen, toggleNavbar }) {
 	return (
 		<Style.Button
-			onClick={() => setIsOpen((prev) => !prev)}
+			onClick={toggleNavbar}
 			variants={buttonVariants}
 			aria-label="Toggle Navbar"
 		>
-			<Style.Line isOpen={isOpen} />
-			<Style.Line isOpen={isOpen} />
-			<Style.Line isOpen={isOpen} />
+			<Style.Line isNavbarOpen={isNavbarOpen} />
+			<Style.Line isNavbarOpen={isNavbarOpen} />
+			<Style.Line isNavbarOpen={isNavbarOpen} />
 		</Style.Button>
 	);
 }
 
 Button.propTypes = {
-	isOpen: PropTypes.bool.isRequired,
-	setIsOpen: PropTypes.func.isRequired,
+	isNavbarOpen: PropTypes.bool.isRequired,
+	toggleNavbar: PropTypes.func.isRequired,
 };

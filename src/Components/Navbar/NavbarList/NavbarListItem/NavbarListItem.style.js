@@ -1,37 +1,6 @@
-import styled, { css } from "styled-components";
-import { NavLink } from "react-router-dom";
-import { Functions, Variables } from "../../../Style";
+import styled from "styled-components";
+import { Functions, Variables } from "../../../../Style";
 import { motion } from "framer-motion";
-
-export const List = styled.ul`
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-
-	${Functions.mediaBreakpointDown("sm")} {
-		position: fixed;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		transform: none;
-		min-height: 500px;
-		height: 100vh;
-		width: 200px;
-		padding: 40px 15px;
-		background-color: rgba(28, 38, 49, 0.95);
-		transform: translateX(-100%);
-		z-index: 1001;
-		transition-property: transform, opacity;
-		transition: 0.3s linear;
-
-		${(props) =>
-			props.isOpen &&
-			css`
-				transform: translateX(0);
-			`}
-	}
-`;
 
 export const Item = styled(motion.li)`
 	&:not(:last-of-type) {
@@ -76,18 +45,17 @@ export const Icon = styled.span`
 	}
 `;
 
-export const Link = styled(NavLink)`
+export const Link = styled.a`
 	position: relative;
-	display: block;
 	color: ${Variables.Colors.textColor};
 	width: 55px;
 	height: 55px;
 	border-radius: 50%;
-	display: grid;
-	place-items: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	transition-property: color, background-color;
 	transition: 0.25s linear;
-	margin: auto;
 
 	&:hover,
 	&:focus,
@@ -105,12 +73,10 @@ export const Link = styled(NavLink)`
 	}
 
 	${Functions.mediaBreakpointDown("sm")} {
-		display: grid;
-		grid-template-columns: repeat(2, auto);
 		gap: 10px;
 		justify-content: start;
 		border-radius: 10px;
-		width: auto;
+		width: 100%;
 		height: auto;
 		padding: 20px;
 

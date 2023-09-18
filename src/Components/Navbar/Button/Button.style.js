@@ -42,7 +42,7 @@ export const Line = styled.span`
 		}
 
 		${(props) =>
-			props.isOpen &&
+			props.isNavbarOpen &&
 			css`
 				&:first-of-type {
 					animation: In1 0.7s forwards;
