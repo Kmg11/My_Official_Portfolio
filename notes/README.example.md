@@ -34,7 +34,7 @@ To get started with [Project Name], follow these steps:
 2. Install dependencies: `cd [project name] && npm install`
 3. Configure environment variables: Rename `.env.local.example` to `.env.local` and update the necessary values.
 4. Start the development server: `npm run dev`
-5. Open your browser and visit `http://localhost:3000` to access Threads Clone.
+5. Open your browser and visit `http://localhost:3000` to access [Project Name].
 
 ## Contributing
 

@@ -68,20 +68,18 @@ Update information
 
 ============================================================================
 
-- Enhance Portfolio README.md file
-	- Remove tests
-	- Add table of content
-	- Add technologies used [ javascript ]
-	- Remove redux from technologies
-	- Enhance description
-	- Add project link on Portfolio
-	- Add getting started section
-	- Add features section
-- Rewrite experience section
-- Remove not needed projects
-- Change github summary
+Enhance README.md file
+
+- Remove tests
+- Add table of content
+- Enhance technologies used
+- Enhance description
+- Add getting started section
+
+============================================================================
 
 - in project page if project id is wrong show message
+- Remove tests from project page
 - Handle experience section
 - Structure Enhancements
 	- Move pages containers to pages folder
@@ -98,7 +96,6 @@ Update information
 - Add eslint and prettier scripts
 - Add cv link in navbar
 - Remove Facebook-Post-Clone after add Facebook Clone project
-- Remove prop types after convert project to typescript
 
 Problems
 
@@ -124,8 +121,3 @@ Problems
 	- add for background image like net ninja move light
 
 - Email Link Make It Copy Not Link home page
-
-Future Enhancements:- projects page
-- Make Slider Buttons Transparency When Hover On Card
-- Accessibilty In Slider [ Hover & Focus On Link ]
-- Swiper Keyboard Need To Seprate Every Slider
