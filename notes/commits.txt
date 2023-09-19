@@ -58,19 +58,16 @@ Enhance Navbar Component
 
 ============================================================================
 
-- Move pages containers to pages folder
-- Move layout components to layouts folder
+Update information
 
-- in project page if project id is wrong show message
+- Remove close button from navbar if navbar closed
+- Enhance Navbar component
+- Update summary
+- Update skills
+- Update description
 
-- Add theme to styled components
-- Remove not needed projects
-- Change summary and headline
-- Add new skills
-- Change skills list design
-- Handle experience section
-- Use absolute path
-- Change github summary
+============================================================================
+
 - Enhance Portfolio README.md file
 	- Remove tests
 	- Add table of content
@@ -80,9 +77,20 @@ Enhance Navbar Component
 	- Add project link on Portfolio
 	- Add getting started section
 	- Add features section
-- Enhance file structure
+- Rewrite experience section
+- Remove not needed projects
+- Change github summary
+
+- in project page if project id is wrong show message
+- Handle experience section
+- Structure Enhancements
+	- Move pages containers to pages folder
+	- Move layout components to layouts folder
+	- Add theme to styled components
+	- Use absolute path
 	- Rename folders and files
-- Add eslint, prettier .editorconfig files with airbnb config
+	- Add eslint, prettier .editorconfig files with airbnb config
+
 - Use markdown for project description
 - Add border to circle image like story with two empty places to round like clock
 - Enhance Box component

@@ -2,11 +2,7 @@ import styled from "styled-components";
 import { Functions, Variables } from "../../../../Style";
 import { motion } from "framer-motion";
 
-export const Item = styled(motion.li)`
-	&:not(:last-of-type) {
-		margin-bottom: 30px;
-	}
-`;
+export const Item = styled(motion.li)``;
 
 export const Name = styled.span`
 	position: absolute;

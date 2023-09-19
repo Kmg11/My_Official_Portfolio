@@ -1,11 +1,9 @@
 {
 	"name": "Kirolos Mahfouz",
 	"email": "kirolosmahfouz15@gmail.com",
-	"description": "Frontend Developer 💻 Typescript | JavaScript | React | Css | Sass",
+	"description": "Software Developer 💻 NextJS | React | Typescript | NodeJS | MongoDB",
 	"summary": [
-		"As a Frontend Developer with experience in building high-quality web applications, I am passionate about creating responsive and user-friendly interfaces that provide exceptional user experiences. My technical skills include React, Redux, TypeScript, and Next.js, as well as a variety of front-end frameworks and libraries. I am also proficient in HTML, CSS, and JavaScript, and I have experience with testing and debugging tools.",
-
-		"I have experience working on various projects, including a cloud-based dental patient education and practice management software, where I was responsible for building the front-end and connecting it to the back-end using APIs. I am also proud of my work on my official portfolio, a single-page application with a modern design and interactive animations. Additionally, I have experience working on landing pages and e-commerce websites, where I have optimized performance and created beautiful animations."
+		"As a passionate software developer, I am deeply interested in web development and problem solving. I possess a strong ability to perceive and understand customer requirements, which allows me to develop efficient, user-friendly, and modern solutions for web applications. I take pride in writing high-quality code that performs efficiently."
 	],
 	"experience": [
 		"Frontend Developer at BeClarified (Remote) | Jul 2022 - Present",
@@ -16,27 +14,32 @@
 		"Received a recommendation from my direct manager for my quality of work and contributions to the project."
 	],
 	"skills": [
-		"React",
-		"TypeScript",
 		"Next.js",
-		"Redux",
-		"React Testing Library",
-		"Unit Testing ( Jest )",
-		"Sass",
+		"React.js",
+		"Vue.js",
+		"TypeScript",
+		"Javascript",
+		"Node.js",
+		"Express.js",
+		"MongoDB",
+		"MySQL",
+		"Redux Toolkit",
+		"React Query",
+		"Vuex",
 		"Styled Components",
-		"Bootstrap",
-		"Tailwindcss",
+		"Sass",
 		"Material UI",
-		"Pug",
-		"Gulp",
-		"Git / Github",
-		"Command Line ( CLI )",
-		"NPM",
+		"Tailwindcss",
+		"Bootstrap",
 		"Html",
 		"Css",
-		"Javascript",
-		"Restful API",
-		"Jquery"
+		"Git / Github",
+		"Gulp / Webpack",
+		"React Testing Library",
+		"Unit Testing ( Jest )",
+		"Pug",
+		"Figma",
+		"Adobe XD"
 	],
 	"languages": ["English", "Arabic"],
 	"social_links": [

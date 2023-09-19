@@ -2,17 +2,17 @@ import styled, { css } from "styled-components";
 import { Functions } from "../../../Style";
 
 export const NavbarList = styled.ul`
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
 
 	${Functions.mediaBreakpointDown("sm")} {
+		align-items: normal;
 		position: fixed;
 		top: 0;
 		left: 0;
 		bottom: 0;
-		transform: none;
 		min-height: 500px;
 		height: 100vh;
 		width: 200px;

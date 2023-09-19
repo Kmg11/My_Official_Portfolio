@@ -45,11 +45,13 @@ export function NavbarList({ isNavbarOpen, closeNavbar }) {
 				}}
 			/> */}
 
-			<NavbarListItem
-				name="close"
-				icon={faTimes}
-				linkProps={{ as: "button", onClick: closeNavbar }}
-			/>
+			{isNavbarOpen && (
+				<NavbarListItem
+					name="close"
+					icon={faTimes}
+					linkProps={{ as: "button", onClick: closeNavbar }}
+				/>
+			)}
 		</Style.NavbarList>
 	);
 }
