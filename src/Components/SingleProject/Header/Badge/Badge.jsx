@@ -1,4 +1,4 @@
-import { Components } from '../../../../Style';
+import { Components } from '../../../../styles';
 import * as Style from './Badge.style';
 import { useProject } from '../../ProjectContext';
 

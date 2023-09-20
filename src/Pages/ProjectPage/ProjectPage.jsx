@@ -5,9 +5,9 @@ import { useFetchGet } from '../../hooks';
 import { APIS, IMAGES } from '../../constants';
 
 import { SingleProject } from '../../Components/SingleProject/SingleProject';
-import * as Style from './Project.style';
+import * as Style from './ProjectPage.style';
 
-export function Project() {
+export function ProjectPage() {
   const { id, type } = useParams();
 
   const { data: projects, isPending, error } = useFetchGet(`${APIS[`${type.toUpperCase()}S`]}`);

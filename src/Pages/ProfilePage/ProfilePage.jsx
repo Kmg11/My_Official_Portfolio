@@ -1,11 +1,11 @@
 import { Helmet } from 'react-helmet-async';
 import { useFetchGet } from '../../hooks';
 import { APIS, IMAGES } from '../../constants';
-import { Components } from '../../Style';
+import { Components } from '../../styles';
 import { ProfileContainer } from '../../Components/ProfileContainer/ProfileContainer';
-import * as Style from './Profile.style';
+import * as Style from './ProfilePage.style';
 
-export function Profile() {
+export function ProfilePage() {
   const response = useFetchGet(APIS.INFO);
   const { data } = response;
 

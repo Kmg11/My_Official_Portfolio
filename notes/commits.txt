@@ -117,10 +117,23 @@ Enhance styles
 
 ============================================================================
 
+Enhance pages
+
+- Rename Style folder to styles
+- Rename pages components
+	- Rename Home to HomePage
+	- Rename Projects to ProjectsPage
+	- Rename Project to ProjectPage
+	- Rename Profile to ProfilePage
+	- Rename Error to ErrorPage
+- Rename Pages folder to pages
+
+============================================================================
+
+- Move pages components to there folder
 - Enhance style components
 - Structure Enhancements
 	- Move pages containers to pages folder
-	- Use absolute path
 	- Rename folders and files
 
 - Try build and clone repo before merge

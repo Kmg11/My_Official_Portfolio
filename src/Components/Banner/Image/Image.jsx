@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { IMAGES } from '../../../constants';
-import { Components } from '../../../Style';
+import { Components } from '../../../styles';
 import { CreateImage } from '../../CreateImage/CreateImage';
 import * as Style from './Image.style';
 

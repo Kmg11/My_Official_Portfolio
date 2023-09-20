@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Error = styled.section`
+export const ErrorPage = styled.section`
   position: relative;
   min-height: 100vh;
 

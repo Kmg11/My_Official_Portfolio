@@ -1,5 +1,5 @@
-export { Home } from './Home/Home';
-export { Projects } from './Projects/Projects';
-export { Project } from './Project/Project';
-export { Profile } from './Profile/Profile';
-export { Error } from './Error/Error';
+export { HomePage } from './HomePage/HomePage';
+export { ProjectsPage } from './ProjectsPage/ProjectsPage';
+export { ProjectPage } from './ProjectPage/ProjectPage';
+export { ProfilePage } from './ProfilePage/ProfilePage';
+export { ErrorPage } from './ErrorPage/ErrorPage';

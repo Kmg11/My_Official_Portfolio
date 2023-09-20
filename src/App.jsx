@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { ROUTES } from './constants';
-import * as Page from './Pages';
+import { HomePage, ErrorPage, ProfilePage, ProjectPage, ProjectsPage } from './pages';
 import { MainLayout } from './layouts';
 
 export function App() {
@@ -11,17 +11,17 @@ export function App() {
   return (
     <AnimatePresence exitBeforeEnter>
       <Switch location={location} key={location.key}>
-        <Route exact path={ROUTES.HOME} component={Page.Home} />
+        <Route exact path={ROUTES.HOME} component={HomePage} />
 
         <Route path={[ROUTES.PROJECTS, ROUTES.PROJECT, ROUTES.PROFILE]}>
           <MainLayout>
-            <Route path={ROUTES.PROJECTS} component={Page.Projects} />
-            <Route path={`${ROUTES.PROJECT}/:type/:id`} component={Page.Project} />
-            <Route path={ROUTES.PROFILE} component={Page.Profile} />
+            <Route path={ROUTES.PROJECTS} component={ProjectsPage} />
+            <Route path={`${ROUTES.PROJECT}/:type/:id`} component={ProjectPage} />
+            <Route path={ROUTES.PROFILE} component={ProfilePage} />
           </MainLayout>
         </Route>
 
-        <Route path="*" component={Page.Error} />
+        <Route path="*" component={ErrorPage} />
       </Switch>
     </AnimatePresence>
   );

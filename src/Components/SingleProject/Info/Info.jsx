@@ -1,5 +1,5 @@
 import { useTheme } from 'styled-components';
-import { Components } from '../../../Style';
+import { Components } from '../../../styles';
 import { Slider } from './Slider/Slider';
 import { SmallScreens } from './SmallScreens/SmallScreens';
 import { BigScreens } from './BigScreens/BigScreens';

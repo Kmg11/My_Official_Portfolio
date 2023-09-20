@@ -2,14 +2,14 @@ import { Helmet } from 'react-helmet-async';
 import { CreateImage } from '../../Components/CreateImage/CreateImage';
 import { IMAGES } from '../../constants';
 import { ErrorContainer } from '../../Components/ErrorContainer/ErrorContainer';
-import * as Style from './Error.style';
+import * as Style from './ErrorPage.style';
 
-export function Error() {
+export function ErrorPage() {
   const title = '404 | Error';
   const description = 'Page not found please try again';
 
   return (
-    <Style.Error>
+    <Style.ErrorPage>
       <Helmet>
         <title>{title}</title>
         <meta name="description" content={description} />
@@ -22,6 +22,6 @@ export function Error() {
       <Style.Content>
         <ErrorContainer />
       </Style.Content>
-    </Style.Error>
+    </Style.ErrorPage>
   );
 }

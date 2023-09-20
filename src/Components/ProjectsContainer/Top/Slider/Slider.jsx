@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, A11y, Keyboard } from 'swiper/core';
-import { Components } from '../../../../Style';
+import { Components } from '../../../../styles';
 import { Card } from '../../Card/Card';
 import 'swiper/swiper-bundle.min.css';
 import * as Style from './Slider.style';

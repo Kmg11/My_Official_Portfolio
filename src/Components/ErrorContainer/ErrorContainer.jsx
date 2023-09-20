@@ -1,6 +1,6 @@
 import { faHome, faUserAlt, faWrench } from '@fortawesome/free-solid-svg-icons';
 import { motion } from 'framer-motion';
-import { Components } from '../../Style';
+import { Components } from '../../styles';
 import { ROUTES } from '../../constants';
 import { CircleButtons, Button } from '../Buttons/Circle/Circle';
 import * as Style from './ErrorContainer.style';

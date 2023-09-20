@@ -1,9 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { ProjectsContainer } from '../../Components/ProjectsContainer/ProjectsContainer';
-import * as Style from './Projects.style';
+import * as Style from './ProjectsPage.style';
 
-export function Projects() {
+export function ProjectsPage() {
   const title = 'Projects | Kirolos Mahfouz';
   const description = 'Kirolos Mahfouz | Frontend Web Devolper Portfolio Projects Page';
 

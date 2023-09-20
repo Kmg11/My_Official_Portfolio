@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Components } from '../../Style';
+import { Components } from '../../styles';
 import * as Style from './Box.style';
 
 const boxVariants = {

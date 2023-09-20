@@ -4,7 +4,7 @@ import { CreateImage } from '../../Components/CreateImage/CreateImage';
 import { APIS, IMAGES } from '../../constants';
 import { Banner } from '../../Components/Banner/Banner';
 import { NextButton } from '../../Components/Buttons/Next/Next';
-import * as Style from './Home.style';
+import * as Style from './HomePage.style';
 
 const homeVariants = {
   hidden: { opacity: 0, scale: 1.2 },
@@ -16,7 +16,7 @@ const homeVariants = {
   },
 };
 
-export function Home() {
+export function HomePage() {
   const response = useFetchGet(APIS.INFO);
   const { data: info } = response;
 
@@ -24,7 +24,7 @@ export function Home() {
   const description = info && info.description;
 
   return (
-    <Style.Home>
+    <Style.HomePage>
       {info && (
         <Helmet>
           <title>{title}</title>
@@ -48,6 +48,6 @@ export function Home() {
         <Banner response={response} />
         {info && <NextButton />}
       </Style.Content>
-    </Style.Home>
+    </Style.HomePage>
   );
 }

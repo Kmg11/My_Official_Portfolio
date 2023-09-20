@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React, { createContext, useContext, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Components } from '../../../Style';
+import { Components } from '../../../styles';
 import * as Style from './Circle.style';
 
 const ButtonContext = createContext();

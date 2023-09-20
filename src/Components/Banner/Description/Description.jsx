@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Components } from '../../../Style';
+import { Components } from '../../../styles';
 import * as Style from './Description.style';
 
 const nameVariants = {

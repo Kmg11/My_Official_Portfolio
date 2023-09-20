@@ -1,4 +1,4 @@
-import { Components } from '../../../Style';
+import { Components } from '../../../styles';
 import { CoverImage } from './CoverImage/CoverImage';
 import { Badge } from './Badge/Badge';
 import { Name } from './Name/Name';

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-export const Home = styled.section`
+export const HomePage = styled.section`
   position: relative;
   min-height: 100vh;
   display: grid;

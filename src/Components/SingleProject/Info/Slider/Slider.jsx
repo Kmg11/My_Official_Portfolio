@@ -10,7 +10,7 @@ import 'swiper/components/thumbs/thumbs.min.css';
 import * as Style from './Slider.style';
 
 // import Swiper core and required modules
-import { Components } from '../../../../Style';
+import { Components } from '../../../../styles';
 import { useProject } from '../../ProjectContext';
 
 // install Swiper modules
