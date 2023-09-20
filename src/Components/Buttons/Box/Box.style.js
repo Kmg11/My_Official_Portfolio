@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components";
-import { Functions, Variables } from "../../../Style";
+import styled, { css } from 'styled-components';
+import { Functions, Variables } from '../../../Style';
 
 export const Buttons = styled.div`
 	display: grid;
@@ -8,7 +8,7 @@ export const Buttons = styled.div`
 	justify-content: start;
 	align-items: center;
 
-	${Functions.mediaBreakpointDown("xs")} {
+	${Functions.mediaBreakpointDown('xs')} {
 		grid-template-columns: repeat(2, 1fr);
 		gap: 1rem;
 	}
@@ -29,16 +29,14 @@ export const Button = styled.button`
 		background-color: ${Variables.Colors.mainColor};
 	}
 
-	${(props) =>
-		props.active &&
-		css`
+	${(props) => props.active
+		&& css`
 			background-color: ${Variables.Colors.mainColor};
 		`}
 
-	${Functions.mediaBreakpointDown("xs")} {
-		${(props) =>
-			props.numberOfButtons % 2 !== 0 &&
-			css`
+	${Functions.mediaBreakpointDown('xs')} {
+		${(props) => props.numberOfButtons % 2 !== 0
+			&& css`
 				padding: 20px 30px;
 
 				&:last-of-type {

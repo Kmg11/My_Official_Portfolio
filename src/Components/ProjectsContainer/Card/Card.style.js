@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import { motion } from "framer-motion";
-import { Functions } from "../../../Style";
-import { Buttons } from "./Buttons/Buttons.style";
-import { Info } from "./Info/Info.style";
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
+import { Functions } from '../../../Style';
+import { Buttons } from './Buttons/Buttons.style';
+import { Info } from './Info/Info.style';
 
 export const Card = styled(motion.div)`
 	width: 100%;
@@ -19,9 +19,9 @@ export const Card = styled(motion.div)`
 		transition: 0.2s linear;
 		z-index: 2;
 		${Functions.overlay(
-			null,
-			"linear-gradient(to top, #000, transparent, transparent)"
-		)}
+    null,
+    'linear-gradient(to top, #000, transparent, transparent)',
+  )}
 	}
 
 	&:hover,
@@ -29,7 +29,7 @@ export const Card = styled(motion.div)`
 		transform: translateY(-10px) !important;
 		z-index: 5;
 
-		${Functions.mediaBreakpointDown("sm")} {
+		${Functions.mediaBreakpointDown('sm')} {
 			transform: translateY(0) !important;
 		}
 

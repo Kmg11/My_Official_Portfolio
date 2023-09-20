@@ -1,14 +1,14 @@
-import styled from "styled-components";
-import { Functions } from "../";
+import styled from 'styled-components';
+import { mediaBreakpointUp } from '../Functions';
 
 export const Container = styled.div`
-	margin: auto;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	width: 100%;
-	display: block;
+  margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+  display: block;
 
-	${Functions.mediaBreakpointUp("xl")} {
-		width: 1170px;
-	}
+  ${mediaBreakpointUp('xl')} {
+    width: 1170px;
+  }
 `;

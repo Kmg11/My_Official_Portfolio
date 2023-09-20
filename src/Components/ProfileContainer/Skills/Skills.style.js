@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Skills = styled.section`
 	text-transform: capitalize;

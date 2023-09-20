@@ -1,21 +1,21 @@
-import { createGlobalStyle } from "styled-components";
-import { Variables } from "..";
+import { createGlobalStyle } from 'styled-components';
+import { Colors } from '../Variables';
 
 export const GlobalStyle = createGlobalStyle`
-	*,
-	*::before,
-	*::after,
-	body *,
-	body *::before,
-	body *::after {
-		box-sizing: border-box;
-		margin: 0;
-		padding: 0;
-	}
+  *,
+  *::before,
+  *::after,
+  body *,
+  body *::before,
+  body *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
 	html {
 		scrollbar-width: normal;
-		scrollbar-color: ${Variables.Colors.mainColor} ${Variables.Colors.secondBackgroundColor};
+		scrollbar-color: ${Colors.mainColor} ${Colors.secondBackgroundColor};
 	}
 
 	::-webkit-scrollbar {
@@ -23,20 +23,20 @@ export const GlobalStyle = createGlobalStyle`
 	}
 	
 	::-webkit-scrollbar-thumb {
-		background-color: ${Variables.Colors.mainColor};
+		background-color: ${Colors.mainColor};
 	}
 
 	::-webkit-scrollbar-track {
-		background-color: ${Variables.Colors.secondBackgroundColor};
+		background-color: ${Colors.secondBackgroundColor};
 	}
 
 	body {
-		background-color: ${Variables.Colors.backgroundColor};
+		background-color: ${Colors.backgroundColor};
 		font-family: "Roboto", sans-serif;
 	}
 
 	::selection {
-		background-color: ${Variables.Colors.mainColor};
+		background-color: ${Colors.mainColor};
 	}
 
 	ul {

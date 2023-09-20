@@ -1,17 +1,17 @@
-import { motion } from "framer-motion";
-import styled from "styled-components";
-import { Functions, Variables } from "../../Style";
+import { motion } from 'framer-motion';
+import styled from 'styled-components';
+import { Functions, Variables } from '../../Style';
 
 export const ErrorContainer = styled(motion.section)`
 	.circle-buttons {
 		justify-content: center;
 
-		${Functions.mediaBreakpointUp("sm")} {
+		${Functions.mediaBreakpointUp('sm')} {
 			grid-template-columns: repeat(3, auto);
 			margin-top: 5px;
 		}
 
-		${Functions.mediaBreakpointDown("xs")} {
+		${Functions.mediaBreakpointDown('xs')} {
 			grid-template-columns: repeat(1, auto);
 			place-items: start;
 			margin-top: 10px;

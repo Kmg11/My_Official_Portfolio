@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { motion } from "framer-motion";
-import { Functions } from "../../Style";
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
+import { Functions } from '../../Style';
 
 export const Banner = styled(motion.section)`
 	max-width: max-content;
@@ -9,7 +9,7 @@ export const Banner = styled(motion.section)`
 	gap: 1.25rem;
 	place-items: center;
 
-	${Functions.mediaBreakpointDown("sm")} {
+	${Functions.mediaBreakpointDown('sm')} {
 		grid-template-columns: 1fr;
 		justify-content: center;
 		text-align: center;

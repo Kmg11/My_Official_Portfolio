@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Functions } from "../../../Style";
+import styled from 'styled-components';
+import { Functions } from '../../../Style';
 
 export const Cards = styled.section`
 	display: grid;
@@ -10,11 +10,11 @@ export const Cards = styled.section`
 		grid-template-columns: repeat(4, 1fr);
 	}
 
-	${Functions.mediaBreakpointDown("md")} {
+	${Functions.mediaBreakpointDown('md')} {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
-	${Functions.mediaBreakpointDown("xs")} {
+	${Functions.mediaBreakpointDown('xs')} {
 		grid-template-columns: 1fr;
 	}
 `;

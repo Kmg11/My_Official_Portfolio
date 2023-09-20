@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Variables } from "../../../Style";
+import styled from 'styled-components';
+import { Variables } from '../../../Style';
 
 export const Buttons = styled.div`
 	display: grid;

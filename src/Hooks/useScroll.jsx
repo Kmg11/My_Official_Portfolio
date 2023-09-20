@@ -1,15 +1,15 @@
-import { useEffect } from "react";
+import { useEffect } from 'react';
 
 export const useScroll = (callback) => {
-	useEffect(() => {
-		const handleScroll = () => {
-			callback();
-		};
+  useEffect(() => {
+    const handleScroll = () => {
+      callback();
+    };
 
-		window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
-		return () => {
-			window.removeEventListener("scroll", handleScroll);
-		};
-	}, [callback]);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [callback]);
 };

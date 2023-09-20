@@ -1,12 +1,10 @@
-import { css } from "styled-components";
-import { Variables } from "../";
+import { css } from 'styled-components';
+import { Colors } from '../Variables';
 
-export const backgroundImage = (backgroundImage) => {
-	return css`
-		background-color: ${Variables.Colors.backgroundColor};
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
-		background-image: url(${backgroundImage});
-	`;
-};
+export const backgroundImage = (backgroundImg) => css`
+  background-color: ${Colors.backgroundColor};
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(${backgroundImg});
+`;

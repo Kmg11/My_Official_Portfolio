@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { motion } from "framer-motion";
-import { Functions } from "../../../Style";
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
+import { Functions } from '../../../Style';
 
 export const Header = styled(motion.header)`
 	width: 100%;
@@ -13,7 +13,7 @@ export const Header = styled(motion.header)`
 	&::before {
 		content: "";
 		z-index: 2;
-		${Functions.overlay(null, "linear-gradient(to right, #000, transparent)")}
+		${Functions.overlay(null, 'linear-gradient(to right, #000, transparent)')}
 	}
 `;
 
@@ -25,12 +25,12 @@ export const Content = styled.div`
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 
-	${Functions.mediaBreakpointDown("sm")} {
+	${Functions.mediaBreakpointDown('sm')} {
 		padding-left: 0;
 		padding-right: 0;
 	}
 
-	${Functions.mediaBreakpointOnly("md")} {
+	${Functions.mediaBreakpointOnly('md')} {
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}

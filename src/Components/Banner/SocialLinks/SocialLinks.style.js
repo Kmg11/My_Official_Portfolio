@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
-import styled from "styled-components";
-import { Variables } from "../../../Style";
+import { motion } from 'framer-motion';
+import styled from 'styled-components';
+import { Variables } from '../../../Style';
 
 export const SocialLinks = styled.ul``;
 

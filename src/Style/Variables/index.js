@@ -1,2 +1,2 @@
-export * as Colors from "./colors";
-export * as Breakpoints from "./breakpoints";
+export * as Colors from './colors';
+export * as Breakpoints from './breakpoints';

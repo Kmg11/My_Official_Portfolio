@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components";
-import { Functions } from "../../../Style";
+import styled, { css } from 'styled-components';
+import { Functions } from '../../../Style';
 
 export const NavbarList = styled.ul`
 	display: flex;
@@ -7,7 +7,7 @@ export const NavbarList = styled.ul`
 	align-items: center;
 	gap: 2rem;
 
-	${Functions.mediaBreakpointDown("sm")} {
+	${Functions.mediaBreakpointDown('sm')} {
 		align-items: normal;
 		position: fixed;
 		top: 0;
@@ -23,9 +23,8 @@ export const NavbarList = styled.ul`
 		transition-property: transform, opacity;
 		transition: 0.3s linear;
 
-		${(props) =>
-			props.isNavbarOpen &&
-			css`
+		${(props) => props.isNavbarOpen
+			&& css`
 				transform: translateX(0);
 			`}
 	}

@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import styled from "styled-components";
-import { Variables } from "../../../../Style";
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import { Variables } from '../../../../Style';
 
 export const Info = styled.div`
 	position: absolute;

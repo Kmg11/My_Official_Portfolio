@@ -78,16 +78,33 @@ Enhance README.md file
 
 ============================================================================
 
-- in project page if project id is wrong show message
+Setup eslint, prettier and .editorconfig | Remove tests from projects
+
 - Remove tests from project page
-- Handle experience section
+- Remove tests from projects data files
+- Remove tests from Project.json example file
 - Structure Enhancements
+	- Setup ESLint
+	- Setup Prettier
+	- Add .editorconfig file
+	- Add [ lint, lint:fix ] scripts
+	- Add .jsx to files extensions
+	- Fix eslint errors
+
+============================================================================
+
+- Structure Enhancements
+	- Enhance CircleButtons
 	- Move pages containers to pages folder
 	- Move layout components to layouts folder
 	- Add theme to styled components
 	- Use absolute path
 	- Rename folders and files
-	- Add eslint, prettier .editorconfig files with airbnb config
+
+- Try build and clone repo before merge
+- Enhance Skelaton
+- in project page if project id is wrong show message
+- Handle experience section
 
 - Use markdown for project description
 - Add border to circle image like story with two empty places to round like clock

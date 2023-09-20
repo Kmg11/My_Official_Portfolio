@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { motion } from "framer-motion";
-import { Variables } from "../../../../Style";
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
+import { Variables } from '../../../../Style';
 
 export const Badge = styled(motion.h5)`
 	color: ${Variables.Colors.whiteColor};

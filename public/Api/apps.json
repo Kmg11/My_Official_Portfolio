@@ -30,7 +30,6 @@
 			"npm run mock or json-server --watch .\\src\\Apis\\posts.json --port 8000",
 			"npm start or npm run start - on another terminal"
 		],
-		"tests": null,
 		"versions": null,
 		"other_links": null,
 		"notes": [
@@ -64,7 +63,6 @@
 			"Help menu"
 		],
 		"how_to_use": null,
-		"tests": null,
 		"versions": null,
 		"other_links": null,
 		"notes": [
@@ -94,7 +92,6 @@
 			"Save all results in local storage"
 		],
 		"how_to_use": null,
-		"tests": null,
 		"versions": null,
 		"other_links": null,
 		"notes": [
@@ -119,7 +116,6 @@
 		},
 		"features": ["4 Different Categories", "Good Design", "Result Screen"],
 		"how_to_use": null,
-		"tests": null,
 		"versions": null,
 		"other_links": null,
 		"notes": null,
@@ -151,7 +147,6 @@
 			"npm install",
 			"npm start or npm run start"
 		],
-		"tests": null,
 		"versions": null,
 		"other_links": null,
 		"notes": null,

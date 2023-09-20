@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { motion } from "framer-motion";
-import { Functions } from "../../Style";
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
+import { Functions } from '../../Style';
 
 export const ProfileContainer = styled(motion.section)`
 	padding: 2.5rem 1.5rem;
@@ -8,11 +8,11 @@ export const ProfileContainer = styled(motion.section)`
 	grid-template-columns: 1fr;
 	gap: 2rem;
 
-	${Functions.mediaBreakpointDown("sm")} {
+	${Functions.mediaBreakpointDown('sm')} {
 		padding: 2.5rem 0 2.5rem;
 	}
 
-	${Functions.mediaBreakpointOnly("md")} {
+	${Functions.mediaBreakpointOnly('md')} {
 		padding: 2.5rem 1rem;
 	}
 `;

@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { motion } from "framer-motion";
-import { Variables, Functions } from "../../Style";
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
+import { Variables, Functions } from '../../Style';
 
 export const Navbar = styled(motion.nav)`
 	position: relative;
@@ -16,7 +16,7 @@ export const Navbar = styled(motion.nav)`
 	align-items: center;
 	gap: 2rem;
 
-	${Functions.mediaBreakpointDown("sm")} {
+	${Functions.mediaBreakpointDown('sm')} {
 		min-height: 0;
 		max-height: none;
 		width: 100%;

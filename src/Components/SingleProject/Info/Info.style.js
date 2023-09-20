@@ -1,16 +1,16 @@
-import styled from "styled-components";
-import { Functions } from "../../../Style";
+import styled from 'styled-components';
+import { Functions } from '../../../Style';
 
-const GAP = "2rem";
+const GAP = '2rem';
 
 export const Info = styled.section`
 	padding: 2.5rem 1.5rem;
 
-	${Functions.mediaBreakpointOnly("md")} {
+	${Functions.mediaBreakpointOnly('md')} {
 		padding: 2.5rem 1rem;
 	}
 
-	${Functions.mediaBreakpointDown("sm")} {
+	${Functions.mediaBreakpointDown('sm')} {
 		padding: 2.5rem 0 2.5rem;
 	}
 `;
@@ -21,11 +21,11 @@ export const Row = styled.div`
 	gap: ${GAP};
 	margin-top: ${GAP};
 
-	${Functions.mediaBreakpointDown("md")} {
+	${Functions.mediaBreakpointDown('md')} {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
-	${Functions.mediaBreakpointDown("xs")} {
+	${Functions.mediaBreakpointDown('xs')} {
 		grid-template-columns: 1fr;
 	}
 `;

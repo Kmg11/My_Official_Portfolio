@@ -1,7 +1,7 @@
-import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
-import styled, { keyframes } from "styled-components";
-import { Variables } from "../../../Style";
+import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import styled, { keyframes } from 'styled-components';
+import { Variables } from '../../../Style';
 
 export const NextButton = styled(Link)`
 	text-align: center;

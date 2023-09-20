@@ -1,12 +1,18 @@
-import { Navbar } from "../../Components/Navbar/Navbar";
-import * as Styles from "./MainLayout.style";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Navbar } from '../../Components/Navbar/Navbar';
+import * as Styles from './MainLayout.style';
 
-export const MainLayout = ({ children }) => {
-	return (
-		<Styles.MainLayout>
-			<Navbar />
+export function MainLayout({ children }) {
+  return (
+    <Styles.MainLayout>
+      <Navbar />
 
-			<Styles.MainLayoutContent>{children}</Styles.MainLayoutContent>
-		</Styles.MainLayout>
-	);
+      <Styles.MainLayoutContent>{children}</Styles.MainLayoutContent>
+    </Styles.MainLayout>
+  );
+}
+
+MainLayout.propTypes = {
+  children: PropTypes.node.isRequired,
 };

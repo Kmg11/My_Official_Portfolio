@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { motion } from "framer-motion";
-import { Components, Functions } from "../../../Style";
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
+import { Components, Functions } from '../../../Style';
 
 export const ImageContainer = styled(motion.div)`
 	width: 60px;
@@ -8,7 +8,7 @@ export const ImageContainer = styled(motion.div)`
 	border-radius: 50%;
 	overflow: hidden;
 
-	${Functions.mediaBreakpointDown("sm")} {
+	${Functions.mediaBreakpointDown('sm')} {
 		width: 50px;
 		height: 50px;
 	}

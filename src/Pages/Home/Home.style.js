@@ -1,17 +1,17 @@
-import { motion } from "framer-motion";
-import styled from "styled-components";
-import { Functions } from "../../Style";
+import { motion } from 'framer-motion';
+import styled from 'styled-components';
+import { Functions } from '../../Style';
 
 export const Home = styled.section`
 	position: relative;
 	min-height: 100vh;
-	${Functions.center("grid")};
+	${Functions.center('grid')};
 	overflow: hidden;
 
 	&::before {
 		content: "";
 		z-index: 2;
-		${Functions.overlay(null, "linear-gradient(to right, #000, transparent)")};
+		${Functions.overlay(null, 'linear-gradient(to right, #000, transparent)')};
 	}
 `;
 
