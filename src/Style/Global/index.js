@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import { Colors } from '../Variables';
 
 export const GlobalStyle = createGlobalStyle`
   *,
@@ -15,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
 
 	html {
 		scrollbar-width: normal;
-		scrollbar-color: ${Colors.mainColor} ${Colors.secondBackgroundColor};
+		scrollbar-color: ${(p) => p.theme.colors.mainColor} ${(p) => p.theme.colors.secondBackgroundColor};
 	}
 
 	::-webkit-scrollbar {
@@ -23,20 +22,20 @@ export const GlobalStyle = createGlobalStyle`
 	}
 	
 	::-webkit-scrollbar-thumb {
-		background-color: ${Colors.mainColor};
+		background-color: ${(p) => p.theme.colors.mainColor};
 	}
 
 	::-webkit-scrollbar-track {
-		background-color: ${Colors.secondBackgroundColor};
+		background-color: ${(p) => p.theme.colors.secondBackgroundColor};
 	}
 
 	body {
-		background-color: ${Colors.backgroundColor};
+		background-color: ${(p) => p.theme.colors.backgroundColor};
 		font-family: "Roboto", sans-serif;
 	}
 
 	::selection {
-		background-color: ${Colors.mainColor};
+		background-color: ${(p) => p.theme.colors.mainColor};
 	}
 
 	ul {

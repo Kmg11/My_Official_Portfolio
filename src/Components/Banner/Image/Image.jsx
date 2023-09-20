@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Images } from '../../../Constants';
+import { IMAGES } from '../../../constants';
 import { Components } from '../../../Style';
 import { CreateImage } from '../../CreateImage/CreateImage';
 import * as Style from './Image.style';
@@ -17,7 +17,7 @@ export function Image({ data, isPending }) {
   ) : (
     data && (
       <Style.ImageContainer variants={ImageVariants}>
-        <CreateImage src={`${Images.GLOBAL}/personal-image`} alt={data.name} />
+        <CreateImage src={`${IMAGES.GLOBAL}/personal-image`} alt={data.name} />
       </Style.ImageContainer>
     )
   );

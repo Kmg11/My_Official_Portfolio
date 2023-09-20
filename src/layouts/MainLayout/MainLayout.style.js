@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Functions, Variables } from '../../Style';
+import { Functions } from '../../Style';
 
 export const MainLayout = styled.div`
   width: 100%;
@@ -15,6 +15,6 @@ export const MainLayout = styled.div`
 `;
 
 export const MainLayoutContent = styled.div`
-  background-color: ${Variables.Colors.backgroundColor};
+  background-color: ${(p) => p.theme.colors.backgroundColor};
   overflow: auto;
 `;

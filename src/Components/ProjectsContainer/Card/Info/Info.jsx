@@ -1,4 +1,4 @@
-import { Routes } from '../../../../Constants';
+import { ROUTES } from '../../../../constants';
 import * as Style from './Info.style';
 import { useInfo } from '../InfoContext';
 
@@ -17,7 +17,7 @@ export function Info() {
         <Style.Title>{title}</Style.Title>
         <Style.Description>
           {sliceDescription}{' '}
-          <Style.Dots to={`${Routes.PROJECT}/${type}/${id}/${title}`}>...</Style.Dots>
+          <Style.Dots to={`${ROUTES.PROJECT}/${type}/${id}/${title}`}>...</Style.Dots>
         </Style.Description>
       </Style.Box>
 

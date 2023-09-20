@@ -1,4 +1,4 @@
-import { Routes } from '../../../Constants';
+import { ROUTES } from '../../../constants';
 import * as Style from './Next.style';
 
 const nextVariants = {
@@ -18,7 +18,7 @@ const nextVariants = {
 
 export function NextButton() {
   return (
-    <Style.NextButton to={Routes.PROJECTS} aria-label="Go To Projects Page">
+    <Style.NextButton to={ROUTES.PROJECTS} aria-label="Go To Projects Page">
       <Style.Arrows variants={nextVariants} initial="hidden" animate="visible" exit="hidden">
         <Style.Arrow />
         <Style.Arrow />

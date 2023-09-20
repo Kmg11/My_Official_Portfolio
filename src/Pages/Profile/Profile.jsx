@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
-import { useFetchGet } from '../../Hooks/Fetch/useFetchGet';
-import { APIS, Images } from '../../Constants';
+import { useFetchGet } from '../../hooks';
+import { APIS, IMAGES } from '../../constants';
 import { Components } from '../../Style';
 import { ProfileContainer } from '../../Components/ProfileContainer/ProfileContainer';
 import * as Style from './Profile.style';
@@ -25,7 +25,7 @@ export function Profile() {
 
           <meta property="og:title" content={title} />
           <meta property="og:description" content={description} />
-          <meta property="og:image" content={`${Images.GLOBAL}/personal-image.png`} />
+          <meta property="og:image" content={`${IMAGES.GLOBAL}/personal-image.png`} />
         </Helmet>
       )}
 

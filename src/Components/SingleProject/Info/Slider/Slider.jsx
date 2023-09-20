@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Thumbs } from 'swiper/core';
-import { Images } from '../../../../Constants';
+import { IMAGES } from '../../../../constants';
 import { CreateImage } from '../../../CreateImage/CreateImage';
 
 // Import Swiper styles
@@ -30,7 +30,7 @@ export function Slider() {
     [...Array(project.images.number_of_images).keys()].map((item) => (
       <SwiperSlide key={item}>
         <CreateImage
-          src={`${Images.PROJECTS}/${project.images.folder_name}/${item + 1}`}
+          src={`${IMAGES.PROJECTS}/${project.images.folder_name}/${item + 1}`}
           alt={`${project.title} Image`}
         />
       </SwiperSlide>

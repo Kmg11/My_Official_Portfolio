@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Images, Routes } from '../../../Constants';
-import { CreateImage } from '../../CreateImage/CreateImage';
+import { IMAGES, ROUTES } from '../../../../constants';
+import { CreateImage } from '../../../../Components/CreateImage/CreateImage';
 import * as Style from './Image.style';
 
 const imageVariants = {
@@ -11,8 +11,8 @@ const imageVariants = {
 export function Image() {
   return (
     <Style.ImageContainer variants={imageVariants}>
-      <Link to={Routes.PROFILE}>
-        <CreateImage src={`${Images.GLOBAL}/personal-image`} alt="Kirolos Mahfouz" />
+      <Link to={ROUTES.PROFILE}>
+        <CreateImage src={`${IMAGES.GLOBAL}/personal-image`} alt="Kirolos Mahfouz" />
       </Link>
     </Style.ImageContainer>
   );

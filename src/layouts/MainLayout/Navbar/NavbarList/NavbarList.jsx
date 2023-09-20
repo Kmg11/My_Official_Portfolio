@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
 import { faWrench, faUserAlt, faHome, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
-import { Routes } from '../../../Constants';
+import { ROUTES } from '../../../../constants';
 import * as Style from './NavbarList.style';
 import { NavbarListItem } from './NavbarListItem/NavbarListItem';
 
 const linksList = [
-  { name: 'home', to: Routes.HOME, icon: faHome },
-  { name: 'projects', to: Routes.PROJECTS, icon: faWrench },
-  { name: 'profile', to: Routes.PROFILE, icon: faUserAlt },
+  { name: 'home', to: ROUTES.HOME, icon: faHome },
+  { name: 'projects', to: ROUTES.PROJECTS, icon: faWrench },
+  { name: 'profile', to: ROUTES.PROFILE, icon: faUserAlt },
 ];
 
 export function NavbarList({ isNavbarOpen, closeNavbar }) {
@@ -33,7 +33,7 @@ export function NavbarList({ isNavbarOpen, closeNavbar }) {
 				icon={faScroll}
 				linkProps={{
 					as: "a",
-					href: `${process.env.PUBLIC_URL}/Files/Kirolos_Mahfouz_Cv.docx`,
+					href: `${process.env.PUBLIC_URL}/files/Kirolos_Mahfouz_Cv.docx`,
 					download: "Kirolos Mahfouz Cv",
 				}}
 			/> */}

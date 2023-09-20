@@ -1,4 +1,4 @@
-import { Images } from '../../../../Constants';
+import { IMAGES } from '../../../../constants';
 import { CreateImage } from '../../../CreateImage/CreateImage';
 import * as Style from './CoverImage.style';
 import { useProject } from '../../ProjectContext';
@@ -18,7 +18,7 @@ export function CoverImage() {
     <Style.CoverImage variants={imageVariants}>
       {project && (
         <CreateImage
-          src={`${Images.PROJECTS}/${project.images.folder_name}/1`}
+          src={`${IMAGES.PROJECTS}/${project.images.folder_name}/1`}
           alt={`${project.title} Cover Image`}
         />
       )}

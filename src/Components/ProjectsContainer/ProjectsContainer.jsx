@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import { useFetchGet } from '../../Hooks/Fetch/useFetchGet';
-import { APIS } from '../../Constants';
+import { useFetchGet } from '../../hooks';
+import { APIS } from '../../constants';
 import { CategoriesButtons } from './CategoriesButtons/CategoriesButtons';
 import { Top } from './Top/Top';
 import { All } from './All/All';

@@ -93,16 +93,27 @@ Setup eslint, prettier and .editorconfig | Remove tests from projects
 
 ============================================================================
 
+Structure Enhancements
+
+- Enhance CircleButtons
 - Structure Enhancements
-	- Enhance CircleButtons
-	- Move pages containers to pages folder
-	- Move layout components to layouts folder
+	- Move Navbar component from components folder to layouts folder
+	- Enhance constants
+	- Enhance hooks
+	- Enhance styles
 	- Add theme to styled components
+
+============================================================================
+
+- Structure Enhancements
+	- Enhance styles
+	- Move pages containers to pages folder
 	- Use absolute path
 	- Rename folders and files
 
 - Try build and clone repo before merge
 - Enhance Skelaton
+- Enhance CircleButtons
 - in project page if project id is wrong show message
 - Handle experience section
 

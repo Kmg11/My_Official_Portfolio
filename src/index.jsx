@@ -2,17 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
 import { App } from './App';
 import 'normalize.css';
-import { GlobalStyle } from './Style';
+import { GlobalStyle, theme } from './Style';
 
 ReactDOM.render(
   <React.StrictMode>
     <HelmetProvider>
-      <GlobalStyle />
-      <Router basename={process.env.PUBLIC_URL}>
-        <App />
-      </Router>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <Router basename={process.env.PUBLIC_URL}>
+          <App />
+        </Router>
+      </ThemeProvider>
     </HelmetProvider>
   </React.StrictMode>,
   document.getElementById('root'),

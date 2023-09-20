@@ -2,13 +2,8 @@ import { useRef, useState } from 'react';
 import { Image } from './Image/Image';
 import { Button } from './Button/Button';
 import { NavbarList } from './NavbarList/NavbarList';
-import { Functions } from '../../Style';
-import {
-  useOutsideClick,
-  useEscapeKey,
-  useScroll,
-  useResize,
-} from '../../Hooks';
+import { Functions } from '../../../Style';
+import { useOutsideClick, useEscapeKey, useScroll, useResize } from '../../../hooks';
 import * as Style from './Navbar.style';
 
 export function Navbar() {
@@ -26,7 +21,10 @@ export function Navbar() {
   const navbarVariants = {
     hidden: { opacity: 0, x: -100, transition: { duration: 0.5 } },
     visible: {
-      opacity: 1, x: 0, y: 0, transition: { duration: 0.7 },
+      opacity: 1,
+      x: 0,
+      y: 0,
+      transition: { duration: 0.7 },
     },
     exit: { opacity: 0, x: -100, transition: { duration: 0.5 } },
   };
@@ -34,7 +32,10 @@ export function Navbar() {
   const smallNavbarVariants = {
     hidden: { opacity: 0, y: -100, transition: { duration: 0.5 } },
     visible: {
-      opacity: 1, y: 0, x: 0, transition: { duration: 0.7 },
+      opacity: 1,
+      y: 0,
+      x: 0,
+      transition: { duration: 0.7 },
     },
     exit: { opacity: 0, y: -100, transition: { duration: 0.5, delay: 0 } },
   };

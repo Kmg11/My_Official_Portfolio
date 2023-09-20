@@ -27,26 +27,6 @@ export function CircleButtons({ children, isStatic, isPending, object, section }
   );
 }
 
-export function Button({ children, name, icon }) {
-  const { object, section, isStatic } = useContext(ButtonContext);
-
-  return isStatic ? (
-    <Style.Button className="button" as={Link} to={name}>
-      <Style.ButtonIcon>
-        <FontAwesomeIcon icon={icon} fixedWidth />
-      </Style.ButtonIcon>
-      <Style.ButtonName>{children}</Style.ButtonName>
-    </Style.Button>
-  ) : object[section][name] ? (
-    <Style.Button className="button" href={object[section][name]} target="_blank" rel="noreferrer">
-      <Style.ButtonIcon>
-        <FontAwesomeIcon icon={icon} fixedWidth />
-      </Style.ButtonIcon>
-      <Style.ButtonName>{children}</Style.ButtonName>
-    </Style.Button>
-  ) : null;
-}
-
 CircleButtons.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.element.isRequired),
@@ -72,6 +52,24 @@ CircleButtons.propTypes = {
     }
   },
 };
+
+export function Button({ children, name, icon }) {
+  const { object, section, isStatic } = useContext(ButtonContext);
+  const innerLink = { as: Link, to: name };
+  const outerLink = { as: 'a', href: object[section][name], target: '_blank', rel: 'noreferrer' };
+
+  return (
+    <Style.Button
+      className="button"
+      {...(isStatic ? innerLink : object[section][name] ? outerLink : {})}
+    >
+      <Style.ButtonIcon>
+        <FontAwesomeIcon icon={icon} fixedWidth />
+      </Style.ButtonIcon>
+      <Style.ButtonName>{children}</Style.ButtonName>
+    </Style.Button>
+  );
+}
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,

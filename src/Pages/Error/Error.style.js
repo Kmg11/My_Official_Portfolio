@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Functions, Variables } from '../../Style';
+import { Functions } from '../../Style';
 
 export const Error = styled.section`
   position: relative;
@@ -13,7 +13,7 @@ export const Error = styled.section`
 `;
 
 export const Content = styled.section`
-  background-color: ${Variables.Colors.backgroundColor};
+  background-color: ${(p) => p.theme.colors.backgroundColor};
   min-height: 100vh;
   position: relative;
   z-index: 3;

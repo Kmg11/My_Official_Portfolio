@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { useFetchGet } from '../../Hooks/Fetch/useFetchGet';
-import { APIS, Images } from '../../Constants';
+import { useFetchGet } from '../../hooks';
+import { APIS, IMAGES } from '../../constants';
 
 import { SingleProject } from '../../Components/SingleProject/SingleProject';
 import * as Style from './Project.style';
@@ -41,7 +41,7 @@ export function Project() {
           />
           <meta
             property="og:image"
-            content={`${Images.PROJECTS}/${targetProject.images.folder_name}/1.png`}
+            content={`${IMAGES.PROJECTS}/${targetProject.images.folder_name}/1.png`}
           />
         </Helmet>
       )}

@@ -1,7 +1,7 @@
 import { faHome, faUserAlt, faWrench } from '@fortawesome/free-solid-svg-icons';
 import { motion } from 'framer-motion';
 import { Components } from '../../Style';
-import { Routes } from '../../Constants';
+import { ROUTES } from '../../constants';
 import { CircleButtons, Button } from '../Buttons/Circle/Circle';
 import * as Style from './ErrorContainer.style';
 
@@ -33,13 +33,13 @@ export function ErrorContainer() {
 
           <motion.div variants={allVariants} transition={{ duration: 0.5, delay: 1.2 }}>
             <CircleButtons isStatic>
-              <Button name={Routes.HOME} icon={faHome}>
+              <Button name={ROUTES.HOME} icon={faHome}>
                 Home
               </Button>
-              <Button name={Routes.PROJECTS} icon={faWrench}>
+              <Button name={ROUTES.PROJECTS} icon={faWrench}>
                 Projects
               </Button>
-              <Button name={Routes.PROFILE} icon={faUserAlt}>
+              <Button name={ROUTES.PROFILE} icon={faUserAlt}>
                 Profile
               </Button>
             </CircleButtons>

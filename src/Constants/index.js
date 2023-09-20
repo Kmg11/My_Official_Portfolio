@@ -1,3 +1,3 @@
-export { APIS } from './Apis';
-export * as Routes from './Routes';
-export * as Images from './Images';
+export { APIS } from './apis.constant';
+export { ROUTES } from './routes.constant';
+export { IMAGES } from './images.constant';

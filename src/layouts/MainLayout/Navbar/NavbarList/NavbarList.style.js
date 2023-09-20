@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { Functions } from '../../../Style';
+import { Functions } from '../../../../Style';
 
 export const NavbarList = styled.ul`
 	display: flex;
