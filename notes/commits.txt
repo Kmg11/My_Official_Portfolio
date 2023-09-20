@@ -105,8 +105,20 @@ Structure Enhancements
 
 ============================================================================
 
+Enhance styles
+
+- Remove styles center function
+- Remove styles backgroundImage function
+- Remove styles overlay functions
+- Remove styles Functions
+- Add breakpoints to theme
+- Add breakpointsSizes to theme
+- Remove ImageCover style component
+
+============================================================================
+
+- Enhance style components
 - Structure Enhancements
-	- Enhance styles
 	- Move pages containers to pages folder
 	- Use absolute path
 	- Rename folders and files

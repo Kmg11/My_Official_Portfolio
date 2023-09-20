@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { Functions } from '../../../../../Style';
 
 export const Item = styled(motion.li)``;
 
@@ -22,7 +21,7 @@ export const Name = styled.span`
   transition-property: opacity, transform;
   transition: 0.25s linear;
 
-  ${Functions.mediaBreakpointDown('sm')} {
+  ${(p) => p.theme.breakpoints.down('sm')} {
     position: static;
     transform: none;
     background-color: transparent;
@@ -36,7 +35,7 @@ export const Icon = styled.span`
   display: block;
   font-size: 1.2rem;
 
-  ${Functions.mediaBreakpointDown('sm')} {
+  ${(p) => p.theme.breakpoints.down('sm')} {
     font-size: 1rem;
   }
 `;
@@ -68,7 +67,7 @@ export const Link = styled.a`
     }
   }
 
-  ${Functions.mediaBreakpointDown('sm')} {
+  ${(p) => p.theme.breakpoints.down('sm')} {
     gap: 10px;
     justify-content: start;
     border-radius: 10px;

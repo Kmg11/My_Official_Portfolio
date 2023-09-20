@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components';
-import { Functions } from '../../../../Style';
 
 export const NavbarList = styled.ul`
 	display: flex;
@@ -7,7 +6,7 @@ export const NavbarList = styled.ul`
 	align-items: center;
 	gap: 2rem;
 
-	${Functions.mediaBreakpointDown('sm')} {
+	${(p) => p.theme.breakpoints.down('sm')} {
 		align-items: normal;
 		position: fixed;
 		top: 0;

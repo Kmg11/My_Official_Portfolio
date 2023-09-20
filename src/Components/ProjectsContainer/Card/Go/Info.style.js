@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { Functions } from '../../../../Style';
 
 export const Go = styled(Link)`
-	${Functions.overlayTransparent}
-	z-index: 3;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
 `;

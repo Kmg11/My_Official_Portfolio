@@ -1,12 +1,13 @@
 import { useRef, useState } from 'react';
+import { useTheme } from 'styled-components';
 import { Image } from './Image/Image';
 import { Button } from './Button/Button';
 import { NavbarList } from './NavbarList/NavbarList';
-import { Functions } from '../../../Style';
 import { useOutsideClick, useEscapeKey, useScroll, useResize } from '../../../hooks';
 import * as Style from './Navbar.style';
 
 export function Navbar() {
+  const theme = useTheme();
   const navbar = useRef(0);
 
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
@@ -40,9 +41,7 @@ export function Navbar() {
     exit: { opacity: 0, y: -100, transition: { duration: 0.5, delay: 0 } },
   };
 
-  const isSmall = window.matchMedia(
-    Functions.mediaBreakpointDown('sm').replace('@media ', ''),
-  ).matches;
+  const isSmall = window.matchMedia(theme.breakpoints.down('sm').replace('@media ', '')).matches;
 
   return (
     <Style.Navbar

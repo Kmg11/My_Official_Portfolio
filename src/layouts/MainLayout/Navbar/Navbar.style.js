@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { Functions } from '../../../Style';
 
 export const Navbar = styled(motion.nav)`
   position: relative;
@@ -16,7 +15,7 @@ export const Navbar = styled(motion.nav)`
   align-items: center;
   gap: 2rem;
 
-  ${Functions.mediaBreakpointDown('sm')} {
+  ${(p) => p.theme.breakpoints.down('sm')} {
     min-height: 0;
     max-height: none;
     width: 100%;

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { mediaBreakpointUp } from '../Functions';
 
 export const Container = styled.div`
   margin: auto;
@@ -8,7 +7,7 @@ export const Container = styled.div`
   width: 100%;
   display: block;
 
-  ${mediaBreakpointUp('xl')} {
+  ${(p) => p.theme.breakpoints.up('xl')} {
     width: 1170px;
   }
 `;

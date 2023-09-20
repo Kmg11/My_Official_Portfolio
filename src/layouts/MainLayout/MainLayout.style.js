@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Functions } from '../../Style';
 
 export const MainLayout = styled.div`
   width: 100%;
@@ -9,7 +8,7 @@ export const MainLayout = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
 
-  ${Functions.mediaBreakpointDown('sm')} {
+  ${(p) => p.theme.breakpoints.down('sm')} {
     grid-template-columns: 1fr;
   }
 `;

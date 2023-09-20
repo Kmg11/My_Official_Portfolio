@@ -30,5 +30,7 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
     'no-nested-ternary': 'off',
     'react/require-default-props': 'off',
+    indent: 'off',
+    'implicit-arrow-linebreak': 'off',
   },
 };

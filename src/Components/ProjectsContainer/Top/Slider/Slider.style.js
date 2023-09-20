@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
-import { Functions } from '../../../../Style';
 
 export const Slider = styled(motion.section)`
   position: relative;
@@ -52,7 +51,7 @@ export const Slider = styled(motion.section)`
         display: none;
       }
 
-      ${Functions.mediaBreakpointDown('sm')} {
+      ${(p) => p.theme.breakpoints.down('sm')} {
         width: 40px;
       }
     }
@@ -61,7 +60,7 @@ export const Slider = styled(motion.section)`
       left: 0;
       transform: translateX(-2.5rem);
 
-      ${Functions.mediaBreakpointDown('sm')} {
+      ${(p) => p.theme.breakpoints.down('sm')} {
         transform: translateX(-1.5rem);
       }
     }
@@ -70,7 +69,7 @@ export const Slider = styled(motion.section)`
       right: 0;
       transform: translateX(2.5rem);
 
-      ${Functions.mediaBreakpointDown('sm')} {
+      ${(p) => p.theme.breakpoints.down('sm')} {
         transform: translateX(1.5rem);
       }
     }
@@ -100,7 +99,7 @@ export const SeeMore = styled.button`
     transform: scale(1.1) translateY(-8px);
     z-index: 5;
 
-    ${Functions.mediaBreakpointDown('sm')} {
+    ${(p) => p.theme.breakpoints.down('sm')} {
       transform: scale(1) translateY(-8px);
     }
   }

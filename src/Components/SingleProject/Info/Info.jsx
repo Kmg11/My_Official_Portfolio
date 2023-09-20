@@ -1,11 +1,13 @@
-import { Components, Functions } from '../../../Style';
+import { useTheme } from 'styled-components';
+import { Components } from '../../../Style';
 import { Slider } from './Slider/Slider';
 import { SmallScreens } from './SmallScreens/SmallScreens';
 import { BigScreens } from './BigScreens/BigScreens';
 import * as Style from './Info.style';
 
 export function Info() {
-  const xs = Functions.mediaBreakpointDown('xs').replace('@media ', '');
+  const theme = useTheme();
+  const xs = theme.breakpoints.down('xs').replace('@media ', '');
 
   return (
     <Style.Info>

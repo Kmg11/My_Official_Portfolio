@@ -1,13 +1,12 @@
 import styled, { css } from 'styled-components';
 import { motion } from 'framer-motion';
-import { Functions } from '../../../../Style';
 
 export const Button = styled(motion.button)`
-  ${Functions.mediaBreakpointUp('md')} {
+  ${(p) => p.theme.breakpoints.up('md')} {
     display: none;
   }
 
-  ${Functions.mediaBreakpointDown('sm')} {
+  ${(p) => p.theme.breakpoints.down('sm')} {
     cursor: pointer;
     position: relative;
     z-index: 5;
@@ -17,7 +16,7 @@ export const Button = styled(motion.button)`
 `;
 
 export const Line = styled.span`
-  ${Functions.mediaBreakpointDown('sm')} {
+  ${(p) => p.theme.breakpoints.down('sm')} {
     display: block;
     width: 100%;
     height: 4px;
@@ -41,7 +40,8 @@ export const Line = styled.span`
       animation-direction: reverse;
     }
 
-    ${(props) => props.isNavbarOpen &&
+    ${(props) =>
+      props.isNavbarOpen &&
       css`
         &:first-of-type {
           animation: In1 0.7s forwards;

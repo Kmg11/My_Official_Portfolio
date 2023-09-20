@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Functions } from '../../Style';
 
 export const Error = styled.section`
   position: relative;
@@ -8,7 +7,14 @@ export const Error = styled.section`
   &::before {
     content: '';
     z-index: 2;
-    ${Functions.overlay(null, 'linear-gradient(to right, #000, transparent)')};
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #000, transparent);
   }
 `;
 
@@ -18,7 +24,8 @@ export const Content = styled.section`
   position: relative;
   z-index: 3;
   background-color: transparent;
-  ${Functions.center('grid')};
+  display: grid;
+  place-items: center;
 `;
 
 export const CoverImage = styled.div`

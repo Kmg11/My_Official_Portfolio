@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components';
-import { Functions } from '../../../Style';
 
 export const Buttons = styled.div`
   display: grid;
@@ -8,7 +7,7 @@ export const Buttons = styled.div`
   justify-content: start;
   align-items: center;
 
-  ${Functions.mediaBreakpointDown('xs')} {
+  ${(p) => p.theme.breakpoints.down('xs')} {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
@@ -29,13 +28,15 @@ export const Button = styled.button`
     background-color: ${(p) => p.theme.colors.mainColor};
   }
 
-  ${(props) => props.active &&
+  ${(props) =>
+    props.active &&
     css`
       background-color: ${props.theme.colors.mainColor};
     `}
 
-  ${Functions.mediaBreakpointDown('xs')} {
-    ${(props) => props.numberOfButtons % 2 !== 0 &&
+  ${(p) => p.theme.breakpoints.down('xs')} {
+    ${(props) =>
+      props.numberOfButtons % 2 !== 0 &&
       css`
         padding: 20px 30px;
 
