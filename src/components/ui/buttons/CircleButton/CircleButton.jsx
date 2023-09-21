@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import React, { createContext, useContext, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Components } from '../../../styles';
-import * as Style from './Circle.style';
+import { Components } from '../../../../styles';
+import * as Style from './CircleButton.style';
 
 const ButtonContext = createContext();
 
@@ -17,10 +17,10 @@ export function CircleButtons({ children, isStatic, isPending, object, section }
       ) : (
         isPending &&
         [...new Array(2).keys()].map((item) => (
-          <Style.Button as="div" key={item}>
+          <Style.CircleButton as="div" key={item}>
             <Components.SkeletonLoadingBox width="40px" height="40px" radius="50%" />
             <Components.SkeletonLoadingText width="60px" />
-          </Style.Button>
+          </Style.CircleButton>
         ))
       )}
     </Style.Buttons>
@@ -53,13 +53,13 @@ CircleButtons.propTypes = {
   },
 };
 
-export function Button({ children, name, icon }) {
+export function CircleButton({ children, name, icon }) {
   const { object, section, isStatic } = useContext(ButtonContext);
   const innerLink = { as: Link, to: name };
   const outerLink = { as: 'a', href: object?.[section][name], target: '_blank', rel: 'noreferrer' };
 
   return (
-    <Style.Button
+    <Style.CircleButton
       className="button"
       {...(isStatic ? innerLink : object[section][name] ? outerLink : {})}
     >
@@ -67,11 +67,11 @@ export function Button({ children, name, icon }) {
         <FontAwesomeIcon icon={icon} fixedWidth />
       </Style.ButtonIcon>
       <Style.ButtonName>{children}</Style.ButtonName>
-    </Style.Button>
+    </Style.CircleButton>
   );
 }
 
-Button.propTypes = {
+CircleButton.propTypes = {
   name: PropTypes.string.isRequired,
   icon: PropTypes.object.isRequired,
   children: PropTypes.node.isRequired,

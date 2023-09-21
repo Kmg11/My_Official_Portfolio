@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Thumbs } from 'swiper/core';
 import { IMAGES } from '../../../../../constants';
-import { CreateImage } from '../../../../../Components/CreateImage/CreateImage';
+import { CreateImage } from '../../../../../components';
 
 // Import Swiper styles
 import 'swiper/swiper.min.css';

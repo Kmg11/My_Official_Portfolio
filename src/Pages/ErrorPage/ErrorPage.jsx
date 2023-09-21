@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import { CreateImage } from '../../Components/CreateImage/CreateImage';
+import { CreateImage } from '../../components';
 import { IMAGES } from '../../constants';
 import { ErrorContainer } from './ErrorContainer/ErrorContainer';
 import * as Style from './ErrorPage.style';

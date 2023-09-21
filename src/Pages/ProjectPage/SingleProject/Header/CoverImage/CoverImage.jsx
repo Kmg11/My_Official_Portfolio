@@ -1,5 +1,5 @@
 import { IMAGES } from '../../../../../constants';
-import { CreateImage } from '../../../../../Components/CreateImage/CreateImage';
+import { CreateImage } from '../../../../../components';
 import * as Style from './CoverImage.style';
 import { useProject } from '../../ProjectContext';
 

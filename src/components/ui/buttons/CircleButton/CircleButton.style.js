@@ -27,7 +27,7 @@ export const ButtonName = styled.span`
   text-transform: capitalize;
 `;
 
-export const Button = styled.a`
+export const CircleButton = styled.a`
   display: grid;
   grid-template-columns: repeat(2, auto);
   place-items: center;

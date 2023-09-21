@@ -1,5 +1,5 @@
 import { faClipboard, faStar } from '@fortawesome/free-solid-svg-icons';
-import { Box } from '../../../../../../Components/Box/Box';
+import { Box } from '../../../../../../components';
 import * as Style from './Left.style';
 import { useProject } from '../../../ProjectContext';
 

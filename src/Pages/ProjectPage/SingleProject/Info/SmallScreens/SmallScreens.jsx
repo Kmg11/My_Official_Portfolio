@@ -5,7 +5,7 @@ import {
   faStar,
   faTools,
 } from '@fortawesome/free-solid-svg-icons';
-import { Box } from '../../../../../Components/Box/Box';
+import { Box } from '../../../../../components';
 import { useProject } from '../../ProjectContext';
 
 export function SmallScreens() {

@@ -1,6 +1,6 @@
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faWifi } from '@fortawesome/free-solid-svg-icons';
-import { CircleButtons, Button } from '../../../../../Components/Buttons/Circle/Circle';
+import { CircleButtons, CircleButton } from '../../../../../components';
 import * as Style from './Links.style';
 import { useProject } from '../../ProjectContext';
 
@@ -25,12 +25,12 @@ export function Links() {
   const getLinks = (variants) => (
     <Style.Links variants={variants}>
       <CircleButtons isPending={isPending} object={project} section="links" isStatic={false}>
-        <Button name="github" icon={faGithub}>
+        <CircleButton name="github" icon={faGithub}>
           github
-        </Button>
-        <Button name="live" icon={faWifi}>
+        </CircleButton>
+        <CircleButton name="live" icon={faWifi}>
           live
-        </Button>
+        </CircleButton>
       </CircleButtons>
     </Style.Links>
   );

@@ -1,5 +1,5 @@
 import { faCodeBranch, faLink, faTools } from '@fortawesome/free-solid-svg-icons';
-import { Box } from '../../../../../../Components/Box/Box';
+import { Box } from '../../../../../../components';
 import * as Style from './Right.style';
 import { useProject } from '../../../ProjectContext';
 

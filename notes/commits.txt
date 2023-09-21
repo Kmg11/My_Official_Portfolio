@@ -153,14 +153,26 @@ Enhance CategoriesButtons and ProjectsContainer components
 
 ============================================================================
 
-- Enhance useFetch hook
-- Rename buttons components
+Enhance components folder
 
+- Move NextButton to HomePage
+- Remove NextButton from components
+- Rename Circle Button to CircleButton
 - Add index file to components folder
+- Add index file to components Buttons folder
+- Create components ui folder
+- Move buttons to components ui folder
+- Move Box component to components ui folder
+- Create components main folder
+- Move banner to components main folder
+- Move CreateImage to components main folder
+- Enhance imports from components folder
+- Rename Components folder to components
+
+============================================================================
+
 - Enhance style components [ Create react components ]
-- Structure Enhancements
-	- Move pages containers to pages folder
-	- Rename folders and files
+- Enhance useFetch hook
 
 - Try build and clone repo before merge
 - Enhance Skelaton

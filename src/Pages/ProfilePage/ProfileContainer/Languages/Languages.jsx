@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { faLanguage } from '@fortawesome/free-solid-svg-icons';
-import { Box } from '../../../../Components/Box/Box';
+import { Box } from '../../../../components';
 import * as Styled from './Languages.style';
 
 export function Languages({ response }) {

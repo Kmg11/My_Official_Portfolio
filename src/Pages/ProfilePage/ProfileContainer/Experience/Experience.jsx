@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { faInfo } from '@fortawesome/free-solid-svg-icons';
-import { Box } from '../../../../Components/Box/Box';
+import { Box } from '../../../../components';
 
 export function Experience({ response }) {
   const { data, isPending } = response;

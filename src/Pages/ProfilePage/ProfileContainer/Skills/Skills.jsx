@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { faTools } from '@fortawesome/free-solid-svg-icons';
-import { Box } from '../../../../Components/Box/Box';
+import { Box } from '../../../../components';
 import * as Style from './Skills.style';
 
 export function Skills({ response }) {

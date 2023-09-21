@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Banner } from '../../../Components/Banner/Banner';
+import { Banner } from '../../../components';
 import { Summary } from './Summary/Summary';
 import { Skills } from './Skills/Skills';
 import { Languages } from './Languages/Languages';

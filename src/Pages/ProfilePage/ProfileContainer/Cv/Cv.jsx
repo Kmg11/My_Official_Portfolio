@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { faScroll } from '@fortawesome/free-solid-svg-icons';
-import { Box } from '../../../../Components/Box/Box';
+import { Box } from '../../../../components';
 import * as Styled from './Cv.style';
 
 export function Cv({ response }) {

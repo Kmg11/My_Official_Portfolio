@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { IMAGES, ROUTES } from '../../../../constants';
-import { CreateImage } from '../../../../Components/CreateImage/CreateImage';
+import { CreateImage } from '../../../../components';
 import * as Style from './Image.style';
 
 const imageVariants = {

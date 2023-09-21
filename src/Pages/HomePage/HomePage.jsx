@@ -1,9 +1,8 @@
 import { Helmet } from 'react-helmet-async';
 import { useFetchGet } from '../../hooks';
-import { CreateImage } from '../../Components/CreateImage/CreateImage';
+import { CreateImage, Banner } from '../../components';
 import { APIS, IMAGES } from '../../constants';
-import { Banner } from '../../Components/Banner/Banner';
-import { NextButton } from '../../Components/Buttons/Next/Next';
+import { NextButton } from './NextButton/NextButton';
 import * as Style from './HomePage.style';
 
 const homeVariants = {

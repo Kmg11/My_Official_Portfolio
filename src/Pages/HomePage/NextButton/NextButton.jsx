@@ -1,5 +1,5 @@
 import { ROUTES } from '../../../constants';
-import * as Style from './Next.style';
+import * as Style from './NextButton.style';
 
 const nextVariants = {
   hidden: {
