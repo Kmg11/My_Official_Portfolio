@@ -1,6 +1,6 @@
-import { Components } from '../../../../../styles';
-import * as Style from './Name.style';
 import { useProject } from '../../ProjectContext';
+import { SkeletonText } from '../../../../../components/ui';
+import * as Style from './Name.style';
 
 const nameVariants = {
   hidden: {
@@ -22,7 +22,7 @@ export function Name() {
 
   return isPending ? (
     <Style.Name>
-      <Components.SkeletonLoadingText head width="200px" />
+      <SkeletonText head width="200px" />
     </Style.Name>
   ) : (
     project && <Style.Name variants={nameVariants}>{project.title}</Style.Name>

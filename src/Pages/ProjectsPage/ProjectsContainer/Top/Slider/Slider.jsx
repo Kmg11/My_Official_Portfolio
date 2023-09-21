@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, A11y, Keyboard } from 'swiper/core';
-import { Components } from '../../../../../styles';
 import { Card } from '../../Card/Card';
 import 'swiper/swiper-bundle.min.css';
+import { SkeletonBox, SkeletonText, SubTitle } from '../../../../../components';
 import * as Style from './Slider.style';
 
 // install Swiper modules
@@ -28,9 +28,7 @@ export function Slider({ response, setCurrentProjectsTab, PAGES }) {
 
   return isPending ? (
     <Style.Slider>
-      <Components.SubTitle>
-        {isPending && <Components.SkeletonLoadingText head width="100px" />}
-      </Components.SubTitle>
+      <SubTitle>{isPending && <SkeletonText head width="100px" />}</SubTitle>
 
       <Swiper
         spaceBetween={10}
@@ -48,7 +46,7 @@ export function Slider({ response, setCurrentProjectsTab, PAGES }) {
         {isPending &&
           [...new Array(4).keys()].map((item) => (
             <SwiperSlide key={item}>
-              <Components.SkeletonLoadingBox height="190px" />
+              <SkeletonBox height="190px" />
             </SwiperSlide>
           ))}
       </Swiper>
@@ -56,7 +54,7 @@ export function Slider({ response, setCurrentProjectsTab, PAGES }) {
   ) : (
     data && (
       <Style.Slider variants={sliderVariants} initial="hidden" animate="visible" exit="hidden">
-        <Components.SubTitle>{data && data[0].type}</Components.SubTitle>
+        <SubTitle>{data && data[0].type}</SubTitle>
 
         <Swiper
           spaceBetween={10}

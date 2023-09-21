@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React, { createContext, useContext, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Components } from '../../../../styles';
+import { SkeletonBox, SkeletonText } from '../../skeletons';
 import * as Style from './CircleButton.style';
 
 const ButtonContext = createContext();
@@ -18,8 +18,8 @@ export function CircleButtons({ children, isStatic, isPending, object, section }
         isPending &&
         [...new Array(2).keys()].map((item) => (
           <Style.CircleButton as="div" key={item}>
-            <Components.SkeletonLoadingBox width="40px" height="40px" radius="50%" />
-            <Components.SkeletonLoadingText width="60px" />
+            <SkeletonBox width="40px" height="40px" radius="50%" />
+            <SkeletonText width="60px" />
           </Style.CircleButton>
         ))
       )}

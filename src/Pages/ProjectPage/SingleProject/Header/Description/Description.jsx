@@ -1,6 +1,6 @@
-import { Components } from '../../../../../styles';
-import * as Style from './Description.style';
 import { useProject } from '../../ProjectContext';
+import { SkeletonText } from '../../../../../components/ui';
+import * as Style from './Description.style';
 
 const descriptionVariants = {
   hidden: {
@@ -22,9 +22,9 @@ export function Description() {
 
   return isPending ? (
     <Style.Description>
-      <Components.SkeletonLoadingText />
-      <Components.SkeletonLoadingText />
-      <Components.SkeletonLoadingText />
+      <SkeletonText />
+      <SkeletonText />
+      <SkeletonText />
     </Style.Description>
   ) : (
     project && (

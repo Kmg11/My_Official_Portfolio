@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { IMAGES } from '../../../../constants';
-import { Components } from '../../../../styles';
 import { CreateImage } from '../../CreateImage/CreateImage';
+import { SkeletonBox } from '../../../ui';
 import * as Style from './Image.style';
 
 const ImageVariants = {
@@ -12,7 +12,7 @@ const ImageVariants = {
 export function Image({ data, isPending }) {
   return isPending ? (
     <Style.ImageContainer>
-      <Components.SkeletonLoadingBox />
+      <SkeletonBox />
     </Style.ImageContainer>
   ) : (
     data && (

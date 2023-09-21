@@ -171,22 +171,30 @@ Enhance components folder
 
 ============================================================================
 
-- Enhance style components [ Create react components ]
-- Enhance useFetch hook
+Create [SubTitle, SkeletonBox, SkeletonText] components | Remove styles Components [SkeletonLoadingBox, SkeletonLoadingBox, SubTitle]
 
-- Try build and clone repo before merge
-- Enhance Skelaton
+- Create SubTitle component
+- Replace styles Components SubTitle with SubTitle component
+- Remove styles Components SubTitle
+- Create skeletons folder inside components/ui folder
+- Create SkeletonBox component
+- Create SkeletonText component
+- Replace styles Components [SkeletonLoadingBox, SkeletonLoadingBox] components with SkeletonBox and SkeletonText components
+- Remove styles Components [SkeletonLoadingBox, SkeletonLoadingBox] components
+
+============================================================================
+
 - Enhance CircleButtons
+- Enhance Box component
+- Enhance useFetch hook
+- Try build and clone repo before merge
+- Enhance Skeleton [ Create templates from skeleton ]
 - in project page if project id is wrong show message
 - Handle experience section
 
 - Use markdown for project description
 - Add border to circle image like story with two empty places to round like clock
-- Enhance Box component
-- Convert project to typescript [ Remove prop types ]
-- Add eslint and prettier scripts
 - Add cv link in navbar
-- Remove Facebook-Post-Clone after add Facebook Clone project
 
 Problems
 
@@ -212,3 +220,4 @@ Problems
 	- add for background image like net ninja move light
 
 - Email Link Make It Copy Not Link home page
+- Remove Facebook-Post-Clone after add Facebook Clone project

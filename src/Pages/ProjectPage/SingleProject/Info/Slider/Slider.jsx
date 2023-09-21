@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Thumbs } from 'swiper/core';
 import { IMAGES } from '../../../../../constants';
-import { CreateImage } from '../../../../../components';
+import { CreateImage, SkeletonBox, SubTitle } from '../../../../../components';
 
 // Import Swiper styles
 import 'swiper/swiper.min.css';
@@ -10,7 +10,6 @@ import 'swiper/components/thumbs/thumbs.min.css';
 import * as Style from './Slider.style';
 
 // import Swiper core and required modules
-import { Components } from '../../../../../styles';
 import { useProject } from '../../ProjectContext';
 
 // install Swiper modules
@@ -38,11 +37,11 @@ export function Slider() {
 
   return (
     <Style.Slider variants={sliderVariants} initial="hidden" animate="visible" exit="hidden">
-      <Components.SubTitle>Images</Components.SubTitle>
+      <SubTitle>Images</SubTitle>
 
       {isPending && (
         <Style.SwiperContainer>
-          <Components.SkeletonLoadingBox height="400px" />
+          <SkeletonBox height="400px" />
         </Style.SwiperContainer>
       )}
 

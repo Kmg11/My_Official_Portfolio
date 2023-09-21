@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Components } from '../../../styles';
 import * as Style from './Box.style';
+import { SubTitle } from '../SubTitle/SubTitle';
+import { SkeletonBox, SkeletonText } from '../skeletons';
 
 const boxVariants = {
   hidden: { opacity: 0, y: 50, transition: { duration: 0.5 } },
@@ -13,14 +14,15 @@ export function Box({ title, icon, isPending, data, section, isLink = false }) {
     isPending &&
     [...new Array(4).keys()].map((item) => (
       <Style.Item key={item}>
-        <Components.SkeletonLoadingBox width="20px" height="20px" />
-        <Components.SkeletonLoadingText width="100%" />
+        <SkeletonBox width="20px" height="20px" />
+        <SkeletonText width="100%" />
       </Style.Item>
     ));
 
   return !isPending && data && data[section] ? (
     <Style.Box variants={boxVariants} initial="hidden" animate="visible" exit="hidden">
-      <Components.SubTitle>{title}</Components.SubTitle>
+      <SubTitle>{title}</SubTitle>
+
       <Style.List>
         {data[section].map((item, index) => (
           <Style.Item key={index}>
@@ -42,9 +44,9 @@ export function Box({ title, icon, isPending, data, section, isLink = false }) {
   ) : (
     isPending && (
       <Style.Box>
-        <Components.SubTitle>
-          <Components.SkeletonLoadingText head width="100px" />
-        </Components.SubTitle>
+        <SubTitle>
+          <SkeletonText head width="100px" />
+        </SubTitle>
 
         <Style.List>{SkeletonLoading}</Style.List>
       </Style.Box>

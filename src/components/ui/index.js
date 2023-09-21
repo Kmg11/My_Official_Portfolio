@@ -1,2 +1,4 @@
 export * from './buttons';
-export * from './Box/Box';
+export * from './skeletons';
+export { Box } from './Box/Box';
+export { SubTitle } from './SubTitle/SubTitle';

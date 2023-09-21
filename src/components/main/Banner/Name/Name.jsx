@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Components } from '../../../../styles';
+import { SkeletonText } from '../../../ui';
 import * as Style from './Name.style';
 
 const nameVariants = {
@@ -20,7 +20,7 @@ const nameVariants = {
 export function Name({ data, isPending }) {
   return isPending ? (
     <Style.Name>
-      <Components.SkeletonLoadingText head />
+      <SkeletonText head />
     </Style.Name>
   ) : (
     data && <Style.Name variants={nameVariants}>{data.name}</Style.Name>

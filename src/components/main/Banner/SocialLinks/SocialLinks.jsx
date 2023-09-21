@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
-import { Components } from '../../../../styles';
+import { SkeletonBox } from '../../../ui';
 import * as Style from './SocialLinks.style';
 
 const itemVariants = {
@@ -25,7 +25,7 @@ export function SocialLinks({ data, isPending }) {
 
   const socialLinksSkeletonList = [...new Array(4).keys()].map((link) => (
     <Style.Item key={link}>
-      <Components.SkeletonLoadingBox width="28px" height="28px" />
+      <SkeletonBox width="28px" height="28px" />
     </Style.Item>
   ));
 
