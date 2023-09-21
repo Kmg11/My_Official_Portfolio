@@ -130,8 +130,22 @@ Enhance pages
 
 ============================================================================
 
-- Move pages components to there folder
-- Enhance style components
+Move pages components to pages folder
+
+- Create components folder in layouts folders
+- Create Container component in layouts components folder
+- Replace Components.Container with layout Container
+- Remove styles Components Container
+- Fix Button component problem
+- Move ErrorContainer component from components folder to ErrorPage
+- Move ProfileContainer component from components folder to ProfilePage
+- Move ProjectsContainer component from components folder to ProjectsPage
+- Move SingleProject component from components folder to ProjectPage
+
+============================================================================
+
+- Add index file to components folder
+- Enhance style components [ Create react components ]
 - Structure Enhancements
 	- Move pages containers to pages folder
 	- Rename folders and files

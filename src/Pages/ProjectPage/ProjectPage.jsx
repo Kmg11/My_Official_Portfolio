@@ -3,8 +3,7 @@ import { useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { useFetchGet } from '../../hooks';
 import { APIS, IMAGES } from '../../constants';
-
-import { SingleProject } from '../../Components/SingleProject/SingleProject';
+import { SingleProject } from './SingleProject/SingleProject';
 import * as Style from './ProjectPage.style';
 
 export function ProjectPage() {

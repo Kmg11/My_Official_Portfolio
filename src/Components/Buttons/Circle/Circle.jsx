@@ -56,7 +56,7 @@ CircleButtons.propTypes = {
 export function Button({ children, name, icon }) {
   const { object, section, isStatic } = useContext(ButtonContext);
   const innerLink = { as: Link, to: name };
-  const outerLink = { as: 'a', href: object[section][name], target: '_blank', rel: 'noreferrer' };
+  const outerLink = { as: 'a', href: object?.[section][name], target: '_blank', rel: 'noreferrer' };
 
   return (
     <Style.Button

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { ProjectsContainer } from '../../Components/ProjectsContainer/ProjectsContainer';
+import { ProjectsContainer } from './ProjectsContainer/ProjectsContainer';
 import * as Style from './ProjectsPage.style';
 
 export function ProjectsPage() {

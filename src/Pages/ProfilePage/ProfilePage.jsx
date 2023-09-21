@@ -1,9 +1,9 @@
 import { Helmet } from 'react-helmet-async';
 import { useFetchGet } from '../../hooks';
 import { APIS, IMAGES } from '../../constants';
-import { Components } from '../../styles';
-import { ProfileContainer } from '../../Components/ProfileContainer/ProfileContainer';
 import * as Style from './ProfilePage.style';
+import { Container } from '../../layouts';
+import { ProfileContainer } from './ProfileContainer/ProfileContainer';
 
 export function ProfilePage() {
   const response = useFetchGet(APIS.INFO);
@@ -30,9 +30,9 @@ export function ProfilePage() {
       )}
 
       <Style.Content>
-        <Components.Container>
+        <Container>
           <ProfileContainer response={response} />
-        </Components.Container>
+        </Container>
       </Style.Content>
     </>
   );
