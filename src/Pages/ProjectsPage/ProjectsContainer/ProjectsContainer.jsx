@@ -7,9 +7,11 @@ import { Top } from './Top/Top';
 import { All } from './All/All';
 import * as Style from './ProjectsContainer.style';
 
-const TOP = 'TOP';
-const TEMPLATES = 'TEMPLATES';
-const APPS = 'APPS';
+const PAGES = {
+  TOP: 'TOP',
+  TEMPLATES: 'TEMPLATES',
+  APPS: 'APPS',
+};
 
 const containerVariants = {
   hidden: { opacity: 0, y: 70, transition: { duration: 0.5 } },
@@ -17,7 +19,11 @@ const containerVariants = {
 };
 
 export function ProjectsContainer() {
-  const [projectsPage, setProjectsPage] = useState(TOP);
+  const [currentProjectsTab, setCurrentProjectsTab] = useState(PAGES.TOP);
+  const setTopPage = () => setCurrentProjectsTab(PAGES.TOP);
+  const setTemplatesPage = () => setCurrentProjectsTab(PAGES.TEMPLATES);
+  const setAppsPage = () => setCurrentProjectsTab(PAGES.APPS);
+
   const templates = useFetchGet(APIS.TEMPLATES);
   const apps = useFetchGet(APIS.APPS);
 
@@ -29,23 +35,24 @@ export function ProjectsContainer() {
       exit="hidden"
     >
       <CategoriesButtons
-        page={{
-          projectsPage,
-          setProjectsPage,
-          pageType: { TOP, TEMPLATES, APPS },
-        }}
+        setTopPage={setTopPage}
+        setTemplatesPage={setTemplatesPage}
+        setAppsPage={setAppsPage}
+        PAGES={PAGES}
+        currentProjectsTab={currentProjectsTab}
       />
 
       <AnimatePresence exitBeforeEnter>
-        {projectsPage === TOP && (
+        {currentProjectsTab === PAGES.TOP && (
           <Top
             key="top"
-            page={{ setProjectsPage, pageType: { TEMPLATES, APPS } }}
+            setCurrentProjectsTab={setCurrentProjectsTab}
+            PAGES={PAGES}
             data={{ templates, apps }}
           />
         )}
-        {projectsPage === TEMPLATES && <All key="templates" data={templates} />}
-        {projectsPage === APPS && <All key="apps" data={apps} />}
+        {currentProjectsTab === PAGES.TEMPLATES && <All key="templates" data={templates} />}
+        {currentProjectsTab === PAGES.APPS && <All key="apps" data={apps} />}
       </AnimatePresence>
     </Style.ProjectsContainer>
   );

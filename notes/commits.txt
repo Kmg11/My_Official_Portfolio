@@ -144,6 +144,18 @@ Move pages components to pages folder
 
 ============================================================================
 
+Enhance CategoriesButtons and ProjectsContainer components
+
+- Move BoxButtons to CategoriesButtons
+- Remove BoxButtons
+- Enhance CategoriesButtons
+- Enhance ProjectsContainer
+
+============================================================================
+
+- Enhance useFetch hook
+- Rename buttons components
+
 - Add index file to components folder
 - Enhance style components [ Create react components ]
 - Structure Enhancements

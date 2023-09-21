@@ -7,8 +7,7 @@ export function All({ data }) {
 
   return (
     <Style.Cards>
-      {projects
-				&& projects.map((item) => <Card key={item.id} data={item} />)}
+      {projects && projects.map((item) => <Card key={item.id} data={item} />)}
     </Style.Cards>
   );
 }

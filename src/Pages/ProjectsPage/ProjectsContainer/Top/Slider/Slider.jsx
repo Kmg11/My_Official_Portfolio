@@ -14,9 +14,8 @@ const sliderVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
 };
 
-export function Slider({ response, page }) {
+export function Slider({ response, setCurrentProjectsTab, PAGES }) {
   const { data, isPending } = response;
-  const { setProjectsPage, pageType } = page;
   const topProjects = data && data.filter((project) => project.is_top);
 
   const slideList =
@@ -76,7 +75,7 @@ export function Slider({ response, page }) {
 
           <SwiperSlide>
             <Style.SeeMore
-              onClick={() => setProjectsPage(pageType[`${data[0].type.toUpperCase()}S`])}
+              onClick={() => setCurrentProjectsTab(PAGES[`${data[0].type.toUpperCase()}S`])}
             >
               See More
             </Style.SeeMore>
@@ -89,9 +88,6 @@ export function Slider({ response, page }) {
 
 Slider.propTypes = {
   response: PropTypes.object.isRequired,
-
-  page: PropTypes.shape({
-    setProjectsPage: PropTypes.func.isRequired,
-    pageType: PropTypes.object.isRequired,
-  }).isRequired,
+  setCurrentProjectsTab: PropTypes.func.isRequired,
+  PAGES: PropTypes.object.isRequired,
 };
