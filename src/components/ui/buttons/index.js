@@ -1,1 +1,2 @@
-export { CircleButton, CircleButtons } from './CircleButton/CircleButton';
+export { CircleButton } from './CircleButton/CircleButton';
+export { CircleButtonSkeleton } from './CircleButton/CircleButtonSkeleton';

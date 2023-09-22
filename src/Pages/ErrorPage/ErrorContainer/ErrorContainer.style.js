@@ -1,23 +1,7 @@
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-export const ErrorContainer = styled(motion.section)`
-  .circle-buttons {
-    justify-content: center;
-
-    ${(p) => p.theme.breakpoints.up('sm')} {
-      grid-template-columns: repeat(3, auto);
-      margin-top: 5px;
-    }
-
-    ${(p) => p.theme.breakpoints.down('xs')} {
-      grid-template-columns: repeat(1, auto);
-      place-items: start;
-      margin-top: 10px;
-      gap: 1.5rem;
-    }
-  }
-`;
+export const ErrorContainer = styled(motion.section)``;
 
 export const Inner = styled.div`
   display: grid;
@@ -45,4 +29,26 @@ export const Description = styled(motion.p)`
   margin-left: auto;
   margin-right: auto;
   line-height: 1.5;
+`;
+
+export const Buttons = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+
+  ${(p) => p.theme.breakpoints.up('sm')} {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  ${(p) => p.theme.breakpoints.down('xs')} {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5rem;
+  }
 `;

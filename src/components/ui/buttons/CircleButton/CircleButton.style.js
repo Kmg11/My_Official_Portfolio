@@ -1,13 +1,5 @@
 import styled from 'styled-components';
 
-export const Buttons = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 1.2rem;
-  justify-content: start;
-  align-items: center;
-`;
-
 export const ButtonIcon = styled.span`
   color: ${(p) => p.theme.colors.whiteColor};
   width: 40px;
@@ -28,9 +20,9 @@ export const ButtonName = styled.span`
 `;
 
 export const CircleButton = styled.a`
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
 
   &:hover,

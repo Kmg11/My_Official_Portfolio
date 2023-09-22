@@ -184,8 +184,20 @@ Create [SubTitle, SkeletonBox, SkeletonText] components | Remove styles Componen
 
 ============================================================================
 
-- Enhance CircleButtons
+Enhance CircleButton component
+
+- Enhance CircleButton component
+- Create CircleButtonSkeleton component
+- Remove CircleButtons component
+- Enhance ErrorContainer component
+- Enhance Links component
+- Enhance Card Buttons component
+
+============================================================================
+
 - Enhance Box component
+- Project page vertical scroll problem in xs
+- Add exit animation for error page
 - Enhance useFetch hook
 - Try build and clone repo before merge
 - Enhance Skeleton [ Create templates from skeleton ]

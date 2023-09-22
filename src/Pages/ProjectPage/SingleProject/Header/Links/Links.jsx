@@ -1,8 +1,8 @@
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faWifi } from '@fortawesome/free-solid-svg-icons';
-import { CircleButtons, CircleButton } from '../../../../../components';
-import * as Style from './Links.style';
+import { CircleButtonSkeleton, CircleButton } from '../../../../../components';
 import { useProject } from '../../ProjectContext';
+import * as Style from './Links.style';
 
 const buttonVariants = {
   hidden: {
@@ -22,18 +22,25 @@ const buttonVariants = {
 export function Links() {
   const { project, isPending } = useProject();
 
-  const getLinks = (variants) => (
-    <Style.Links variants={variants}>
-      <CircleButtons isPending={isPending} object={project} section="links" isStatic={false}>
-        <CircleButton name="github" icon={faGithub}>
-          github
-        </CircleButton>
-        <CircleButton name="live" icon={faWifi}>
-          live
-        </CircleButton>
-      </CircleButtons>
+  return (
+    <Style.Links key={project} variants={isPending ? null : project && buttonVariants}>
+      {project && (
+        <>
+          <CircleButton to={project.links.github} icon={faGithub}>
+            github
+          </CircleButton>
+          <CircleButton to={project.links.live} icon={faWifi}>
+            live
+          </CircleButton>
+        </>
+      )}
+
+      {isPending && (
+        <>
+          <CircleButtonSkeleton />
+          <CircleButtonSkeleton />
+        </>
+      )}
     </Style.Links>
   );
-
-  return isPending ? getLinks(null) : project && getLinks(buttonVariants);
 }
