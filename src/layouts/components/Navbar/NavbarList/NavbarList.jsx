@@ -28,16 +28,6 @@ export function NavbarList({ isNavbarOpen, closeNavbar }) {
         />
       ))}
 
-      {/* <NavbarListItem
-				name="cv"
-				icon={faScroll}
-				linkProps={{
-					as: "a",
-					href: `${process.env.PUBLIC_URL}/files/Kirolos_Mahfouz_Cv.docx`,
-					download: "Kirolos Mahfouz Cv",
-				}}
-			/> */}
-
       {isNavbarOpen && (
         <NavbarListItem
           name="close"

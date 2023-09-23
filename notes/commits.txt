@@ -204,9 +204,10 @@ Enhance Box component | Fix project page vertical scroll problem
 
 ============================================================================
 
-- in project page if project id is wrong redirect to 404 page
-- Handle experience section
-- Add cv link in navbar
+Update experience data
+
+============================================================================
+
 - Try build and clone repo before merge
 
 Problems
@@ -216,11 +217,10 @@ Problems
 	- don't load design if api not load
 	- need handle in responsive
 	- Enhance Skeleton [ Create templates from skeleton ]
-- Performance
-	- check swiper css files
 
 FUTURE UPDATES
 
+- in project page if project id is wrong redirect to 404 page
 - Use markdown for project description
 - Email Link Make It Copy Not Link home page
 - Remove Facebook-Post-Clone after add Facebook Clone project
