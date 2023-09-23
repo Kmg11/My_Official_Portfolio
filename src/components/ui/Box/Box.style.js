@@ -4,9 +4,8 @@ import { motion } from 'framer-motion';
 export const Box = styled(motion.div)``;
 
 export const List = styled.ul`
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: start;
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
 `;
 
@@ -15,8 +14,7 @@ export const Icon = styled.span`
 `;
 
 export const Item = styled.li`
-  display: grid;
-  grid-template-columns: auto 1fr;
+  display: flex;
   gap: 15px;
   align-items: center;
   padding: 15px;
@@ -35,6 +33,8 @@ export const Item = styled.li`
 export const Text = styled.p`
   color: ${(p) => p.theme.colors.whiteColor};
   line-height: 1.6;
+  word-break: break-word;
+  overflow-wrap: break-word;
 `;
 
 export const Link = styled.a`

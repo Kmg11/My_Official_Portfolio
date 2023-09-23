@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { useFetchGet } from '../../hooks';
@@ -8,16 +8,10 @@ import * as Style from './ProjectPage.style';
 
 export function ProjectPage() {
   const { id, type } = useParams();
-
   const { data: projects, isPending, error } = useFetchGet(`${APIS[`${type.toUpperCase()}S`]}`);
 
   const targetProject = projects && projects.filter((project) => project.id.toString() === id)[0];
-
   const apiInfo = { project: targetProject, isPending, error };
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   const helmetTitle =
     targetProject && targetProject.title.charAt(0).toUpperCase() + targetProject.title.slice(1);

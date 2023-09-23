@@ -195,41 +195,36 @@ Enhance CircleButton component
 
 ============================================================================
 
-- Enhance Box component
-- Project page vertical scroll problem in xs
-- Add exit animation for error page
-- Enhance useFetch hook
-- Try build and clone repo before merge
-- Enhance Skeleton [ Create templates from skeleton ]
-- in project page if project id is wrong show message
-- Handle experience section
+Enhance Box component | Fix project page vertical scroll problem
 
-- Use markdown for project description
-- Add border to circle image like story with two empty places to round like clock
+- Handle hide live button in Buttons and Links if not exists
+- Create BoxSkeleton component
+- Enhance Box component
+- Fix Project page vertical scroll problem
+
+============================================================================
+
+- in project page if project id is wrong redirect to 404 page
+- Handle experience section
 - Add cv link in navbar
+- Try build and clone repo before merge
 
 Problems
 
 - fallback image problem
-
-- Style
-	- change banner social links to circle button style
-	- Ibtikar Colors & Fonts [ https://squadio.com/ ]
-	- font of responsive Portfolio
-	- Add Start To Top Projects after title in card
-		- add yellow color to type in single page to top projects
-
-- Structure
-	- Add home container for banner & next Button
-
-- Performance
-	- Mobile Problems
-	- check swiper css files
-
-- Skelaton
+- Skeleton
 	- don't load design if api not load
 	- need handle in responsive
-	- add for background image like net ninja move light
+	- Enhance Skeleton [ Create templates from skeleton ]
+- Performance
+	- check swiper css files
 
+FUTURE UPDATES
+
+- Use markdown for project description
 - Email Link Make It Copy Not Link home page
 - Remove Facebook-Post-Clone after add Facebook Clone project
+- Remove background image from home page
+- Create preview image for every project
+- Enhance useFetch hook
+- Add exit animation for error page

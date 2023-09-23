@@ -29,9 +29,12 @@ export function Links() {
           <CircleButton to={project.links.github} icon={faGithub}>
             github
           </CircleButton>
-          <CircleButton to={project.links.live} icon={faWifi}>
-            live
-          </CircleButton>
+
+          {project.links.live && (
+            <CircleButton to={project.links.live} icon={faWifi}>
+              live
+            </CircleButton>
+          )}
         </>
       )}
 

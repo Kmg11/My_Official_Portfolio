@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import * as Style from './Box.style';
 import { SubTitle } from '../SubTitle/SubTitle';
-import { SkeletonBox, SkeletonText } from '../skeletons';
+import { BoxSkeleton } from './BoxSkeleton';
+import * as Style from './Box.style';
 
 const boxVariants = {
   hidden: { opacity: 0, y: 50, transition: { duration: 0.5 } },
@@ -10,15 +10,6 @@ const boxVariants = {
 };
 
 export function Box({ title, icon, isPending, data, section, isLink = false }) {
-  const SkeletonLoading =
-    isPending &&
-    [...new Array(4).keys()].map((item) => (
-      <Style.Item key={item}>
-        <SkeletonBox width="20px" height="20px" />
-        <SkeletonText width="100%" />
-      </Style.Item>
-    ));
-
   return !isPending && data && data[section] ? (
     <Style.Box variants={boxVariants} initial="hidden" animate="visible" exit="hidden">
       <SubTitle>{title}</SubTitle>
@@ -42,15 +33,7 @@ export function Box({ title, icon, isPending, data, section, isLink = false }) {
       </Style.List>
     </Style.Box>
   ) : (
-    isPending && (
-      <Style.Box>
-        <SubTitle>
-          <SkeletonText head width="100px" />
-        </SubTitle>
-
-        <Style.List>{SkeletonLoading}</Style.List>
-      </Style.Box>
-    )
+    isPending && <BoxSkeleton />
   );
 }
 

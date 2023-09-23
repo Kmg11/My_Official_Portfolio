@@ -1,4 +1,8 @@
 import styled from 'styled-components';
-import { SideGrid } from '../../Info.style';
 
-export const Right = styled(SideGrid)``;
+export const Right = styled.section`
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: start;
+  gap: 2rem;
+`;

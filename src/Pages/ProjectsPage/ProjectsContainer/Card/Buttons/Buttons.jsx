@@ -7,14 +7,19 @@ import * as Style from './Buttons.style';
 export function Buttons() {
   const info = useInfo();
 
+  if (!info.links) return null;
+
   return (
     <Style.Buttons>
       <CircleButton to={info.links.github} icon={faGithub}>
         github
       </CircleButton>
-      <CircleButton to={info.links.live} icon={faWifi}>
-        live
-      </CircleButton>
+
+      {info.links.live && (
+        <CircleButton to={info.links.live} icon={faWifi}>
+          live
+        </CircleButton>
+      )}
     </Style.Buttons>
   );
 }
