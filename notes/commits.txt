@@ -208,7 +208,9 @@ Update experience data
 
 ============================================================================
 
-- Try build and clone repo before merge
+Rename Hooks to hooksFolder
+
+============================================================================
 
 Problems
 
