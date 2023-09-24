@@ -212,6 +212,10 @@ Rename Hooks to hooksFolder
 
 ============================================================================
 
+Rename hooksFolder to hooks
+
+============================================================================
+
 Problems
 
 - fallback image problem
