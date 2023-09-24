@@ -39,13 +39,6 @@
 			"Start the development server: npm run dev",
 			"Open your browser and visit http://localhost:3000 to access Threads Clone."
 		],
-		"tests": [
-			"100% Performance",
-			"100% Accessibility",
-			"100% Seo",
-			"100% Best Practices",
-			"100% Html Validation"
-		],
 		"versions": null,
 		"other_links": null,
 		"notes": null,
@@ -85,13 +78,6 @@
 			"Clone Repo",
 			"npm install",
 			"npm start or npm run start"
-		],
-		"tests": [
-			"100% Performance",
-			"100% Accessibility",
-			"100% Seo",
-			"100% Best Practices",
-			"100% Html Validation"
 		],
 		"versions": null,
 		"other_links": null,
@@ -133,13 +119,6 @@
 			"npm start or npm run start",
 			"Add / in the last of url => http://localhost:3000/Agency/"
 		],
-		"tests": [
-			"97% Performance",
-			"97% Accessibility",
-			"100% Seo",
-			"100% Best Practices",
-			"100% Html Validation"
-		],
 		"versions": null,
 		"other_links": null,
 		"notes": null,
@@ -172,13 +151,6 @@
 			"npm install",
 			"npm start or npm run start",
 			"Open On Your Browser http://localhost:8888"
-		],
-		"tests": [
-			"98% Performance",
-			"100% Accessibility",
-			"100% Seo",
-			"100% Best Practices",
-			"100% Html Validation"
 		],
 		"versions": [
 			{
@@ -226,13 +198,6 @@
 			"npm start or npm run start",
 			"Open (index.html) or (index-ar.html) in dist folder with live server"
 		],
-		"tests": [
-			"96% Performance",
-			"100% Accessibility",
-			"100% Seo",
-			"100% Best Practices",
-			"100% Html Validation"
-		],
 		"versions": null,
 		"other_links": [
 			{
@@ -264,13 +229,6 @@
 			"Dark Mode"
 		],
 		"how_to_use": null,
-		"tests": [
-			"99% Performance",
-			"97% Accessibility",
-			"100% Seo",
-			"100% Best Practices",
-			"100% Html Validation"
-		],
 		"versions": null,
 		"other_links": null,
 		"notes": ["Media player is design only not working as real media player"],
@@ -306,13 +264,6 @@
 			"On terminal sass --watch .\\scss:.\\dist\\css",
 			"Open index.html with live server for English version",
 			"Open index-rtl.html with live server for Arabic version"
-		],
-		"tests": [
-			"100% performance",
-			"100% accessibility",
-			"100% seo",
-			"100% best practices",
-			"100% html validation"
 		],
 		"versions": null,
 		"other_links": [

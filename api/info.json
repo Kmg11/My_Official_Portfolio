@@ -1,0 +1,65 @@
+{
+	"name": "Kirolos Mahfouz",
+	"email": "kirolosmahfouz15@gmail.com",
+	"description": "Software Developer 💻 NextJS | React | Typescript | NodeJS | MongoDB",
+	"summary": [
+		"As a passionate software developer, I am deeply interested in web development and problem solving. I possess a strong ability to perceive and understand customer requirements, which allows me to develop efficient, user-friendly, and modern solutions for web applications. I take pride in writing high-quality code that performs efficiently."
+	],
+	"experience": [
+		"Frontend Developer at BeClarified | Jul 2022 - March 2023",
+		"Develop and maintain the frontend of the cloud-based dental patient educationand practice management software for BeClarified using React, TypeScript,",
+		"Transformed the company's UI design system by implementing a reusabledesign system, resulting in a significant reduction in development time and animprovement in the consistency of the user interface across the platform.",
+		"Improved the performance of the application by optimizing the codebase andreducing the number of network requests, resulting in a 20% faster load timeand a more responsive user experience.",
+		"Collaborated with the backend to design and implement RESTful APIs, enablingsmooth data flow and functionality between the frontend and backend.",
+		"Contribute to the development and improvement of the user experience, throughimplementing new features and enhancing existing ones."
+	],
+	"skills": [
+		"Next.js",
+		"React.js",
+		"Vue.js",
+		"TypeScript",
+		"Javascript",
+		"Node.js",
+		"Express.js",
+		"MongoDB",
+		"MySQL",
+		"Redux Toolkit",
+		"React Query",
+		"Vuex",
+		"Styled Components",
+		"Sass",
+		"Material UI",
+		"Tailwindcss",
+		"Bootstrap",
+		"Html",
+		"Css",
+		"Git / Github",
+		"Gulp / Webpack",
+		"React Testing Library",
+		"Unit Testing ( Jest )",
+		"Pug",
+		"Figma",
+		"Adobe XD"
+	],
+	"languages": ["English", "Arabic"],
+	"social_links": [
+		{
+			"id": 1,
+			"website": "Github",
+			"link": "https://github.com/Kmg11",
+			"icon": "faGithubSquare"
+		},
+		{
+			"id": 2,
+			"website": "Linkedin",
+			"link": "https://www.linkedin.com/in/kirolos-mahfouz/",
+			"icon": "faLinkedin"
+		},
+		{
+			"id": 3,
+			"website": "Email",
+			"link": "kirolosmahfouz15@gmail.com",
+			"icon": "faEnvelopeSquare"
+		}
+	]
+}
